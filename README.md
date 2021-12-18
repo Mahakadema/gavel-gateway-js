@@ -22,7 +22,7 @@ let saltedWithOptions = wynnAPI.fetchPlayer({
 .then(player => console.log(player.classes[0].quests))
 .catch(console.log);
 
-let recipes = await wynnAPI.searchRecipes({
+let recipes = await wynnAPI.fetchRecipes({
     type: "BOOTS",
     level: {
         min: 40,
