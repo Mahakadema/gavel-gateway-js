@@ -15,7 +15,7 @@ const wynnAPI = require('gavel-gateway-js');
 ```js
 let salted = await wynnAPI.fetchPlayer("Salted").catch(console.log);
 
-let saltedWithOptions = wynnAPI.fetchPlayer({
+wynnAPI.fetchPlayer({
     name: "Salted",
     allowCache: false
 })
@@ -34,4 +34,4 @@ let recipes = await wynnAPI.fetchRecipes({
 Anybody is welcome to contribute to gavel-gateway-js.
 To make a contribution, fork the project, commit your changes and additions, run them agains the tests, and open a Pull Request on this repository.
 We will check the changes and request alterations if needed. If we deem the Pull Request to be helpful to the project, it will be merged.
-Please make sure to open Pull Requests **only on the development branch** of the repository.
+Please make sure to open Pull Requests **only on the `development` branch** of the repository.
