@@ -1,0 +1,27 @@
+{
+  "name": "gavel-gateway-js",
+  "version": "0.1.0",
+  "description": "Object-oriented Wynncraft API wrapper for Javascript",
+  "main": "./lib/src/index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahakadema/gavel-gateway-js.git"
+  },
+  "keywords": [
+    "wynncraft",
+    "api",
+    "wrapper"
+  ],
+  "author": "mahakadema",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mahakadema/gavel-gateway-js/issues"
+  },
+  "homepage": "https://github.com/Mahakadema/gavel-gateway-js",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}

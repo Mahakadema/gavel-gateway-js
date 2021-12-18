@@ -1,0 +1,302 @@
+[
+    {
+        "name": "STRENGTH",
+        "itemApiName": "strengthPoints",
+        "ingredientApiName": "STRENGTHPOINTS",
+        "static": true
+    },
+    {
+        "name": "DEXTERITY",
+        "itemApiName": "dexterityPoints",
+        "ingredientApiName": "DEXTERITYPOINTS",
+        "static": true
+    },
+    {
+        "name": "INTELLIGENCE",
+        "itemApiName": "intelligencePoints",
+        "ingredientApiName": "INTELLIGENCE",
+        "static": true
+    },
+    {
+        "name": "DEFENCE",
+        "itemApiName": "defensePoints",
+        "ingredientApiName": "DEFENSEPOINTS",
+        "static": true
+    },
+    {
+        "name": "AGILITY",
+        "itemApiName": "agilityPoints",
+        "ingredientApiName": "AGILITYPOINTS",
+        "static": true
+    },
+    {
+        "name": "MAIN_ATTACK_DAMAGE_PERCENT",
+        "itemApiName": "damageBonus",
+        "ingredientApiName": "DAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_DAMAGE_RAW",
+        "itemApiName": "damageBonusRaw",
+        "ingredientApiName": "DAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_DAMAGE_PERCENT",
+        "itemApiName": "spellDamage",
+        "ingredientApiName": "SPELLDAMAGE",
+        "static": false
+    },
+    {
+        "name": "SPELL_DAMAGE_RAW",
+        "itemApiName": "spellDamageRaw",
+        "ingredientApiName": "SPELLDAMAGERAW",
+        "static": false
+    },
+    {
+        "name": "RAINBOW_SPELL_DAMAGE_RAW",
+        "itemApiName": "rainbowSpellDamageRaw",
+        "ingredientApiName": "RAINBOWSPELLDAMAGERAW",
+        "static": false
+    },
+    {
+        "name": "EARTH_DAMAGE",
+        "itemApiName": "bonusEarthDamage",
+        "ingredientApiName": "EARTHDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "THUNDER_DAMAGE",
+        "itemApiName": "bonusThunderDamage",
+        "ingredientApiName": "THUNDERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "WATER_DAMAGE",
+        "itemApiName": "bonusWaterDamage",
+        "ingredientApiName": "WATERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "FIRE_DAMAGE",
+        "itemApiName": "bonusFireDamage",
+        "ingredientApiName": "FIREDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "AIR_DAMAGE",
+        "itemApiName": "bonusAirDamage",
+        "ingredientApiName": "AIRDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "EARTH_DEFENCE",
+        "itemApiName": "bonusEarthDefense",
+        "ingredientApiName": "EARTHDEFENSE",
+        "static": false
+    },
+    {
+        "name": "THUNDER_DEFENCE",
+        "itemApiName": "bonusThunderDefense",
+        "ingredientApiName": "THUNDERDEFENSE",
+        "static": false
+    },
+    {
+        "name": "WATER_DEFENCE",
+        "itemApiName": "bonusWaterDefense",
+        "ingredientApiName": "WATERDEFENSE",
+        "static": false
+    },
+    {
+        "name": "FIRE_DEFENCE",
+        "itemApiName": "bonusFireDefense",
+        "ingredientApiName": "FIREDEFENSE",
+        "static": false
+    },
+    {
+        "name": "AIR_DEFENCE",
+        "itemApiName": "bonusAirDefense",
+        "ingredientApiName": "AIRDEFENSE",
+        "static": false
+    },
+    {
+        "name": "HEALTH_REGEN_PERCENT",
+        "itemApiName": "healthRegen",
+        "ingredientApiName": "HEALTHREGEN",
+        "static": false
+    },
+    {
+        "name": "HEALTH_REGEN_RAW",
+        "itemApiName": "healthRegenRaw",
+        "ingredientApiName": "HEALTHREGENRAW",
+        "static": false
+    },
+    {
+        "name": "HEALTH",
+        "itemApiName": "healthBonus",
+        "ingredientApiName": "HEALTHBONUS",
+        "static": false
+    },
+    {
+        "name": "LIFE_STEAL",
+        "itemApiName": "lifeSteal",
+        "ingredientApiName": "LIFESTEAL",
+        "static": false
+    },
+    {
+        "name": "MANA_REGEN",
+        "itemApiName": "manaRegen",
+        "ingredientApiName": "MANAREGEN",
+        "static": false
+    },
+    {
+        "name": "MANA_STEAL",
+        "itemApiName": "manaSteal",
+        "ingredientApiName": "MANASTEAL",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_PCT_1",
+        "itemApiName": "spellCostPct1",
+        "ingredientApiName": "SPELL_COST_PCT_1",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_RAW_1",
+        "itemApiName": "spellCostRaw1",
+        "ingredientApiName": "SPELL_COST_RAW_1",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_PCT_2",
+        "itemApiName": "spellCostPct2",
+        "ingredientApiName": "SPELL_COST_PCT_2",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_RAW_2",
+        "itemApiName": "spellCostRaw2",
+        "ingredientApiName": "SPELL_COST_RAW_2",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_PCT_3",
+        "itemApiName": "spellCostPct3",
+        "ingredientApiName": "SPELL_COST_PCT_3",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_RAW_3",
+        "itemApiName": "spellCostRaw3",
+        "ingredientApiName": "SPELL_COST_RAW_3",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_PCT_4",
+        "itemApiName": "spellCostPct4",
+        "ingredientApiName": "SPELL_COST_PCT_4",
+        "static": false
+    },
+    {
+        "name": "SPELL_COST_RAW_4",
+        "itemApiName": "spellCostRaw4",
+        "ingredientApiName": "SPELL_COST_RAW_4",
+        "static": false
+    },
+    {
+        "name": "ATTACK_SPEED",
+        "itemApiName": "attackSpeedBonus",
+        "ingredientApiName": "ATTACKSPEED",
+        "static": false
+    },
+    {
+        "name": "POISON",
+        "itemApiName": "poison",
+        "ingredientApiName": "POISON",
+        "static": false
+    },
+    {
+        "name": "THORNS",
+        "itemApiName": "thorns",
+        "ingredientApiName": "THORNS",
+        "static": false
+    },
+    {
+        "name": "REFLECTION",
+        "itemApiName": "reflection",
+        "ingredientApiName": "REFLECTION",
+        "static": false
+    },
+    {
+        "name": "EXPLODING",
+        "itemApiName": "exploding",
+        "ingredientApiName": "EXPLODING",
+        "static": false
+    },
+    {
+        "name": "JUMP_HEIGHT",
+        "itemApiName": "jumpHeight",
+        "ingredientApiName": "JUMP_HEIGHT",
+        "static": false
+    },
+    {
+        "name": "WALK_SPEED",
+        "itemApiName": "speed",
+        "ingredientApiName": "SPEED",
+        "static": false
+    },
+    {
+        "name": "SPRINT_DURATION",
+        "itemApiName": "sprint",
+        "ingredientApiName": "SPRINT",
+        "static": false
+    },
+    {
+        "name": "SPRINT_REGEN",
+        "itemApiName": "sprintRegen",
+        "ingredientApiName": "SPRINT_REGEN",
+        "static": false
+    },
+    {
+        "name": "SOUL_POINT_REGEN",
+        "itemApiName": "soulPoints",
+        "ingredientApiName": "SOULPOINTS",
+        "static": false
+    },
+    {
+        "name": "GATHERING_SPEED",
+        "itemApiName": "gatherSpeed",
+        "ingredientApiName": "GATHER_SPEED",
+        "static": false
+    },
+    {
+        "name": "GATHERING_XP_BONUS",
+        "itemApiName": "gatherXpBonus",
+        "ingredientApiName": "GATHER_XP_BONUS",
+        "static": false
+    },
+    {
+        "name": "XP_BONUS",
+        "itemApiName": "xpBonus",
+        "ingredientApiName": "XPBONUS",
+        "static": false
+    },
+    {
+        "name": "LOOT_BONUS",
+        "itemApiName": "lootBonus",
+        "ingredientApiName": "LOOTBONUS",
+        "static": false
+    },
+    {
+        "name": "LOOT_QUALITY",
+        "itemApiName": "lootQuality",
+        "ingredientApiName": "LOOT_QUALITY",
+        "static": false
+    },
+    {
+        "name": "STEALING",
+        "itemApiName": "emeraldStealing",
+        "ingredientApiName": "EMERALDSTEALING",
+        "static": false
+    }
+]

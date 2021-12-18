@@ -1,0 +1,146 @@
+[
+    {
+        "name": "PLAGUE",
+        "apiName": "PLAGUE",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "HAWKEYE",
+        "apiName": "HAWKEYE",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "GREED",
+        "apiName": "GREED",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "CAVALRYMAN",
+        "apiName": "CAVALRYMAN",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "GUARDIAN",
+        "apiName": "GUARDIAN",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "HEART_OF_THE_PACK",
+        "apiName": "ALTRUISM",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "SAVIOURS_SACRIFICE",
+        "apiName": "HERO",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "TRANSCENDENCE",
+        "apiName": "ARCANES",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "ENTROPY",
+        "apiName": "ENTROPY",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "ROVING_ASSASSIN",
+        "apiName": "ROVINGASSASSIN",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "MAGNET",
+        "apiName": "MAGNET",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "MADNESS",
+        "apiName": "MADNESS",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "LIGHTWEIGHT",
+        "apiName": "LIGHTWEIGHT",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "SORCERY",
+        "apiName": "SORCERY",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "TAUNT",
+        "apiName": "TAUNT",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "FREERUNNER",
+        "apiName": "FREERUNNER",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "RALLY",
+        "apiName": "RALLY",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "CHERRY_BOMBS",
+        "apiName": "CHERRY_BOMBS",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "PEACEFUL_EFFIGY",
+        "apiName": "PEACEFUL_EFFIGY",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "FURIOUS_EFFIGY",
+        "apiName": "FURIOUS_EFFIGY",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "FLASHFREEZE",
+        "apiName": "FLASHFREEZE",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "FISSION",
+        "apiName": "FISSION",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "EXPLOSIVE_IMPACT",
+        "apiName": "EXPLOSIVE_IMPACT",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "GEOCENTRISM",
+        "apiName": "GEOCENTRISM",
+        "inGameName": null,
+        "description": null
+    }
+]

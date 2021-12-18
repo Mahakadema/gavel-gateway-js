@@ -1,0 +1,864 @@
+{
+    "PLAYER_HEAD": {
+        "id": "minecraft:skull",
+        "numericalId": 397,
+        "damage": 3
+    },
+    "LEATHER_HELMET": {
+        "id": "minecraft:leather_helmet",
+        "numericalId": 298,
+        "damage": 0
+    },
+    "LEATHER_CHESTPLATE": {
+        "id": "minecraft:leather_chestplate",
+        "numericalId": 299,
+        "damage": 0
+    },
+    "LEATHER_LEGGINGS": {
+        "id": "minecraft:leather_leggings",
+        "numericalId": 300,
+        "damage": 0
+    },
+    "LEATHER_BOOTS": {
+        "id": "minecraft:leather_boots",
+        "numericalId": 301,
+        "damage": 0
+    },
+    "GOLDEN_HELMET": {
+        "id": "minecraft:golden_helmet",
+        "numericalId": 298,
+        "damage": 0
+    },
+    "GOLDEN_CHESTPLATE": {
+        "id": "minecraft:golden_chestplate",
+        "numericalId": 299,
+        "damage": 0
+    },
+    "GOLDEN_LEGGINGS": {
+        "id": "minecraft:golden_leggings",
+        "numericalId": 300,
+        "damage": 0
+    },
+    "GOLDEN_BOOTS": {
+        "id": "minecraft:golden_boots",
+        "numericalId": 301,
+        "damage": 0
+    },
+    "CHAIN_HELMET": {
+        "id": "minecraft:chainmail_helmet",
+        "numericalId": 302,
+        "damage": 0
+    },
+    "CHAIN_CHESTPLATE": {
+        "id": "minecraft:chainmail_chestplate",
+        "numericalId": 303,
+        "damage": 0
+    },
+    "CHAIN_LEGGINGS": {
+        "id": "minecraft:chainmail_leggings",
+        "numericalId": 304,
+        "damage": 0
+    },
+    "CHAIN_BOOTS": {
+        "id": "minecraft:chainmail_boots",
+        "numericalId": 305,
+        "damage": 0
+    },
+    "IRON_HELMET": {
+        "id": "minecraft:iron_helmet",
+        "numericalId": 306,
+        "damage": 0
+    },
+    "IRON_CHESTPLATE": {
+        "id": "minecraft:iron_chestplate",
+        "numericalId": 307,
+        "damage": 0
+    },
+    "IRON_LEGGINGS": {
+        "id": "minecraft:iron_leggings",
+        "numericalId": 308,
+        "damage": 0
+    },
+    "IRON_BOOTS": {
+        "id": "minecraft:iron_boots",
+        "numericalId": 309,
+        "damage": 0
+    },
+    "DIAMOND_HELMET": {
+        "id": "minecraft:diamond_helmet",
+        "numericalId": 310,
+        "damage": 0
+    },
+    "DIAMOND_CHESTPLATE": {
+        "id": "minecraft:diamond_chestplate",
+        "numericalId": 311,
+        "damage": 0
+    },
+    "DIAMOND_LEGGINGS": {
+        "id": "minecraft:diamond_leggings",
+        "numericalId": 312,
+        "damage": 0
+    },
+    "DIAMOND_BOOTS": {
+        "id": "minecraft:diamond_boots",
+        "numericalId": 313,
+        "damage": 0
+    },
+    "WAND_DEFAULT_0": {
+        "id": "minecraft:stick",
+        "numericalId": 280,
+        "damage": 0
+    },
+    "WAND_DEFAULT_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 1
+    },
+    "WAND_DEFAULT_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 20
+    },
+    "WAND_EARTH_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 2
+    },
+    "WAND_EARTH_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 3
+    },
+    "WAND_EARTH_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 4
+    },
+    "WAND_THUNDER_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 5
+    },
+    "WAND_THUNDER_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 6
+    },
+    "WAND_THUNDER_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 7
+    },
+    "WAND_WATER_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 14
+    },
+    "WAND_WATER_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 15
+    },
+    "WAND_WATER_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 16
+    },
+    "WAND_FIRE_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 8
+    },
+    "WAND_FIRE_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 9
+    },
+    "WAND_FIRE_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 10
+    },
+    "WAND_AIR_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 11
+    },
+    "WAND_AIR_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 12
+    },
+    "WAND_AIR_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 13
+    },
+    "WAND_MULTI_0": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 17
+    },
+    "WAND_MULTI_1": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 18
+    },
+    "WAND_MULTI_2": {
+        "id": "minecraft:wooden_shovel",
+        "numericalId": 269,
+        "damage": 19
+    },
+    "SPEAR_DEFAULT_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 0
+    },
+    "SPEAR_DEFAULT_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 1
+    },
+    "SPEAR_EARTH_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 2
+    },
+    "SPEAR_EARTH_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 3
+    },
+    "SPEAR_EARTH_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 4
+    },
+    "SPEAR_THUNDER_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 5
+    },
+    "SPEAR_THUNDER_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 6
+    },
+    "SPEAR_THUNDER_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 7
+    },
+    "SPEAR_WATER_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 14
+    },
+    "SPEAR_WATER_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 15
+    },
+    "SPEAR_WATER_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 16
+    },
+    "SPEAR_FIRE_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 8
+    },
+    "SPEAR_FIRE_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 9
+    },
+    "SPEAR_FIRE_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 10
+    },
+    "SPEAR_AIR_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 11
+    },
+    "SPEAR_AIR_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 12
+    },
+    "SPEAR_AIR_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 13
+    },
+    "SPEAR_MULTI_0": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 17
+    },
+    "SPEAR_MULTI_1": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 18
+    },
+    "SPEAR_MULTI_2": {
+        "id": "minecraft:iron_shovel",
+        "numericalId": 256,
+        "damage": 19
+    },
+    "DAGGER_DEFAULT_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 0
+    },
+    "DAGGER_DEFAULT_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 1
+    },
+    "DAGGER_EARTH_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 2
+    },
+    "DAGGER_EARTH_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 3
+    },
+    "DAGGER_EARTH_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 4
+    },
+    "DAGGER_THUNDER_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 5
+    },
+    "DAGGER_THUNDER_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 6
+    },
+    "DAGGER_THUNDER_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 7
+    },
+    "DAGGER_WATER_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 14
+    },
+    "DAGGER_WATER_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 15
+    },
+    "DAGGER_WATER_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 16
+    },
+    "DAGGER_FIRE_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 8
+    },
+    "DAGGER_FIRE_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 9
+    },
+    "DAGGER_FIRE_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 10
+    },
+    "DAGGER_AIR_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 11
+    },
+    "DAGGER_AIR_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 12
+    },
+    "DAGGER_AIR_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 13
+    },
+    "DAGGER_MULTI_0": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 17
+    },
+    "DAGGER_MULTI_1": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 18
+    },
+    "DAGGER_MULTI_2": {
+        "id": "minecraft:shears",
+        "numericalId": 359,
+        "damage": 19
+    },
+    "BOW_DEFAULT_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 0
+    },
+    "BOW_DEFAULT_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 1
+    },
+    "BOW_EARTH_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 2
+    },
+    "BOW_EARTH_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 3
+    },
+    "BOW_EARTH_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 4
+    },
+    "BOW_THUNDER_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 5
+    },
+    "BOW_THUNDER_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 6
+    },
+    "BOW_THUNDER_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 7
+    },
+    "BOW_WATER_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 14
+    },
+    "BOW_WATER_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 15
+    },
+    "BOW_WATER_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 16
+    },
+    "BOW_FIRE_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 8
+    },
+    "BOW_FIRE_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 9
+    },
+    "BOW_FIRE_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 10
+    },
+    "BOW_AIR_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 11
+    },
+    "BOW_AIR_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 12
+    },
+    "BOW_AIR_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 13
+    },
+    "BOW_MULTI_0": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 17
+    },
+    "BOW_MULTI_1": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 18
+    },
+    "BOW_MULTI_2": {
+        "id": "minecraft:bow",
+        "numericalId": 261,
+        "damage": 19
+    },
+    "RELIK_DEFAULT_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 7
+    },
+    "RELIK_DEFAULT_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 8
+    },
+    "RELIK_EARTH_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 9
+    },
+    "RELIK_EARTH_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 10
+    },
+    "RELIK_EARTH_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 11
+    },
+    "RELIK_THUNDER_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 12
+    },
+    "RELIK_THUNDER_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 13
+    },
+    "RELIK_THUNDER_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 14
+    },
+    "RELIK_WATER_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 21
+    },
+    "RELIK_WATER_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 22
+    },
+    "RELIK_WATER_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 23
+    },
+    "RELIK_FIRE_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 15
+    },
+    "RELIK_FIRE_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 16
+    },
+    "RELIK_FIRE_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 17
+    },
+    "RELIK_AIR_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 18
+    },
+    "RELIK_AIR_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 19
+    },
+    "RELIK_AIR_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 20
+    },
+    "RELIK_MULTI_0": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 24
+    },
+    "RELIK_MULTI_1": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 25
+    },
+    "RELIK_MULTI_2": {
+        "id": "minecraft:stone_shovel",
+        "numericalId": 273,
+        "damage": 26
+    },
+    "RING_DEFAULT_0": {
+        "texture": "purity",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 1
+    },
+    "RING_DEFAULT_1": {
+        "texture": "base",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 2
+    },
+    "RING_EARTH_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 3
+    },
+    "RING_EARTH_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 4
+    },
+    "RING_THUNDER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 5
+    },
+    "RING_THUNDER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 6
+    },
+    "RING_WATER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 11
+    },
+    "RING_WATER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 12
+    },
+    "RING_FIRE_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 7
+    },
+    "RING_FIRE_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 8
+    },
+    "RING_AIR_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 9
+    },
+    "RING_AIR_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 10
+    },
+    "RING_MULTI_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 13
+    },
+    "RING_MULTI_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 14
+    },
+    "RING_SPECIAL_0": {
+        "texture": "wedding",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 15
+    },
+    "RING_SPECIAL_1": {
+        "texture": "pearl",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 16
+    },
+    "RING_SPECIAL_2": {
+        "texture": "thick",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 17
+    },
+    "BRACELET_DEFAULT_0": {
+        "texture": "shackle",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 35
+    },
+    "BRACELET_DEFAULT_1": {
+        "texture": "base",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 36
+    },
+    "BRACELET_EARTH_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 37
+    },
+    "BRACELET_EARTH_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 38
+    },
+    "BRACELET_THUNDER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 39
+    },
+    "BRACELET_THUNDER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 40
+    },
+    "BRACELET_WATER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 45
+    },
+    "BRACELET_WATER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 46
+    },
+    "BRACELET_FIRE_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 41
+    },
+    "BRACELET_FIRE_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 42
+    },
+    "BRACELET_AIR_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 43
+    },
+    "BRACELET_AIR_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 44
+    },
+    "BRACELET_MULTI_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 47
+    },
+    "BRACELET_MULTI_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 48
+    },
+    "NECKLACE_DEFAULT_0": {
+        "texture": "silver",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 18
+    },
+    "NECKLACE_DEFAULT_1": {
+        "texture": "base",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 19
+    },
+    "NECKLACE_EARTH_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 20
+    },
+    "NECKLACE_EARTH_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 21
+    },
+    "NECKLACE_THUNDER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 22
+    },
+    "NECKLACE_THUNDER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 23
+    },
+    "NECKLACE_WATER_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 28
+    },
+    "NECKLACE_WATER_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 29
+    },
+    "NECKLACE_FIRE_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 24
+    },
+    "NECKLACE_FIRE_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 25
+    },
+    "NECKLACE_AIR_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 26
+    },
+    "NECKLACE_AIR_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 27
+    },
+    "NECKLACE_MULTI_0": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 30
+    },
+    "NECKLACE_MULTI_1": {
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 31
+    },
+    "NECKLACE_SPECIAL_0": {
+        "texture": "cross",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 32
+    },
+    "NECKLACE_SPECIAL_1": {
+        "texture": "broach",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 33
+    },
+    "NECKLACE_SPECIAL_2": {
+        "texture": "pearl",
+        "id": "minecraft:flint_and_steel",
+        "numericalId": 259,
+        "damage": 34
+    }
+}
