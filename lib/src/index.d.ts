@@ -2120,7 +2120,8 @@ export type ServerRank =
     | "CMD"
     | "MUSIC"
     | "HYBRID"
-    | "MEDIA";
+    | "MEDIA"
+    | "PLAYER";
 
 /**
  * A donator rank on Wynncraft
