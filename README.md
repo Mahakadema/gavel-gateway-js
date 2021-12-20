@@ -16,7 +16,7 @@ const wynnAPI = require('gavel-gateway-js');
 let salted = await wynnAPI.fetchPlayer("Salted").catch(console.log);
 
 wynnAPI.fetchPlayer({
-    name: "Salted",
+    player: "Salted",
     allowCache: false
 })
 .then(player => console.log(player.classes[0].quests))

@@ -11,7 +11,12 @@ export function ratelimit(): Ratelimit
 export function setConfig(config?: ConfigOptions): Config
 
 /**
- * Returns a raw API response of the requested route; THESE CALLS NEVER CACHE
+ * Removes all stored entries from cache
+ */
+export function flushCache(): void
+
+/**
+ * Returns a raw API response of the requested route
  * @param options The options for the request
  */
 export function fetchRaw(options?: RawRequestOptions): Promise<JSON>
@@ -321,6 +326,16 @@ export interface Config {
      */
     allowStackingByDefault: boolean,
     /**
+     * Whether to reuse JSON objects returned by the fetchRaw() method
+     * instead of regenerating them every time they are drawn from cache;
+     * if set to false, gavel-gateway-js will clone API responses every
+     * time the cache is used. Disabling this hurts performance, but hardens
+     * the code against bugs due to downstream code modifying API responses
+     * in the cache
+     * @default true
+     */
+    reuseJSON: boolean,
+    /**
      * The API keys being used
      */
     apiKeys: string[],
@@ -361,6 +376,15 @@ export interface ConfigOptions {
      * overridden by `allowStacking` in request options
      */
     allowStackingByDefault?: boolean,
+    /**
+     * Whether to reuse JSON objects returned by the fetchRaw() method
+     * instead of regenerating them every time they are drawn from cache;
+     * if set to false, gavel-gateway-js will clone API responses every
+     * time the cache is used. Disabling this hurts performance, but hardens
+     * the code against bugs due to downstream code modifying API responses
+     * in the cache
+     */
+    reuseJson?: boolean,
     /**
      * The API keys to use
      */
@@ -455,7 +479,7 @@ export interface Route {
     /**
      * The URL of the route
      */
-    url: string,
+    url: WynncraftAPIRoute,
     /**
      * The amount of milliseconds to cache data from this route for
      */
@@ -557,7 +581,9 @@ export interface RequestOptions {
      */
     timeout?: number,
     /**
-     * The amount of time the request should be cached for
+     * The amount of time the request should be cached for;
+     * default is overridden by config unless `fetchRaw()` is used
+     * @default 30000
      */
     cacheFor?: number,
     /**
@@ -576,7 +602,7 @@ export interface RawRequestOptions extends RequestOptions {
     /**
      * The API route to request
      */
-    route: string
+    route: WynncraftAPIRoute
     /**
      * Whether requests to the same route should be allowed
      * to be stacked; stacked requests only use a single
@@ -586,6 +612,12 @@ export interface RawRequestOptions extends RequestOptions {
      * DOWNSTREAM CODE
      */
     allowStacking?: boolean,
+    /**
+     * Whether errors or profiles not being found should be
+     * filtered out and throw errors/return null
+     * @default true
+     */
+    interpret?: boolean
 }
 
 /**
@@ -815,6 +847,11 @@ export interface ItemSearchRequestOptions extends RequestOptions {
      */
     majorIds?: MajorIdQuery
 }
+
+/**
+ * A URL to a Wynncraft API resource
+ */
+export type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
 
 /**
  * A scope of leaderboard ranking
