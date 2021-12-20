@@ -21,7 +21,7 @@ async function main() {
     const guildsToTest = [
         {
             guild: "Cyphrus Code",
-            cacheFor: 1000
+            cacheFor: 10000
         },
         {
             guild: "TheNoLifes"
