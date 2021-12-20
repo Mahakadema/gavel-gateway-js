@@ -401,6 +401,51 @@ Requesting Ingredients
 
     console.log(`
 #####################################
+Testing Guild List
+#####################################
+`);
+
+    const guildList = await api.fetchGuildList();
+    console.log(guildList.list.length, guildList.list.slice(guildList.list.length - 10));
+
+    console.log(`
+#####################################
+Testing Ingredient List
+#####################################
+`);
+
+    const ingredientList = await api.fetchIngredientList();
+    console.log(ingredientList.list.length, ingredientList.list.slice(ingredientList.list.length - 10));
+
+    console.log(`
+#####################################
+Testing Recipe List
+#####################################
+`);
+
+    const recipeList = await api.fetchRecipeList();
+    console.log(recipeList.list.length, recipeList.list.slice(recipeList.list.length - 10));
+
+    console.log(`
+#####################################
+Testing Online Players
+#####################################
+`);
+
+    const onlinePlayers = await api.fetchOnlinePlayers();
+    console.log(onlinePlayers.list.map(v => `${v.name} ${v.worldType} ${v.players.length}`).join("\n"));
+
+    console.log(`
+#####################################
+Testing Online Player Sum
+#####################################
+`);
+
+    const onlinePlayersSum = await api.fetchOnlinePlayersSum();
+    console.log(onlinePlayersSum);
+
+    console.log(`
+#####################################
 Testing config functionality
 #####################################
 `);
