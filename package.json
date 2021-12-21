@@ -1,6 +1,6 @@
 {
   "name": "gavel-gateway-js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Object-oriented Wynncraft API wrapper for Javascript",
   "main": "./lib/src/index.js",
   "scripts": {
