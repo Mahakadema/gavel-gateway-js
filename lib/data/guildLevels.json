@@ -1,0 +1,614 @@
+[
+  {
+    "oldRequirement": 0,
+    "newRequirement": 0
+  },
+  {
+    "oldRequirement": 2200,
+    "newRequirement": 20000
+  },
+  {
+    "oldRequirement": 6864,
+    "newRequirement": 43000
+  },
+  {
+    "oldRequirement": 15630,
+    "newRequirement": 69450
+  },
+  {
+    "oldRequirement": 30976,
+    "newRequirement": 99868
+  },
+  {
+    "oldRequirement": 56428,
+    "newRequirement": 134848
+  },
+  {
+    "oldRequirement": 97944,
+    "newRequirement": 175075
+  },
+  {
+    "oldRequirement": 163300,
+    "newRequirement": 221336
+  },
+  {
+    "oldRequirement": 264844,
+    "newRequirement": 274536
+  },
+  {
+    "oldRequirement": 419560,
+    "newRequirement": 335171
+  },
+  {
+    "oldRequirement": 602448,
+    "newRequirement": 406074
+  },
+  {
+    "oldRequirement": 852324,
+    "newRequirement": 486986
+  },
+  {
+    "oldRequirement": 1274800,
+    "newRequirement": 580033
+  },
+  {
+    "oldRequirement": 1741568,
+    "newRequirement": 687038
+  },
+  {
+    "oldRequirement": 2393896,
+    "newRequirement": 810094
+  },
+  {
+    "oldRequirement": 3178888,
+    "newRequirement": 951608
+  },
+  {
+    "oldRequirement": 4395776,
+    "newRequirement": 1114349
+  },
+  {
+    "oldRequirement": 5822952,
+    "newRequirement": 1301502
+  },
+  {
+    "oldRequirement": 7680496,
+    "newRequirement": 1516727
+  },
+  {
+    "oldRequirement": 10094700,
+    "newRequirement": 1764236
+  },
+  {
+    "oldRequirement": 12576960,
+    "newRequirement": 2048872
+  },
+  {
+    "oldRequirement": 15271408,
+    "newRequirement": 2376202
+  },
+  {
+    "oldRequirement": 18176328,
+    "newRequirement": 2752633
+  },
+  {
+    "oldRequirement": 21296324,
+    "newRequirement": 3185528
+  },
+  {
+    "oldRequirement": 24346288,
+    "newRequirement": 3683357
+  },
+  {
+    "oldRequirement": 28540928,
+    "newRequirement": 4255860
+  },
+  {
+    "oldRequirement": 34120944,
+    "newRequirement": 4914239
+  },
+  {
+    "oldRequirement": 40238272,
+    "newRequirement": 5671375
+  },
+  {
+    "oldRequirement": 48132760,
+    "newRequirement": 6542082
+  },
+  {
+    "oldRequirement": 56424720,
+    "newRequirement": 7543394
+  },
+  {
+    "oldRequirement": 65569680,
+    "newRequirement": 8694903
+  },
+  {
+    "oldRequirement": 76150072,
+    "newRequirement": 10019138
+  },
+  {
+    "oldRequirement": 94969036,
+    "newRequirement": 11542009
+  },
+  {
+    "oldRequirement": 106260696,
+    "newRequirement": 13293310
+  },
+  {
+    "oldRequirement": 121637664,
+    "newRequirement": 15307307
+  },
+  {
+    "oldRequirement": 140582440,
+    "newRequirement": 17623403
+  },
+  {
+    "oldRequirement": 168081408,
+    "newRequirement": 20286914
+  },
+  {
+    "oldRequirement": 187435056,
+    "newRequirement": 23349951
+  },
+  {
+    "oldRequirement": 216914412,
+    "newRequirement": 26872443
+  },
+  {
+    "oldRequirement": 250716864,
+    "newRequirement": 30923310
+  },
+  {
+    "oldRequirement": 302589056,
+    "newRequirement": 35581806
+  },
+  {
+    "oldRequirement": 372900328,
+    "newRequirement": 40939077
+  },
+  {
+    "oldRequirement": 439287340,
+    "newRequirement": 47099939
+  },
+  {
+    "oldRequirement": 528448652,
+    "newRequirement": 54184929
+  },
+  {
+    "oldRequirement": 635079244,
+    "newRequirement": 62332669
+  },
+  {
+    "oldRequirement": 762509284,
+    "newRequirement": 71702569
+  },
+  {
+    "oldRequirement": 914665840,
+    "newRequirement": 82477955
+  },
+  {
+    "oldRequirement": 1074729260,
+    "newRequirement": 94869648
+  },
+  {
+    "oldRequirement": 1262236800,
+    "newRequirement": 109120095
+  },
+  {
+    "oldRequirement": 1481808020,
+    "newRequirement": 125508109
+  },
+  {
+    "oldRequirement": 1738858000,
+    "newRequirement": 144354326
+  },
+  {
+    "oldRequirement": 2039683800,
+    "newRequirement": 166027474
+  },
+  {
+    "oldRequirement": 2391634960,
+    "newRequirement": 190951596
+  },
+  {
+    "oldRequirement": 2803273880,
+    "newRequirement": 219614335
+  },
+  {
+    "oldRequirement": 3284594280,
+    "newRequirement": 252576485
+  },
+  {
+    "oldRequirement": 3847231300,
+    "newRequirement": 290482958
+  },
+  {
+    "oldRequirement": 4504758720,
+    "newRequirement": 334075402
+  },
+  {
+    "oldRequirement": 5272982220,
+    "newRequirement": 384206712
+  },
+  {
+    "oldRequirement": 6170314920,
+    "newRequirement": 441857719
+  },
+  {
+    "oldRequirement": 7218203960,
+    "newRequirement": 508156376
+  },
+  {
+    "oldRequirement": 8074598400,
+    "newRequirement": 584399833
+  },
+  {
+    "oldRequirement": 9030089860,
+    "newRequirement": 672079808
+  },
+  {
+    "oldRequirement": 10095932440,
+    "newRequirement": 772911779
+  },
+  {
+    "oldRequirement": 11282040000,
+    "newRequirement": 888868546
+  },
+  {
+    "oldRequirement": 12601600000,
+    "newRequirement": 1022218827
+  },
+  {
+    "oldRequirement": 14085500000,
+    "newRequirement": 1175571652
+  },
+  {
+    "oldRequirement": 15725160000,
+    "newRequirement": 1351927399
+  },
+  {
+    "oldRequirement": 17570861220,
+    "newRequirement": 1554736509
+  },
+  {
+    "oldRequirement": 19616419680,
+    "newRequirement": 1787966986
+  },
+  {
+    "oldRequirement": 21895389120,
+    "newRequirement": 2056182033
+  },
+  {
+    "oldRequirement": 24424400000,
+    "newRequirement": 2364629339
+  },
+  {
+    "oldRequirement": 27261351700,
+    "newRequirement": 2719343739
+  },
+  {
+    "oldRequirement": 30396960000,
+    "newRequirement": 3127265300
+  },
+  {
+    "oldRequirement": 33902660000,
+    "newRequirement": 3596375095
+  },
+  {
+    "oldRequirement": 37802160000,
+    "newRequirement": 4135851359
+  },
+  {
+    "oldRequirement": 42157500000,
+    "newRequirement": 4756249063
+  },
+  {
+    "oldRequirement": 46983200000,
+    "newRequirement": 5469706423
+  },
+  {
+    "oldRequirement": 52361540000,
+    "newRequirement": 6290182386
+  },
+  {
+    "oldRequirement": 58361160000,
+    "newRequirement": 7233729744
+  },
+  {
+    "oldRequirement": 65018580000,
+    "newRequirement": 8318809206
+  },
+  {
+    "oldRequirement": 72424000000,
+    "newRequirement": 9566650587
+  },
+  {
+    "oldRequirement": 80653320000,
+    "newRequirement": 11001668175
+  },
+  {
+    "oldRequirement": 89821160000,
+    "newRequirement": 12651938401
+  },
+  {
+    "oldRequirement": 100010020000,
+    "newRequirement": 14549749161
+  },
+  {
+    "oldRequirement": 111342000000,
+    "newRequirement": 16732231535
+  },
+  {
+    "oldRequirement": 123924900000,
+    "newRequirement": 19242086266
+  },
+  {
+    "oldRequirement": 137926800000,
+    "newRequirement": 22128419206
+  },
+  {
+    "oldRequirement": 153483660000,
+    "newRequirement": 25447702087
+  },
+  {
+    "oldRequirement": 170774560000,
+    "newRequirement": 29264877400
+  },
+  {
+    "oldRequirement": 190094983561,
+    "newRequirement": 33654629009
+  },
+  {
+    "oldRequirement": 211947041817,
+    "newRequirement": 38702843361
+  },
+  {
+    "oldRequirement": 235073342519,
+    "newRequirement": 44508289865
+  },
+  {
+    "oldRequirement": 261403348032,
+    "newRequirement": 51184553345
+  },
+  {
+    "oldRequirement": 290950934667,
+    "newRequirement": 58000000000
+  },
+  {
+    "oldRequirement": 323278730758,
+    "newRequirement": 67691614798
+  },
+  {
+    "oldRequirement": 359353060405,
+    "newRequirement": 77845377018
+  },
+  {
+    "oldRequirement": 399348290843,
+    "newRequirement": 89522203571
+  },
+  {
+    "oldRequirement": 443875079666,
+    "newRequirement": 102950554106
+  },
+  {
+    "oldRequirement": 493292473071,
+    "newRequirement": 118393157222
+  },
+  {
+    "oldRequirement": 547739833230,
+    "newRequirement": 136152150806
+  },
+  {
+    "oldRequirement": 608538954719,
+    "newRequirement": 156574993427
+  },
+  {
+    "oldRequirement": 676086778692,
+    "newRequirement": 180061262441
+  },
+  {
+    "oldRequirement": 751132411127,
+    "newRequirement": 207070471807
+  },
+  {
+    "oldRequirement": 834508108762,
+    "newRequirement": 238131062578
+  },
+  {
+    "oldRequirement": 927138508835,
+    "newRequirement": 273850741965
+  },
+  {
+    "oldRequirement": 1030050883316,
+    "newRequirement": 314928353259
+  },
+  {
+    "oldRequirement": 1144386531364,
+    "newRequirement": 362167606248
+  },
+  {
+    "oldRequirement": 1271413436345,
+    "newRequirement": 416492747185
+  },
+  {
+    "oldRequirement": 1412540327779,
+    "newRequirement": 478966659263
+  },
+  {
+    "oldRequirement": 1569332304163,
+    "newRequirement": 550811658152
+  },
+  {
+    "oldRequirement": 1743528189925,
+    "newRequirement": 633433406875
+  },
+  {
+    "oldRequirement": 1937059819006,
+    "newRequirement": 728448417907
+  },
+  {
+    "oldRequirement": 2152073458916,
+    "newRequirement": 837715680593
+  },
+  {
+    "oldRequirement": 2390953612856,
+    "newRequirement": 963373032681
+  },
+  {
+    "oldRequirement": 2656349463883,
+    "newRequirement": 1107878987584
+  },
+  {
+    "oldRequirement": 2951204254374,
+    "newRequirement": 1274060835721
+  },
+  {
+    "oldRequirement": 3278787926609,
+    "newRequirement": 1465169961079
+  },
+  {
+    "oldRequirement": 3642733386463,
+    "newRequirement": 1684945455241
+  },
+  {
+    "oldRequirement": 4047076792360,
+    "newRequirement": 1937687273528
+  },
+  {
+    "oldRequirement": 4496302316312,
+    "newRequirement": 2228340364557
+  },
+  {
+    "oldRequirement": 4995391873423,
+    "newRequirement": 2562591419240
+  },
+  {
+    "oldRequirement": 5549880371373,
+    "newRequirement": 2946980132126
+  },
+  {
+    "oldRequirement": 6165917092595,
+    "newRequirement": 3389027151945
+  },
+  {
+    "oldRequirement": 6850333889873,
+    "newRequirement": 3897381224737
+  },
+  {
+    "oldRequirement": 7610720951649,
+    "newRequirement": 4481988408447
+  },
+  {
+    "oldRequirement": 8455510977282,
+    "newRequirement": 5154286669714
+  },
+  {
+    "oldRequirement": 9394072695761,
+    "newRequirement": 5927429670172
+  },
+  {
+    "oldRequirement": 10436814764990,
+    "newRequirement": 6816544120697
+  },
+  {
+    "oldRequirement": 11595301203904,
+    "newRequirement": 7839025738802
+  },
+  {
+    "oldRequirement": 12882379637537,
+    "newRequirement": 9014879599622
+  },
+  {
+    "oldRequirement": 14312323777304,
+    "newRequirement": 10367111539566
+  },
+  {
+    "oldRequirement": 15900991716585,
+    "newRequirement": 11922178270501
+  },
+  {
+    "oldRequirement": 17666001797125,
+    "newRequirement": 13710505011076
+  },
+  {
+    "oldRequirement": 19626927996606,
+    "newRequirement": 15767080762737
+  },
+  {
+    "oldRequirement": 21805517004230,
+    "newRequirement": 18132142877148
+  },
+  {
+    "oldRequirement": 24225929391699,
+    "newRequirement": 20851964308720
+  },
+  {
+    "oldRequirement": 26915007554178,
+    "newRequirement": 23979758955028
+  },
+  {
+    "oldRequirement": 29902573392692,
+    "newRequirement": 27576722798282
+  },
+  {
+    "oldRequirement": 33221759039280,
+    "newRequirement": 31713231218024
+  },
+  {
+    "oldRequirement": 36909374292640,
+    "newRequirement": 36470215900728
+  },
+  {
+    "oldRequirement": 41006314839123,
+    "newRequirement": 41940748285837
+  },
+  {
+    "oldRequirement": 45558015786266,
+    "newRequirement": 48231860528712
+  },
+  {
+    "oldRequirement": 50614955538542,
+    "newRequirement": 55466639608019
+  },
+  {
+    "oldRequirement": 56233215603320,
+    "newRequirement": 63786635549222
+  },
+  {
+    "oldRequirement": 62475102535288,
+    "newRequirement": 73354630881605
+  },
+  {
+    "oldRequirement": 69409838916705,
+    "newRequirement": 84357825513846
+  },
+  {
+    "oldRequirement": 77114331036460,
+    "newRequirement": 97011499340923
+  },
+  {
+    "oldRequirement": 85674021781507,
+    "newRequirement": 111563224242061
+  },
+  {
+    "oldRequirement": 95183838199254,
+    "newRequirement": 128297707878370
+  },
+  {
+    "oldRequirement": 105749244239371,
+    "newRequirement": 147542364060126
+  },
+  {
+    "oldRequirement": 117487410349941,
+    "newRequirement": 169673718669145
+  },
+  {
+    "oldRequirement": 130528512898785,
+    "newRequirement": 195124776469516
+  },
+  {
+    "oldRequirement": 145017177830550,
+    "newRequirement": 224393492939944
+  }
+]
