@@ -140,13 +140,21 @@ export var data: {
     /**
      * Information on Territories
      */
-    territories: Map<string, TerritoryData>
+    territories: Map<string, TerritoryData>,
     /**
      * Information on sprites commonly used by wynncraft items;
      * Not all sprites are listed here, namely any ingredients
      * along with some special weapons, currently only `Wybel Paw`
      */
-    sprites: Map<ItemSpriteName, Sprite>
+    sprites: Map<ItemSpriteName, Sprite>,
+    /**
+     * Information on guild level requirements; the preGavelReborn is the
+     * value for a guild to level up from the given level to the next,
+     * prior to 1.20; postGavelReborn is it's equivalent for post 1.20;
+     * this data can be used to interpret the xp percentage returned by
+     * the guild API; the index indicates the level for this requirement
+     */
+    guildLevels: GuildLevelRequirementData[]
 }
 
 /**
@@ -226,6 +234,23 @@ export interface MinecraftIds {
      * An object with key value pairs mapping numeric IDs -> string IDs
      */
     strings: Map<number, MinecraftStringId>
+}
+
+/**
+ * Information on guild level requirements
+ */
+export interface GuildLevelRequirementData {
+    /**
+     * The amount of XP required to level to the next level
+     * before 1.20 - Gavel Reborn;
+     * values above lvl 87 are only approximations
+     */
+    preGavelReborn: number,
+    /**
+     * The amount of XP required to level to the next level
+     * after 1.20 - Gavel Reborn
+     */
+    postGavelReborn: number
 }
 
 /**
@@ -2732,8 +2757,8 @@ export class Guild extends BaseAPIObject {
      * The xp percentage of the 1.19 requirement of the
      * guilds current level as a number between 0 and 1;
      * calculates like `current_xp / requirement_1_19`;
-     * use `gavel-gateway-js.data.guildLevels` to trans-
-     * late the percentage to 1.20 values or percentage
+     * use `gavel-gateway-js.data.guildLevels` to translate
+     * the percentages to 1.20 values or percentages
      */
     public xp: number;
     /**
