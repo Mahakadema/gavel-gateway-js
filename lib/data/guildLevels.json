@@ -1,614 +1,614 @@
 [
   {
-    "oldRequirement": 0,
-    "newRequirement": 0
+    "preGavelReborn": 0,
+    "postGavelReborn": 0
   },
   {
-    "oldRequirement": 2200,
-    "newRequirement": 20000
+    "preGavelReborn": 2200,
+    "postGavelReborn": 20000
   },
   {
-    "oldRequirement": 6864,
-    "newRequirement": 43000
+    "preGavelReborn": 6864,
+    "postGavelReborn": 43000
   },
   {
-    "oldRequirement": 15630,
-    "newRequirement": 69450
+    "preGavelReborn": 15630,
+    "postGavelReborn": 69450
   },
   {
-    "oldRequirement": 30976,
-    "newRequirement": 99868
+    "preGavelReborn": 30976,
+    "postGavelReborn": 99868
   },
   {
-    "oldRequirement": 56428,
-    "newRequirement": 134848
+    "preGavelReborn": 56428,
+    "postGavelReborn": 134848
   },
   {
-    "oldRequirement": 97944,
-    "newRequirement": 175075
+    "preGavelReborn": 97944,
+    "postGavelReborn": 175075
   },
   {
-    "oldRequirement": 163300,
-    "newRequirement": 221336
+    "preGavelReborn": 163300,
+    "postGavelReborn": 221336
   },
   {
-    "oldRequirement": 264844,
-    "newRequirement": 274536
+    "preGavelReborn": 264844,
+    "postGavelReborn": 274536
   },
   {
-    "oldRequirement": 419560,
-    "newRequirement": 335171
+    "preGavelReborn": 419560,
+    "postGavelReborn": 335171
   },
   {
-    "oldRequirement": 602448,
-    "newRequirement": 406074
+    "preGavelReborn": 602448,
+    "postGavelReborn": 406074
   },
   {
-    "oldRequirement": 852324,
-    "newRequirement": 486986
+    "preGavelReborn": 852324,
+    "postGavelReborn": 486986
   },
   {
-    "oldRequirement": 1274800,
-    "newRequirement": 580033
+    "preGavelReborn": 1274800,
+    "postGavelReborn": 580033
   },
   {
-    "oldRequirement": 1741568,
-    "newRequirement": 687038
+    "preGavelReborn": 1741568,
+    "postGavelReborn": 687038
   },
   {
-    "oldRequirement": 2393896,
-    "newRequirement": 810094
+    "preGavelReborn": 2393896,
+    "postGavelReborn": 810094
   },
   {
-    "oldRequirement": 3178888,
-    "newRequirement": 951608
+    "preGavelReborn": 3178888,
+    "postGavelReborn": 951608
   },
   {
-    "oldRequirement": 4395776,
-    "newRequirement": 1114349
+    "preGavelReborn": 4395776,
+    "postGavelReborn": 1114349
   },
   {
-    "oldRequirement": 5822952,
-    "newRequirement": 1301502
+    "preGavelReborn": 5822952,
+    "postGavelReborn": 1301502
   },
   {
-    "oldRequirement": 7680496,
-    "newRequirement": 1516727
+    "preGavelReborn": 7680496,
+    "postGavelReborn": 1516727
   },
   {
-    "oldRequirement": 10094700,
-    "newRequirement": 1764236
+    "preGavelReborn": 10094700,
+    "postGavelReborn": 1764236
   },
   {
-    "oldRequirement": 12576960,
-    "newRequirement": 2048872
+    "preGavelReborn": 12576960,
+    "postGavelReborn": 2048872
   },
   {
-    "oldRequirement": 15271408,
-    "newRequirement": 2376202
+    "preGavelReborn": 15271408,
+    "postGavelReborn": 2376202
   },
   {
-    "oldRequirement": 18176328,
-    "newRequirement": 2752633
+    "preGavelReborn": 18176328,
+    "postGavelReborn": 2752633
   },
   {
-    "oldRequirement": 21296324,
-    "newRequirement": 3185528
+    "preGavelReborn": 21296324,
+    "postGavelReborn": 3185528
   },
   {
-    "oldRequirement": 24346288,
-    "newRequirement": 3683357
+    "preGavelReborn": 24346288,
+    "postGavelReborn": 3683357
   },
   {
-    "oldRequirement": 28540928,
-    "newRequirement": 4255860
+    "preGavelReborn": 28540928,
+    "postGavelReborn": 4255860
   },
   {
-    "oldRequirement": 34120944,
-    "newRequirement": 4914239
+    "preGavelReborn": 34120944,
+    "postGavelReborn": 4914239
   },
   {
-    "oldRequirement": 40238272,
-    "newRequirement": 5671375
+    "preGavelReborn": 40238272,
+    "postGavelReborn": 5671375
   },
   {
-    "oldRequirement": 48132760,
-    "newRequirement": 6542082
+    "preGavelReborn": 48132760,
+    "postGavelReborn": 6542082
   },
   {
-    "oldRequirement": 56424720,
-    "newRequirement": 7543394
+    "preGavelReborn": 56424720,
+    "postGavelReborn": 7543394
   },
   {
-    "oldRequirement": 65569680,
-    "newRequirement": 8694903
+    "preGavelReborn": 65569680,
+    "postGavelReborn": 8694903
   },
   {
-    "oldRequirement": 76150072,
-    "newRequirement": 10019138
+    "preGavelReborn": 76150072,
+    "postGavelReborn": 10019138
   },
   {
-    "oldRequirement": 94969036,
-    "newRequirement": 11542009
+    "preGavelReborn": 94969036,
+    "postGavelReborn": 11542009
   },
   {
-    "oldRequirement": 106260696,
-    "newRequirement": 13293310
+    "preGavelReborn": 106260696,
+    "postGavelReborn": 13293310
   },
   {
-    "oldRequirement": 121637664,
-    "newRequirement": 15307307
+    "preGavelReborn": 121637664,
+    "postGavelReborn": 15307307
   },
   {
-    "oldRequirement": 140582440,
-    "newRequirement": 17623403
+    "preGavelReborn": 140582440,
+    "postGavelReborn": 17623403
   },
   {
-    "oldRequirement": 168081408,
-    "newRequirement": 20286914
+    "preGavelReborn": 168081408,
+    "postGavelReborn": 20286914
   },
   {
-    "oldRequirement": 187435056,
-    "newRequirement": 23349951
+    "preGavelReborn": 187435056,
+    "postGavelReborn": 23349951
   },
   {
-    "oldRequirement": 216914412,
-    "newRequirement": 26872443
+    "preGavelReborn": 216914412,
+    "postGavelReborn": 26872443
   },
   {
-    "oldRequirement": 250716864,
-    "newRequirement": 30923310
+    "preGavelReborn": 250716864,
+    "postGavelReborn": 30923310
   },
   {
-    "oldRequirement": 302589056,
-    "newRequirement": 35581806
+    "preGavelReborn": 302589056,
+    "postGavelReborn": 35581806
   },
   {
-    "oldRequirement": 372900328,
-    "newRequirement": 40939077
+    "preGavelReborn": 372900328,
+    "postGavelReborn": 40939077
   },
   {
-    "oldRequirement": 439287340,
-    "newRequirement": 47099939
+    "preGavelReborn": 439287340,
+    "postGavelReborn": 47099939
   },
   {
-    "oldRequirement": 528448652,
-    "newRequirement": 54184929
+    "preGavelReborn": 528448652,
+    "postGavelReborn": 54184929
   },
   {
-    "oldRequirement": 635079244,
-    "newRequirement": 62332669
+    "preGavelReborn": 635079244,
+    "postGavelReborn": 62332669
   },
   {
-    "oldRequirement": 762509284,
-    "newRequirement": 71702569
+    "preGavelReborn": 762509284,
+    "postGavelReborn": 71702569
   },
   {
-    "oldRequirement": 914665840,
-    "newRequirement": 82477955
+    "preGavelReborn": 914665840,
+    "postGavelReborn": 82477955
   },
   {
-    "oldRequirement": 1074729260,
-    "newRequirement": 94869648
+    "preGavelReborn": 1074729260,
+    "postGavelReborn": 94869648
   },
   {
-    "oldRequirement": 1262236800,
-    "newRequirement": 109120095
+    "preGavelReborn": 1262236800,
+    "postGavelReborn": 109120095
   },
   {
-    "oldRequirement": 1481808020,
-    "newRequirement": 125508109
+    "preGavelReborn": 1481808020,
+    "postGavelReborn": 125508109
   },
   {
-    "oldRequirement": 1738858000,
-    "newRequirement": 144354326
+    "preGavelReborn": 1738858000,
+    "postGavelReborn": 144354326
   },
   {
-    "oldRequirement": 2039683800,
-    "newRequirement": 166027474
+    "preGavelReborn": 2039683800,
+    "postGavelReborn": 166027474
   },
   {
-    "oldRequirement": 2391634960,
-    "newRequirement": 190951596
+    "preGavelReborn": 2391634960,
+    "postGavelReborn": 190951596
   },
   {
-    "oldRequirement": 2803273880,
-    "newRequirement": 219614335
+    "preGavelReborn": 2803273880,
+    "postGavelReborn": 219614335
   },
   {
-    "oldRequirement": 3284594280,
-    "newRequirement": 252576485
+    "preGavelReborn": 3284594280,
+    "postGavelReborn": 252576485
   },
   {
-    "oldRequirement": 3847231300,
-    "newRequirement": 290482958
+    "preGavelReborn": 3847231300,
+    "postGavelReborn": 290482958
   },
   {
-    "oldRequirement": 4504758720,
-    "newRequirement": 334075402
+    "preGavelReborn": 4504758720,
+    "postGavelReborn": 334075402
   },
   {
-    "oldRequirement": 5272982220,
-    "newRequirement": 384206712
+    "preGavelReborn": 5272982220,
+    "postGavelReborn": 384206712
   },
   {
-    "oldRequirement": 6170314920,
-    "newRequirement": 441857719
+    "preGavelReborn": 6170314920,
+    "postGavelReborn": 441857719
   },
   {
-    "oldRequirement": 7218203960,
-    "newRequirement": 508156376
+    "preGavelReborn": 7218203960,
+    "postGavelReborn": 508156376
   },
   {
-    "oldRequirement": 8074598400,
-    "newRequirement": 584399833
+    "preGavelReborn": 8074598400,
+    "postGavelReborn": 584399833
   },
   {
-    "oldRequirement": 9030089860,
-    "newRequirement": 672079808
+    "preGavelReborn": 9030089860,
+    "postGavelReborn": 672079808
   },
   {
-    "oldRequirement": 10095932440,
-    "newRequirement": 772911779
+    "preGavelReborn": 10095932440,
+    "postGavelReborn": 772911779
   },
   {
-    "oldRequirement": 11282040000,
-    "newRequirement": 888868546
+    "preGavelReborn": 11282040000,
+    "postGavelReborn": 888868546
   },
   {
-    "oldRequirement": 12601600000,
-    "newRequirement": 1022218827
+    "preGavelReborn": 12601600000,
+    "postGavelReborn": 1022218827
   },
   {
-    "oldRequirement": 14085500000,
-    "newRequirement": 1175571652
+    "preGavelReborn": 14085500000,
+    "postGavelReborn": 1175571652
   },
   {
-    "oldRequirement": 15725160000,
-    "newRequirement": 1351927399
+    "preGavelReborn": 15725160000,
+    "postGavelReborn": 1351927399
   },
   {
-    "oldRequirement": 17570861220,
-    "newRequirement": 1554736509
+    "preGavelReborn": 17570861220,
+    "postGavelReborn": 1554736509
   },
   {
-    "oldRequirement": 19616419680,
-    "newRequirement": 1787966986
+    "preGavelReborn": 19616419680,
+    "postGavelReborn": 1787966986
   },
   {
-    "oldRequirement": 21895389120,
-    "newRequirement": 2056182033
+    "preGavelReborn": 21895389120,
+    "postGavelReborn": 2056182033
   },
   {
-    "oldRequirement": 24424400000,
-    "newRequirement": 2364629339
+    "preGavelReborn": 24424400000,
+    "postGavelReborn": 2364629339
   },
   {
-    "oldRequirement": 27261351700,
-    "newRequirement": 2719343739
+    "preGavelReborn": 27261351700,
+    "postGavelReborn": 2719343739
   },
   {
-    "oldRequirement": 30396960000,
-    "newRequirement": 3127265300
+    "preGavelReborn": 30396960000,
+    "postGavelReborn": 3127265300
   },
   {
-    "oldRequirement": 33902660000,
-    "newRequirement": 3596375095
+    "preGavelReborn": 33902660000,
+    "postGavelReborn": 3596375095
   },
   {
-    "oldRequirement": 37802160000,
-    "newRequirement": 4135851359
+    "preGavelReborn": 37802160000,
+    "postGavelReborn": 4135851359
   },
   {
-    "oldRequirement": 42157500000,
-    "newRequirement": 4756249063
+    "preGavelReborn": 42157500000,
+    "postGavelReborn": 4756249063
   },
   {
-    "oldRequirement": 46983200000,
-    "newRequirement": 5469706423
+    "preGavelReborn": 46983200000,
+    "postGavelReborn": 5469706423
   },
   {
-    "oldRequirement": 52361540000,
-    "newRequirement": 6290182386
+    "preGavelReborn": 52361540000,
+    "postGavelReborn": 6290182386
   },
   {
-    "oldRequirement": 58361160000,
-    "newRequirement": 7233729744
+    "preGavelReborn": 58361160000,
+    "postGavelReborn": 7233729744
   },
   {
-    "oldRequirement": 65018580000,
-    "newRequirement": 8318809206
+    "preGavelReborn": 65018580000,
+    "postGavelReborn": 8318809206
   },
   {
-    "oldRequirement": 72424000000,
-    "newRequirement": 9566650587
+    "preGavelReborn": 72424000000,
+    "postGavelReborn": 9566650587
   },
   {
-    "oldRequirement": 80653320000,
-    "newRequirement": 11001668175
+    "preGavelReborn": 80653320000,
+    "postGavelReborn": 11001668175
   },
   {
-    "oldRequirement": 89821160000,
-    "newRequirement": 12651938401
+    "preGavelReborn": 89821160000,
+    "postGavelReborn": 12651938401
   },
   {
-    "oldRequirement": 100010020000,
-    "newRequirement": 14549749161
+    "preGavelReborn": 100010020000,
+    "postGavelReborn": 14549749161
   },
   {
-    "oldRequirement": 111342000000,
-    "newRequirement": 16732231535
+    "preGavelReborn": 111342000000,
+    "postGavelReborn": 16732231535
   },
   {
-    "oldRequirement": 123924900000,
-    "newRequirement": 19242086266
+    "preGavelReborn": 123924900000,
+    "postGavelReborn": 19242086266
   },
   {
-    "oldRequirement": 137926800000,
-    "newRequirement": 22128419206
+    "preGavelReborn": 137926800000,
+    "postGavelReborn": 22128419206
   },
   {
-    "oldRequirement": 153483660000,
-    "newRequirement": 25447702087
+    "preGavelReborn": 153483660000,
+    "postGavelReborn": 25447702087
   },
   {
-    "oldRequirement": 170774560000,
-    "newRequirement": 29264877400
+    "preGavelReborn": 170774560000,
+    "postGavelReborn": 29264877400
   },
   {
-    "oldRequirement": 190094983561,
-    "newRequirement": 33654629009
+    "preGavelReborn": 190094983561,
+    "postGavelReborn": 33654629009
   },
   {
-    "oldRequirement": 211947041817,
-    "newRequirement": 38702843361
+    "preGavelReborn": 211947041817,
+    "postGavelReborn": 38702843361
   },
   {
-    "oldRequirement": 235073342519,
-    "newRequirement": 44508289865
+    "preGavelReborn": 235073342519,
+    "postGavelReborn": 44508289865
   },
   {
-    "oldRequirement": 261403348032,
-    "newRequirement": 51184553345
+    "preGavelReborn": 261403348032,
+    "postGavelReborn": 51184553345
   },
   {
-    "oldRequirement": 290950934667,
-    "newRequirement": 58000000000
+    "preGavelReborn": 290950934667,
+    "postGavelReborn": 58000000000
   },
   {
-    "oldRequirement": 323278730758,
-    "newRequirement": 67691614798
+    "preGavelReborn": 323278730758,
+    "postGavelReborn": 67691614798
   },
   {
-    "oldRequirement": 359353060405,
-    "newRequirement": 77845377018
+    "preGavelReborn": 359353060405,
+    "postGavelReborn": 77845377018
   },
   {
-    "oldRequirement": 399348290843,
-    "newRequirement": 89522203571
+    "preGavelReborn": 399348290843,
+    "postGavelReborn": 89522203571
   },
   {
-    "oldRequirement": 443875079666,
-    "newRequirement": 102950554106
+    "preGavelReborn": 443875079666,
+    "postGavelReborn": 102950554106
   },
   {
-    "oldRequirement": 493292473071,
-    "newRequirement": 118393157222
+    "preGavelReborn": 493292473071,
+    "postGavelReborn": 118393157222
   },
   {
-    "oldRequirement": 547739833230,
-    "newRequirement": 136152150806
+    "preGavelReborn": 547739833230,
+    "postGavelReborn": 136152150806
   },
   {
-    "oldRequirement": 608538954719,
-    "newRequirement": 156574993427
+    "preGavelReborn": 608538954719,
+    "postGavelReborn": 156574993427
   },
   {
-    "oldRequirement": 676086778692,
-    "newRequirement": 180061262441
+    "preGavelReborn": 676086778692,
+    "postGavelReborn": 180061262441
   },
   {
-    "oldRequirement": 751132411127,
-    "newRequirement": 207070471807
+    "preGavelReborn": 751132411127,
+    "postGavelReborn": 207070471807
   },
   {
-    "oldRequirement": 834508108762,
-    "newRequirement": 238131062578
+    "preGavelReborn": 834508108762,
+    "postGavelReborn": 238131062578
   },
   {
-    "oldRequirement": 927138508835,
-    "newRequirement": 273850741965
+    "preGavelReborn": 927138508835,
+    "postGavelReborn": 273850741965
   },
   {
-    "oldRequirement": 1030050883316,
-    "newRequirement": 314928353259
+    "preGavelReborn": 1030050883316,
+    "postGavelReborn": 314928353259
   },
   {
-    "oldRequirement": 1144386531364,
-    "newRequirement": 362167606248
+    "preGavelReborn": 1144386531364,
+    "postGavelReborn": 362167606248
   },
   {
-    "oldRequirement": 1271413436345,
-    "newRequirement": 416492747185
+    "preGavelReborn": 1271413436345,
+    "postGavelReborn": 416492747185
   },
   {
-    "oldRequirement": 1412540327779,
-    "newRequirement": 478966659263
+    "preGavelReborn": 1412540327779,
+    "postGavelReborn": 478966659263
   },
   {
-    "oldRequirement": 1569332304163,
-    "newRequirement": 550811658152
+    "preGavelReborn": 1569332304163,
+    "postGavelReborn": 550811658152
   },
   {
-    "oldRequirement": 1743528189925,
-    "newRequirement": 633433406875
+    "preGavelReborn": 1743528189925,
+    "postGavelReborn": 633433406875
   },
   {
-    "oldRequirement": 1937059819006,
-    "newRequirement": 728448417907
+    "preGavelReborn": 1937059819006,
+    "postGavelReborn": 728448417907
   },
   {
-    "oldRequirement": 2152073458916,
-    "newRequirement": 837715680593
+    "preGavelReborn": 2152073458916,
+    "postGavelReborn": 837715680593
   },
   {
-    "oldRequirement": 2390953612856,
-    "newRequirement": 963373032681
+    "preGavelReborn": 2390953612856,
+    "postGavelReborn": 963373032681
   },
   {
-    "oldRequirement": 2656349463883,
-    "newRequirement": 1107878987584
+    "preGavelReborn": 2656349463883,
+    "postGavelReborn": 1107878987584
   },
   {
-    "oldRequirement": 2951204254374,
-    "newRequirement": 1274060835721
+    "preGavelReborn": 2951204254374,
+    "postGavelReborn": 1274060835721
   },
   {
-    "oldRequirement": 3278787926609,
-    "newRequirement": 1465169961079
+    "preGavelReborn": 3278787926609,
+    "postGavelReborn": 1465169961079
   },
   {
-    "oldRequirement": 3642733386463,
-    "newRequirement": 1684945455241
+    "preGavelReborn": 3642733386463,
+    "postGavelReborn": 1684945455241
   },
   {
-    "oldRequirement": 4047076792360,
-    "newRequirement": 1937687273528
+    "preGavelReborn": 4047076792360,
+    "postGavelReborn": 1937687273528
   },
   {
-    "oldRequirement": 4496302316312,
-    "newRequirement": 2228340364557
+    "preGavelReborn": 4496302316312,
+    "postGavelReborn": 2228340364557
   },
   {
-    "oldRequirement": 4995391873423,
-    "newRequirement": 2562591419240
+    "preGavelReborn": 4995391873423,
+    "postGavelReborn": 2562591419240
   },
   {
-    "oldRequirement": 5549880371373,
-    "newRequirement": 2946980132126
+    "preGavelReborn": 5549880371373,
+    "postGavelReborn": 2946980132126
   },
   {
-    "oldRequirement": 6165917092595,
-    "newRequirement": 3389027151945
+    "preGavelReborn": 6165917092595,
+    "postGavelReborn": 3389027151945
   },
   {
-    "oldRequirement": 6850333889873,
-    "newRequirement": 3897381224737
+    "preGavelReborn": 6850333889873,
+    "postGavelReborn": 3897381224737
   },
   {
-    "oldRequirement": 7610720951649,
-    "newRequirement": 4481988408447
+    "preGavelReborn": 7610720951649,
+    "postGavelReborn": 4481988408447
   },
   {
-    "oldRequirement": 8455510977282,
-    "newRequirement": 5154286669714
+    "preGavelReborn": 8455510977282,
+    "postGavelReborn": 5154286669714
   },
   {
-    "oldRequirement": 9394072695761,
-    "newRequirement": 5927429670172
+    "preGavelReborn": 9394072695761,
+    "postGavelReborn": 5927429670172
   },
   {
-    "oldRequirement": 10436814764990,
-    "newRequirement": 6816544120697
+    "preGavelReborn": 10436814764990,
+    "postGavelReborn": 6816544120697
   },
   {
-    "oldRequirement": 11595301203904,
-    "newRequirement": 7839025738802
+    "preGavelReborn": 11595301203904,
+    "postGavelReborn": 7839025738802
   },
   {
-    "oldRequirement": 12882379637537,
-    "newRequirement": 9014879599622
+    "preGavelReborn": 12882379637537,
+    "postGavelReborn": 9014879599622
   },
   {
-    "oldRequirement": 14312323777304,
-    "newRequirement": 10367111539566
+    "preGavelReborn": 14312323777304,
+    "postGavelReborn": 10367111539566
   },
   {
-    "oldRequirement": 15900991716585,
-    "newRequirement": 11922178270501
+    "preGavelReborn": 15900991716585,
+    "postGavelReborn": 11922178270501
   },
   {
-    "oldRequirement": 17666001797125,
-    "newRequirement": 13710505011076
+    "preGavelReborn": 17666001797125,
+    "postGavelReborn": 13710505011076
   },
   {
-    "oldRequirement": 19626927996606,
-    "newRequirement": 15767080762737
+    "preGavelReborn": 19626927996606,
+    "postGavelReborn": 15767080762737
   },
   {
-    "oldRequirement": 21805517004230,
-    "newRequirement": 18132142877148
+    "preGavelReborn": 21805517004230,
+    "postGavelReborn": 18132142877148
   },
   {
-    "oldRequirement": 24225929391699,
-    "newRequirement": 20851964308720
+    "preGavelReborn": 24225929391699,
+    "postGavelReborn": 20851964308720
   },
   {
-    "oldRequirement": 26915007554178,
-    "newRequirement": 23979758955028
+    "preGavelReborn": 26915007554178,
+    "postGavelReborn": 23979758955028
   },
   {
-    "oldRequirement": 29902573392692,
-    "newRequirement": 27576722798282
+    "preGavelReborn": 29902573392692,
+    "postGavelReborn": 27576722798282
   },
   {
-    "oldRequirement": 33221759039280,
-    "newRequirement": 31713231218024
+    "preGavelReborn": 33221759039280,
+    "postGavelReborn": 31713231218024
   },
   {
-    "oldRequirement": 36909374292640,
-    "newRequirement": 36470215900728
+    "preGavelReborn": 36909374292640,
+    "postGavelReborn": 36470215900728
   },
   {
-    "oldRequirement": 41006314839123,
-    "newRequirement": 41940748285837
+    "preGavelReborn": 41006314839123,
+    "postGavelReborn": 41940748285837
   },
   {
-    "oldRequirement": 45558015786266,
-    "newRequirement": 48231860528712
+    "preGavelReborn": 45558015786266,
+    "postGavelReborn": 48231860528712
   },
   {
-    "oldRequirement": 50614955538542,
-    "newRequirement": 55466639608019
+    "preGavelReborn": 50614955538542,
+    "postGavelReborn": 55466639608019
   },
   {
-    "oldRequirement": 56233215603320,
-    "newRequirement": 63786635549222
+    "preGavelReborn": 56233215603320,
+    "postGavelReborn": 63786635549222
   },
   {
-    "oldRequirement": 62475102535288,
-    "newRequirement": 73354630881605
+    "preGavelReborn": 62475102535288,
+    "postGavelReborn": 73354630881605
   },
   {
-    "oldRequirement": 69409838916705,
-    "newRequirement": 84357825513846
+    "preGavelReborn": 69409838916705,
+    "postGavelReborn": 84357825513846
   },
   {
-    "oldRequirement": 77114331036460,
-    "newRequirement": 97011499340923
+    "preGavelReborn": 77114331036460,
+    "postGavelReborn": 97011499340923
   },
   {
-    "oldRequirement": 85674021781507,
-    "newRequirement": 111563224242061
+    "preGavelReborn": 85674021781507,
+    "postGavelReborn": 111563224242061
   },
   {
-    "oldRequirement": 95183838199254,
-    "newRequirement": 128297707878370
+    "preGavelReborn": 95183838199254,
+    "postGavelReborn": 128297707878370
   },
   {
-    "oldRequirement": 105749244239371,
-    "newRequirement": 147542364060126
+    "preGavelReborn": 105749244239371,
+    "postGavelReborn": 147542364060126
   },
   {
-    "oldRequirement": 117487410349941,
-    "newRequirement": 169673718669145
+    "preGavelReborn": 117487410349941,
+    "postGavelReborn": 169673718669145
   },
   {
-    "oldRequirement": 130528512898785,
-    "newRequirement": 195124776469516
+    "preGavelReborn": 130528512898785,
+    "postGavelReborn": 195124776469516
   },
   {
-    "oldRequirement": 145017177830550,
-    "newRequirement": 224393492939944
+    "preGavelReborn": 145017177830550,
+    "postGavelReborn": 224393492939944
   }
 ]
