@@ -386,6 +386,11 @@ Requesting Ingredients
 #####################################
 `);
 
+    const ingredientStart = Date.now();
+    const ingredient = await api.fetchIngredients("yottaBYTE");
+    console.log(Date.now() - ingredientStart, "ms");
+    console.log(ingredient?.list[0] ?? ingredient);
+
     for (const request of ingredientsToTest) {
         console.log("Requesting", request);
         const start = Date.now();
@@ -443,6 +448,15 @@ Testing Online Player Sum
 
     const onlinePlayersSum = await api.fetchOnlinePlayersSum();
     console.log(onlinePlayersSum);
+
+    console.log(`
+#####################################
+Testing Name Search
+#####################################
+`);
+
+    const names = await api.fetchNames("Palad");
+    console.log(names);
 
     console.log(`
 #####################################
