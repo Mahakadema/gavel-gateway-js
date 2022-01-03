@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="default">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>gavel-gateway-js</title>
+    <meta name="description" content="Documentation for gavel-gateway-js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/highlight.css" />
+    <link rel="stylesheet" href="assets/custom.css" />
+</head>
+
+<body>
+    <script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script>
+    <header>
+        <div class="tsd-page-toolbar">
+            <div class="container">
+                <div class="table-wrap">
+                    <div class="table-cell" id="tsd-search" data-base=".">
+                        <a href="index.html" class="title">gavel-gateway-js</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tsd-page-title">
+            <div class="container">
+                <h1>gavel-gateway-js: Getting started</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container container-main">
+        <div class="row">
+            <div class="col-8 col-content">
+                <div class="tsd-panel tsd-typography">
+                    <a href="#setup" id="setup" style="color: inherit; text-decoration: none;">
+                        <h1>Setup</h1>
+                    </a>
+                    <p>To set up gavel-gateway-js, install the dependency in your project</p>
+                    <code>npm install gavel-gateway-js</code>
+                    <p>Then, require the library in your package</p>
+                    <pre><code class="language-js"><span class="hl-6">const</span><span class="hl-2"> </span><span class="hl-7">api</span><span class="hl-2"> = </span><span class="hl-3">require</span><span class="hl-2">(</span><span class="hl-4">&quot;gavel-gateway-js&quot;</span><span class="hl-2">);</span></code></pre>
+                    <a href="#making-a-request" id="making-a-request" style="color: inherit; text-decoration: none;">
+                        <h1>Making a Request</h1>
+                    </a>
+                    <p>From here, you can request any of the endpoints. Check the <a href="index.html">index</a> and
+                        select your version to view all available endpoints. Heres an example to request a guild:</p>
+                    <pre><code class="language-js"><span class="hl-6">const</span><span class="hl-2"> </span><span class="hl-7">salted</span><span class="hl-2"> = </span><span class="hl-8">await</span><span class="hl-2"> </span><span class="hl-1">api</span><span class="hl-2">.</span><span class="hl-3">fetchPlayer</span><span class="hl-2">(</span><span class="hl-4">&quot;Salted&quot;</span><span class="hl-2">).</span><span class="hl-3">catch</span><span class="hl-2">(</span><span class="hl-1">console</span><span class="hl-2">.</span><span class="hl-1">log</span><span class="hl-2">);</span><br/><span class="hl-1">console</span><span class="hl-2">.</span><span class="hl-3">log</span><span class="hl-2">(</span><span class="hl-7">salted</span><span class="hl-2">.</span><span class="hl-1">lastJoin</span><span class="hl-2">);</span></code></pre>
+                    <p>Notice how <code>await</code> was used here on the fetch method. That's because all endpoint functions return <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a> to represents ongoing requests. You can read more on how to handle requests <a href="working_with_promises.html">here</a>.</p>
+                </div>
+            </div>
+            <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+                <nav class="tsd-navigation primary">
+                    <ul>
+                        <li class="a"><a href="index.html">Code Documentation</a></li>
+                        <li class="current"><a href="getting_started.html">Getting started</a></li>
+                        <li class="a"><a href="configuration.html">Configuration</a></li>
+                        <li class="a"><a href="ratelimits.html">Ratelimits and caching</a></li>
+                        <li class="a"><a href="working_with_promises.html">Working with Promises</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer class="with-border-bottom">
+        <div class="container">
+            <h2>Settings</h2>
+            <p>Theme <select id="theme">
+                    <option value="os">OS</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select></p>
+        </div>
+    </footer>
+    <div class="container tsd-generator">
+        <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+    </div>
+    <div class="overlay"></div>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>

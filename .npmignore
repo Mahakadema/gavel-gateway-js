@@ -1,0 +1,10 @@
+#node + npm stuff
+node_modules/
+
+#private data
+testApiKeys.json
+
+#dev stuff and docs (tsconf is needed for typedoc, the docs generator, to work)
+test.js
+tsconfig.json
+docs/

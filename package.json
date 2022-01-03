@@ -4,7 +4,8 @@
   "description": "Object-oriented Wynncraft API wrapper for Javascript",
   "main": "./lib/src/index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "build-docs": "typedoc"
   },
   "repository": {
     "type": "git",

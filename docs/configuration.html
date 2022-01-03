@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="default">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>gavel-gateway-js</title>
+    <meta name="description" content="Documentation for gavel-gateway-js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/highlight.css" />
+    <link rel="stylesheet" href="assets/custom.css" />
+</head>
+
+<body>
+    <script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script>
+    <header>
+        <div class="tsd-page-toolbar">
+            <div class="container">
+                <div class="table-wrap">
+                    <div class="table-cell" id="tsd-search" data-base=".">
+                        <a href="index.html" class="title">gavel-gateway-js</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tsd-page-title">
+            <div class="container">
+                <h1>gavel-gateway-js: Configuration</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container container-main">
+        <div class="row">
+            <div class="col-8 col-content">
+                <div class="tsd-panel tsd-typography">
+                    <a href="#configuration" id="configuration" style="color: inherit; text-decoration: none;">
+                        <h1>Configuration</h1>
+                    </a>
+                    <p>The config is accessed and changed through the <a href="latest/index.html#setConfig"><code>setConfig()</code></a> function in the exports. The function accepts an optional <a href="latest/interfaces/ConfigOptions.html"><code>ConfigOptions</code></a> object as a parameter and returns a copy of the config.</p>
+                    <p>To override any options of the config, simply pass a <a href="latest/interfaces/ConfigOptions.html"><code>ConfigOptions</code></a> object with the properties you want to override into the <a href="latest/index.html#setConfig"><code>setConfig()</code></a> function.</p>
+                    <pre><code class="language-js"><span class="hl-6">const</span><span class="hl-2"> </span><span class="hl-7">newConfig</span><span class="hl-2"> = </span><span class="hl-1">api</span><span class="hl-2">.</span><span class="hl-3">setConfig</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-1">defaultTimeout:</span><span class="hl-2"> </span><span class="hl-5">15000</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-1">allowCacheByDefault:</span><span class="hl-2"> </span><span class="hl-6">false</span><br/><span class="hl-2">});</span></code></pre>
+                    <p>The object returned by the function is a copy of the actual config. Changing the return values properties has no effect.</p>
+                    <p>Most config options are just default parameters for <a href="latest/interfaces/RequestOptions.html"><code>RequestOptions</code></a>. However, <a href="latest/interfaces/ConfigOptions.html#apiKeys"><code>apiKeys</code></a>, <a href="latest/interfaces/ConfigOptions.html#maxQueueLength"><code>maxQueueLength</code></a> and <a href="latest/interfaces/ConfigOptions.html#reuseJson"><code>reuseJson</code></a> all control behaviour not controllable through request options.</p>
+                    <div class="noteBox warning" style="display:flex">
+                        <img src="assets/warning.png", class="noteBoxIcon">Changing the <a href="latest/interfaces/ConfigOptions.html#reuseJson"><code>reuseJson</code></a> option will cause the cache to be cleared.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+                <nav class="tsd-navigation primary">
+                    <ul>
+                        <li class="a"><a href="index.html">Code Documentation</a></li>
+                        <li class="a"><a href="getting_started.html">Getting started</a></li>
+                        <li class="current"><a href="configuration.html">Configuration</a></li>
+                        <li class="a"><a href="ratelimits.html">Ratelimits and caching</a></li>
+                        <li class="a"><a href="working_with_promises.html">Working with Promises</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer class="with-border-bottom">
+        <div class="container">
+            <h2>Settings</h2>
+            <p>Theme <select id="theme">
+                    <option value="os">OS</option>
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select></p>
+        </div>
+    </footer>
+    <div class="container tsd-generator">
+        <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+    </div>
+    <div class="overlay"></div>
+    <script src="assets/main.js"></script>
+</body>
+
+</html>

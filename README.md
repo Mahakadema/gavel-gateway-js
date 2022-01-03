@@ -7,11 +7,11 @@ An object-oriented Wynncraft API wrapper for Javascript
 - 100% coverage of legacy and V2 API
 ### Usage
 1. Install the package `npm i gavel-gateway-js`
-1. Require the dependency in your project
+2. Require the dependency in your project
 ```js
 const wynnAPI = require('gavel-gateway-js');
 ```
-1. Request any resource
+3. Request any resource
 ```js
 let salted = await wynnAPI.fetchPlayer("Salted").catch(console.log);
 
