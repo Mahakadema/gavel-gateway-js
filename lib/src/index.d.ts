@@ -1835,7 +1835,6 @@ export class NameSearch extends BaseAPIObject {
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered in ascending order of creation date.
      * </div>
-     * @case-insensitive
      */
     public guilds: string[];
     /**
@@ -1846,7 +1845,6 @@ export class NameSearch extends BaseAPIObject {
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">It is not clear how exactly the search matches players, but most names require a near exact match.
      * </div>
-     * @case-insensitive
      */
     public players: string[];
 }
@@ -1887,7 +1885,7 @@ export class Item {
     /**
      * the visual sprite of the item
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">Items using mob heads (not player heads) will display as <code>minecraft:leather_helmet</code> and no ItemSkin.
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Items using mob heads (not player heads) will display as <code>minecraft:leather_helmet</code> and no ItemSkin.</div>
      * </div>
      */
     public sprite: Sprite;
@@ -2617,7 +2615,7 @@ export class OnlinePlayersSum extends BaseAPIObject {
 
 
 /**
- * A [semantic version identifier](https://semver.org/)
+ * A <a href="https://semver.org/" target="_blank">semantic version identifier</a>
  */
 export type SemanticVersion = `${number}.${number}.${number}`;
 

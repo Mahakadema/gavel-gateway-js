@@ -107,7 +107,9 @@
       "disableSources": true,
       "logLevel": "Verbose",
       "name": "gavel-gateway-js",
+      "includeVersion": true,
       "customCss": "docs/assets/custom.css",
-      "readme": "none"
+      "readme": "none",
+      "githubPages": false
   }
 }
