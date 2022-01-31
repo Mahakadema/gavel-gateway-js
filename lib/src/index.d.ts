@@ -2251,6 +2251,13 @@ export class Guild extends BaseAPIObject {
      */
     public xp: number;
     /**
+     * Some data that was extracted from the guild level
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Make sure  is <code>true</code>, the data will only be present on some guild levels.</div>
+     * </div>
+     */
+    public xpFriendly: GuildXPInterpretation;
+    /**
      * The creation date of the guild
      */
     public created: Date;
@@ -3156,6 +3163,39 @@ export interface BannerData {
      * The banner layers
      */
     layers: BannerLayer[]
+}
+
+/**
+ * A guild level in friendly format
+ * <div class="noteBox warning" style="display:flex">
+ *     <img src="../../assets/warning.png", class="noteBoxIcon">The values in this are based on API science and statistic analysis. That means they are decently accurate, but not <i>exact</i>. Always keep in mind that these values are merely approximations.
+ * </div>
+ */
+export interface GuildXPInterpretation {
+    /**
+     * If this is `false`, all other properties are `null`
+     */
+    isSafe: boolean,
+    /**
+     * The maximum error the xp values may be off by, divide `xpRaw` and `xpPct` by this number in order to get the the lower bound for the xp value
+     */
+    maxErrorLower: number,
+    /**
+     * The maximum error the xp values may be off by, multiply `xpRaw` and `xpPct` by this number in order to get the upper bound for the xp value
+     */
+    maxErrorUpper: number,
+    /**
+     * The actual progression of the guild towards the next guild level as a number between 0 and 1
+     */
+    xpPct: number,
+    /**
+     * The raw amount of XP of the guild at this moment
+     */
+    xpRaw: number,
+    /**
+     * The raw amount of XP required for this level
+     */
+    required: number
 }
 
 /**
