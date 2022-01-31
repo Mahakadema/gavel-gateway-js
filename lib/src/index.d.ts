@@ -2245,15 +2245,12 @@ export class Guild extends BaseAPIObject {
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">Calculates like <code>current_xp /requirement_1_19</code>.
      * </div>
-     * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use <code>data.guildLevels</code> to translate the percentages to 1.20 values or percentages.
-     * </div>
      */
     public xp: number;
     /**
      * Some data that was extracted from the guild level
      * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Make sure  is <code>true</code>, the data will only be present on some guild levels.</div>
+     *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Make sure <code>Guild#xpFriendly.isSafe</code> is <code>true</code>, the data will only be present on guild levels up to 150.</div>
      * </div>
      */
     public xpFriendly: GuildXPInterpretation;
@@ -3168,7 +3165,7 @@ export interface BannerData {
 /**
  * A guild level in friendly format
  * <div class="noteBox warning" style="display:flex">
- *     <img src="../../assets/warning.png", class="noteBoxIcon">The values in this are based on API science and statistic analysis. That means they are decently accurate, but not <i>exact</i>. Always keep in mind that these values are merely approximations.
+ *     <img src="../../assets/warning.png", class="noteBoxIcon"><div>The values in this are based on API science and statistic analysis. That means they are decently accurate, but not <i>exact</i>. Always keep in mind that these values are merely approximations.</div>
  * </div>
  */
 export interface GuildXPInterpretation {
