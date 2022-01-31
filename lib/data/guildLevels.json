@@ -1,614 +1,767 @@
 [
   {
     "preGavelReborn": 0,
-    "postGavelReborn": 0
+    "postGavelReborn": 0,
+    "maxError": 0
   },
   {
     "preGavelReborn": 2200,
-    "postGavelReborn": 20000
+    "postGavelReborn": 20000,
+    "maxError": 0
   },
   {
     "preGavelReborn": 6864,
-    "postGavelReborn": 43000
+    "postGavelReborn": 43000,
+    "maxError": 0
   },
   {
     "preGavelReborn": 15630,
-    "postGavelReborn": 69450
+    "postGavelReborn": 69450,
+    "maxError": 0
   },
   {
     "preGavelReborn": 30976,
-    "postGavelReborn": 99868
+    "postGavelReborn": 99868,
+    "maxError": 0
   },
   {
     "preGavelReborn": 56428,
-    "postGavelReborn": 134848
+    "postGavelReborn": 134848,
+    "maxError": 0
   },
   {
     "preGavelReborn": 97944,
-    "postGavelReborn": 175075
+    "postGavelReborn": 175075,
+    "maxError": 0
   },
   {
     "preGavelReborn": 163300,
-    "postGavelReborn": 221336
+    "postGavelReborn": 221336,
+    "maxError": 0
   },
   {
     "preGavelReborn": 264844,
-    "postGavelReborn": 274536
+    "postGavelReborn": 274536,
+    "maxError": 0
   },
   {
     "preGavelReborn": 419560,
-    "postGavelReborn": 335171
+    "postGavelReborn": 335171,
+    "maxError": 0
   },
   {
     "preGavelReborn": 602448,
-    "postGavelReborn": 406074
+    "postGavelReborn": 406074,
+    "maxError": 0
   },
   {
     "preGavelReborn": 852324,
-    "postGavelReborn": 486986
+    "postGavelReborn": 486986,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1274800,
-    "postGavelReborn": 580033
+    "postGavelReborn": 580033,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1741568,
-    "postGavelReborn": 687038
+    "postGavelReborn": 687038,
+    "maxError": 0
   },
   {
     "preGavelReborn": 2393896,
-    "postGavelReborn": 810094
+    "postGavelReborn": 810094,
+    "maxError": 0
   },
   {
     "preGavelReborn": 3178888,
-    "postGavelReborn": 951608
+    "postGavelReborn": 951608,
+    "maxError": 0
   },
   {
     "preGavelReborn": 4395776,
-    "postGavelReborn": 1114349
+    "postGavelReborn": 1114349,
+    "maxError": 0
   },
   {
     "preGavelReborn": 5822952,
-    "postGavelReborn": 1301502
+    "postGavelReborn": 1301502,
+    "maxError": 0
   },
   {
     "preGavelReborn": 7680496,
-    "postGavelReborn": 1516727
+    "postGavelReborn": 1516727,
+    "maxError": 0
   },
   {
     "preGavelReborn": 10094700,
-    "postGavelReborn": 1764236
+    "postGavelReborn": 1764236,
+    "maxError": 0
   },
   {
     "preGavelReborn": 12576960,
-    "postGavelReborn": 2048872
+    "postGavelReborn": 2048872,
+    "maxError": 0
   },
   {
     "preGavelReborn": 15271408,
-    "postGavelReborn": 2376202
+    "postGavelReborn": 2376202,
+    "maxError": 0
   },
   {
     "preGavelReborn": 18176328,
-    "postGavelReborn": 2752633
+    "postGavelReborn": 2752633,
+    "maxError": 0
   },
   {
     "preGavelReborn": 21296324,
-    "postGavelReborn": 3185528
+    "postGavelReborn": 3185528,
+    "maxError": 0
   },
   {
     "preGavelReborn": 24346288,
-    "postGavelReborn": 3683357
+    "postGavelReborn": 3683357,
+    "maxError": 0
   },
   {
     "preGavelReborn": 28540928,
-    "postGavelReborn": 4255860
+    "postGavelReborn": 4255860,
+    "maxError": 0
   },
   {
     "preGavelReborn": 34120944,
-    "postGavelReborn": 4914239
+    "postGavelReborn": 4914239,
+    "maxError": 0
   },
   {
     "preGavelReborn": 40238272,
-    "postGavelReborn": 5671375
+    "postGavelReborn": 5671375,
+    "maxError": 0
   },
   {
     "preGavelReborn": 48132760,
-    "postGavelReborn": 6542082
+    "postGavelReborn": 6542082,
+    "maxError": 0
   },
   {
     "preGavelReborn": 56424720,
-    "postGavelReborn": 7543394
+    "postGavelReborn": 7543394,
+    "maxError": 0
   },
   {
     "preGavelReborn": 65569680,
-    "postGavelReborn": 8694903
+    "postGavelReborn": 8694903,
+    "maxError": 0
   },
   {
     "preGavelReborn": 76150072,
-    "postGavelReborn": 10019138
+    "postGavelReborn": 10019138,
+    "maxError": 0
   },
   {
     "preGavelReborn": 94969036,
-    "postGavelReborn": 11542009
+    "postGavelReborn": 11542009,
+    "maxError": 0
   },
   {
     "preGavelReborn": 106260696,
-    "postGavelReborn": 13293310
+    "postGavelReborn": 13293310,
+    "maxError": 0
   },
   {
     "preGavelReborn": 121637664,
-    "postGavelReborn": 15307307
+    "postGavelReborn": 15307307,
+    "maxError": 0
   },
   {
     "preGavelReborn": 140582440,
-    "postGavelReborn": 17623403
+    "postGavelReborn": 17623403,
+    "maxError": 0
   },
   {
     "preGavelReborn": 168081408,
-    "postGavelReborn": 20286914
+    "postGavelReborn": 20286914,
+    "maxError": 0
   },
   {
     "preGavelReborn": 187435056,
-    "postGavelReborn": 23349951
+    "postGavelReborn": 23349951,
+    "maxError": 0
   },
   {
     "preGavelReborn": 216914412,
-    "postGavelReborn": 26872443
+    "postGavelReborn": 26872443,
+    "maxError": 0
   },
   {
     "preGavelReborn": 250716864,
-    "postGavelReborn": 30923310
+    "postGavelReborn": 30923310,
+    "maxError": 0
   },
   {
     "preGavelReborn": 302589056,
-    "postGavelReborn": 35581806
+    "postGavelReborn": 35581806,
+    "maxError": 0
   },
   {
     "preGavelReborn": 372900328,
-    "postGavelReborn": 40939077
+    "postGavelReborn": 40939077,
+    "maxError": 0
   },
   {
     "preGavelReborn": 439287340,
-    "postGavelReborn": 47099939
+    "postGavelReborn": 47099939,
+    "maxError": 0
   },
   {
     "preGavelReborn": 528448652,
-    "postGavelReborn": 54184929
+    "postGavelReborn": 54184929,
+    "maxError": 0
   },
   {
     "preGavelReborn": 635079244,
-    "postGavelReborn": 62332669
+    "postGavelReborn": 62332669,
+    "maxError": 0
   },
   {
     "preGavelReborn": 762509284,
-    "postGavelReborn": 71702569
+    "postGavelReborn": 71702569,
+    "maxError": 0
   },
   {
     "preGavelReborn": 914665840,
-    "postGavelReborn": 82477955
+    "postGavelReborn": 82477955,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1074729260,
-    "postGavelReborn": 94869648
+    "postGavelReborn": 94869648,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1262236800,
-    "postGavelReborn": 109120095
+    "postGavelReborn": 109120095,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1481808020,
-    "postGavelReborn": 125508109
+    "postGavelReborn": 125508109,
+    "maxError": 0
   },
   {
     "preGavelReborn": 1738858000,
-    "postGavelReborn": 144354326
+    "postGavelReborn": 144354326,
+    "maxError": 0
   },
   {
     "preGavelReborn": 2039683800,
-    "postGavelReborn": 166027474
+    "postGavelReborn": 166027474,
+    "maxError": 0
   },
   {
     "preGavelReborn": 2391634960,
-    "postGavelReborn": 190951596
+    "postGavelReborn": 190951596,
+    "maxError": 0
   },
   {
     "preGavelReborn": 2803273880,
-    "postGavelReborn": 219614335
+    "postGavelReborn": 219614335,
+    "maxError": 0
   },
   {
     "preGavelReborn": 3284594280,
-    "postGavelReborn": 252576485
+    "postGavelReborn": 252576485,
+    "maxError": 0
   },
   {
     "preGavelReborn": 3847231300,
-    "postGavelReborn": 290482958
+    "postGavelReborn": 290482958,
+    "maxError": 0
   },
   {
     "preGavelReborn": 4504758720,
-    "postGavelReborn": 334075402
+    "postGavelReborn": 334075402,
+    "maxError": 0
   },
   {
     "preGavelReborn": 5272982220,
-    "postGavelReborn": 384206712
+    "postGavelReborn": 384206712,
+    "maxError": 0
   },
   {
     "preGavelReborn": 6170314920,
-    "postGavelReborn": 441857719
+    "postGavelReborn": 441857719,
+    "maxError": 0
   },
   {
     "preGavelReborn": 7218203960,
-    "postGavelReborn": 508156376
+    "postGavelReborn": 508156376,
+    "maxError": 0
   },
   {
     "preGavelReborn": 8074598400,
-    "postGavelReborn": 584399833
+    "postGavelReborn": 584399833,
+    "maxError": 0
   },
   {
     "preGavelReborn": 9030089860,
-    "postGavelReborn": 672079808
+    "postGavelReborn": 672079808,
+    "maxError": 0
   },
   {
     "preGavelReborn": 10095932440,
-    "postGavelReborn": 772911779
+    "postGavelReborn": 772911779,
+    "maxError": 0
   },
   {
     "preGavelReborn": 11282040000,
-    "postGavelReborn": 888868546
+    "postGavelReborn": 888868546,
+    "maxError": 0
   },
   {
     "preGavelReborn": 12601600000,
-    "postGavelReborn": 1022218827
+    "postGavelReborn": 1022218827,
+    "maxError": 0
   },
   {
     "preGavelReborn": 14085500000,
-    "postGavelReborn": 1175571652
+    "postGavelReborn": 1175571652,
+    "maxError": 0
   },
   {
     "preGavelReborn": 15725160000,
-    "postGavelReborn": 1351927399
+    "postGavelReborn": 1351927399,
+    "maxError": 0
   },
   {
     "preGavelReborn": 17570861220,
-    "postGavelReborn": 1554736509
+    "postGavelReborn": 1554736509,
+    "maxError": 0
   },
   {
     "preGavelReborn": 19616419680,
-    "postGavelReborn": 1787966986
+    "postGavelReborn": 1787966986,
+    "maxError": 0
   },
   {
     "preGavelReborn": 21895389120,
-    "postGavelReborn": 2056182033
+    "postGavelReborn": 2056182033,
+    "maxError": 0
   },
   {
     "preGavelReborn": 24424400000,
-    "postGavelReborn": 2364629339
+    "postGavelReborn": 2364629339,
+    "maxError": 0
   },
   {
     "preGavelReborn": 27261351700,
-    "postGavelReborn": 2719343739
+    "postGavelReborn": 2719343739,
+    "maxError": 0
   },
   {
     "preGavelReborn": 30396960000,
-    "postGavelReborn": 3127265300
+    "postGavelReborn": 3127265300,
+    "maxError": 0
   },
   {
     "preGavelReborn": 33902660000,
-    "postGavelReborn": 3596375095
+    "postGavelReborn": 3596375095,
+    "maxError": 0
   },
   {
     "preGavelReborn": 37802160000,
-    "postGavelReborn": 4135851359
+    "postGavelReborn": 4135851359,
+    "maxError": 0
   },
   {
     "preGavelReborn": 42157500000,
-    "postGavelReborn": 4756249063
+    "postGavelReborn": 4756249063,
+    "maxError": 0
   },
   {
     "preGavelReborn": 46983200000,
-    "postGavelReborn": 5469706423
+    "postGavelReborn": 5469706423,
+    "maxError": 0
   },
   {
     "preGavelReborn": 52361540000,
-    "postGavelReborn": 6290182386
+    "postGavelReborn": 6290182386,
+    "maxError": 0
   },
   {
     "preGavelReborn": 58361160000,
-    "postGavelReborn": 7233729744
+    "postGavelReborn": 7233729744,
+    "maxError": 0
   },
   {
     "preGavelReborn": 65018580000,
-    "postGavelReborn": 8318809206
+    "postGavelReborn": 8318809206,
+    "maxError": 0
   },
   {
     "preGavelReborn": 72424000000,
-    "postGavelReborn": 9566650587
+    "postGavelReborn": 9566650587,
+    "maxError": 0
   },
   {
     "preGavelReborn": 80653320000,
-    "postGavelReborn": 11001668175
+    "postGavelReborn": 11001668175,
+    "maxError": 0
   },
   {
     "preGavelReborn": 89821160000,
-    "postGavelReborn": 12651938401
+    "postGavelReborn": 12651938401,
+    "maxError": 0
   },
   {
     "preGavelReborn": 100010020000,
-    "postGavelReborn": 14549749161
+    "postGavelReborn": 14549749161,
+    "maxError": 0
   },
   {
     "preGavelReborn": 111342000000,
-    "postGavelReborn": 16732231535
+    "postGavelReborn": 16732231535,
+    "maxError": 0
   },
   {
     "preGavelReborn": 123924900000,
-    "postGavelReborn": 19242086266
+    "postGavelReborn": 19242086266,
+    "maxError": 0
   },
   {
     "preGavelReborn": 137926800000,
-    "postGavelReborn": 22128419206
+    "postGavelReborn": 22128419206,
+    "maxError": 0
   },
   {
     "preGavelReborn": 153483660000,
-    "postGavelReborn": 25447702087
+    "postGavelReborn": 25447702087,
+    "maxError": 0
   },
   {
     "preGavelReborn": 170774560000,
-    "postGavelReborn": 29264877400
+    "postGavelReborn": 29264877400,
+    "maxError": 0
   },
   {
     "preGavelReborn": 190094983561,
-    "postGavelReborn": 33654629009
+    "postGavelReborn": 33654629009,
+    "maxError": 0.005
   },
   {
     "preGavelReborn": 211947041817,
-    "postGavelReborn": 38702843361
+    "postGavelReborn": 38702843361,
+    "maxError": 0.01
   },
   {
     "preGavelReborn": 235073342519,
-    "postGavelReborn": 44508289865
+    "postGavelReborn": 44508289865,
+    "maxError": 0.0001
   },
   {
     "preGavelReborn": 261403348032,
-    "postGavelReborn": 51184553345
+    "postGavelReborn": 51184553345,
+    "maxError": 0.0004
   },
   {
     "preGavelReborn": 290950934667,
-    "postGavelReborn": 58000000000
+    "postGavelReborn": 58000000000,
+    "maxError": 0.0004
   },
   {
     "preGavelReborn": 323278730758,
-    "postGavelReborn": 67691614798
+    "postGavelReborn": 67691614798,
+    "maxError": 0.0004
   },
   {
     "preGavelReborn": 359353060405,
-    "postGavelReborn": 77845377018
+    "postGavelReborn": 77845377018,
+    "maxError": 0.00033
   },
   {
     "preGavelReborn": 399348290843,
-    "postGavelReborn": 89522203571
+    "postGavelReborn": 89522203571,
+    "maxError": 0.00002
   },
   {
     "preGavelReborn": 443875079666,
-    "postGavelReborn": 102950554106
+    "postGavelReborn": 102950554106,
+    "maxError": 0.0000097
   },
   {
     "preGavelReborn": 493292473071,
-    "postGavelReborn": 118393157222
+    "postGavelReborn": 118393157222,
+    "maxError": 0.0000011
   },
   {
     "preGavelReborn": 547739833230,
-    "postGavelReborn": 136152150806
+    "postGavelReborn": 136152150806,
+    "maxError": 0.0000015
   },
   {
     "preGavelReborn": 608538954719,
-    "postGavelReborn": 156574993427
+    "postGavelReborn": 156574993427,
+    "maxError": 0.01
   },
   {
     "preGavelReborn": 676086778692,
-    "postGavelReborn": 180061262441
+    "postGavelReborn": 180061262441,
+    "maxError": 0.02
   },
   {
     "preGavelReborn": 751132411127,
-    "postGavelReborn": 207070471807
+    "postGavelReborn": 207070471807,
+    "maxError": 0.03
   },
   {
     "preGavelReborn": 834508108762,
-    "postGavelReborn": 238131062578
+    "postGavelReborn": 238131062578,
+    "maxError": 0.04
   },
   {
     "preGavelReborn": 927138508835,
-    "postGavelReborn": 273850741965
+    "postGavelReborn": 273850741965,
+    "maxError": 0.051
   },
   {
     "preGavelReborn": 1030050883316,
-    "postGavelReborn": 314928353259
+    "postGavelReborn": 314928353259,
+    "maxError": 0.061
   },
   {
     "preGavelReborn": 1144386531364,
-    "postGavelReborn": 362167606248
+    "postGavelReborn": 362167606248,
+    "maxError": 0.072
   },
   {
     "preGavelReborn": 1271413436345,
-    "postGavelReborn": 416492747185
+    "postGavelReborn": 416492747185,
+    "maxError": 0.082
   },
   {
     "preGavelReborn": 1412540327779,
-    "postGavelReborn": 478966659263
+    "postGavelReborn": 478966659263,
+    "maxError": 0.093
   },
   {
     "preGavelReborn": 1569332304163,
-    "postGavelReborn": 550811658152
+    "postGavelReborn": 550811658152,
+    "maxError": 0.104
   },
   {
     "preGavelReborn": 1743528189925,
-    "postGavelReborn": 633433406875
+    "postGavelReborn": 633433406875,
+    "maxError": 0.116
   },
   {
     "preGavelReborn": 1937059819006,
-    "postGavelReborn": 728448417907
+    "postGavelReborn": 728448417907,
+    "maxError": 0.127
   },
   {
     "preGavelReborn": 2152073458916,
-    "postGavelReborn": 837715680593
+    "postGavelReborn": 837715680593,
+    "maxError": 0.138
   },
   {
     "preGavelReborn": 2390953612856,
-    "postGavelReborn": 963373032681
+    "postGavelReborn": 963373032681,
+    "maxError": 0.149
   },
   {
     "preGavelReborn": 2656349463883,
-    "postGavelReborn": 1107878987584
+    "postGavelReborn": 1107878987584,
+    "maxError": 0.161
   },
   {
     "preGavelReborn": 2951204254374,
-    "postGavelReborn": 1274060835721
+    "postGavelReborn": 1274060835721,
+    "maxError": 0.173
   },
   {
     "preGavelReborn": 3278787926609,
-    "postGavelReborn": 1465169961079
+    "postGavelReborn": 1465169961079,
+    "maxError": 0.184
   },
   {
     "preGavelReborn": 3642733386463,
-    "postGavelReborn": 1684945455241
+    "postGavelReborn": 1684945455241,
+    "maxError": 0.196
   },
   {
     "preGavelReborn": 4047076792360,
-    "postGavelReborn": 1937687273528
+    "postGavelReborn": 1937687273528,
+    "maxError": 0.208
   },
   {
     "preGavelReborn": 4496302316312,
-    "postGavelReborn": 2228340364557
+    "postGavelReborn": 2228340364557,
+    "maxError": 0.220
   },
   {
     "preGavelReborn": 4995391873423,
-    "postGavelReborn": 2562591419240
+    "postGavelReborn": 2562591419240,
+    "maxError": 0.232
   },
   {
     "preGavelReborn": 5549880371373,
-    "postGavelReborn": 2946980132126
+    "postGavelReborn": 2946980132126,
+    "maxError": 0.244
   },
   {
     "preGavelReborn": 6165917092595,
-    "postGavelReborn": 3389027151945
+    "postGavelReborn": 3389027151945,
+    "maxError": 0.257
   },
   {
     "preGavelReborn": 6850333889873,
-    "postGavelReborn": 3897381224737
+    "postGavelReborn": 3897381224737,
+    "maxError": 0.270
   },
   {
     "preGavelReborn": 7610720951649,
-    "postGavelReborn": 4481988408447
+    "postGavelReborn": 4481988408447,
+    "maxError": 0.282
   },
   {
     "preGavelReborn": 8455510977282,
-    "postGavelReborn": 5154286669714
+    "postGavelReborn": 5154286669714,
+    "maxError": 0.295
   },
   {
     "preGavelReborn": 9394072695761,
-    "postGavelReborn": 5927429670172
+    "postGavelReborn": 5927429670172,
+    "maxError": 0.308
   },
   {
     "preGavelReborn": 10436814764990,
-    "postGavelReborn": 6816544120697
+    "postGavelReborn": 6816544120697,
+    "maxError": 0.321
   },
   {
     "preGavelReborn": 11595301203904,
-    "postGavelReborn": 7839025738802
+    "postGavelReborn": 7839025738802,
+    "maxError": 0.335
   },
   {
     "preGavelReborn": 12882379637537,
-    "postGavelReborn": 9014879599622
+    "postGavelReborn": 9014879599622,
+    "maxError": 0.348
   },
   {
     "preGavelReborn": 14312323777304,
-    "postGavelReborn": 10367111539566
+    "postGavelReborn": 10367111539566,
+    "maxError": 0.362
   },
   {
     "preGavelReborn": 15900991716585,
-    "postGavelReborn": 11922178270501
+    "postGavelReborn": 11922178270501,
+    "maxError": 0.375
   },
   {
     "preGavelReborn": 17666001797125,
-    "postGavelReborn": 13710505011076
+    "postGavelReborn": 13710505011076,
+    "maxError": 0.389
   },
   {
     "preGavelReborn": 19626927996606,
-    "postGavelReborn": 15767080762737
+    "postGavelReborn": 15767080762737,
+    "maxError": 0.403
   },
   {
     "preGavelReborn": 21805517004230,
-    "postGavelReborn": 18132142877148
+    "postGavelReborn": 18132142877148,
+    "maxError": 0.417
   },
   {
     "preGavelReborn": 24225929391699,
-    "postGavelReborn": 20851964308720
+    "postGavelReborn": 20851964308720,
+    "maxError": 0.431
   },
   {
     "preGavelReborn": 26915007554178,
-    "postGavelReborn": 23979758955028
+    "postGavelReborn": 23979758955028,
+    "maxError": 0.445
   },
   {
     "preGavelReborn": 29902573392692,
-    "postGavelReborn": 27576722798282
+    "postGavelReborn": 27576722798282,
+    "maxError": 0.460
   },
   {
     "preGavelReborn": 33221759039280,
-    "postGavelReborn": 31713231218024
+    "postGavelReborn": 31713231218024,
+    "maxError": 0.475
   },
   {
     "preGavelReborn": 36909374292640,
-    "postGavelReborn": 36470215900728
+    "postGavelReborn": 36470215900728,
+    "maxError": 0.489
   },
   {
     "preGavelReborn": 41006314839123,
-    "postGavelReborn": 41940748285837
+    "postGavelReborn": 41940748285837,
+    "maxError": 0.503
   },
   {
     "preGavelReborn": 45558015786266,
-    "postGavelReborn": 48231860528712
+    "postGavelReborn": 48231860528712,
+    "maxError": 0.519
   },
   {
     "preGavelReborn": 50614955538542,
-    "postGavelReborn": 55466639608019
+    "postGavelReborn": 55466639608019,
+    "maxError": 0.534
   },
   {
     "preGavelReborn": 56233215603320,
-    "postGavelReborn": 63786635549222
+    "postGavelReborn": 63786635549222,
+    "maxError": 0.550
   },
   {
     "preGavelReborn": 62475102535288,
-    "postGavelReborn": 73354630881605
+    "postGavelReborn": 73354630881605,
+    "maxError": 0.565
   },
   {
     "preGavelReborn": 69409838916705,
-    "postGavelReborn": 84357825513846
+    "postGavelReborn": 84357825513846,
+    "maxError": 0.581
   },
   {
     "preGavelReborn": 77114331036460,
-    "postGavelReborn": 97011499340923
+    "postGavelReborn": 97011499340923,
+    "maxError": 0.597
   },
   {
     "preGavelReborn": 85674021781507,
-    "postGavelReborn": 111563224242061
+    "postGavelReborn": 111563224242061,
+    "maxError": 0.613
   },
   {
     "preGavelReborn": 95183838199254,
-    "postGavelReborn": 128297707878370
+    "postGavelReborn": 128297707878370,
+    "maxError": 0.629
   },
   {
     "preGavelReborn": 105749244239371,
-    "postGavelReborn": 147542364060126
+    "postGavelReborn": 147542364060126,
+    "maxError": 0.645
   },
   {
     "preGavelReborn": 117487410349941,
-    "postGavelReborn": 169673718669145
+    "postGavelReborn": 169673718669145,
+    "maxError": 0.661
   },
   {
     "preGavelReborn": 130528512898785,
-    "postGavelReborn": 195124776469516
+    "postGavelReborn": 195124776469516,
+    "maxError": 0.678
   },
   {
     "preGavelReborn": 145017177830550,
-    "postGavelReborn": 224393492939944
+    "postGavelReborn": 224393492939944,
+    "maxError": 0.695
   }
 ]
