@@ -21,7 +21,7 @@ async function main() {
     const guildsToTest = [
         {
             guild: "Cyphrus Code",
-            cacheFor: 10000
+            cacheFor: 40000
         },
         {
             guild: "TheNoLifes"
@@ -107,7 +107,7 @@ async function main() {
         }
     ];
     const itemsToTest = [
-        "TOXOPLASMOSIS",
+        "TOXOPLASMOSis",
         {
             name: "Spirit",
             identifications: {
@@ -239,6 +239,9 @@ async function main() {
                     min: 10
                 }
             }
+        },
+        {
+            tier: -1
         }
     ]
 
@@ -254,7 +257,7 @@ Requesting invalid player stats route
 
     console.log(`
 #####################################
-Requesting glayers
+Requesting players
 #####################################
 `);
 
@@ -287,7 +290,7 @@ Requesting guilds
         console.log(Date.now() - start, "ms")
         if (result?.tag) {
             console.log(result?.name);
-            console.log(result?.territories);
+            console.log(result?.members.length);
         } else {
             console.log(result);
         }
@@ -394,12 +397,10 @@ Requesting Ingredients
     for (const request of ingredientsToTest) {
         console.log("Requesting", request);
         const start = Date.now();
-        const result = await api.fetchIngredients(request).catch(e => e);
+        const result = await api.fetchIngredients(request).catch(e => console.log(e));
         console.log(Date.now() - start, "ms")
-        if (result.list) {
+        if (result?.list) {
             console.log(result.list.map(v => v.name).join(", "));
-        } else {
-            console.log(result);
         }
         console.log();
     }

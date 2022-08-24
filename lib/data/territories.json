@@ -10,7 +10,13 @@
     },
     "connections": [
       "Air Temple Lower"
-    ]
+    ],
+    "location": {
+      "startX": 445,
+      "startZ": -4833,
+      "endX": 570,
+      "endZ": -4692
+    }
   },
   "MARO PEAKS": {
     "name": "Maro Peaks",
@@ -24,7 +30,13 @@
     "connections": [
       "Tree Island",
       "Skiens Island"
-    ]
+    ],
+    "location": {
+      "startX": -41,
+      "startZ": -4174,
+      "endX": 453,
+      "endZ": -3793
+    }
   },
   "PLAINS": {
     "name": "Plains",
@@ -41,7 +53,13 @@
       "Maltic Plains",
       "North Nivla Woods",
       "Arachnid Route"
-    ]
+    ],
+    "location": {
+      "startX": -435,
+      "startZ": -1883,
+      "endX": -270,
+      "endZ": -1653
+    }
   },
   "PATH TO THANOS": {
     "name": "Path To Thanos",
@@ -57,7 +75,13 @@
       "Cinfras Thanos Transition",
       "Cinfras County Upper",
       "Path To Ozoth's Spire Upper"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -5149,
+      "endX": 98,
+      "endZ": -5049
+    }
   },
   "SAVANNAH WEST LOWER": {
     "name": "Savannah West Lower",
@@ -73,7 +97,13 @@
       "Savannah East Lower",
       "Savannah West Upper",
       "Detlas Savannah Transition"
-    ]
+    ],
+    "location": {
+      "startX": 630,
+      "startZ": -1830,
+      "endX": 775,
+      "endZ": -1675
+    }
   },
   "DURUM ISLES UPPER": {
     "name": "Durum Isles Upper",
@@ -89,7 +119,13 @@
       "Mage Island",
       "Selchar",
       "Durum Isles Center"
-    ]
+    ],
+    "location": {
+      "startX": 537,
+      "startZ": -2994,
+      "endX": 595,
+      "endZ": -2924
+    }
   },
   "SELCHAR": {
     "name": "Selchar",
@@ -106,7 +142,13 @@
       "Durum Isles Upper",
       "Durum Isles Lower",
       "Rooster Island"
-    ]
+    ],
+    "location": {
+      "startX": -100,
+      "startZ": -3270,
+      "endX": 210,
+      "endZ": -3070
+    }
   },
   "LLEVIGAR PLAINS WEST LOWER": {
     "name": "Llevigar Plains West Lower",
@@ -122,7 +164,13 @@
       "Llevigar Plains West Upper",
       "Llevigar Gate West",
       "Llevigar Farm Plains West"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -4909,
+      "endX": -2060,
+      "endZ": -4831
+    }
   },
   "NESAAK PLAINS SOUTH EAST": {
     "name": "Nesaak Plains South East",
@@ -137,7 +185,13 @@
       "Nesaak Village",
       "Bob's Tomb",
       "Nesaak Plains South West"
-    ]
+    ],
+    "location": {
+      "startX": 76,
+      "startZ": -757,
+      "endX": 230,
+      "endZ": -660
+    }
   },
   "LLEVIGAR PLAINS EAST LOWER": {
     "name": "Llevigar Plains East Lower",
@@ -153,7 +207,13 @@
       "Orc Lake",
       "Llevigar Plains East Upper",
       "Llevigar Plains West Lower"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -4909,
+      "endX": -1937,
+      "endZ": -4831
+    }
   },
   "KANDER MINES": {
     "name": "Kander Mines",
@@ -169,7 +229,13 @@
       "Abandoned Manor",
       "Path to Talor",
       "Mesquis Tower"
-    ]
+    ],
+    "location": {
+      "startX": -785,
+      "startZ": -5229,
+      "endX": -725,
+      "endZ": -5102
+    }
   },
   "SWAMP DARK FOREST TRANSITION UPPER": {
     "name": "Swamp Dark Forest Transition Upper",
@@ -184,7 +250,13 @@
       "Olux",
       "Swamp Dark Forest Transition Mid",
       "Taproot Descent"
-    ]
+    ],
+    "location": {
+      "startX": -1626,
+      "startZ": -5607,
+      "endX": -1519,
+      "endZ": -5492
+    }
   },
   "MINE BASE PLAINS": {
     "name": "Mine Base Plains",
@@ -202,7 +274,13 @@
       "Mining Base Upper",
       "Ternaves Plains Lower",
       "Detlas Savannah Transition"
-    ]
+    ],
+    "location": {
+      "startX": 550,
+      "startZ": -1430,
+      "endX": 650,
+      "endZ": -1190
+    }
   },
   "DETLAS SAVANNAH TRANSITION": {
     "name": "Detlas Savannah Transition",
@@ -218,7 +296,13 @@
       "Ternaves Plains Upper",
       "Detlas",
       "Mine Base Plains"
-    ]
+    ],
+    "location": {
+      "startX": 545,
+      "startZ": -1670,
+      "endX": 650,
+      "endZ": -1520
+    }
   },
   "FORTRESS SOUTH": {
     "name": "Fortress South",
@@ -234,7 +318,13 @@
       "Mansion of Insanity",
       "Orc Battlegrounds",
       "Swamp Dark Forest Transition Lower"
-    ]
+    ],
+    "location": {
+      "startX": -1460,
+      "startZ": -5210,
+      "endX": -1272,
+      "endZ": -5025
+    }
   },
   "ALDOREI LOWLANDS": {
     "name": "Aldorei Lowlands",
@@ -249,7 +339,13 @@
       "Aldorei's River",
       "Aldorei's Waterfall",
       "Cinfras's Small Farm"
-    ]
+    ],
+    "location": {
+      "startX": -337,
+      "startZ": -4756,
+      "endX": -225,
+      "endZ": -4657
+    }
   },
   "LLEVIGAR GATE EAST": {
     "name": "Llevigar Gate East",
@@ -265,7 +361,13 @@
       "Orc Road",
       "Llevigar Gate West",
       "Llevigar"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -4746,
+      "endX": -1932,
+      "endZ": -4648
+    }
   },
   "VISCERA PITS WEST": {
     "name": "Viscera Pits West",
@@ -281,7 +383,13 @@
       "Viscera Pits East",
       "Lexdales Prison",
       "Entrance to Kander"
-    ]
+    ],
+    "location": {
+      "startX": -899,
+      "startZ": -5504,
+      "endX": -771,
+      "endZ": -5412
+    }
   },
   "SANCTUARY BRIDGE": {
     "name": "Sanctuary Bridge",
@@ -295,7 +403,13 @@
     "connections": [
       "Nesaak Plains Upper North West",
       "Time Valley"
-    ]
+    ],
+    "location": {
+      "startX": -324,
+      "startZ": -1130,
+      "endX": -192,
+      "endZ": -993
+    }
   },
   "DESERT WEST UPPER": {
     "name": "Desert West Upper",
@@ -309,7 +423,13 @@
     "connections": [
       "Desert Upper",
       "Almuj City"
-    ]
+    ],
+    "location": {
+      "startX": 895,
+      "startZ": -2270,
+      "endX": 990,
+      "endZ": -2140
+    }
   },
   "MALTIC PLAINS": {
     "name": "Maltic Plains",
@@ -326,7 +446,13 @@
       "Emerald Trail",
       "Ragni East Suburbs",
       "South Farmers Valley"
-    ]
+    ],
+    "location": {
+      "startX": -564,
+      "startZ": -1883,
+      "endX": -436,
+      "endZ": -1653
+    }
   },
   "SAVANNAH WEST UPPER": {
     "name": "Savannah West Upper",
@@ -342,7 +468,13 @@
       "Cathedral Harbour",
       "Bremminglar",
       "Savannah East Upper"
-    ]
+    ],
+    "location": {
+      "startX": 570,
+      "startZ": -2060,
+      "endX": 750,
+      "endZ": -1870
+    }
   },
   "MAGE ISLAND": {
     "name": "Mage Island",
@@ -359,7 +491,13 @@
       "Durum Isles Upper",
       "Durum Isles East",
       "Nodguj Nation"
-    ]
+    ],
+    "location": {
+      "startX": 805,
+      "startZ": -2960,
+      "endX": 983,
+      "endZ": -2787
+    }
   },
   "AHMSORD": {
     "name": "Ahmsord",
@@ -376,7 +514,13 @@
       "Sky Island Ascent",
       "Path to Ahmsord Upper",
       "Central Islands"
-    ]
+    ],
+    "location": {
+      "startX": 942,
+      "startZ": -4604,
+      "endX": 1163,
+      "endZ": -4462
+    }
   },
   "SWAMP MOUNTAIN TRANSITION MID": {
     "name": "Swamp Mountain Transition Mid",
@@ -391,7 +535,13 @@
       "Swamp Mountain Transition Lower",
       "Swamp West Upper",
       "Swamp Mountain Transition Mid-Upper"
-    ]
+    ],
+    "location": {
+      "startX": -2127,
+      "startZ": -5603,
+      "endX": -2066,
+      "endZ": -5466
+    }
   },
   "BOB'S TOMB": {
     "name": "Bob's Tomb",
@@ -406,7 +556,13 @@
       "Nesaak Plains South East",
       "Nesaak Plains North East",
       "Nesaak Village"
-    ]
+    ],
+    "location": {
+      "startX": 246,
+      "startZ": -867,
+      "endX": 380,
+      "endZ": -747
+    }
   },
   "FALLEN FACTORY": {
     "name": "Fallen Factory",
@@ -423,7 +579,13 @@
       "Factory Entrance",
       "Corkus City South",
       "Corkus Sea Cove"
-    ]
+    ],
+    "location": {
+      "startX": -1681,
+      "startZ": -2662,
+      "endX": -1579,
+      "endZ": -2518
+    }
   },
   "CANYON VALLEY SOUTH": {
     "name": "Canyon Valley South",
@@ -438,7 +600,13 @@
       "Canyon Mountain East",
       "Bandit Camp Exit",
       "Bandit Cave Lower"
-    ]
+    ],
+    "location": {
+      "startX": 199,
+      "startZ": -5035,
+      "endX": 263,
+      "endZ": -4973
+    }
   },
   "SWAMP EAST LOWER": {
     "name": "Swamp East Lower",
@@ -454,7 +622,13 @@
       "Llevigar Plains East Upper",
       "Swamp West Lower",
       "Sunspark Camp"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -5074,
+      "endX": -1956,
+      "endZ": -5003
+    }
   },
   "PATH TO LIGHT": {
     "name": "Path to Light",
@@ -468,7 +642,13 @@
     "connections": [
       "Otherwordly Monolith",
       "Azure Frontier"
-    ]
+    ],
+    "location": {
+      "startX": -827,
+      "startZ": -6164,
+      "endX": -775,
+      "endZ": -6010
+    }
   },
   "CORKUS CITY": {
     "name": "Corkus City",
@@ -485,7 +665,13 @@
       "Corkus Castle",
       "Corkus Forest South",
       "Corkus Forest North"
-    ]
+    ],
+    "location": {
+      "startX": -1680,
+      "startZ": -3010,
+      "endX": -1557,
+      "endZ": -2835
+    }
   },
   "CANYON PATH NORTH MID": {
     "name": "Canyon Path North Mid",
@@ -501,7 +687,13 @@
       "Bandit Camp Exit",
       "Canyon Waterfall Mid North",
       "Canyon Path South West"
-    ]
+    ],
+    "location": {
+      "startX": 200,
+      "startZ": -4875,
+      "endX": 264,
+      "endZ": -4743
+    }
   },
   "THE SILENT ROAD": {
     "name": "The Silent Road",
@@ -515,7 +707,13 @@
     "connections": [
       "The Broken Road",
       "Mine Base Plains"
-    ]
+    ],
+    "location": {
+      "startX": 540,
+      "startZ": -1088,
+      "endX": 704,
+      "endZ": -961
+    }
   },
   "CITY OF TROMS": {
     "name": "City of Troms",
@@ -530,7 +728,13 @@
       "Temple of Legends",
       "South Pigmen Ravines",
       "Jungle Lake"
-    ]
+    ],
+    "location": {
+      "startX": -899,
+      "startZ": -970,
+      "endX": -726,
+      "endZ": -826
+    }
   },
   "GYLIA LAKE SOUTH WEST": {
     "name": "Gylia Lake South West",
@@ -545,7 +749,13 @@
       "Dark Forest Cinfras Transition",
       "Gylia Lake North West",
       "Gylia Lake South East"
-    ]
+    ],
+    "location": {
+      "startX": -241,
+      "startZ": -5271,
+      "endX": -130,
+      "endZ": -5173
+    }
   },
   "PRIMAL FEN": {
     "name": "Primal Fen",
@@ -558,7 +768,13 @@
     },
     "connections": [
       "Field of Life"
-    ]
+    ],
+    "location": {
+      "startX": -1026,
+      "startZ": -6244,
+      "endX": -894,
+      "endZ": -6066
+    }
   },
   "CANYON MOUNTAIN EAST": {
     "name": "Canyon Mountain East",
@@ -572,7 +788,13 @@
     "connections": [
       "Canyon Valley South",
       "Canyon Walk Way"
-    ]
+    ],
+    "location": {
+      "startX": 271,
+      "startZ": -5039,
+      "endX": 337,
+      "endZ": -4948
+    }
   },
   "DARK FOREST CINFRAS TRANSITION": {
     "name": "Dark Forest Cinfras Transition",
@@ -587,7 +809,13 @@
       "Gylia Lake South West",
       "Cinfras Outskirts",
       "Fallen Village"
-    ]
+    ],
+    "location": {
+      "startX": -392,
+      "startZ": -5292,
+      "endX": -290,
+      "endZ": -5116
+    }
   },
   "CLIFFSIDE LAKE": {
     "name": "Cliffside Lake",
@@ -601,7 +829,13 @@
     "connections": [
       "Cliffside Passage",
       "Canyon Of The Lost"
-    ]
+    ],
+    "location": {
+      "startX": 445,
+      "startZ": -4689,
+      "endX": 570,
+      "endZ": -4568
+    }
   },
   "NEMRACT PLAINS WEST": {
     "name": "Nemract Plains West",
@@ -617,7 +851,13 @@
       "Nemract Road",
       "Nivla Woods Edge",
       "Nemract Quarry"
-    ]
+    ],
+    "location": {
+      "startX": -100,
+      "startZ": -1960,
+      "endX": 5,
+      "endZ": -1810
+    }
   },
   "TWAIN MANSION": {
     "name": "Twain Mansion",
@@ -630,7 +870,13 @@
     },
     "connections": [
       "Twain Lake"
-    ]
+    ],
+    "location": {
+      "startX": 95,
+      "startZ": -407,
+      "endX": 140,
+      "endZ": -310
+    }
   },
   "SAVANNAH EAST LOWER": {
     "name": "Savannah East Lower",
@@ -645,7 +891,13 @@
       "Savannah West Lower",
       "Ternaves",
       "Savannah East Upper"
-    ]
+    ],
+    "location": {
+      "startX": 775,
+      "startZ": -1860,
+      "endX": 890,
+      "endZ": -1675
+    }
   },
   "SWAMP LOWER": {
     "name": "Swamp Lower",
@@ -661,7 +913,13 @@
       "Entrance to Olux",
       "Swamp Dark Forest Transition Lower",
       "Swamp Mountain Base"
-    ]
+    ],
+    "location": {
+      "startX": -1763,
+      "startZ": -5241,
+      "endX": -1649,
+      "endZ": -5134
+    }
   },
   "BREMMINGLAR": {
     "name": "Bremminglar",
@@ -675,7 +933,13 @@
     "connections": [
       "Lion Lair",
       "Savannah West Upper"
-    ]
+    ],
+    "location": {
+      "startX": 615,
+      "startZ": -2120,
+      "endX": 760,
+      "endZ": -2070
+    }
   },
   "ROAD TO LIGHT FOREST": {
     "name": "Road To Light Forest",
@@ -690,7 +954,13 @@
       "Fleris Trail",
       "Light Forest Entrance",
       "Leadin Fortress"
-    ]
+    ],
+    "location": {
+      "startX": -1387,
+      "startZ": -4713,
+      "endX": -1252,
+      "endZ": -4595
+    }
   },
   "SWAMP EAST MID-UPPER": {
     "name": "Swamp East Mid-Upper",
@@ -706,7 +976,13 @@
       "Swamp East Upper",
       "Swamp West Mid-Upper",
       "Swamp Plains Basin"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -5309,
+      "endX": -1955,
+      "endZ": -5188
+    }
   },
   "THANOS VALLEY WEST": {
     "name": "Thanos Valley West",
@@ -719,7 +995,13 @@
     },
     "connections": [
       "Military Base Lower"
-    ]
+    ],
+    "location": {
+      "startX": 250,
+      "startZ": -5401,
+      "endX": 311,
+      "endZ": -5315
+    }
   },
   "LLEVIGAR ENTRANCE": {
     "name": "Llevigar Entrance",
@@ -733,7 +1015,13 @@
     "connections": [
       "Llevigar",
       "Volcano Lower"
-    ]
+    ],
+    "location": {
+      "startX": -2048,
+      "startZ": -4403,
+      "endX": -1932,
+      "endZ": -4250
+    }
   },
   "VOLCANIC SLOPE": {
     "name": "Volcanic Slope",
@@ -747,7 +1035,13 @@
     "connections": [
       "Lava Lake",
       "Active Volcano"
-    ]
+    ],
+    "location": {
+      "startX": 1221,
+      "startZ": -5637,
+      "endX": 1531,
+      "endZ": -5555
+    }
   },
   "DURUM ISLES CENTER": {
     "name": "Durum Isles Center",
@@ -763,7 +1057,13 @@
       "Selchar",
       "Durum Isles Upper",
       "Durum Isles East"
-    ]
+    ],
+    "location": {
+      "startX": 405,
+      "startZ": -2972,
+      "endX": 504,
+      "endZ": -2846
+    }
   },
   "CANYON WATERFALL NORTH": {
     "name": "Canyon Waterfall North",
@@ -777,7 +1077,13 @@
     "connections": [
       "Canyon Upper North West",
       "Aldorei's Arch"
-    ]
+    ],
+    "location": {
+      "startX": 115,
+      "startZ": -4518,
+      "endX": 194,
+      "endZ": -4380
+    }
   },
   "GELIBORD CORRUPTED FARM": {
     "name": "Gelibord Corrupted Farm",
@@ -793,7 +1099,13 @@
       "Gelibord",
       "Gelibord Castle",
       "Taproot Descent"
-    ]
+    ],
+    "location": {
+      "startX": -1179,
+      "startZ": -5448,
+      "endX": -1056,
+      "endZ": -5355
+    }
   },
   "PIRATE TOWN": {
     "name": "Pirate Town",
@@ -809,7 +1121,13 @@
       "Lost Atoll",
       "Bloody Beach",
       "Volcano Upper"
-    ]
+    ],
+    "location": {
+      "startX": -750,
+      "startZ": -3251,
+      "endX": -580,
+      "endZ": -3006
+    }
   },
   "FUNGAL GROVE": {
     "name": "Fungal Grove",
@@ -826,7 +1144,13 @@
       "Cinfras Outskirts",
       "Fallen Village",
       "Old Crossroads South"
-    ]
+    ],
+    "location": {
+      "startX": -549,
+      "startZ": -5398,
+      "endX": -489,
+      "endZ": -5279
+    }
   },
   "ORC ROAD": {
     "name": "Orc Road",
@@ -842,7 +1166,13 @@
       "Loamsprout Camp",
       "Orc Lake",
       "Llevigar Gate East"
-    ]
+    ],
+    "location": {
+      "startX": -1927,
+      "startZ": -4852,
+      "endX": -1815,
+      "endZ": -4700
+    }
   },
   "LLEVIGAR FARM PLAINS EAST": {
     "name": "Llevigar Farm Plains East",
@@ -858,7 +1188,13 @@
       "Llevigar Farm Plains West",
       "Orc Road",
       "Llevigar Gate East"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -4828,
+      "endX": -1931,
+      "endZ": -4747
+    }
   },
   "OLD CROSSROADS NORTH": {
     "name": "Old Crossroads North",
@@ -874,7 +1210,13 @@
       "Lexdale",
       "Fungal Grove",
       "Old Crossroads South"
-    ]
+    ],
+    "location": {
+      "startX": -648,
+      "startZ": -5400,
+      "endX": -567,
+      "endZ": -5314
+    }
   },
   "CORKUS DOCKS": {
     "name": "Corkus Docks",
@@ -887,7 +1229,13 @@
     },
     "connections": [
       "Corkus Mountain"
-    ]
+    ],
+    "location": {
+      "startX": -2022,
+      "startZ": -3274,
+      "endX": -1891,
+      "endZ": -2997
+    }
   },
   "CANYON UPPER NORTH WEST": {
     "name": "Canyon Upper North West",
@@ -901,7 +1249,13 @@
     "connections": [
       "Canyon Waterfall North",
       "Canyon Lower South East"
-    ]
+    ],
+    "location": {
+      "startX": 200,
+      "startZ": -4518,
+      "endX": 265,
+      "endZ": -4380
+    }
   },
   "AHMSORD OUTSKIRTS": {
     "name": "Ahmsord Outskirts",
@@ -917,7 +1271,13 @@
       "Swamp Island",
       "Angel Refuge",
       "Wybel Island"
-    ]
+    ],
+    "location": {
+      "startX": 1179,
+      "startZ": -4893,
+      "endX": 1336,
+      "endZ": -4730
+    }
   },
   "DESERT WEST LOWER": {
     "name": "Desert West Lower",
@@ -933,7 +1293,13 @@
       "Almuj City",
       "Desert Mid-Lower",
       "Rymek West Upper"
-    ]
+    ],
+    "location": {
+      "startX": 900,
+      "startZ": -1870,
+      "endX": 1040,
+      "endZ": -1681
+    }
   },
   "SWAMP WEST MID": {
     "name": "Swamp West Mid",
@@ -948,7 +1314,13 @@
       "Swamp East Mid",
       "Swamp West Lower",
       "Swamp West Mid-Upper"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -5186,
+      "endX": -2060,
+      "endZ": -5082
+    }
   },
   "KROLTON'S CAVE": {
     "name": "Krolton's Cave",
@@ -964,7 +1336,13 @@
       "Wizard Tower North",
       "Canyon Mountain South",
       "Air Temple Lower"
-    ]
+    ],
+    "location": {
+      "startX": 341,
+      "startZ": -4962,
+      "endX": 438,
+      "endZ": -4841
+    }
   },
   "ROYAL GATE": {
     "name": "Royal Gate",
@@ -977,7 +1355,13 @@
     },
     "connections": [
       "Phinas Farm"
-    ]
+    ],
+    "location": {
+      "startX": -2015,
+      "startZ": -1995,
+      "endX": -1822,
+      "endZ": -1725
+    }
   },
   "PATHS OF SLUDGE": {
     "name": "Paths of Sludge",
@@ -991,7 +1375,13 @@
     "connections": [
       "Toxic Drip",
       "Lutho"
-    ]
+    ],
+    "location": {
+      "startX": 892,
+      "startZ": -870,
+      "endX": 1040,
+      "endZ": -767
+    }
   },
   "NESAAK PLAINS LOWER NORTH WEST": {
     "name": "Nesaak Plains Lower North West",
@@ -1008,7 +1398,13 @@
       "Nesaak Plains Upper North West",
       "Nesaak Plains South West",
       "Nesaak Plains North East"
-    ]
+    ],
+    "location": {
+      "startX": -120,
+      "startZ": -910,
+      "endX": 70,
+      "endZ": -834
+    }
   },
   "LONE FARMSTEAD": {
     "name": "Lone Farmstead",
@@ -1023,7 +1419,13 @@
       "Abandoned Manor",
       "Twisted Housing",
       "Gelibord"
-    ]
+    ],
+    "location": {
+      "startX": -1050,
+      "startZ": -5227,
+      "endX": -942,
+      "endZ": -5116
+    }
   },
   "ROAD TO ELKURN": {
     "name": "Road to Elkurn",
@@ -1039,7 +1441,13 @@
       "Elkurn Fields",
       "Elkurn",
       "Nivla Woods Edge"
-    ]
+    ],
+    "location": {
+      "startX": -89,
+      "startZ": -1481,
+      "endX": 2,
+      "endZ": -1267
+    }
   },
   "ROOSTER ISLAND": {
     "name": "Rooster Island",
@@ -1055,7 +1463,13 @@
       "Durum Isles Lower",
       "The Bear Zoo",
       "Nemract Town"
-    ]
+    ],
+    "location": {
+      "startX": -128,
+      "startZ": -2538,
+      "endX": -30,
+      "endZ": -2448
+    }
   },
   "DERNEL JUNGLE MID": {
     "name": "Dernel Jungle Mid",
@@ -1070,7 +1484,13 @@
       "Dernel Jungle Lower",
       "Jungle Upper",
       "Dernel Jungle Upper"
-    ]
+    ],
+    "location": {
+      "startX": -965,
+      "startZ": -528,
+      "endX": -744,
+      "endZ": -264
+    }
   },
   "SWAMP PLAINS BASIN": {
     "name": "Swamp Plains Basin",
@@ -1086,7 +1506,13 @@
       "Swamp East Upper",
       "Entrance to Olux",
       "Swamp Mountain Base"
-    ]
+    ],
+    "location": {
+      "startX": -1898,
+      "startZ": -5396,
+      "endX": -1776,
+      "endZ": -5246
+    }
   },
   "FINAL STEP": {
     "name": "Final Step",
@@ -1100,7 +1526,13 @@
     "connections": [
       "Bizarre Passage",
       "Gateway to Nothing"
-    ]
+    ],
+    "location": {
+      "startX": 1254,
+      "startZ": -932,
+      "endX": 1388,
+      "endZ": -869
+    }
   },
   "TREE ISLAND": {
     "name": "Tree Island",
@@ -1116,7 +1548,13 @@
       "Lost Atoll",
       "Light Peninsula",
       "Maro Peaks"
-    ]
+    ],
+    "location": {
+      "startX": -454,
+      "startZ": -3905,
+      "endX": -323,
+      "endZ": -3766
+    }
   },
   "CANYON DROPOFF": {
     "name": "Canyon Dropoff",
@@ -1130,7 +1568,13 @@
     "connections": [
       "Cliff Side of the Lost",
       "Mountain Path"
-    ]
+    ],
+    "location": {
+      "startX": 269,
+      "startZ": -4518,
+      "endX": 334,
+      "endZ": -4395
+    }
   },
   "ANCIENT NEMRACT": {
     "name": "Ancient Nemract",
@@ -1147,7 +1591,13 @@
       "Nemract Road",
       "Detlas Trail West Plains",
       "Detlas Trail East Plains"
-    ]
+    ],
+    "location": {
+      "startX": 152,
+      "startZ": -1999,
+      "endX": 290,
+      "endZ": -1832
+    }
   },
   "ALDOREI VALLEY MID": {
     "name": "Aldorei Valley Mid",
@@ -1161,7 +1611,13 @@
     "connections": [
       "Aldorei Valley Lower",
       "Aldorei Valley Upper"
-    ]
+    ],
+    "location": {
+      "startX": -557,
+      "startZ": -4499,
+      "endX": -322,
+      "endZ": -4395
+    }
   },
   "CINFRAS COUNTY UPPER": {
     "name": "Cinfras County Upper",
@@ -1176,7 +1632,13 @@
       "Path To Thanos",
       "Cinfras County Mid-Upper",
       "Gylia Lake South East"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -5155,
+      "endX": 3,
+      "endZ": -5051
+    }
   },
   "SOUTH FARMERS VALLEY": {
     "name": "South Farmers Valley",
@@ -1193,7 +1655,13 @@
       "Maltic Plains",
       "North Farmers Valley",
       "Maltic"
-    ]
+    ],
+    "location": {
+      "startX": -472,
+      "startZ": -1944,
+      "endX": -255,
+      "endZ": -1887
+    }
   },
   "KATOA RANCH": {
     "name": "Katoa Ranch",
@@ -1207,7 +1675,13 @@
     "connections": [
       "Ragni North Entrance",
       "Ragni North Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": -914,
+      "startZ": -1955,
+      "endX": -748,
+      "endZ": -1860
+    }
   },
   "DECAYED BASIN": {
     "name": "Decayed Basin",
@@ -1223,7 +1697,13 @@
       "Lexdale",
       "Mushroom Hill",
       "Heart of Decay"
-    ]
+    ],
+    "location": {
+      "startX": -549,
+      "startZ": -5512,
+      "endX": -471,
+      "endZ": -5405
+    }
   },
   "RAGNI NORTH SUBURBS": {
     "name": "Ragni North Suburbs",
@@ -1238,7 +1718,13 @@
       "Ragni North Entrance",
       "Katoa Ranch",
       "Ragni Plains"
-    ]
+    ],
+    "location": {
+      "startX": -817,
+      "startZ": -1859,
+      "endX": -762,
+      "endZ": -1761
+    }
   },
   "DURUM ISLES LOWER": {
     "name": "Durum Isles Lower",
@@ -1254,7 +1740,13 @@
       "Rooster Island",
       "Selchar",
       "Cathedral Harbour"
-    ]
+    ],
+    "location": {
+      "startX": 347,
+      "startZ": -2851,
+      "endX": 390,
+      "endZ": -2791
+    }
   },
   "ORC BATTLEGROUNDS": {
     "name": "Orc Battlegrounds",
@@ -1268,7 +1760,13 @@
     "connections": [
       "Fortress South",
       "Leadin Fortress"
-    ]
+    ],
+    "location": {
+      "startX": -1460,
+      "startZ": -5024,
+      "endX": -1282,
+      "endZ": -4870
+    }
   },
   "THANOS": {
     "name": "Thanos",
@@ -1284,7 +1782,13 @@
       "Path To Ozoth's Spire Lower",
       "Path To Military Base",
       "Gylia Lake South East"
-    ]
+    ],
+    "location": {
+      "startX": 51,
+      "startZ": -5295,
+      "endX": 194,
+      "endZ": -5189
+    }
   },
   "PATH TO OZOTH'S SPIRE LOWER": {
     "name": "Path To Ozoth's Spire Lower",
@@ -1298,7 +1802,13 @@
     "connections": [
       "Thanos",
       "Military Base Lower"
-    ]
+    ],
+    "location": {
+      "startX": 199,
+      "startZ": -5298,
+      "endX": 260,
+      "endZ": -5169
+    }
   },
   "WORM TUNNEL": {
     "name": "Worm Tunnel",
@@ -1312,7 +1822,13 @@
     "connections": [
       "The Broken Road",
       "Grey Ruins"
-    ]
+    ],
+    "location": {
+      "startX": 543,
+      "startZ": -767,
+      "endX": 641,
+      "endZ": -640
+    }
   },
   "CINFRAS COUNTY MID-LOWER": {
     "name": "Cinfras County Mid-Lower",
@@ -1327,7 +1843,13 @@
       "Cinfras's Small Farm",
       "Cinfras County Lower",
       "Cinfras County Mid-Upper"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -4895,
+      "endX": 3,
+      "endZ": -4761
+    }
   },
   "TOWER OF ASCENSION": {
     "name": "Tower of Ascension",
@@ -1340,7 +1862,13 @@
     },
     "connections": [
       "Icy Descent"
-    ]
+    ],
+    "location": {
+      "startX": -400,
+      "startZ": -450,
+      "endX": -315,
+      "endZ": -330
+    }
   },
   "SKIENS ISLAND": {
     "name": "Skiens Island",
@@ -1356,7 +1884,13 @@
       "Selchar",
       "Nodguj Nation",
       "Maro Peaks"
-    ]
+    ],
+    "location": {
+      "startX": 297,
+      "startZ": -3644,
+      "endX": 527,
+      "endZ": -3386
+    }
   },
   "ACTIVE VOLCANO": {
     "name": "Active Volcano",
@@ -1371,7 +1905,13 @@
       "Lava Lake",
       "Volcanic Slope",
       "Lava Lake Bridge"
-    ]
+    ],
+    "location": {
+      "startX": 1233,
+      "startZ": -5553,
+      "endX": 1379,
+      "endZ": -5369
+    }
   },
   "CLIFFSIDE WATERFALL": {
     "name": "Cliffside Waterfall",
@@ -1384,7 +1924,13 @@
     },
     "connections": [
       "Canyon High Path"
-    ]
+    ],
+    "location": {
+      "startX": 440,
+      "startZ": -5183,
+      "endX": 563,
+      "endZ": -5080
+    }
   },
   "VALLEY OF THE LOST": {
     "name": "Valley of the Lost",
@@ -1400,7 +1946,13 @@
       "Canyon Fortress",
       "Canyon Of The Lost",
       "Cliff Side of the Lost"
-    ]
+    ],
+    "location": {
+      "startX": 341,
+      "startZ": -4670,
+      "endX": 435,
+      "endZ": -4511
+    }
   },
   "FROZEN FORT": {
     "name": "Frozen Fort",
@@ -1413,7 +1965,13 @@
     },
     "connections": [
       "Sky Falls"
-    ]
+    ],
+    "location": {
+      "startX": 1501,
+      "startZ": -4789,
+      "endX": 1586,
+      "endZ": -4513
+    }
   },
   "PATH TO CINFRAS": {
     "name": "Path to Cinfras",
@@ -1428,7 +1986,13 @@
       "Light Forest East Upper",
       "Cinfras Entrance",
       "Mesquis Tower"
-    ]
+    ],
+    "location": {
+      "startX": -818,
+      "startZ": -4953,
+      "endX": -734,
+      "endZ": -4842
+    }
   },
   "TEMPLE ISLAND": {
     "name": "Temple Island",
@@ -1445,7 +2009,13 @@
       "Snail Island",
       "Ahmsord",
       "Kandon Ridge"
-    ]
+    ],
+    "location": {
+      "startX": 991,
+      "startZ": -4750,
+      "endX": 1124,
+      "endZ": -4643
+    }
   },
   "NODGUJ NATION": {
     "name": "Nodguj Nation",
@@ -1463,7 +2033,13 @@
       "Icy Island",
       "Skiens Island",
       "Durum Isles Upper"
-    ]
+    ],
+    "location": {
+      "startX": 695,
+      "startZ": -3440,
+      "endX": 880,
+      "endZ": -3210
+    }
   },
   "ARACHNID ROUTE": {
     "name": "Arachnid Route",
@@ -1478,7 +2054,13 @@
       "Nemract Plains West",
       "Plains",
       "North Nivla Woods"
-    ]
+    ],
+    "location": {
+      "startX": -261,
+      "startZ": -1881,
+      "endX": -109,
+      "endZ": -1808
+    }
   },
   "NESAAK BRIDGE TRANSITION": {
     "name": "Nesaak Bridge Transition",
@@ -1492,7 +2074,13 @@
     "connections": [
       "Great Bridge Nesaak",
       "Nesaak Plains South West"
-    ]
+    ],
+    "location": {
+      "startX": -240,
+      "startZ": -780,
+      "endX": -115,
+      "endZ": -630
+    }
   },
   "CINFRAS'S SMALL FARM": {
     "name": "Cinfras's Small Farm",
@@ -1508,7 +2096,13 @@
       "Cinfras County Mid-Lower",
       "Aldorei Lowlands",
       "Cinfras County Lower"
-    ]
+    ],
+    "location": {
+      "startX": -224,
+      "startZ": -4793,
+      "endX": -130,
+      "endZ": -4643
+    }
   },
   "SOUTH NIVLA WOODS": {
     "name": "South Nivla Woods",
@@ -1525,7 +2119,13 @@
       "Nivla Woods Exit",
       "Road to Time Valley",
       "Road to Elkurn"
-    ]
+    ],
+    "location": {
+      "startX": -350,
+      "startZ": -1440,
+      "endX": -99,
+      "endZ": -1330
+    }
   },
   "HEART OF DECAY": {
     "name": "Heart of Decay",
@@ -1540,7 +2140,13 @@
       "Mushroom Hill",
       "Lexdale",
       "Decayed Basin"
-    ]
+    ],
+    "location": {
+      "startX": -598,
+      "startZ": -5580,
+      "endX": -454,
+      "endZ": -5518
+    }
   },
   "REGULAR ISLAND": {
     "name": "Regular Island",
@@ -1556,7 +2162,13 @@
       "Dujgon Nation",
       "Jofash Docks",
       "Dead Island South East"
-    ]
+    ],
+    "location": {
+      "startX": 1202,
+      "startZ": -3764,
+      "endX": 1458,
+      "endZ": -3597
+    }
   },
   "QUARTZ MINES SOUTH WEST": {
     "name": "Quartz Mines South West",
@@ -1571,7 +2183,13 @@
       "Quartz Mines North West",
       "Quartz Mines South East",
       "Llevigar"
-    ]
+    ],
+    "location": {
+      "startX": -1776,
+      "startZ": -4524,
+      "endX": -1609,
+      "endZ": -4352
+    }
   },
   "PIGMEN RAVINES": {
     "name": "Pigmen Ravines",
@@ -1585,7 +2203,13 @@
     "connections": [
       "Pigmen Ravines Entrance",
       "Abandoned Farm"
-    ]
+    ],
+    "location": {
+      "startX": -784,
+      "startZ": -1398,
+      "endX": -617,
+      "endZ": -1317
+    }
   },
   "SWAMP WEST MID-UPPER": {
     "name": "Swamp West Mid-Upper",
@@ -1600,7 +2224,13 @@
       "Swamp East Mid-Upper",
       "Swamp West Upper",
       "Swamp West Mid"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -5309,
+      "endX": -2060,
+      "endZ": -5190
+    }
   },
   "RYMEK WEST MID": {
     "name": "Rymek West Mid",
@@ -1615,7 +2245,13 @@
       "Rymek West Upper",
       "Rymek West Lower",
       "Rymek East Mid"
-    ]
+    ],
+    "location": {
+      "startX": 1000,
+      "startZ": -1530,
+      "endX": 1211,
+      "endZ": -1410
+    }
   },
   "AVOS WORKSHOP": {
     "name": "Avos Workshop",
@@ -1628,7 +2264,13 @@
     },
     "connections": [
       "Avos Temple"
-    ]
+    ],
+    "location": {
+      "startX": -1888,
+      "startZ": -3375,
+      "endX": -1681,
+      "endZ": -3178
+    }
   },
   "SWAMP MOUNTAIN TRANSITION LOWER": {
     "name": "Swamp Mountain Transition Lower",
@@ -1641,7 +2283,13 @@
     },
     "connections": [
       "Swamp Mountain Transition Mid"
-    ]
+    ],
+    "location": {
+      "startX": -2173,
+      "startZ": -5603,
+      "endX": -2128,
+      "endZ": -5466
+    }
   },
   "CRATER DESCENT": {
     "name": "Crater Descent",
@@ -1656,7 +2304,13 @@
       "Molten Heights Portal",
       "Rodoroc",
       "Lava Lake Bridge"
-    ]
+    ],
+    "location": {
+      "startX": 1230,
+      "startZ": -5238,
+      "endX": 1383,
+      "endZ": -5067
+    }
   },
   "JOFASH DOCKS": {
     "name": "Jofash Docks",
@@ -1671,7 +2325,13 @@
       "Dead Island North East",
       "Jofash Tunnel",
       "Regular Island"
-    ]
+    ],
+    "location": {
+      "startX": 1178,
+      "startZ": -4175,
+      "endX": 1445,
+      "endZ": -4012
+    }
   },
   "BANDIT CAMP EXIT": {
     "name": "Bandit Camp Exit",
@@ -1685,7 +2345,13 @@
     "connections": [
       "Canyon Path North Mid",
       "Canyon Valley South"
-    ]
+    ],
+    "location": {
+      "startX": 203,
+      "startZ": -4971,
+      "endX": 264,
+      "endZ": -4877
+    }
   },
   "RAGNI MAIN ENTRANCE": {
     "name": "Ragni Main Entrance",
@@ -1700,7 +2366,13 @@
       "Ragni",
       "Emerald Trail",
       "Ragni East Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": -747,
+      "startZ": -1652,
+      "endX": -616,
+      "endZ": -1530
+    }
   },
   "CANYON FORTRESS": {
     "name": "Canyon Fortress",
@@ -1714,7 +2386,13 @@
     "connections": [
       "Canyon Waterfall Mid North",
       "Valley of the Lost"
-    ]
+    ],
+    "location": {
+      "startX": 271,
+      "startZ": -4739,
+      "endX": 338,
+      "endZ": -4630
+    }
   },
   "LLEVIGAR FARM": {
     "name": "Llevigar Farm",
@@ -1732,7 +2410,13 @@
       "Goblin Plains West",
       "Goblin Plains East",
       "Pre-Light Forest Transition"
-    ]
+    ],
+    "location": {
+      "startX": -1663,
+      "startZ": -4849,
+      "endX": -1556,
+      "endZ": -4714
+    }
   },
   "DETLAS SUBURBS": {
     "name": "Detlas Suburbs",
@@ -1749,7 +2433,13 @@
       "Nether Plains Upper",
       "Detlas Trail East Plains",
       "Detlas Trail West Plains"
-    ]
+    ],
+    "location": {
+      "startX": 188,
+      "startZ": -1657,
+      "endX": 300,
+      "endZ": -1500
+    }
   },
   "CORKUS SEA COVE": {
     "name": "Corkus Sea Cove",
@@ -1765,7 +2455,13 @@
       "Corkus City Mine",
       "Fallen Factory",
       "Road To Mine"
-    ]
+    ],
+    "location": {
+      "startX": -1578,
+      "startZ": -2662,
+      "endX": -1330,
+      "endZ": -2513
+    }
   },
   "IRON ROAD": {
     "name": "Iron Road",
@@ -1781,7 +2477,13 @@
       "Goblin Plains West",
       "Meteor Crater",
       "Forgotten Path"
-    ]
+    ],
+    "location": {
+      "startX": -1688,
+      "startZ": -5099,
+      "endX": -1608,
+      "endZ": -4969
+    }
   },
   "THESEAD SUBURBS": {
     "name": "Thesead Suburbs",
@@ -1797,7 +2499,13 @@
       "Ranol's Farm",
       "Chained House",
       "Entrance to Rodoroc"
-    ]
+    ],
+    "location": {
+      "startX": 703,
+      "startZ": -5374,
+      "endX": 810,
+      "endZ": -5216
+    }
   },
   "BURNING FARM": {
     "name": "Burning Farm",
@@ -1811,7 +2519,13 @@
     "connections": [
       "Burning Airship",
       "Ghostly Path"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -4857,
+      "endX": 107,
+      "endZ": -4755
+    }
   },
   "DESERT MID-UPPER": {
     "name": "Desert Mid-Upper",
@@ -1827,7 +2541,13 @@
       "Desert Mid-Lower",
       "Desert Upper",
       "Almuj City"
-    ]
+    ],
+    "location": {
+      "startX": 1060,
+      "startZ": -2120,
+      "endX": 1195,
+      "endZ": -1935
+    }
   },
   "FORGOTTEN TOWN": {
     "name": "Forgotten Town",
@@ -1841,7 +2561,13 @@
     "connections": [
       "Grey Ruins",
       "Forest of Eyes"
-    ]
+    ],
+    "location": {
+      "startX": 480,
+      "startZ": -493,
+      "endX": 734,
+      "endZ": -355
+    }
   },
   "NEMRACT QUARRY": {
     "name": "Nemract Quarry",
@@ -1856,7 +2582,13 @@
       "Plains Coast",
       "Nemract Road",
       "Nemract Plains West"
-    ]
+    ],
+    "location": {
+      "startX": -105,
+      "startZ": -2069,
+      "endX": 20,
+      "endZ": -1960
+    }
   },
   "NETHER PLAINS UPPER": {
     "name": "Nether Plains Upper",
@@ -1874,7 +2606,13 @@
       "Detlas Suburbs",
       "Corrupted Road",
       "Plains Lake"
-    ]
+    ],
+    "location": {
+      "startX": 115,
+      "startZ": -1495,
+      "endX": 390,
+      "endZ": -1360
+    }
   },
   "DESERT EAST UPPER": {
     "name": "Desert East Upper",
@@ -1887,7 +2625,13 @@
     },
     "connections": [
       "Desert East Mid"
-    ]
+    ],
+    "location": {
+      "startX": 1260,
+      "startZ": -2370,
+      "endX": 1450,
+      "endZ": -2170
+    }
   },
   "SAVANNAH EAST UPPER": {
     "name": "Savannah East Upper",
@@ -1902,7 +2646,13 @@
       "Savannah East Lower",
       "Savannah West Upper",
       "Almuj City"
-    ]
+    ],
+    "location": {
+      "startX": 750,
+      "startZ": -2060,
+      "endX": 820,
+      "endZ": -1895
+    }
   },
   "SUNSPARK CAMP": {
     "name": "Sunspark Camp",
@@ -1919,7 +2669,13 @@
       "Swamp East Lower",
       "Swamp Mountain Base",
       "Meteor Crater"
-    ]
+    ],
+    "location": {
+      "startX": -1930,
+      "startZ": -5099,
+      "endX": -1816,
+      "endZ": -4968
+    }
   },
   "ICY ISLAND": {
     "name": "Icy Island",
@@ -1935,7 +2691,13 @@
       "Dujgon Nation",
       "Regular Island",
       "Nodguj Nation"
-    ]
+    ],
+    "location": {
+      "startX": 1001,
+      "startZ": -3430,
+      "endX": 1172,
+      "endZ": -3274
+    }
   },
   "QUARTZ MINES NORTH EAST": {
     "name": "Quartz Mines North East",
@@ -1951,7 +2713,13 @@
       "Quartz Mines North West",
       "Quartz Mines South East",
       "Pre-Light Forest Transition"
-    ]
+    ],
+    "location": {
+      "startX": -1607,
+      "startZ": -4664,
+      "endX": -1391,
+      "endZ": -4526
+    }
   },
   "GERT CAMP": {
     "name": "Gert Camp",
@@ -1965,7 +2733,13 @@
     "connections": [
       "Jitak's Farm",
       "Gylia Lake North East"
-    ]
+    ],
+    "location": {
+      "startX": -83,
+      "startZ": -5605,
+      "endX": 30,
+      "endZ": -5447
+    }
   },
   "THESEAD": {
     "name": "Thesead",
@@ -1979,7 +2753,13 @@
     "connections": [
       "Entrance to Thesead South",
       "Thesead Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": 747,
+      "startZ": -5104,
+      "endX": 872,
+      "endZ": -4964
+    }
   },
   "MILITARY BASE UPPER": {
     "name": "Military Base Upper",
@@ -1993,7 +2773,13 @@
     "connections": [
       "Military Base",
       "Military Base Lower"
-    ]
+    ],
+    "location": {
+      "startX": 168,
+      "startZ": -5518,
+      "endX": 250,
+      "endZ": -5408
+    }
   },
   "VOLCANO UPPER": {
     "name": "Volcano Upper",
@@ -2010,7 +2796,13 @@
       "Lost Atoll",
       "Volcano Lower",
       "Light Peninsula"
-    ]
+    ],
+    "location": {
+      "startX": -929,
+      "startZ": -3831,
+      "endX": -722,
+      "endZ": -3530
+    }
   },
   "ENTRANCE TO OLUX": {
     "name": "Entrance to Olux",
@@ -2027,7 +2819,13 @@
       "Swamp Dark Forest Transition Lower",
       "Swamp Lower",
       "Swamp Plains Basin"
-    ]
+    ],
+    "location": {
+      "startX": -1764,
+      "startZ": -5396,
+      "endX": -1649,
+      "endZ": -5246
+    }
   },
   "OTHERWORDLY MONOLITH": {
     "name": "Otherwordly Monolith",
@@ -2041,7 +2839,13 @@
     "connections": [
       "Path to Light",
       "Azure Frontier"
-    ]
+    ],
+    "location": {
+      "startX": -775,
+      "startZ": -6164,
+      "endX": -662,
+      "endZ": -6003
+    }
   },
   "LAVA LAKE BRIDGE": {
     "name": "Lava Lake Bridge",
@@ -2056,7 +2860,13 @@
       "Molten Heights Portal",
       "Crater Descent",
       "Active Volcano"
-    ]
+    ],
+    "location": {
+      "startX": 1230,
+      "startZ": -5366,
+      "endX": 1379,
+      "endZ": -5240
+    }
   },
   "ALDOREI VALLEY WEST ENTRANCE": {
     "name": "Aldorei Valley West Entrance",
@@ -2071,7 +2881,13 @@
       "Hobbit River",
       "Mantis Nest",
       "Aldorei Valley Lower"
-    ]
+    ],
+    "location": {
+      "startX": -802,
+      "startZ": -4553,
+      "endX": -736,
+      "endZ": -4428
+    }
   },
   "KANDON-BEDA": {
     "name": "Kandon-Beda",
@@ -2084,7 +2900,13 @@
     },
     "connections": [
       "Canyon Of The Lost"
-    ]
+    ],
+    "location": {
+      "startX": 607,
+      "startZ": -4579,
+      "endX": 760,
+      "endZ": -4372
+    }
   },
   "RAIDER'S BASE UPPER": {
     "name": "Raider's Base Upper",
@@ -2098,7 +2920,13 @@
     "connections": [
       "Sky Island Ascent",
       "Raider's Base Lower"
-    ]
+    ],
+    "location": {
+      "startX": 1380,
+      "startZ": -4457,
+      "endX": 1551,
+      "endZ": -4316
+    }
   },
   "LIGHT FOREST EAST LOWER": {
     "name": "Light Forest East Lower",
@@ -2114,7 +2942,13 @@
       "Mantis Nest",
       "Hobbit River",
       "Light Forest West Mid"
-    ]
+    ],
+    "location": {
+      "startX": -926,
+      "startZ": -4700,
+      "endX": -805,
+      "endZ": -4552
+    }
   },
   "JUNGLE UPPER": {
     "name": "Jungle Upper",
@@ -2128,7 +2962,13 @@
     "connections": [
       "Jungle Mid",
       "Dernel Jungle Mid"
-    ]
+    ],
+    "location": {
+      "startX": -810,
+      "startZ": -779,
+      "endX": -671,
+      "endZ": -630
+    }
   },
   "DEAD ISLAND SOUTH EAST": {
     "name": "Dead Island South East",
@@ -2144,7 +2984,13 @@
       "Dujgon Nation",
       "Dead Island North East",
       "Regular Island"
-    ]
+    ],
+    "location": {
+      "startX": 870,
+      "startZ": -3920,
+      "endX": 1000,
+      "endZ": -3810
+    }
   },
   "MESQUIS TOWER": {
     "name": "Mesquis Tower",
@@ -2160,7 +3006,13 @@
       "Path to Cinfras",
       "Cinfras Entrance",
       "Kander Mines"
-    ]
+    ],
+    "location": {
+      "startX": -834,
+      "startZ": -5078,
+      "endX": -727,
+      "endZ": -4999
+    }
   },
   "LIGHT FOREST WEST MID": {
     "name": "Light Forest West Mid",
@@ -2176,7 +3028,13 @@
       "Light Forest Entrance",
       "Light Forest West Lower",
       "Light Forest West Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1014,
+      "startZ": -4706,
+      "endX": -929,
+      "endZ": -4552
+    }
   },
   "PATH TO MILITARY BASE": {
     "name": "Path To Military Base",
@@ -2190,7 +3048,13 @@
     "connections": [
       "Military Base",
       "Thanos"
-    ]
+    ],
+    "location": {
+      "startX": 51,
+      "startZ": -5391,
+      "endX": 166,
+      "endZ": -5297
+    }
   },
   "LIGHT FOREST WEST UPPER": {
     "name": "Light Forest West Upper",
@@ -2206,7 +3070,13 @@
       "Light Forest West Mid",
       "Light Forest East Mid",
       "Light Forest North Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -1014,
+      "startZ": -4845,
+      "endX": -935,
+      "endZ": -4708
+    }
   },
   "MOUNTAIN EDGE": {
     "name": "Mountain Edge",
@@ -2219,7 +3089,13 @@
     },
     "connections": [
       "Cliff Side of the Lost"
-    ]
+    ],
+    "location": {
+      "startX": 336,
+      "startZ": -4392,
+      "endX": 437,
+      "endZ": -4314
+    }
   },
   "NIVLA WOODS EXIT": {
     "name": "Nivla Woods Exit",
@@ -2235,7 +3111,13 @@
       "South Nivla Woods",
       "Nivla Woods Edge",
       "North Nivla Woods"
-    ]
+    ],
+    "location": {
+      "startX": -175,
+      "startZ": -1630,
+      "endX": -105,
+      "endZ": -1514
+    }
   },
   "LEGENDARY ISLAND": {
     "name": "Legendary Island",
@@ -2249,7 +3131,13 @@
     "connections": [
       "Zhight Island",
       "Southern Outpost"
-    ]
+    ],
+    "location": {
+      "startX": -1212,
+      "startZ": -2576,
+      "endX": -1001,
+      "endZ": -2342
+    }
   },
   "ABANDONED PASS": {
     "name": "Abandoned Pass",
@@ -2263,7 +3151,13 @@
     "connections": [
       "Mining Base Upper",
       "Ternaves Plains Lower"
-    ]
+    ],
+    "location": {
+      "startX": 881,
+      "startZ": -1380,
+      "endX": 1019,
+      "endZ": -1225
+    }
   },
   "NESAAK PLAINS UPPER NORTH WEST": {
     "name": "Nesaak Plains Upper North West",
@@ -2280,7 +3174,13 @@
       "Sanctuary Bridge",
       "Elkurn",
       "Nesaak Plains North East"
-    ]
+    ],
+    "location": {
+      "startX": -140,
+      "startZ": -1060,
+      "endX": 70,
+      "endZ": -950
+    }
   },
   "DETLAS": {
     "name": "Detlas",
@@ -2295,7 +3195,13 @@
       "Detlas Close Suburbs",
       "Detlas Savannah Transition",
       "Detlas Trail East Plains"
-    ]
+    ],
+    "location": {
+      "startX": 402,
+      "startZ": -1657,
+      "endX": 536,
+      "endZ": -1518
+    }
   },
   "CHAINED HOUSE": {
     "name": "Chained House",
@@ -2311,7 +3217,13 @@
       "Hive South",
       "Entrance to Thesead South",
       "Thesead Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": 574,
+      "startZ": -5375,
+      "endX": 699,
+      "endZ": -5242
+    }
   },
   "CORKUS CITY MINE": {
     "name": "Corkus City Mine",
@@ -2326,7 +3238,13 @@
       "Corkus Statue",
       "Corkus Sea Cove",
       "Road To Mine"
-    ]
+    ],
+    "location": {
+      "startX": -1466,
+      "startZ": -2831,
+      "endX": -1394,
+      "endZ": -2750
+    }
   },
   "MOUNTAIN PATH": {
     "name": "Mountain Path",
@@ -2339,7 +3257,13 @@
     },
     "connections": [
       "Canyon Dropoff"
-    ]
+    ],
+    "location": {
+      "startX": 276,
+      "startZ": -4393,
+      "endX": 334,
+      "endZ": -4314
+    }
   },
   "LEXDALE": {
     "name": "Lexdale",
@@ -2355,7 +3279,13 @@
       "Decayed Basin",
       "Old Crossroads North",
       "Heart of Decay"
-    ]
+    ],
+    "location": {
+      "startX": -650,
+      "startZ": -5511,
+      "endX": -562,
+      "endZ": -5406
+    }
   },
   "CINFRAS": {
     "name": "Cinfras",
@@ -2371,7 +3301,13 @@
       "Guild Hall",
       "Cinfras Entrance",
       "Aldorei's River"
-    ]
+    ],
+    "location": {
+      "startX": -534,
+      "startZ": -5088,
+      "endX": -375,
+      "endZ": -4807
+    }
   },
   "CORKUS CITY SOUTH": {
     "name": "Corkus City South",
@@ -2389,7 +3325,13 @@
       "Factory Entrance",
       "Corkus City",
       "Corkus Forest North"
-    ]
+    ],
+    "location": {
+      "startX": -1679,
+      "startZ": -2833,
+      "endX": -1559,
+      "endZ": -2662
+    }
   },
   "ZHIGHT ISLAND": {
     "name": "Zhight Island",
@@ -2404,7 +3346,13 @@
       "Pirate Town",
       "Legendary Island",
       "The Bear Zoo"
-    ]
+    ],
+    "location": {
+      "startX": -727,
+      "startZ": -2846,
+      "endX": -440,
+      "endZ": -2629
+    }
   },
   "TOXIC CAVES": {
     "name": "Toxic Caves",
@@ -2417,7 +3365,13 @@
     },
     "connections": [
       "Toxic Drip"
-    ]
+    ],
+    "location": {
+      "startX": 844,
+      "startZ": -1146,
+      "endX": 1017,
+      "endZ": -993
+    }
   },
   "NESAAK PLAINS NORTH EAST": {
     "name": "Nesaak Plains North East",
@@ -2434,7 +3388,13 @@
       "Bob's Tomb",
       "Nesaak Plains Lower North West",
       "Nesaak Village"
-    ]
+    ],
+    "location": {
+      "startX": 110,
+      "startZ": -1035,
+      "endX": 240,
+      "endZ": -873
+    }
   },
   "DESOLATE VALLEY": {
     "name": "Desolate Valley",
@@ -2449,7 +3409,13 @@
       "Nesaak Transition",
       "Nether Plains Lower",
       "Plains Lake"
-    ]
+    ],
+    "location": {
+      "startX": 330,
+      "startZ": -1170,
+      "endX": 450,
+      "endZ": -1040
+    }
   },
   "RAGNI": {
     "name": "Ragni",
@@ -2464,7 +3430,13 @@
       "Ragni North Entrance",
       "Ragni Main Entrance",
       "Pigmen Ravines Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -955,
+      "startZ": -1748,
+      "endX": -756,
+      "endZ": -1415
+    }
   },
   "FIELD OF LIFE": {
     "name": "Field of Life",
@@ -2480,7 +3452,13 @@
       "Azure Frontier",
       "Luminous Plateau",
       "Primal Fen"
-    ]
+    ],
+    "location": {
+      "startX": -894,
+      "startZ": -6164,
+      "endX": -827,
+      "endZ": -6010
+    }
   },
   "NEMRACT TOWN": {
     "name": "Nemract Town",
@@ -2496,7 +3474,13 @@
       "Plains Coast",
       "Nemract Road",
       "Rooster Island"
-    ]
+    ],
+    "location": {
+      "startX": 10,
+      "startZ": -2270,
+      "endX": 210,
+      "endZ": -2070
+    }
   },
   "ENTRANCE TO THESEAD NORTH": {
     "name": "Entrance to Thesead North",
@@ -2511,7 +3495,13 @@
       "Entrance to Thesead South",
       "Cliffside Passage North",
       "Cliffside Valley"
-    ]
+    ],
+    "location": {
+      "startX": 572,
+      "startZ": -5028,
+      "endX": 700,
+      "endZ": -4935
+    }
   },
   "DETLAS FAR SUBURBS": {
     "name": "Detlas Far Suburbs",
@@ -2528,7 +3518,13 @@
       "Nivla Woods Edge",
       "Nether Plains Upper",
       "Detlas Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": 29,
+      "startZ": -1657,
+      "endX": 188,
+      "endZ": -1500
+    }
   },
   "LIGHTHOUSE PLATEAU": {
     "name": "Lighthouse Plateau",
@@ -2543,7 +3539,13 @@
       "Corkus Sea Port",
       "Southern Outpost",
       "Phinas Farm"
-    ]
+    ],
+    "location": {
+      "startX": -1633,
+      "startZ": -2306,
+      "endX": -1445,
+      "endZ": -2162
+    }
   },
   "ENTRANCE TO THESEAD SOUTH": {
     "name": "Entrance to Thesead South",
@@ -2559,7 +3561,13 @@
       "Thesead",
       "Chained House",
       "Entrance to Thesead North"
-    ]
+    ],
+    "location": {
+      "startX": 574,
+      "startZ": -5181,
+      "endX": 700,
+      "endZ": -5030
+    }
   },
   "DARK FOREST VILLAGE": {
     "name": "Dark Forest Village",
@@ -2575,7 +3583,13 @@
       "Path to Talor",
       "Kander Mines",
       "Old Crossroads South"
-    ]
+    ],
+    "location": {
+      "startX": -723,
+      "startZ": -5229,
+      "endX": -574,
+      "endZ": -5147
+    }
   },
   "SWAMP EAST MID": {
     "name": "Swamp East Mid",
@@ -2591,7 +3605,13 @@
       "Swamp East Mid-Upper",
       "Swamp West Mid",
       "Swamp Mountain Base"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -5186,
+      "endX": -1955,
+      "endZ": -5081
+    }
   },
   "MUMMY'S TOMB": {
     "name": "Mummy's Tomb",
@@ -2604,7 +3624,13 @@
     },
     "connections": [
       "Desert Upper"
-    ]
+    ],
+    "location": {
+      "startX": 990,
+      "startZ": -2400,
+      "endX": 1120,
+      "endZ": -2270
+    }
   },
   "DERNEL JUNGLE UPPER": {
     "name": "Dernel Jungle Upper",
@@ -2617,7 +3643,13 @@
     },
     "connections": [
       "Dernel Jungle Mid"
-    ]
+    ],
+    "location": {
+      "startX": -970,
+      "startZ": -795,
+      "endX": -900,
+      "endZ": -547
+    }
   },
   "LEXDALES PRISON": {
     "name": "Lexdales Prison",
@@ -2631,7 +3663,13 @@
     "connections": [
       "Twisted Ridge",
       "Viscera Pits West"
-    ]
+    ],
+    "location": {
+      "startX": -873,
+      "startZ": -5585,
+      "endX": -772,
+      "endZ": -5518
+    }
   },
   "WYBEL ISLAND": {
     "name": "Wybel Island",
@@ -2646,7 +3684,13 @@
       "Central Islands",
       "Ahmsord Outskirts",
       "Sky Falls"
-    ]
+    ],
+    "location": {
+      "startX": 1253,
+      "startZ": -4700,
+      "endX": 1355,
+      "endZ": -4595
+    }
   },
   "AVOS TEMPLE": {
     "name": "Avos Temple",
@@ -2661,7 +3705,13 @@
       "Bloody Beach",
       "Avos Workshop",
       "Corkus Countryside"
-    ]
+    ],
+    "location": {
+      "startX": -1526,
+      "startZ": -3426,
+      "endX": -1378,
+      "endZ": -3225
+    }
   },
   "SWAMP DARK FOREST TRANSITION MID": {
     "name": "Swamp Dark Forest Transition Mid",
@@ -2678,7 +3728,13 @@
       "Olux",
       "Swamp Dark Forest Transition Lower",
       "Entrance to Olux"
-    ]
+    ],
+    "location": {
+      "startX": -1626,
+      "startZ": -5492,
+      "endX": -1519,
+      "endZ": -5291
+    }
   },
   "RYMEK WEST UPPER": {
     "name": "Rymek West Upper",
@@ -2694,7 +3750,13 @@
       "Desert West Lower",
       "Rymek East Upper",
       "Rymek West Mid"
-    ]
+    ],
+    "location": {
+      "startX": 975,
+      "startZ": -1665,
+      "endX": 1190,
+      "endZ": -1540
+    }
   },
   "GOBLIN PLAINS EAST": {
     "name": "Goblin Plains East",
@@ -2710,7 +3772,13 @@
       "Forgotten Path",
       "Goblin Plains West",
       "Pre-Light Forest Transition"
-    ]
+    ],
+    "location": {
+      "startX": -1603,
+      "startZ": -4963,
+      "endX": -1527,
+      "endZ": -4853
+    }
   },
   "AZURE FRONTIER": {
     "name": "Azure Frontier",
@@ -2726,7 +3794,13 @@
       "Field of Life",
       "Nexus of Light",
       "Otherwordly Monolith"
-    ]
+    ],
+    "location": {
+      "startX": -894,
+      "startZ": -6313,
+      "endX": -684,
+      "endZ": -6164
+    }
   },
   "CINFRAS COUNTY MID-UPPER": {
     "name": "Cinfras County Mid-Upper",
@@ -2741,7 +3815,13 @@
       "Cinfras County Mid-Lower",
       "Cinfras County Upper",
       "Cinfras Thanos Transition"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -5050,
+      "endX": 3,
+      "endZ": -4896
+    }
   },
   "MALTIC": {
     "name": "Maltic",
@@ -2758,7 +3838,13 @@
       "South Farmers Valley",
       "Coastal Trail",
       "Maltic Plains"
-    ]
+    ],
+    "location": {
+      "startX": -604,
+      "startZ": -1945,
+      "endX": -475,
+      "endZ": -1884
+    }
   },
   "ABANDONED MANOR": {
     "name": "Abandoned Manor",
@@ -2774,7 +3860,13 @@
       "Lone Farmstead",
       "Entrance to Kander",
       "Kander Mines"
-    ]
+    ],
+    "location": {
+      "startX": -896,
+      "startZ": -5232,
+      "endX": -802,
+      "endZ": -5102
+    }
   },
   "SWAMP WEST UPPER": {
     "name": "Swamp West Upper",
@@ -2790,7 +3882,13 @@
       "Swamp East Upper",
       "Swamp Mountain Transition Mid-Upper",
       "Swamp Mountain Transition Mid"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -5419,
+      "endX": -2060,
+      "endZ": -5312
+    }
   },
   "RAGNI EAST SUBURBS": {
     "name": "Ragni East Suburbs",
@@ -2805,7 +3903,13 @@
       "Maltic Plains",
       "Ragni Plains",
       "Ragni Main Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -747,
+      "startZ": -1776,
+      "endX": -616,
+      "endZ": -1653
+    }
   },
   "PLAINS LAKE": {
     "name": "Plains Lake",
@@ -2821,7 +3925,13 @@
       "Nether Plains Upper",
       "Desolate Valley",
       "Mine Base Plains"
-    ]
+    ],
+    "location": {
+      "startX": 395,
+      "startZ": -1365,
+      "endX": 550,
+      "endZ": -1190
+    }
   },
   "TERNAVES PLAINS UPPER": {
     "name": "Ternaves Plains Upper",
@@ -2837,7 +3947,13 @@
       "Ternaves Plains Lower",
       "Detlas Savannah Transition",
       "Ternaves"
-    ]
+    ],
+    "location": {
+      "startX": 655,
+      "startZ": -1675,
+      "endX": 770,
+      "endZ": -1430
+    }
   },
   "SWAMP DARK FOREST TRANSITION LOWER": {
     "name": "Swamp Dark Forest Transition Lower",
@@ -2855,7 +3971,13 @@
       "Fortress South",
       "Swamp Lower",
       "Entrance to Olux"
-    ]
+    ],
+    "location": {
+      "startX": -1631,
+      "startZ": -5288,
+      "endX": -1519,
+      "endZ": -5134
+    }
   },
   "TWISTED HOUSING": {
     "name": "Twisted Housing",
@@ -2872,7 +3994,13 @@
       "Lone Farmstead",
       "Mansion of Insanity",
       "Efilim Village"
-    ]
+    ],
+    "location": {
+      "startX": -1133,
+      "startZ": -5272,
+      "endX": -1053,
+      "endZ": -5116
+    }
   },
   "HOBBIT RIVER": {
     "name": "Hobbit River",
@@ -2888,7 +4016,13 @@
       "Light Peninsula",
       "Aldorei Valley West Entrance",
       "Light Forest West Lower"
-    ]
+    ],
+    "location": {
+      "startX": -926,
+      "startZ": -4550,
+      "endX": -806,
+      "endZ": -4428
+    }
   },
   "CINFRAS ENTRANCE": {
     "name": "Cinfras Entrance",
@@ -2904,7 +4038,13 @@
       "Path to Cinfras",
       "Light Forest North Exit",
       "Mesquis Tower"
-    ]
+    ],
+    "location": {
+      "startX": -717,
+      "startZ": -4996,
+      "endX": -555,
+      "endZ": -4868
+    }
   },
   "DETLAS CLOSE SUBURBS": {
     "name": "Detlas Close Suburbs",
@@ -2920,7 +4060,13 @@
       "Detlas Suburbs",
       "Detlas",
       "Detlas Trail East Plains"
-    ]
+    ],
+    "location": {
+      "startX": 300,
+      "startZ": -1657,
+      "endX": 389,
+      "endZ": -1500
+    }
   },
   "LOST ATOLL": {
     "name": "Lost Atoll",
@@ -2935,7 +4081,13 @@
       "Volcano Upper",
       "Tree Island",
       "Pirate Town"
-    ]
+    ],
+    "location": {
+      "startX": -688,
+      "startZ": -3590,
+      "endX": -472,
+      "endZ": -3385
+    }
   },
   "TWISTED RIDGE": {
     "name": "Twisted Ridge",
@@ -2950,7 +4102,13 @@
       "Viscera Pits West",
       "Entrance to Kander",
       "Lexdales Prison"
-    ]
+    ],
+    "location": {
+      "startX": -1020,
+      "startZ": -5603,
+      "endX": -910,
+      "endZ": -5343
+    }
   },
   "CLIFFSIDE VALLEY": {
     "name": "Cliffside Valley",
@@ -2966,7 +4124,13 @@
       "Entrance to Thesead South",
       "Bandits Toll",
       "Entrance to Thesead North"
-    ]
+    ],
+    "location": {
+      "startX": 440,
+      "startZ": -5079,
+      "endX": 563,
+      "endZ": -4975
+    }
   },
   "DETLAS TRAIL WEST PLAINS": {
     "name": "Detlas Trail West Plains",
@@ -2982,7 +4146,13 @@
       "Nemract Plains East",
       "Detlas Suburbs",
       "Ancient Nemract"
-    ]
+    ],
+    "location": {
+      "startX": 25,
+      "startZ": -1800,
+      "endX": 200,
+      "endZ": -1660
+    }
   },
   "CANYON SURVIVOR": {
     "name": "Canyon Survivor",
@@ -2996,7 +4166,13 @@
     "connections": [
       "Canyon Lower South East",
       "Cliff Side of the Lost"
-    ]
+    ],
+    "location": {
+      "startX": 269,
+      "startZ": -4628,
+      "endX": 338,
+      "endZ": -4522
+    }
   },
   "ALDOREI VALLEY SOUTH ENTRANCE": {
     "name": "Aldorei Valley South Entrance",
@@ -3011,7 +4187,13 @@
       "Aldorei's North Exit",
       "Cinfras's Small Farm",
       "Aldorei's Waterfall"
-    ]
+    ],
+    "location": {
+      "startX": -222,
+      "startZ": -4641,
+      "endX": -130,
+      "endZ": -4509
+    }
   },
   "PATH TO OZOTH'S SPIRE UPPER": {
     "name": "Path To Ozoth's Spire Upper",
@@ -3027,7 +4209,13 @@
       "Path To Ozoth's Spire Mid",
       "Path To Thanos",
       "Cinfras Thanos Transition"
-    ]
+    ],
+    "location": {
+      "startX": 111,
+      "startZ": -5165,
+      "endX": 194,
+      "endZ": -5045
+    }
   },
   "LIGHT FOREST WEST LOWER": {
     "name": "Light Forest West Lower",
@@ -3042,7 +4230,13 @@
       "Hobbit River",
       "Light Forest South Entrance",
       "Light Forest West Mid"
-    ]
+    ],
+    "location": {
+      "startX": -1014,
+      "startZ": -4549,
+      "endX": -929,
+      "endZ": -4428
+    }
   },
   "RYMEK EAST MID": {
     "name": "Rymek East Mid",
@@ -3057,7 +4251,13 @@
       "Rymek East Upper",
       "Rymek East Lower",
       "Rymek West Mid"
-    ]
+    ],
+    "location": {
+      "startX": 1211,
+      "startZ": -1578,
+      "endX": 1480,
+      "endZ": -1410
+    }
   },
   "FORGOTTEN PATH": {
     "name": "Forgotten Path",
@@ -3072,7 +4272,13 @@
       "Iron Road",
       "Swamp Dark Forest Transition Lower",
       "Goblin Plains East"
-    ]
+    ],
+    "location": {
+      "startX": -1603,
+      "startZ": -5100,
+      "endX": -1529,
+      "endZ": -4969
+    }
   },
   "LUSUCO": {
     "name": "Lusuco",
@@ -3085,7 +4291,13 @@
     },
     "connections": [
       "Icy Descent"
-    ]
+    ],
+    "location": {
+      "startX": -267,
+      "startZ": -348,
+      "endX": -91,
+      "endZ": -250
+    }
   },
   "TERNAVES": {
     "name": "Ternaves",
@@ -3100,7 +4312,13 @@
       "Ternaves Plains Upper",
       "Savannah East Lower",
       "Ternaves Plains Lower"
-    ]
+    ],
+    "location": {
+      "startX": 770,
+      "startZ": -1675,
+      "endX": 880,
+      "endZ": -1540
+    }
   },
   "SWAMP ISLAND": {
     "name": "Swamp Island",
@@ -3115,7 +4333,13 @@
       "Ahmsord Outskirts",
       "Temple Island",
       "Astraulus' Tower"
-    ]
+    ],
+    "location": {
+      "startX": 1101,
+      "startZ": -4915,
+      "endX": 1178,
+      "endZ": -4754
+    }
   },
   "TEMPLE OF THE LOST EAST": {
     "name": "Temple of the Lost East",
@@ -3129,7 +4353,13 @@
     "connections": [
       "Krolton's Cave",
       "Valley of the Lost"
-    ]
+    ],
+    "location": {
+      "startX": 341,
+      "startZ": -4838,
+      "endX": 440,
+      "endZ": -4672
+    }
   },
   "GATEWAY TO NOTHING": {
     "name": "Gateway to Nothing",
@@ -3144,7 +4374,13 @@
       "Final Step",
       "Toxic Drip",
       "Void Valley"
-    ]
+    ],
+    "location": {
+      "startX": 1120,
+      "startZ": -1058,
+      "endX": 1244,
+      "endZ": -882
+    }
   },
   "GOBLIN PLAINS WEST": {
     "name": "Goblin Plains West",
@@ -3160,7 +4396,13 @@
       "Goblin Plains East",
       "Llevigar Farm",
       "Sablestone Camp"
-    ]
+    ],
+    "location": {
+      "startX": -1688,
+      "startZ": -4962,
+      "endX": -1611,
+      "endZ": -4854
+    }
   },
   "HALF MOON ISLAND": {
     "name": "Half Moon Island",
@@ -3173,7 +4415,13 @@
     },
     "connections": [
       "Mage Island"
-    ]
+    ],
+    "location": {
+      "startX": 900,
+      "startZ": -2660,
+      "endX": 1100,
+      "endZ": -2480
+    }
   },
   "MOLTEN HEIGHTS PORTAL": {
     "name": "Molten Heights Portal",
@@ -3189,7 +4437,13 @@
       "Lava Lake",
       "Lava Lake Bridge",
       "Molten Reach"
-    ]
+    ],
+    "location": {
+      "startX": 1387,
+      "startZ": -5366,
+      "endX": 1535,
+      "endZ": -5067
+    }
   },
   "JUNGLE LAKE": {
     "name": "Jungle Lake",
@@ -3205,7 +4459,13 @@
       "Temple of Legends",
       "Herb Cave",
       "City of Troms"
-    ]
+    ],
+    "location": {
+      "startX": -680,
+      "startZ": -940,
+      "endX": -601,
+      "endZ": -791
+    }
   },
   "GREAT BRIDGE JUNGLE": {
     "name": "Great Bridge Jungle",
@@ -3220,7 +4480,13 @@
       "Great Bridge Nesaak",
       "Jungle Lower",
       "Herb Cave"
-    ]
+    ],
+    "location": {
+      "startX": -515,
+      "startZ": -790,
+      "endX": -395,
+      "endZ": -610
+    }
   },
   "CANYON ENTRANCE WATERFALL": {
     "name": "Canyon Entrance Waterfall",
@@ -3234,7 +4500,13 @@
     "connections": [
       "Canyon Path North West",
       "Canyon Path North Mid"
-    ]
+    ],
+    "location": {
+      "startX": 110,
+      "startZ": -4869,
+      "endX": 194,
+      "endZ": -4741
+    }
   },
   "ORC LAKE": {
     "name": "Orc Lake",
@@ -3251,7 +4523,13 @@
       "Sablestone Camp",
       "Orc Road",
       "Llevigar Plains East Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1933,
+      "startZ": -4962,
+      "endX": -1816,
+      "endZ": -4854
+    }
   },
   "CORKUS FOREST SOUTH": {
     "name": "Corkus Forest South",
@@ -3267,7 +4545,13 @@
       "Corkus City",
       "Corkus City South",
       "Corkus Forest North"
-    ]
+    ],
+    "location": {
+      "startX": -1883,
+      "startZ": -2861,
+      "endX": -1681,
+      "endZ": -2732
+    }
   },
   "NESAAK PLAINS SOUTH WEST": {
     "name": "Nesaak Plains South West",
@@ -3285,7 +4569,13 @@
       "Nesaak Plains Lower North West",
       "Icy Descent",
       "Nesaak Village"
-    ]
+    ],
+    "location": {
+      "startX": -110,
+      "startZ": -820,
+      "endX": 70,
+      "endZ": -625
+    }
   },
   "NETHER GATE": {
     "name": "Nether Gate",
@@ -3301,7 +4591,13 @@
       "Nether Plains Lower",
       "Corrupted Road",
       "Plains Lake"
-    ]
+    ],
+    "location": {
+      "startX": 106,
+      "startZ": -1341,
+      "endX": 342,
+      "endZ": -1222
+    }
   },
   "ALDOREI'S ARCH": {
     "name": "Aldorei's Arch",
@@ -3315,7 +4611,13 @@
     "connections": [
       "Canyon Waterfall North",
       "Path To The Arch"
-    ]
+    ],
+    "location": {
+      "startX": 33,
+      "startZ": -4519,
+      "endX": 107,
+      "endZ": -4367
+    }
   },
   "GELIBORD CASTLE": {
     "name": "Gelibord Castle",
@@ -3329,7 +4631,13 @@
     "connections": [
       "Taproot Descent",
       "Gelibord Corrupted Farm"
-    ]
+    ],
+    "location": {
+      "startX": -1180,
+      "startZ": -5600,
+      "endX": -1027,
+      "endZ": -5470
+    }
   },
   "LLEVIGAR GATE WEST": {
     "name": "Llevigar Gate West",
@@ -3344,7 +4652,13 @@
       "Llevigar Farm Plains West",
       "Llevigar Gate East",
       "Llevigar Plains West Lower"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -4746,
+      "endX": -2060,
+      "endZ": -4644
+    }
   },
   "CATHEDRAL HARBOUR": {
     "name": "Cathedral Harbour",
@@ -3362,7 +4676,13 @@
       "Ancient Nemract",
       "Nemract Cathedral",
       "Detlas Trail East Plains"
-    ]
+    ],
+    "location": {
+      "startX": 385,
+      "startZ": -2180,
+      "endX": 570,
+      "endZ": -1950
+    }
   },
   "GREAT BRIDGE NESAAK": {
     "name": "Great Bridge Nesaak",
@@ -3376,7 +4696,13 @@
     "connections": [
       "Great Bridge Jungle",
       "Nesaak Bridge Transition"
-    ]
+    ],
+    "location": {
+      "startX": -390,
+      "startZ": -790,
+      "endX": -275,
+      "endZ": -620
+    }
   },
   "PHINAS FARM": {
     "name": "Phinas Farm",
@@ -3390,7 +4716,13 @@
     "connections": [
       "Royal Gate",
       "Lighthouse Plateau"
-    ]
+    ],
+    "location": {
+      "startX": -1842,
+      "startZ": -2162,
+      "endX": -1633,
+      "endZ": -2058
+    }
   },
   "JOFASH TUNNEL": {
     "name": "Jofash Tunnel",
@@ -3404,7 +4736,13 @@
     "connections": [
       "Sky Island Ascent",
       "Jofash Docks"
-    ]
+    ],
+    "location": {
+      "startX": 1126,
+      "startZ": -4354,
+      "endX": 1304,
+      "endZ": -4176
+    }
   },
   "LIGHT FOREST NORTH EXIT": {
     "name": "Light Forest North Exit",
@@ -3419,7 +4757,13 @@
       "Light Forest Canyon",
       "Light Forest South Exit",
       "Cinfras Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -733,
+      "startZ": -4848,
+      "endX": -654,
+      "endZ": -4707
+    }
   },
   "SABLESTONE CAMP": {
     "name": "Sablestone Camp",
@@ -3435,7 +4779,13 @@
       "Orc Lake",
       "Goblin Plains West",
       "Meteor Crater"
-    ]
+    ],
+    "location": {
+      "startX": -1800,
+      "startZ": -4962,
+      "endX": -1695,
+      "endZ": -4854
+    }
   },
   "VISCERA PITS EAST": {
     "name": "Viscera Pits East",
@@ -3450,7 +4800,13 @@
       "Lexdale",
       "Path to Talor",
       "Viscera Pits West"
-    ]
+    ],
+    "location": {
+      "startX": -766,
+      "startZ": -5508,
+      "endX": -659,
+      "endZ": -5424
+    }
   },
   "THE BROKEN ROAD": {
     "name": "The Broken Road",
@@ -3464,7 +4820,13 @@
     "connections": [
       "The Silent Road",
       "Worm Tunnel"
-    ]
+    ],
+    "location": {
+      "startX": 493,
+      "startZ": -923,
+      "endX": 686,
+      "endZ": -783
+    }
   },
   "ALDOREI'S WATERFALL": {
     "name": "Aldorei's Waterfall",
@@ -3479,7 +4841,13 @@
       "Aldorei Valley South Entrance",
       "Aldorei Valley Upper",
       "Aldorei Lowlands"
-    ]
+    ],
+    "location": {
+      "startX": -321,
+      "startZ": -4648,
+      "endX": -237,
+      "endZ": -4514
+    }
   },
   "GYLIA LAKE NORTH WEST": {
     "name": "Gylia Lake North West",
@@ -3495,7 +4863,13 @@
       "Jitak's Farm",
       "Gylia Lake North East",
       "Fallen Village"
-    ]
+    ],
+    "location": {
+      "startX": -218,
+      "startZ": -5427,
+      "endX": -130,
+      "endZ": -5273
+    }
   },
   "DERNEL JUNGLE LOWER": {
     "name": "Dernel Jungle Lower",
@@ -3509,7 +4883,13 @@
     "connections": [
       "Dernel Jungle Mid",
       "Jungle Lower"
-    ]
+    ],
+    "location": {
+      "startX": -737,
+      "startZ": -530,
+      "endX": -502,
+      "endZ": -317
+    }
   },
   "GYLIA LAKE SOUTH EAST": {
     "name": "Gylia Lake South East",
@@ -3525,7 +4905,13 @@
       "Cinfras County Upper",
       "Gylia Lake North East",
       "Thanos"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -5271,
+      "endX": 30,
+      "endZ": -5157
+    }
   },
   "MUSHROOM HILL": {
     "name": "Mushroom Hill",
@@ -3541,7 +4927,13 @@
       "Heart of Decay",
       "Fallen Village",
       "Jitak's Farm"
-    ]
+    ],
+    "location": {
+      "startX": -392,
+      "startZ": -5601,
+      "endX": -288,
+      "endZ": -5411
+    }
   },
   "FOREST OF EYES": {
     "name": "Forest of Eyes",
@@ -3555,7 +4947,13 @@
     "connections": [
       "Sinister Forest",
       "Forgotten Town"
-    ]
+    ],
+    "location": {
+      "startX": 813,
+      "startZ": -504,
+      "endX": 1043,
+      "endZ": -333
+    }
   },
   "VOID VALLEY": {
     "name": "Void Valley",
@@ -3568,7 +4966,13 @@
     },
     "connections": [
       "Gateway to Nothing"
-    ]
+    ],
+    "location": {
+      "startX": 1082,
+      "startZ": -1161,
+      "endX": 1250,
+      "endZ": -1078
+    }
   },
   "KANDON FARM": {
     "name": "Kandon Farm",
@@ -3581,7 +4985,13 @@
     },
     "connections": [
       "Kandon Ridge"
-    ]
+    ],
+    "location": {
+      "startX": 614,
+      "startZ": -4682,
+      "endX": 710,
+      "endZ": -4587
+    }
   },
   "METEOR CRATER": {
     "name": "Meteor Crater",
@@ -3596,7 +5006,13 @@
       "Iron Road",
       "Sunspark Camp",
       "Sablestone Camp"
-    ]
+    ],
+    "location": {
+      "startX": -1800,
+      "startZ": -5099,
+      "endX": -1690,
+      "endZ": -4969
+    }
   },
   "ASTRAULUS' TOWER": {
     "name": "Astraulus' Tower",
@@ -3610,7 +5026,13 @@
     "connections": [
       "Swamp Island",
       "Dragonling Nests"
-    ]
+    ],
+    "location": {
+      "startX": 1102,
+      "startZ": -5016,
+      "endX": 1250,
+      "endZ": -4916
+    }
   },
   "DESERT EAST MID": {
     "name": "Desert East Mid",
@@ -3625,7 +5047,13 @@
       "Desert East Upper",
       "Desert East Lower",
       "Desert Mid-Upper"
-    ]
+    ],
+    "location": {
+      "startX": 1260,
+      "startZ": -2170,
+      "endX": 1450,
+      "endZ": -2020
+    }
   },
   "EFILIM SOUTH EAST PLAINS": {
     "name": "Efilim South East Plains",
@@ -3641,7 +5069,13 @@
       "Light Forest East Upper",
       "Efilim South Plains",
       "Light Forest West Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1014,
+      "startZ": -4942,
+      "endX": -949,
+      "endZ": -4847
+    }
   },
   "TAPROOT DESCENT": {
     "name": "Taproot Descent",
@@ -3658,7 +5092,13 @@
       "Swamp Dark Forest Transition Upper",
       "Gelibord Corrupted Farm",
       "Fortress North"
-    ]
+    ],
+    "location": {
+      "startX": -1425,
+      "startZ": -5589,
+      "endX": -1194,
+      "endZ": -5407
+    }
   },
   "CINFRAS COUNTY LOWER": {
     "name": "Cinfras County Lower",
@@ -3673,7 +5113,13 @@
       "Cinfras County Mid-Lower",
       "Aldorei's North Exit",
       "Cinfras's Small Farm"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -4760,
+      "endX": 3,
+      "endZ": -4640
+    }
   },
   "DEAD ISLAND NORTH WEST": {
     "name": "Dead Island North West",
@@ -3687,7 +5133,13 @@
     "connections": [
       "Dead Island South West",
       "Dead Island North East"
-    ]
+    ],
+    "location": {
+      "startX": 745,
+      "startZ": -4040,
+      "endX": 870,
+      "endZ": -3920
+    }
   },
   "CINFRAS OUTSKIRTS": {
     "name": "Cinfras Outskirts",
@@ -3704,7 +5156,13 @@
       "Fungal Grove",
       "Dark Forest Cinfras Transition",
       "Old Crossroads South"
-    ]
+    ],
+    "location": {
+      "startX": -534,
+      "startZ": -5278,
+      "endX": -392,
+      "endZ": -5116
+    }
   },
   "PLAINS COAST": {
     "name": "Plains Coast",
@@ -3719,7 +5177,13 @@
       "North Farmers Valley",
       "Nemract Town",
       "Nemract Quarry"
-    ]
+    ],
+    "location": {
+      "startX": -320,
+      "startZ": -2270,
+      "endX": 5,
+      "endZ": -2090
+    }
   },
   "DESERT EAST LOWER": {
     "name": "Desert East Lower",
@@ -3734,7 +5198,13 @@
       "Desert East Mid",
       "Rymek East Upper",
       "Desert Mid-Lower"
-    ]
+    ],
+    "location": {
+      "startX": 1270,
+      "startZ": -2020,
+      "endX": 1450,
+      "endZ": -1785
+    }
   },
   "CLIFF SIDE OF THE LOST": {
     "name": "Cliff Side of the Lost",
@@ -3751,7 +5221,13 @@
       "Canyon Of The Lost",
       "Canyon Survivor",
       "Canyon Dropoff"
-    ]
+    ],
+    "location": {
+      "startX": 340,
+      "startZ": -4508,
+      "endX": 437,
+      "endZ": -4395
+    }
   },
   "LLEVIGAR PLAINS EAST UPPER": {
     "name": "Llevigar Plains East Upper",
@@ -3768,7 +5244,13 @@
       "Orc Lake",
       "Llevigar Plains West Upper",
       "Sunspark Camp"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -5000,
+      "endX": -1940,
+      "endZ": -4912
+    }
   },
   "RAIDER'S BASE LOWER": {
     "name": "Raider's Base Lower",
@@ -3781,7 +5263,13 @@
     },
     "connections": [
       "Raider's Base Upper"
-    ]
+    ],
+    "location": {
+      "startX": 1305,
+      "startZ": -4316,
+      "endX": 1558,
+      "endZ": -4253
+    }
   },
   "TIME VALLEY": {
     "name": "Time Valley",
@@ -3797,7 +5285,13 @@
       "Little Wood",
       "Abandoned Farm",
       "Sanctuary Bridge"
-    ]
+    ],
+    "location": {
+      "startX": -563,
+      "startZ": -1261,
+      "endX": -406,
+      "endZ": -1006
+    }
   },
   "SWAMP MOUNTAIN TRANSITION MID-UPPER": {
     "name": "Swamp Mountain Transition Mid-Upper",
@@ -3813,7 +5307,13 @@
       "Swamp Mountain Transition Mid",
       "Swamp Mountain Transition Upper",
       "Swamp West Upper"
-    ]
+    ],
+    "location": {
+      "startX": -2065,
+      "startZ": -5603,
+      "endX": -1982,
+      "endZ": -5466
+    }
   },
   "GHOSTLY PATH": {
     "name": "Ghostly Path",
@@ -3827,7 +5327,13 @@
     "connections": [
       "Burning Farm",
       "Path To The Arch"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -4753,
+      "endX": 107,
+      "endZ": -4643
+    }
   },
   "NORTH NIVLA WOODS": {
     "name": "North Nivla Woods",
@@ -3843,7 +5349,13 @@
       "Plains",
       "Nivla Woods Exit",
       "Arachnid Route"
-    ]
+    ],
+    "location": {
+      "startX": -194,
+      "startZ": -1800,
+      "endX": -86,
+      "endZ": -1632
+    }
   },
   "GYLIA LAKE NORTH EAST": {
     "name": "Gylia Lake North East",
@@ -3859,7 +5371,13 @@
       "Gert Camp",
       "Gylia Lake South East",
       "Gylia Lake North West"
-    ]
+    ],
+    "location": {
+      "startX": -128,
+      "startZ": -5416,
+      "endX": 21,
+      "endZ": -5273
+    }
   },
   "BANDIT CAVE LOWER": {
     "name": "Bandit Cave Lower",
@@ -3873,7 +5391,13 @@
     "connections": [
       "Path To Ozoth's Spire Upper",
       "Canyon Valley South"
-    ]
+    ],
+    "location": {
+      "startX": 111,
+      "startZ": -5043,
+      "endX": 194,
+      "endZ": -4958
+    }
   },
   "MILITARY BASE LOWER": {
     "name": "Military Base Lower",
@@ -3888,7 +5412,13 @@
       "Thanos Valley West",
       "Military Base Upper",
       "Path To Ozoth's Spire Lower"
-    ]
+    ],
+    "location": {
+      "startX": 168,
+      "startZ": -5407,
+      "endX": 244,
+      "endZ": -5315
+    }
   },
   "CANYON WALK WAY": {
     "name": "Canyon Walk Way",
@@ -3903,7 +5433,13 @@
       "Path To Ozoth's Spire Mid",
       "Bandits Toll",
       "Canyon Mountain East"
-    ]
+    ],
+    "location": {
+      "startX": 271,
+      "startZ": -5165,
+      "endX": 338,
+      "endZ": -5041
+    }
   },
   "MINING BASE UPPER": {
     "name": "Mining Base Upper",
@@ -3919,7 +5455,13 @@
       "Abandoned Pass",
       "Ternaves Plains Lower",
       "Mine Base Plains"
-    ]
+    ],
+    "location": {
+      "startX": 670,
+      "startZ": -1330,
+      "endX": 880,
+      "endZ": -1225
+    }
   },
   "VOLCANO LOWER": {
     "name": "Volcano Lower",
@@ -3935,7 +5477,13 @@
       "Light Peninsula",
       "Llevigar Entrance",
       "Bloody Beach"
-    ]
+    ],
+    "location": {
+      "startX": -1164,
+      "startZ": -3831,
+      "endX": -930,
+      "endZ": -3530
+    }
   },
   "HIVE SOUTH": {
     "name": "Hive South",
@@ -3952,7 +5500,13 @@
       "Thanos Exit Upper",
       "Chained House",
       "Cherry Blossom Forest"
-    ]
+    ],
+    "location": {
+      "startX": 440,
+      "startZ": -5449,
+      "endX": 560,
+      "endZ": -5315
+    }
   },
   "SWAMP WEST LOWER": {
     "name": "Swamp West Lower",
@@ -3967,7 +5521,13 @@
       "Swamp East Lower",
       "Llevigar Plains West Upper",
       "Swamp West Mid"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -5075,
+      "endX": -2060,
+      "endZ": -5003
+    }
   },
   "ROAD TO MINE": {
     "name": "Road To Mine",
@@ -3982,7 +5542,13 @@
       "Corkus Sea Cove",
       "Corkus City South",
       "Corkus City Mine"
-    ]
+    ],
+    "location": {
+      "startX": -1557,
+      "startZ": -2834,
+      "endX": -1467,
+      "endZ": -2691
+    }
   },
   "LLEVIGAR": {
     "name": "Llevigar",
@@ -3997,7 +5563,13 @@
       "Quartz Mines South West",
       "Llevigar Entrance",
       "Llevigar Gate East"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -4643,
+      "endX": -1800,
+      "endZ": -4405
+    }
   },
   "ENTRANCE TO RODOROC": {
     "name": "Entrance to Rodoroc",
@@ -4012,7 +5584,13 @@
       "Thesead Suburbs",
       "Eltom",
       "Rodoroc"
-    ]
+    ],
+    "location": {
+      "startX": 854,
+      "startZ": -5367,
+      "endX": 1113,
+      "endZ": -5257
+    }
   },
   "LIGHT FOREST CANYON": {
     "name": "Light Forest Canyon",
@@ -4027,7 +5605,13 @@
       "Mantis Nest",
       "Light Forest East Mid",
       "Light Forest North Exit"
-    ]
+    ],
+    "location": {
+      "startX": -818,
+      "startZ": -4840,
+      "endX": -738,
+      "endZ": -4708
+    }
   },
   "CORKUS CASTLE": {
     "name": "Corkus Castle",
@@ -4040,7 +5624,13 @@
     },
     "connections": [
       "Corkus City"
-    ]
+    ],
+    "location": {
+      "startX": -1555,
+      "startZ": -2968,
+      "endX": -1452,
+      "endZ": -2835
+    }
   },
   "SNAIL ISLAND": {
     "name": "Snail Island",
@@ -4054,7 +5644,13 @@
     "connections": [
       "Temple Island",
       "Dragonling Nests"
-    ]
+    ],
+    "location": {
+      "startX": 949,
+      "startZ": -4885,
+      "endX": 1057,
+      "endZ": -4804
+    }
   },
   "LAVA LAKE": {
     "name": "Lava Lake",
@@ -4069,7 +5665,13 @@
       "Molten Heights Portal",
       "Active Volcano",
       "Volcanic Slope"
-    ]
+    ],
+    "location": {
+      "startX": 1387,
+      "startZ": -5553,
+      "endX": 1531,
+      "endZ": -5369
+    }
   },
   "SKY CASTLE": {
     "name": "Sky Castle",
@@ -4082,7 +5684,13 @@
     },
     "connections": [
       "Path to Ahmsord Lower"
-    ]
+    ],
+    "location": {
+      "startX": 854,
+      "startZ": -4425,
+      "endX": 954,
+      "endZ": -4340
+    }
   },
   "CANYON PATH SOUTH EAST": {
     "name": "Canyon Path South East",
@@ -4096,7 +5704,13 @@
     "connections": [
       "Canyon Lower South East",
       "Canyon Path North West"
-    ]
+    ],
+    "location": {
+      "startX": 115,
+      "startZ": -4649,
+      "endX": 194,
+      "endZ": -4521
+    }
   },
   "TERNAVES PLAINS LOWER": {
     "name": "Ternaves Plains Lower",
@@ -4113,7 +5727,13 @@
       "Abandoned Pass",
       "Mining Base Upper",
       "Ternaves"
-    ]
+    ],
+    "location": {
+      "startX": 655,
+      "startZ": -1430,
+      "endX": 880,
+      "endZ": -1330
+    }
   },
   "THE GATE": {
     "name": "The Gate",
@@ -4126,7 +5746,13 @@
     },
     "connections": [
       "Bizarre Passage"
-    ]
+    ],
+    "location": {
+      "startX": 1265,
+      "startZ": -520,
+      "endX": 1350,
+      "endZ": -410
+    }
   },
   "FLERIS TRAIL": {
     "name": "Fleris Trail",
@@ -4139,7 +5765,13 @@
     },
     "connections": [
       "Road To Light Forest"
-    ]
+    ],
+    "location": {
+      "startX": -1390,
+      "startZ": -4594,
+      "endX": -1254,
+      "endZ": -4351
+    }
   },
   "CORKUS FOREST NORTH": {
     "name": "Corkus Forest North",
@@ -4155,7 +5787,13 @@
       "Corkus Forest South",
       "Corkus City",
       "Corkus City South"
-    ]
+    ],
+    "location": {
+      "startX": -1888,
+      "startZ": -2995,
+      "endX": -1682,
+      "endZ": -2862
+    }
   },
   "SINISTER FOREST": {
     "name": "Sinister Forest",
@@ -4169,7 +5807,13 @@
     "connections": [
       "Lutho",
       "Forest of Eyes"
-    ]
+    ],
+    "location": {
+      "startX": 815,
+      "startZ": -629,
+      "endX": 1059,
+      "endZ": -506
+    }
   },
   "SWAMP EAST UPPER": {
     "name": "Swamp East Upper",
@@ -4186,7 +5830,13 @@
       "Swamp West Upper",
       "Swamp Mountain Transition Mid-Upper",
       "Swamp Plains Basin"
-    ]
+    ],
+    "location": {
+      "startX": -2059,
+      "startZ": -5419,
+      "endX": -1955,
+      "endZ": -5311
+    }
   },
   "PIGMEN RAVINES ENTRANCE": {
     "name": "Pigmen Ravines Entrance",
@@ -4201,7 +5851,13 @@
       "Pigmen Ravines",
       "Ragni",
       "South Pigmen Ravines"
-    ]
+    ],
+    "location": {
+      "startX": -924,
+      "startZ": -1398,
+      "endX": -784,
+      "endZ": -1307
+    }
   },
   "CORKUS OUTSKIRTS": {
     "name": "Corkus Outskirts",
@@ -4216,7 +5872,13 @@
       "Corkus Statue",
       "Corkus Countryside",
       "Bloody Beach"
-    ]
+    ],
+    "location": {
+      "startX": -1502,
+      "startZ": -3224,
+      "endX": -1230,
+      "endZ": -2976
+    }
   },
   "MALTIC COAST": {
     "name": "Maltic Coast",
@@ -4232,7 +5894,13 @@
       "Maltic",
       "South Farmers Valley",
       "Coastal Trail"
-    ]
+    ],
+    "location": {
+      "startX": -564,
+      "startZ": -2059,
+      "endX": -400,
+      "endZ": -1946
+    }
   },
   "QUARTZ MINES NORTH WEST": {
     "name": "Quartz Mines North West",
@@ -4248,7 +5916,13 @@
       "Quartz Mines South West",
       "Llevigar Farm",
       "Quartz Mines North East"
-    ]
+    ],
+    "location": {
+      "startX": -1776,
+      "startZ": -4664,
+      "endX": -1609,
+      "endZ": -4526
+    }
   },
   "GUILD HALL": {
     "name": "Guild Hall",
@@ -4261,7 +5935,13 @@
     },
     "connections": [
       "Cinfras"
-    ]
+    ],
+    "location": {
+      "startX": -349,
+      "startZ": -5093,
+      "endX": -137,
+      "endZ": -4814
+    }
   },
   "NEMRACT PLAINS EAST": {
     "name": "Nemract Plains East",
@@ -4275,7 +5955,13 @@
     "connections": [
       "Detlas Trail West Plains",
       "Nemract Road"
-    ]
+    ],
+    "location": {
+      "startX": 20,
+      "startZ": -1870,
+      "endX": 151,
+      "endZ": -1810
+    }
   },
   "CORKUS SEA PORT": {
     "name": "Corkus Sea Port",
@@ -4291,7 +5977,13 @@
       "Fallen Factory",
       "Ruined Houses",
       "Lighthouse Plateau"
-    ]
+    ],
+    "location": {
+      "startX": -1680,
+      "startZ": -2512,
+      "endX": -1437,
+      "endZ": -2307
+    }
   },
   "EFILIM SOUTH PLAINS": {
     "name": "Efilim South Plains",
@@ -4306,7 +5998,13 @@
       "Efilim South East Plains",
       "Efilim Village",
       "Light Forest North Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -1134,
+      "startZ": -4940,
+      "endX": -1030,
+      "endZ": -4847
+    }
   },
   "PATH TO TALOR": {
     "name": "Path to Talor",
@@ -4324,7 +6022,13 @@
       "Old Crossroads North",
       "Old Crossroads South",
       "Kander Mines"
-    ]
+    ],
+    "location": {
+      "startX": -785,
+      "startZ": -5401,
+      "endX": -653,
+      "endZ": -5231
+    }
   },
   "MANSION OF INSANITY": {
     "name": "Mansion of Insanity",
@@ -4339,7 +6043,13 @@
       "Fortress South",
       "Twisted Housing",
       "Fortress North"
-    ]
+    ],
+    "location": {
+      "startX": -1237,
+      "startZ": -5268,
+      "endX": -1144,
+      "endZ": -5116
+    }
   },
   "DETLAS TRAIL EAST PLAINS": {
     "name": "Detlas Trail East Plains",
@@ -4356,7 +6066,13 @@
       "Detlas Suburbs",
       "Detlas",
       "Ancient Nemract"
-    ]
+    ],
+    "location": {
+      "startX": 200,
+      "startZ": -1820,
+      "endX": 510,
+      "endZ": -1675
+    }
   },
   "EFILIM EAST PLAINS": {
     "name": "Efilim East Plains",
@@ -4370,7 +6086,13 @@
     "connections": [
       "Efilim Village",
       "Efilim South East Plains"
-    ]
+    ],
+    "location": {
+      "startX": -1014,
+      "startZ": -5079,
+      "endX": -949,
+      "endZ": -4944
+    }
   },
   "LIGHT FOREST ENTRANCE": {
     "name": "Light Forest Entrance",
@@ -4386,7 +6108,13 @@
       "Road To Light Forest",
       "Light Forest West Mid",
       "Light Forest North Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -1134,
+      "startZ": -4706,
+      "endX": -1040,
+      "endZ": -4552
+    }
   },
   "LIGHT FOREST EAST UPPER": {
     "name": "Light Forest East Upper",
@@ -4400,7 +6128,13 @@
     "connections": [
       "Path to Cinfras",
       "Efilim South East Plains"
-    ]
+    ],
+    "location": {
+      "startX": -926,
+      "startZ": -4945,
+      "endX": -831,
+      "endZ": -4842
+    }
   },
   "ELTOM": {
     "name": "Eltom",
@@ -4414,7 +6148,13 @@
     "connections": [
       "Ranol's Farm",
       "Entrance to Rodoroc"
-    ]
+    ],
+    "location": {
+      "startX": 828,
+      "startZ": -5581,
+      "endX": 1029,
+      "endZ": -5376
+    }
   },
   "MOLTEN REACH": {
     "name": "Molten Reach",
@@ -4428,7 +6168,13 @@
     "connections": [
       "Molten Heights Portal",
       "Angel Refuge"
-    ]
+    ],
+    "location": {
+      "startX": 1251,
+      "startZ": -4964,
+      "endX": 1500,
+      "endZ": -4894
+    }
   },
   "LLEVIGAR FARM PLAINS WEST": {
     "name": "Llevigar Farm Plains West",
@@ -4443,7 +6189,13 @@
       "Llevigar Gate West",
       "Llevigar Farm Plains East",
       "Llevigar Plains West Lower"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -4828,
+      "endX": -2060,
+      "endZ": -4746
+    }
   },
   "MANTIS NEST": {
     "name": "Mantis Nest",
@@ -4460,7 +6212,13 @@
       "Light Forest Canyon",
       "Light Forest South Exit",
       "Light Forest East Lower"
-    ]
+    ],
+    "location": {
+      "startX": -802,
+      "startZ": -4698,
+      "endX": -736,
+      "endZ": -4559
+    }
   },
   "QUARTZ MINES SOUTH EAST": {
     "name": "Quartz Mines South East",
@@ -4474,7 +6232,13 @@
     "connections": [
       "Quartz Mines South West",
       "Quartz Mines North East"
-    ]
+    ],
+    "location": {
+      "startX": -1607,
+      "startZ": -4524,
+      "endX": -1391,
+      "endZ": -4352
+    }
   },
   "DRAGONLING NESTS": {
     "name": "Dragonling Nests",
@@ -4488,7 +6252,13 @@
     "connections": [
       "Snail Island",
       "Astraulus' Tower"
-    ]
+    ],
+    "location": {
+      "startX": 925,
+      "startZ": -5016,
+      "endX": 1101,
+      "endZ": -4916
+    }
   },
   "GREY RUINS": {
     "name": "Grey Ruins",
@@ -4502,7 +6272,13 @@
     "connections": [
       "Worm Tunnel",
       "Forgotten Town"
-    ]
+    ],
+    "location": {
+      "startX": 477,
+      "startZ": -619,
+      "endX": 683,
+      "endZ": -515
+    }
   },
   "CORKUS MOUNTAIN": {
     "name": "Corkus Mountain",
@@ -4517,7 +6293,13 @@
       "Corkus Countryside",
       "Corkus Docks",
       "Corkus Forest North"
-    ]
+    ],
+    "location": {
+      "startX": -1888,
+      "startZ": -3175,
+      "endX": -1683,
+      "endZ": -2997
+    }
   },
   "BIZARRE PASSAGE": {
     "name": "Bizarre Passage",
@@ -4531,7 +6313,13 @@
     "connections": [
       "Final Step",
       "The Gate"
-    ]
+    ],
+    "location": {
+      "startX": 1187,
+      "startZ": -680,
+      "endX": 1388,
+      "endZ": -530
+    }
   },
   "BURNING AIRSHIP": {
     "name": "Burning Airship",
@@ -4546,7 +6334,13 @@
       "Bandit Cave Upper",
       "Burning Farm",
       "Cinfras Thanos Transition"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -4955,
+      "endX": 107,
+      "endZ": -4859
+    }
   },
   "BLOODY BEACH": {
     "name": "Bloody Beach",
@@ -4562,7 +6356,13 @@
       "Pirate Town",
       "Corkus Outskirts",
       "Volcano Lower"
-    ]
+    ],
+    "location": {
+      "startX": -1376,
+      "startZ": -3426,
+      "endX": -1097,
+      "endZ": -3225
+    }
   },
   "NIVLA WOODS EDGE": {
     "name": "Nivla Woods Edge",
@@ -4579,7 +6379,13 @@
       "Road to Elkurn",
       "North Nivla Woods",
       "Nemract Plains West"
-    ]
+    ],
+    "location": {
+      "startX": -74,
+      "startZ": -1777,
+      "endX": -3,
+      "endZ": -1485
+    }
   },
   "NESAAK TRANSITION": {
     "name": "Nesaak Transition",
@@ -4595,7 +6401,13 @@
       "Desolate Valley",
       "Elkurn",
       "Nesaak Plains North East"
-    ]
+    ],
+    "location": {
+      "startX": 75,
+      "startZ": -1145,
+      "endX": 330,
+      "endZ": -1040
+    }
   },
   "ROAD TO TIME VALLEY": {
     "name": "Road to Time Valley",
@@ -4610,7 +6422,13 @@
       "Nivla Woods Entrance",
       "Nivla Woods",
       "South Nivla Woods"
-    ]
+    ],
+    "location": {
+      "startX": -461,
+      "startZ": -1525,
+      "endX": -359,
+      "endZ": -1412
+    }
   },
   "LIGHT PENINSULA": {
     "name": "Light Peninsula",
@@ -4626,7 +6444,13 @@
       "Tree Island",
       "Volcano Lower",
       "Hobbit River"
-    ]
+    ],
+    "location": {
+      "startX": -950,
+      "startZ": -4420,
+      "endX": -801,
+      "endZ": -4107
+    }
   },
   "SWAMP MOUNTAIN BASE": {
     "name": "Swamp Mountain Base",
@@ -4642,7 +6466,13 @@
       "Swamp Lower",
       "Swamp Plains Basin",
       "Sunspark Camp"
-    ]
+    ],
+    "location": {
+      "startX": -1898,
+      "startZ": -5240,
+      "endX": -1776,
+      "endZ": -5134
+    }
   },
   "LOAMSPROUT CAMP": {
     "name": "Loamsprout Camp",
@@ -4658,7 +6488,13 @@
       "Quartz Mines North West",
       "Orc Road",
       "Sablestone Camp"
-    ]
+    ],
+    "location": {
+      "startX": -1800,
+      "startZ": -4852,
+      "endX": -1670,
+      "endZ": -4684
+    }
   },
   "ELKURN FIELDS": {
     "name": "Elkurn Fields",
@@ -4674,7 +6510,13 @@
       "Time Valley",
       "Elkurn",
       "Road to Elkurn"
-    ]
+    ],
+    "location": {
+      "startX": -357,
+      "startZ": -1325,
+      "endX": -99,
+      "endZ": -1141
+    }
   },
   "NEXUS OF LIGHT": {
     "name": "Nexus of Light",
@@ -4687,7 +6529,13 @@
     },
     "connections": [
       "Azure Frontier"
-    ]
+    ],
+    "location": {
+      "startX": -855,
+      "startZ": -6561,
+      "endX": -645,
+      "endZ": -6384
+    }
   },
   "ALDOREI VALLEY UPPER": {
     "name": "Aldorei Valley Upper",
@@ -4701,7 +6549,13 @@
     "connections": [
       "Aldorei Valley Mid",
       "Aldorei's Waterfall"
-    ]
+    ],
+    "location": {
+      "startX": -557,
+      "startZ": -4656,
+      "endX": -322,
+      "endZ": -4501
+    }
   },
   "JITAK'S FARM": {
     "name": "Jitak's Farm",
@@ -4716,7 +6570,13 @@
       "Gylia Lake North West",
       "Mushroom Hill",
       "Gert Camp"
-    ]
+    ],
+    "location": {
+      "startX": -218,
+      "startZ": -5567,
+      "endX": -122,
+      "endZ": -5430
+    }
   },
   "TWAIN LAKE": {
     "name": "Twain Lake",
@@ -4730,7 +6590,13 @@
     "connections": [
       "Twain Mansion",
       "Nesaak Plains South West"
-    ]
+    ],
+    "location": {
+      "startX": 0,
+      "startZ": -530,
+      "endX": 80,
+      "endZ": -330
+    }
   },
   "HERB CAVE": {
     "name": "Herb Cave",
@@ -4744,7 +6610,13 @@
     "connections": [
       "Great Bridge Jungle",
       "Jungle Lake"
-    ]
+    ],
+    "location": {
+      "startX": -557,
+      "startZ": -876,
+      "endX": -448,
+      "endZ": -813
+    }
   },
   "DURUM ISLES EAST": {
     "name": "Durum Isles East",
@@ -4759,7 +6631,13 @@
       "Mage Island",
       "Durum Isles Center",
       "Cathedral Harbour"
-    ]
+    ],
+    "location": {
+      "startX": 482,
+      "startZ": -2841,
+      "endX": 548,
+      "endZ": -2785
+    }
   },
   "PRE-LIGHT FOREST TRANSITION": {
     "name": "Pre-Light Forest Transition",
@@ -4775,7 +6653,13 @@
       "Goblin Plains East",
       "Llevigar Farm",
       "Quartz Mines North East"
-    ]
+    ],
+    "location": {
+      "startX": -1553,
+      "startZ": -4850,
+      "endX": -1476,
+      "endZ": -4719
+    }
   },
   "ALDOREI'S RIVER": {
     "name": "Aldorei's River",
@@ -4789,7 +6673,13 @@
     "connections": [
       "Aldorei Lowlands",
       "Cinfras"
-    ]
+    ],
+    "location": {
+      "startX": -437,
+      "startZ": -4756,
+      "endX": -338,
+      "endZ": -4656
+    }
   },
   "CLIFFSIDE PASSAGE NORTH": {
     "name": "Cliffside Passage North",
@@ -4803,7 +6693,13 @@
     "connections": [
       "Cliffside Passage",
       "Entrance to Thesead North"
-    ]
+    ],
+    "location": {
+      "startX": 572,
+      "startZ": -4933,
+      "endX": 700,
+      "endZ": -4818
+    }
   },
   "TEMPLE OF LEGENDS": {
     "name": "Temple of Legends",
@@ -4817,7 +6713,13 @@
     "connections": [
       "City of Troms",
       "Jungle Lake"
-    ]
+    ],
+    "location": {
+      "startX": -745,
+      "startZ": -1093,
+      "endX": -631,
+      "endZ": -973
+    }
   },
   "LION LAIR": {
     "name": "Lion Lair",
@@ -4830,7 +6732,13 @@
     },
     "connections": [
       "Bremminglar"
-    ]
+    ],
+    "location": {
+      "startX": 790,
+      "startZ": -2320,
+      "endX": 890,
+      "endZ": -2140
+    }
   },
   "NESAAK VILLAGE": {
     "name": "Nesaak Village",
@@ -4847,7 +6755,13 @@
       "Nesaak Plains North East",
       "Nesaak Plains South West",
       "Nesaak Plains Lower North West"
-    ]
+    ],
+    "location": {
+      "startX": 75,
+      "startZ": -850,
+      "endX": 160,
+      "endZ": -760
+    }
   },
   "SWAMP MOUNTAIN TRANSITION UPPER": {
     "name": "Swamp Mountain Transition Upper",
@@ -4862,7 +6776,13 @@
       "Swamp East Upper",
       "Olux",
       "Swamp Mountain Transition Mid-Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1981,
+      "startZ": -5603,
+      "endX": -1889,
+      "endZ": -5466
+    }
   },
   "LEADIN FORTRESS": {
     "name": "Leadin Fortress",
@@ -4877,7 +6797,13 @@
       "Orc Battlegrounds",
       "Road To Light Forest",
       "Pre-Light Forest Transition"
-    ]
+    ],
+    "location": {
+      "startX": -1403,
+      "startZ": -4869,
+      "endX": -1284,
+      "endZ": -4748
+    }
   },
   "CORRUPTED ROAD": {
     "name": "Corrupted Road",
@@ -4893,7 +6819,13 @@
       "Detlas Far Suburbs",
       "Nether Plains Upper",
       "Elkurn"
-    ]
+    ],
+    "location": {
+      "startX": 22,
+      "startZ": -1479,
+      "endX": 96,
+      "endZ": -1261
+    }
   },
   "NORTH FARMERS VALLEY": {
     "name": "North Farmers Valley",
@@ -4908,7 +6840,13 @@
       "Maltic Coast",
       "South Farmers Valley",
       "Plains Coast"
-    ]
+    ],
+    "location": {
+      "startX": -348,
+      "startZ": -2060,
+      "endX": -254,
+      "endZ": -1954
+    }
   },
   "RUINED HOUSES": {
     "name": "Ruined Houses",
@@ -4923,7 +6861,13 @@
       "Corkus Sea Port",
       "Fallen Factory",
       "Factory Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -1793,
+      "startZ": -2569,
+      "endX": -1684,
+      "endZ": -2453
+    }
   },
   "EMERALD TRAIL": {
     "name": "Emerald Trail",
@@ -4938,7 +6882,13 @@
       "Nivla Woods Entrance",
       "Ragni Main Entrance",
       "Maltic Plains"
-    ]
+    ],
+    "location": {
+      "startX": -615,
+      "startZ": -1652,
+      "endX": -436,
+      "endZ": -1530
+    }
   },
   "HEAVENLY INGRESS": {
     "name": "Heavenly Ingress",
@@ -4952,7 +6902,13 @@
     "connections": [
       "Field of Life",
       "Light Forest South Entrance"
-    ]
+    ],
+    "location": {
+      "startX": -894,
+      "startZ": -6015,
+      "endX": -814,
+      "endZ": -5928
+    }
   },
   "SKY ISLAND ASCENT": {
     "name": "Sky Island Ascent",
@@ -4969,7 +6925,13 @@
       "Sky Falls",
       "Jofash Tunnel",
       "Ahmsord"
-    ]
+    ],
+    "location": {
+      "startX": 1180,
+      "startZ": -4524,
+      "endX": 1379,
+      "endZ": -4355
+    }
   },
   "LUTHO": {
     "name": "Lutho",
@@ -4983,7 +6945,13 @@
     "connections": [
       "Sinister Forest",
       "Paths of Sludge"
-    ]
+    ],
+    "location": {
+      "startX": 936,
+      "startZ": -754,
+      "endX": 1027,
+      "endZ": -654
+    }
   },
   "OLD COAL MINE": {
     "name": "Old Coal Mine",
@@ -4996,7 +6964,13 @@
     },
     "connections": [
       "Kandon Ridge"
-    ]
+    ],
+    "location": {
+      "startX": 719,
+      "startZ": -4900,
+      "endX": 885,
+      "endZ": -4778
+    }
   },
   "DEAD ISLAND SOUTH WEST": {
     "name": "Dead Island South West",
@@ -5012,7 +6986,13 @@
       "Skiens Island",
       "Dead Island North West",
       "Dead Island South East"
-    ]
+    ],
+    "location": {
+      "startX": 745,
+      "startZ": -3920,
+      "endX": 870,
+      "endZ": -3810
+    }
   },
   "JUNGLE MID": {
     "name": "Jungle Mid",
@@ -5027,7 +7007,13 @@
       "Jungle Lower",
       "Jungle Upper",
       "Jungle Lake"
-    ]
+    ],
+    "location": {
+      "startX": -670,
+      "startZ": -780,
+      "endX": -600,
+      "endZ": -610
+    }
   },
   "ALDOREI'S NORTH EXIT": {
     "name": "Aldorei's North Exit",
@@ -5042,7 +7028,13 @@
       "Aldorei Valley South Entrance",
       "Cinfras County Lower",
       "Path To The Arch"
-    ]
+    ],
+    "location": {
+      "startX": -127,
+      "startZ": -4639,
+      "endX": 3,
+      "endZ": -4509
+    }
   },
   "LIGHT FOREST SOUTH ENTRANCE": {
     "name": "Light Forest South Entrance",
@@ -5057,7 +7049,13 @@
       "Heavenly Ingress",
       "Light Forest Entrance",
       "Light Forest West Lower"
-    ]
+    ],
+    "location": {
+      "startX": -1134,
+      "startZ": -4548,
+      "endX": -1038,
+      "endZ": -4426
+    }
   },
   "DESERT UPPER": {
     "name": "Desert Upper",
@@ -5072,7 +7070,13 @@
       "Desert Mid-Upper",
       "Mummy's Tomb",
       "Desert West Upper"
-    ]
+    ],
+    "location": {
+      "startX": 990,
+      "startZ": -2270,
+      "endX": 1195,
+      "endZ": -2120
+    }
   },
   "SOUTHERN OUTPOST": {
     "name": "Southern Outpost",
@@ -5086,7 +7090,13 @@
     "connections": [
       "Legendary Island",
       "Lighthouse Plateau"
-    ]
+    ],
+    "location": {
+      "startX": -1444,
+      "startZ": -2306,
+      "endX": -1258,
+      "endZ": -2204
+    }
   },
   "FACTORY ENTRANCE": {
     "name": "Factory Entrance",
@@ -5102,7 +7112,13 @@
       "Corkus Forest South",
       "Ruined Houses",
       "Corkus City South"
-    ]
+    ],
+    "location": {
+      "startX": -1798,
+      "startZ": -2730,
+      "endX": -1683,
+      "endZ": -2571
+    }
   },
   "THE BEAR ZOO": {
     "name": "The Bear Zoo",
@@ -5116,7 +7132,13 @@
     "connections": [
       "Zhight Island",
       "Rooster Island"
-    ]
+    ],
+    "location": {
+      "startX": -409,
+      "startZ": -2539,
+      "endX": -283,
+      "endZ": -2414
+    }
   },
   "DEAD ISLAND NORTH EAST": {
     "name": "Dead Island North East",
@@ -5131,7 +7153,13 @@
       "Jofash Docks",
       "Dead Island North West",
       "Dead Island South East"
-    ]
+    ],
+    "location": {
+      "startX": 870,
+      "startZ": -4040,
+      "endX": 1000,
+      "endZ": -3920
+    }
   },
   "CHERRY BLOSSOM FOREST": {
     "name": "Cherry Blossom Forest",
@@ -5146,7 +7174,13 @@
       "Hive South",
       "Ranol's Farm",
       "Chained House"
-    ]
+    ],
+    "location": {
+      "startX": 575,
+      "startZ": -5551,
+      "endX": 699,
+      "endZ": -5378
+    }
   },
   "WIZARD TOWER NORTH": {
     "name": "Wizard Tower North",
@@ -5160,7 +7194,13 @@
     "connections": [
       "Krolton's Cave",
       "Bandits Toll"
-    ]
+    ],
+    "location": {
+      "startX": 345,
+      "startZ": -5037,
+      "endX": 438,
+      "endZ": -4966
+    }
   },
   "CANYON OF THE LOST": {
     "name": "Canyon Of The Lost",
@@ -5176,7 +7216,13 @@
       "Valley of the Lost",
       "Kandon-Beda",
       "Cliffside Lake"
-    ]
+    ],
+    "location": {
+      "startX": 443,
+      "startZ": -4566,
+      "endX": 570,
+      "endZ": -4392
+    }
   },
   "RYMEK WEST LOWER": {
     "name": "Rymek West Lower",
@@ -5190,7 +7236,13 @@
     "connections": [
       "Rymek East Lower",
       "Rymek West Mid"
-    ]
+    ],
+    "location": {
+      "startX": 1020,
+      "startZ": -1380,
+      "endX": 1209,
+      "endZ": -1269
+    }
   },
   "CENTRAL ISLANDS": {
     "name": "Central Islands",
@@ -5207,7 +7259,13 @@
       "Sky Island Ascent",
       "Ahmsord Outskirts",
       "Ahmsord"
-    ]
+    ],
+    "location": {
+      "startX": 1183,
+      "startZ": -4718,
+      "endX": 1250,
+      "endZ": -4535
+    }
   },
   "CANYON PATH NORTH WEST": {
     "name": "Canyon Path North West",
@@ -5222,7 +7280,13 @@
       "Canyon Entrance Waterfall",
       "Canyon Path South East",
       "Canyon Path South West"
-    ]
+    ],
+    "location": {
+      "startX": 110,
+      "startZ": -4736,
+      "endX": 194,
+      "endZ": -4651
+    }
   },
   "CANYON WATERFALL MID NORTH": {
     "name": "Canyon Waterfall Mid North",
@@ -5237,7 +7301,13 @@
       "Canyon Fortress",
       "Canyon Mountain South",
       "Canyon Path North Mid"
-    ]
+    ],
+    "location": {
+      "startX": 271,
+      "startZ": -4855,
+      "endX": 337,
+      "endZ": -4741
+    }
   },
   "MILITARY BASE": {
     "name": "Military Base",
@@ -5252,7 +7322,13 @@
       "Military Base Upper",
       "Path To Military Base",
       "Gylia Lake North East"
-    ]
+    ],
+    "location": {
+      "startX": 104,
+      "startZ": -5518,
+      "endX": 166,
+      "endZ": -5393
+    }
   },
   "ICY DESCENT": {
     "name": "Icy Descent",
@@ -5267,7 +7343,13 @@
       "Lusuco",
       "Tower of Ascension",
       "Nesaak Plains South West"
-    ]
+    ],
+    "location": {
+      "startX": -311,
+      "startZ": -496,
+      "endX": -104,
+      "endZ": -358
+    }
   },
   "CANYON PATH SOUTH WEST": {
     "name": "Canyon Path South West",
@@ -5282,7 +7364,13 @@
       "Canyon Lower South East",
       "Canyon Path North West",
       "Canyon Path North Mid"
-    ]
+    ],
+    "location": {
+      "startX": 200,
+      "startZ": -4741,
+      "endX": 265,
+      "endZ": -4652
+    }
   },
   "ALDOREI VALLEY LOWER": {
     "name": "Aldorei Valley Lower",
@@ -5297,7 +7385,13 @@
       "Aldorei Valley West Entrance",
       "Aldorei Valley Mid",
       "Mantis Nest"
-    ]
+    ],
+    "location": {
+      "startX": -714,
+      "startZ": -4499,
+      "endX": -559,
+      "endZ": -4395
+    }
   },
   "SOUTH PIGMEN RAVINES": {
     "name": "South Pigmen Ravines",
@@ -5312,7 +7406,13 @@
       "Pigmen Ravines Entrance",
       "Little Wood",
       "City of Troms"
-    ]
+    ],
+    "location": {
+      "startX": -898,
+      "startZ": -1298,
+      "endX": -678,
+      "endZ": -1221
+    }
   },
   "DESERT LOWER": {
     "name": "Desert Lower",
@@ -5327,7 +7427,13 @@
       "Rymek West Upper",
       "Desert West Lower",
       "Desert Mid-Lower"
-    ]
+    ],
+    "location": {
+      "startX": 1040,
+      "startZ": -1810,
+      "endX": 1210,
+      "endZ": -1680
+    }
   },
   "ABANDONED FARM": {
     "name": "Abandoned Farm",
@@ -5341,7 +7447,13 @@
     "connections": [
       "Pigmen Ravines",
       "Time Valley"
-    ]
+    ],
+    "location": {
+      "startX": -577,
+      "startZ": -1395,
+      "endX": -478,
+      "endZ": -1335
+    }
   },
   "NETHER PLAINS LOWER": {
     "name": "Nether Plains Lower",
@@ -5357,7 +7469,13 @@
       "Desolate Valley",
       "Nesaak Transition",
       "Elkurn"
-    ]
+    ],
+    "location": {
+      "startX": 75,
+      "startZ": -1210,
+      "endX": 325,
+      "endZ": -1145
+    }
   },
   "OLUX": {
     "name": "Olux",
@@ -5373,7 +7491,13 @@
       "Entrance to Olux",
       "Swamp Dark Forest Transition Mid",
       "Swamp Mountain Transition Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1810,
+      "startZ": -5597,
+      "endX": -1668,
+      "endZ": -5397
+    }
   },
   "GELIBORD": {
     "name": "Gelibord",
@@ -5389,7 +7513,13 @@
       "Twisted Housing",
       "Lone Farmstead",
       "Entrance to Kander"
-    ]
+    ],
+    "location": {
+      "startX": -1050,
+      "startZ": -5342,
+      "endX": -958,
+      "endZ": -5244
+    }
   },
   "MINING BASE LOWER": {
     "name": "Mining Base Lower",
@@ -5403,7 +7533,13 @@
     "connections": [
       "Mining Base Upper",
       "Mine Base Plains"
-    ]
+    ],
+    "location": {
+      "startX": 670,
+      "startZ": -1225,
+      "endX": 870,
+      "endZ": -1130
+    }
   },
   "RAGNI NORTH ENTRANCE": {
     "name": "Ragni North Entrance",
@@ -5418,7 +7554,13 @@
       "Ragni North Suburbs",
       "Ragni",
       "Katoa Ranch"
-    ]
+    ],
+    "location": {
+      "startX": -944,
+      "startZ": -1859,
+      "endX": -818,
+      "endZ": -1761
+    }
   },
   "RANOL'S FARM": {
     "name": "Ranol's Farm",
@@ -5433,7 +7575,13 @@
       "Thesead Suburbs",
       "Eltom",
       "Cherry Blossom Forest"
-    ]
+    ],
+    "location": {
+      "startX": 701,
+      "startZ": -5551,
+      "endX": 810,
+      "endZ": -5377
+    }
   },
   "PATH TO THE ARCH": {
     "name": "Path To The Arch",
@@ -5448,7 +7596,13 @@
       "Aldorei's North Exit",
       "Aldorei's Arch",
       "Ghostly Path"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -4641,
+      "endX": 107,
+      "endZ": -4521
+    }
   },
   "LIGHT FOREST NORTH ENTRANCE": {
     "name": "Light Forest North Entrance",
@@ -5463,7 +7617,13 @@
       "Efilim South Plains",
       "Light Forest Entrance",
       "Light Forest West Upper"
-    ]
+    ],
+    "location": {
+      "startX": -1134,
+      "startZ": -4845,
+      "endX": -1030,
+      "endZ": -4708
+    }
   },
   "LIGHT FOREST SOUTH EXIT": {
     "name": "Light Forest South Exit",
@@ -5477,7 +7637,13 @@
     "connections": [
       "Light Forest North Exit",
       "Mantis Nest"
-    ]
+    ],
+    "location": {
+      "startX": -733,
+      "startZ": -4699,
+      "endX": -646,
+      "endZ": -4559
+    }
   },
   "NIVLA WOODS": {
     "name": "Nivla Woods",
@@ -5493,7 +7659,13 @@
       "South Nivla Woods",
       "Nivla Woods Exit",
       "Road to Time Valley"
-    ]
+    ],
+    "location": {
+      "startX": -325,
+      "startZ": -1624,
+      "endX": -196,
+      "endZ": -1460
+    }
   },
   "LUMINOUS PLATEAU": {
     "name": "Luminous Plateau",
@@ -5506,7 +7678,13 @@
     },
     "connections": [
       "Field of Life"
-    ]
+    ],
+    "location": {
+      "startX": -962,
+      "startZ": -6066,
+      "endX": -894,
+      "endZ": -5957
+    }
   },
   "RYMEK EAST LOWER": {
     "name": "Rymek East Lower",
@@ -5520,7 +7698,13 @@
     "connections": [
       "Rymek West Lower",
       "Rymek East Mid"
-    ]
+    ],
+    "location": {
+      "startX": 1210,
+      "startZ": -1390,
+      "endX": 1400,
+      "endZ": -1270
+    }
   },
   "LLEVIGAR PLAINS WEST UPPER": {
     "name": "Llevigar Plains West Upper",
@@ -5535,7 +7719,13 @@
       "Swamp West Lower",
       "Llevigar Plains West Lower",
       "Llevigar Plains East Upper"
-    ]
+    ],
+    "location": {
+      "startX": -2171,
+      "startZ": -5000,
+      "endX": -2060,
+      "endZ": -4912
+    }
   },
   "DESERT MID-LOWER": {
     "name": "Desert Mid-Lower",
@@ -5552,7 +7742,13 @@
       "Desert West Lower",
       "Desert Mid-Upper",
       "Desert East Lower"
-    ]
+    ],
+    "location": {
+      "startX": 1060,
+      "startZ": -1935,
+      "endX": 1210,
+      "endZ": -1810
+    }
   },
   "COASTAL TRAIL": {
     "name": "Coastal Trail",
@@ -5567,7 +7763,13 @@
       "Maltic Coast",
       "Ragni Plains",
       "Maltic"
-    ]
+    ],
+    "location": {
+      "startX": -747,
+      "startZ": -2059,
+      "endX": -565,
+      "endZ": -1946
+    }
   },
   "THANOS EXIT UPPER": {
     "name": "Thanos Exit Upper",
@@ -5584,7 +7786,13 @@
       "Canyon High Path",
       "Hive South",
       "Thanos Exit"
-    ]
+    ],
+    "location": {
+      "startX": 347,
+      "startZ": -5313,
+      "endX": 438,
+      "endZ": -5183
+    }
   },
   "ELKURN": {
     "name": "Elkurn",
@@ -5602,7 +7810,13 @@
       "Road to Elkurn",
       "Nesaak Transition",
       "Nether Plains Lower"
-    ]
+    ],
+    "location": {
+      "startX": -98,
+      "startZ": -1250,
+      "endX": 62,
+      "endZ": -1080
+    }
   },
   "BANDIT CAVE UPPER": {
     "name": "Bandit Cave Upper",
@@ -5615,7 +7829,13 @@
     },
     "connections": [
       "Burning Airship"
-    ]
+    ],
+    "location": {
+      "startX": 111,
+      "startZ": -4956,
+      "endX": 194,
+      "endZ": -4872
+    }
   },
   "LIGHT FOREST EAST MID": {
     "name": "Light Forest East Mid",
@@ -5630,7 +7850,13 @@
       "Light Forest East Lower",
       "Light Forest Canyon",
       "Light Forest West Upper"
-    ]
+    ],
+    "location": {
+      "startX": -926,
+      "startZ": -4839,
+      "endX": -834,
+      "endZ": -4708
+    }
   },
   "CORKUS COUNTRYSIDE": {
     "name": "Corkus Countryside",
@@ -5646,7 +7872,13 @@
       "Avos Temple",
       "Corkus Mountain",
       "Corkus Outskirts"
-    ]
+    ],
+    "location": {
+      "startX": -1680,
+      "startZ": -3191,
+      "endX": -1503,
+      "endZ": -3012
+    }
   },
   "KANDON RIDGE": {
     "name": "Kandon Ridge",
@@ -5662,7 +7894,13 @@
       "Path to Ahmsord Upper",
       "Old Coal Mine",
       "Temple Island"
-    ]
+    ],
+    "location": {
+      "startX": 719,
+      "startZ": -4777,
+      "endX": 885,
+      "endZ": -4640
+    }
   },
   "JUNGLE LOWER": {
     "name": "Jungle Lower",
@@ -5677,7 +7915,13 @@
       "Jungle Mid",
       "Dernel Jungle Lower",
       "Great Bridge Jungle"
-    ]
+    ],
+    "location": {
+      "startX": -600,
+      "startZ": -790,
+      "endX": -515,
+      "endZ": -610
+    }
   },
   "CLIFFSIDE PASSAGE": {
     "name": "Cliffside Passage",
@@ -5691,7 +7935,13 @@
     "connections": [
       "Cliffside Passage North",
       "Cliffside Lake"
-    ]
+    ],
+    "location": {
+      "startX": 572,
+      "startZ": -4817,
+      "endX": 699,
+      "endZ": -4691
+    }
   },
   "CORKUS STATUE": {
     "name": "Corkus Statue",
@@ -5705,7 +7955,13 @@
     "connections": [
       "Corkus Outskirts",
       "Corkus City Mine"
-    ]
+    ],
+    "location": {
+      "startX": -1393,
+      "startZ": -2917,
+      "endX": -1322,
+      "endZ": -2836
+    }
   },
   "HIVE": {
     "name": "Hive",
@@ -5719,7 +7975,13 @@
     "connections": [
       "Thanos Exit Upper",
       "Hive South"
-    ]
+    ],
+    "location": {
+      "startX": 286,
+      "startZ": -5593,
+      "endX": 381,
+      "endZ": -5413
+    }
   },
   "DUJGON NATION": {
     "name": "Dujgon Nation",
@@ -5736,7 +7998,13 @@
       "Dead Island South East",
       "Regular Island",
       "Nodguj Nation"
-    ]
+    ],
+    "location": {
+      "startX": 925,
+      "startZ": -3550,
+      "endX": 1000,
+      "endZ": -3380
+    }
   },
   "CANYON LOWER SOUTH EAST": {
     "name": "Canyon Lower South East",
@@ -5752,7 +8020,13 @@
       "Canyon Upper North West",
       "Canyon Path South West",
       "Canyon Survivor"
-    ]
+    ],
+    "location": {
+      "startX": 199,
+      "startZ": -4649,
+      "endX": 265,
+      "endZ": -4521
+    }
   },
   "SKY FALLS": {
     "name": "Sky Falls",
@@ -5767,7 +8041,13 @@
       "Wybel Island",
       "Sky Island Ascent",
       "Frozen Fort"
-    ]
+    ],
+    "location": {
+      "startX": 1380,
+      "startZ": -4653,
+      "endX": 1466,
+      "endZ": -4458
+    }
   },
   "RODOROC": {
     "name": "Rodoroc",
@@ -5781,7 +8061,13 @@
     "connections": [
       "Crater Descent",
       "Entrance to Rodoroc"
-    ]
+    ],
+    "location": {
+      "startX": 965,
+      "startZ": -5238,
+      "endX": 1200,
+      "endZ": -5067
+    }
   },
   "ALMUJ CITY": {
     "name": "Almuj City",
@@ -5798,7 +8084,13 @@
       "Savannah East Upper",
       "Desert West Upper",
       "Desert Mid-Lower"
-    ]
+    ],
+    "location": {
+      "startX": 840,
+      "startZ": -2060,
+      "endX": 1050,
+      "endZ": -1900
+    }
   },
   "BANDITS TOLL": {
     "name": "Bandits Toll",
@@ -5814,7 +8106,13 @@
       "Wizard Tower North",
       "Cliffside Valley",
       "Thanos Exit Upper"
-    ]
+    ],
+    "location": {
+      "startX": 345,
+      "startZ": -5181,
+      "endX": 439,
+      "endZ": -5038
+    }
   },
   "TOXIC DRIP": {
     "name": "Toxic Drip",
@@ -5829,7 +8127,13 @@
       "Toxic Caves",
       "Paths of Sludge",
       "Gateway to Nothing"
-    ]
+    ],
+    "location": {
+      "startX": 893,
+      "startZ": -992,
+      "endX": 1086,
+      "endZ": -876
+    }
   },
   "CANYON HIGH PATH": {
     "name": "Canyon High Path",
@@ -5844,7 +8148,13 @@
       "Cliffside Waterfall",
       "Thanos Exit Upper",
       "Hive South"
-    ]
+    ],
+    "location": {
+      "startX": 440,
+      "startZ": -5313,
+      "endX": 562,
+      "endZ": -5191
+    }
   },
   "RYMEK EAST UPPER": {
     "name": "Rymek East Upper",
@@ -5859,7 +8169,13 @@
       "Desert East Lower",
       "Rymek East Mid",
       "Rymek West Upper"
-    ]
+    ],
+    "location": {
+      "startX": 1210,
+      "startZ": -1780,
+      "endX": 1479,
+      "endZ": -1579
+    }
   },
   "CINFRAS THANOS TRANSITION": {
     "name": "Cinfras Thanos Transition",
@@ -5875,7 +8191,13 @@
       "Path To Thanos",
       "Cinfras County Mid-Upper",
       "Path To Ozoth's Spire Upper"
-    ]
+    ],
+    "location": {
+      "startX": 35,
+      "startZ": -5046,
+      "endX": 98,
+      "endZ": -4957
+    }
   },
   "FORTRESS NORTH": {
     "name": "Fortress North",
@@ -5891,7 +8213,13 @@
       "Fortress South",
       "Mansion of Insanity",
       "Swamp Dark Forest Transition Lower"
-    ]
+    ],
+    "location": {
+      "startX": -1452,
+      "startZ": -5395,
+      "endX": -1272,
+      "endZ": -5211
+    }
   },
   "SANTA'S HIDEOUT": {
     "name": "Santa's Hideout",
@@ -5906,7 +8234,13 @@
       "Mage Island",
       "Icy Island",
       "Nodguj Nation"
-    ]
+    ],
+    "location": {
+      "startX": 1057,
+      "startZ": -3209,
+      "endX": 1221,
+      "endZ": -3077
+    }
   },
   "PATH TO OZOTH'S SPIRE MID": {
     "name": "Path To Ozoth's Spire Mid",
@@ -5920,7 +8254,13 @@
     "connections": [
       "Path To Ozoth's Spire Upper",
       "Canyon Walk Way"
-    ]
+    ],
+    "location": {
+      "startX": 199,
+      "startZ": -5164,
+      "endX": 260,
+      "endZ": -5042
+    }
   },
   "NIVLA WOODS ENTRANCE": {
     "name": "Nivla Woods Entrance",
@@ -5936,7 +8276,13 @@
       "Road to Time Valley",
       "Emerald Trail",
       "Plains"
-    ]
+    ],
+    "location": {
+      "startX": -435,
+      "startZ": -1652,
+      "endX": -372,
+      "endZ": -1530
+    }
   },
   "PATH TO AHMSORD LOWER": {
     "name": "Path to Ahmsord Lower",
@@ -5951,7 +8297,13 @@
       "Path to Ahmsord Upper",
       "Sky Castle",
       "Ahmsord"
-    ]
+    ],
+    "location": {
+      "startX": 779,
+      "startZ": -4570,
+      "endX": 885,
+      "endZ": -4480
+    }
   },
   "PATH TO AHMSORD UPPER": {
     "name": "Path to Ahmsord Upper",
@@ -5966,7 +8318,13 @@
       "Path to Ahmsord Lower",
       "Kandon Ridge",
       "Ahmsord"
-    ]
+    ],
+    "location": {
+      "startX": 779,
+      "startZ": -4639,
+      "endX": 885,
+      "endZ": -4571
+    }
   },
   "CANYON MOUNTAIN SOUTH": {
     "name": "Canyon Mountain South",
@@ -5980,7 +8338,13 @@
     "connections": [
       "Canyon Waterfall Mid North",
       "Krolton's Cave"
-    ]
+    ],
+    "location": {
+      "startX": 271,
+      "startZ": -4946,
+      "endX": 337,
+      "endZ": -4857
+    }
   },
   "AIR TEMPLE LOWER": {
     "name": "Air Temple Lower",
@@ -5995,7 +8359,13 @@
       "Krolton's Cave",
       "Air Temple Upper",
       "Cliffside Valley"
-    ]
+    ],
+    "location": {
+      "startX": 445,
+      "startZ": -4972,
+      "endX": 563,
+      "endZ": -4835
+    }
   },
   "FALLEN VILLAGE": {
     "name": "Fallen Village",
@@ -6011,7 +8381,13 @@
       "Gylia Lake North West",
       "Mushroom Hill",
       "Fungal Grove"
-    ]
+    ],
+    "location": {
+      "startX": -392,
+      "startZ": -5409,
+      "endX": -288,
+      "endZ": -5294
+    }
   },
   "ENTRANCE TO KANDER": {
     "name": "Entrance to Kander",
@@ -6028,7 +8404,13 @@
       "Path to Talor",
       "Viscera Pits West",
       "Twisted Ridge"
-    ]
+    ],
+    "location": {
+      "startX": -896,
+      "startZ": -5408,
+      "endX": -792,
+      "endZ": -5233
+    }
   },
   "THANOS EXIT": {
     "name": "Thanos Exit",
@@ -6041,7 +8423,13 @@
     },
     "connections": [
       "Thanos Exit Upper"
-    ]
+    ],
+    "location": {
+      "startX": 262,
+      "startZ": -5310,
+      "endX": 338,
+      "endZ": -5168
+    }
   },
   "NEMRACT ROAD": {
     "name": "Nemract Road",
@@ -6059,7 +8447,13 @@
       "Nemract Plains East",
       "Ancient Nemract",
       "Nemract Cathedral"
-    ]
+    ],
+    "location": {
+      "startX": 20,
+      "startZ": -2065,
+      "endX": 151,
+      "endZ": -1871
+    }
   },
   "ANGEL REFUGE": {
     "name": "Angel Refuge",
@@ -6073,7 +8467,13 @@
     "connections": [
       "Molten Reach",
       "Ahmsord Outskirts"
-    ]
+    ],
+    "location": {
+      "startX": 1354,
+      "startZ": -4877,
+      "endX": 1484,
+      "endZ": -4727
+    }
   },
   "EFILIM VILLAGE": {
     "name": "Efilim Village",
@@ -6088,7 +8488,13 @@
       "Efilim East Plains",
       "Twisted Housing",
       "Efilim South Plains"
-    ]
+    ],
+    "location": {
+      "startX": -1134,
+      "startZ": -5078,
+      "endX": -1020,
+      "endZ": -4943
+    }
   },
   "NESAAK PLAINS MID NORTH WEST": {
     "name": "Nesaak Plains Mid North West",
@@ -6102,7 +8508,13 @@
     "connections": [
       "Nesaak Plains Upper North West",
       "Nesaak Plains Lower North West"
-    ]
+    ],
+    "location": {
+      "startX": -180,
+      "startZ": -980,
+      "endX": -140,
+      "endZ": -860
+    }
   },
   "NEMRACT CATHEDRAL": {
     "name": "Nemract Cathedral",
@@ -6118,7 +8530,13 @@
       "Cathedral Harbour",
       "Nemract Road",
       "Ancient Nemract"
-    ]
+    ],
+    "location": {
+      "startX": 270,
+      "startZ": -2180,
+      "endX": 385,
+      "endZ": -2030
+    }
   },
   "RAGNI PLAINS": {
     "name": "Ragni Plains",
@@ -6134,7 +8552,13 @@
       "Maltic",
       "Coastal Trail",
       "Ragni East Suburbs"
-    ]
+    ],
+    "location": {
+      "startX": -747,
+      "startZ": -1945,
+      "endX": -605,
+      "endZ": -1776
+    }
   },
   "OLD CROSSROADS SOUTH": {
     "name": "Old Crossroads South",
@@ -6151,7 +8575,13 @@
       "Old Crossroads North",
       "Cinfras Outskirts",
       "Path to Talor"
-    ]
+    ],
+    "location": {
+      "startX": -648,
+      "startZ": -5311,
+      "endX": -567,
+      "endZ": -5234
+    }
   },
   "LITTLE WOOD": {
     "name": "Little Wood",
@@ -6165,7 +8595,13 @@
     "connections": [
       "Time Valley",
       "South Pigmen Ravines"
-    ]
+    ],
+    "location": {
+      "startX": -812,
+      "startZ": -1177,
+      "endX": -636,
+      "endZ": -1094
+    }
   },
   "_default": {
     "name": "ERROR",
@@ -6176,6 +8612,12 @@
       "wood": 0,
       "fish": 0
     },
-    "connections": []
+    "connections": [],
+    "location": {
+      "startX": 1000,
+      "startZ": 1000,
+      "endX": 1024,
+      "endZ": 1024
+    }
   }
 }
