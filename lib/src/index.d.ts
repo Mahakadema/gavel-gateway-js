@@ -2586,7 +2586,7 @@ export class World {
 }
 
 /**
- * Represents a list of values
+ * Represents a list of API objects
  */
 export class List<T> extends BaseAPIObject {
     private constructor(arr: T[], params: Object);
