@@ -27,7 +27,7 @@ export function flushCache(): number
  * @param options The options for the request, or a route to request
  * @category Endpoint
  */
-export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promise<JSON>
+export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promise<any>
 
 /**
  * Fetches a player from the API
