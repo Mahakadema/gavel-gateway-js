@@ -2240,11 +2240,8 @@ export class Guild extends BaseAPIObject {
      */
     public level: number;
     /**
-     * The xp percentage of the 1.19 requirement of the guilds current level
+     * The level progress of the guilds current level
      * as a number between 0 and 1
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">Calculates like <code>current_xp /requirement_1_19</code>.
-     * </div>
      */
     public xp: number;
     /**
@@ -3164,33 +3161,32 @@ export interface BannerData {
 
 /**
  * A guild level in friendly format
- * <div class="noteBox warning" style="display:flex">
- *     <img src="../../assets/warning.png", class="noteBoxIcon"><div>The values in this are based on API science and statistic analysis. That means they are decently accurate, but not <i>exact</i>. Always keep in mind that these values are merely approximations.</div>
- * </div>
  */
 export interface GuildXPInterpretation {
     /**
-     * If this is `false`, all other properties are `null`
+     * If this is `false`, all other properties are `null`, should never be `false`, unless the library hasn't updated in years
      */
     isSafe: boolean,
     /**
-     * The maximum error the xp values may be off by, divide `xpRaw` and `xpPct` by this number in order to get the the lower bound for the xp value
+     * The maximum error the xp values may be off by, divide `xpRaw` by this number in order to get the the lower bound for the xp value
+     * @deprecated will be removed in the next major release
      */
     maxErrorLower: number,
     /**
-     * The maximum error the xp values may be off by, multiply `xpRaw` and `xpPct` by this number in order to get the upper bound for the xp value
+     * The maximum error the xp values may be off by, multiply `xpRaw` by this number in order to get the upper bound for the xp value
+     * @deprecated will be removed in the next major release
      */
     maxErrorUpper: number,
     /**
-     * The actual progression of the guild towards the next guild level as a number between 0 and 1
+     * The progression of the guild towards the next guild level as a number between 0 and 1
      */
     xpPct: number,
     /**
-     * The raw amount of XP of the guild at this moment
+     * The approximate raw amount of XP of the guild at this moment, this rounds down to the value of the nearest percent
      */
     xpRaw: number,
     /**
-     * The raw amount of XP required for this level
+     * The total raw amount of XP required for this level
      */
     required: number
 }
