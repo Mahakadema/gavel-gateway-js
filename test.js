@@ -461,6 +461,28 @@ Testing Name Search
 
     console.log(`
 #####################################
+Testing Map Locations
+#####################################
+`);
+
+    const mapLocations = await api.fetchMapLocations();
+    console.log(mapLocations.list.slice(-10));
+
+    console.log(`
+#####################################
+Testing Self Location
+#####################################
+`);
+
+    const party = await api.fetchMyLocation();
+    console.log(party);
+    if (party) {
+        const self = await party.self.fetch();
+        console.log(self.name, self.mobsKilled);
+    }
+
+    console.log(`
+#####################################
 Testing config functionality
 #####################################
 `);

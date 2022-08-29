@@ -194,6 +194,29 @@ export function fetchOnlinePlayersSum(options?: RequestOptions): Promise<OnlineP
 export function fetchNames(options: NameSearchRequestOptions | string): Promise<NameSearch>
 
 /**
+ * Fetches the coordinates of important locations from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchMapLocations(options: RequestOptions): Promise<List<MapLocation>>
+
+/**
+ * Fetches the coordinates and health info for the locally logged in player from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * <div class="noteBox note" style="display:flex">
+ *     <img src="../assets/note.png", class="noteBoxIcon">Which player to return info for is based on the IP used to cast this request and the IP logged into the Minecraft server.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchMyLocation(options: RequestOptions): Promise<PlayerParty>
+
+/**
  * A collection of static data that is used within
  * the library, but can also be used externally
  */
@@ -223,7 +246,7 @@ export interface LocalData {
     /**
      * Information on sprites commonly used by wynncraft items
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../assets/note.png", class="noteBoxIcon">Not all sprite are listed here. Ingredient sprites and some special items (currently only "Wybel Paw") don't use sprites from here.
+     *     <img src="../assets/note.png", class="noteBoxIcon">Not all sprites are listed here. Ingredient sprites and some special items (currently only "Wybel Paw") don't use sprites from here.
      * </div>
      */
     sprites: Map<ItemSpriteName, Sprite>,
@@ -1850,6 +1873,99 @@ export class NameSearch extends BaseAPIObject {
 }
 
 /**
+ * Represents an important location on the Wynncraft map
+ */
+export class MapLocation {
+    private constructor(v: Object);
+
+    /**
+     * The name of the location
+     */
+    public name: MapLocationName;
+    /**
+     * The icon the Wynncraft map uses to display this location
+     */
+    public icon: MapLocationIcon;
+    /**
+     * The X coordinate of the location
+     */
+    public x: number;
+    /**
+     * The Y coordinate of the location
+     */
+    public y: number;
+    /**
+     * The Z coordinate of the location
+     */
+    public z: number;
+}
+
+/**
+ * Represents the party information for a specific player
+ */
+export class PlayerParty extends BaseAPIObject {
+    private constructor(data: any);
+
+    /**
+     * The world the player is currently logged into
+     */
+    public world: string;
+    /**
+     * The player to whom this request is bound
+     */
+    public self: PlayerPartyMember;
+    /**
+     * The members of the player's party. This includes all guild members and friends currently logged into the same world, along with all party members of the player, regardless of whether they share a world.
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">The connected player themselves is not included in this list.
+     * </div>
+     */
+    public party: PlayerPartyMember[];
+}
+
+export class PlayerPartyMember {
+    private constructor(v: any);
+
+    /**
+     * The name of the player
+     */
+    public name: string;
+    /**
+     * The UUID of the player
+     */
+    public uuid: string;
+    /**
+     * The X coordinate of the player
+     */
+    public x: number;
+    /**
+     * The Y coordinate of the player
+     */
+    public y: number;
+    /**
+     * The Z coordinate of the player
+     */
+    public z: number;
+    /**
+     * The maximum health of the player
+     */
+    public maxHealth: number;
+    /**
+     * The current health of the player
+     */
+    public health: number;
+
+    /**
+     * Fetches the player stats of the party member
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">This method causes API requests.
+     * </div>
+     * @param options The options for the request; the `player` field has no effect
+     */
+    public fetch(options?: PlayerRequestOptions): Promise<Player>;
+}
+
+/**
  * Represents an Item from the API
  */
 export class Item {
@@ -3190,6 +3306,445 @@ export interface GuildXPInterpretation {
      */
     required: number
 }
+
+/**
+ * A name for a map location
+ */
+export type MapLocationName =
+    | "Decrepit Sewers Dungeon"
+    | "Infested Pit Dungeon"
+    | "Lost Sanctuary Dungeon"
+    | "Underworld Crypt Dungeon"
+    | "Sand-Swept Tomb Dungeon"
+    | "Ice Barrows Dungeon"
+    | "Undergrowth Ruins Dungeon"
+    | "Galleon's Graveyard Dungeon"
+    | "Fallen Factory Dungeon"
+    | "Eldritch Outlook Dungeon"
+    | "Corrupted Decrepit Sewers Dungeon"
+    | "Corrupted Infested Pit Dungeon"
+    | "Corrupted Lost Sanctuary Dungeon"
+    | "Corrupted Underworld Crypt Dungeon"
+    | "Corrupted Sand-Swept Tomb Dungeon"
+    | "Corrupted Ice Barrows Dungeon"
+    | "Corrupted Undergrowth Ruins Dungeon"
+
+    | "A Grave Mistake"
+    | "A Marauder's Dues"
+    | "A Sandy Scandal"
+    | "Acquiring Credentials"
+    | "Aldorei's Secret Part I"
+    | "Aldorei's Secret Part II"
+    | "An Iron Heart Part I"
+    | "An Iron Heart Part II"
+    | "Arachnids' Ascent"
+    | "Beyond the Grave"
+    | "Blazing Retribution"
+    | "Canyon Condor"
+    | "Clearing the Camps"
+    | "Corrupted Betrayal"
+    | "Cowfusion"
+    | "Craftmas Chaos"
+    | "Creeper Infiltration"
+    | "Death Whistle"
+    | "Deja Vu"
+    | "Desperate Metal"
+    | "Dwarves and Doguns Part I"
+    | "Dwarves and Doguns Part II"
+    | "Dwarves and Doguns Part III"
+    | "Dwarves and Doguns Part IV"
+    | "Dwelling Walls"
+    | "Elemental Exercise"
+    | "Enter the Dojo"
+    | "Fallen Delivery"
+    | "Fantastic Voyage"
+    | "Fate of the Fallen"
+    | "Flight in Distress"
+    | "From the Bottom"
+    | "From the Mountains"
+    | "General's Orders"
+    | "Grand Youth"
+    | "Green Gloop"
+    | "Macabre Masquerade ''Hallowynn 2014''"
+    | "Haven Antiquity"
+    | "Realm of Light III - A Headless History"
+    | "Heart of Llevigar"
+    | "Infested Plants"
+    | "King's Recruit"
+    | "Lava Springs"
+    | "Lazarus Pit"
+    | "Lost in the Jungle"
+    | "Lost Royalty"
+    | "Lost Soles"
+    | "The Maiden Tower"
+    | "Master Piece"
+    | "Meaningful Holiday"
+    | "Memory Paranoia"
+    | "Mixed Feelings"
+    | "Murder Mystery"
+    | "Mushroom Man"
+    | "One Thousand Meters Under"
+    | "Out of my Mind"
+    | "Pirate's Trove"
+    | "Pit of the Dead"
+    | "Poisoning the Pest"
+    | "Potion Making"
+    | "Purple and Blue"
+    | "Recipe For Disaster"
+    | "Reclaiming the House"
+    | "Recover the Past"
+    | "Redbeard's Booty"
+    | "Rise of the Quartron"
+    | "Royal Trials"
+    | "???"
+    | "The Sewers of Ragni"
+    | "Shattered Minds"
+    | "Tempo Town Trouble"
+    | "The Belly of the Beast"
+    | "The Bigger Picture"
+    | "The Canary Calls"
+    | "The Canyon Guides"
+    | "The Corrupted Village"
+    | "The Dark Descent"
+    | "The Envoy Part I"
+    | "The Envoy Part II"
+    | "The Fortuneteller"
+    | "The Hero of Gavel"
+    | "The Hidden City"
+    | "The Hunger of Gerts Part 1"
+    | "The Hunger of Gerts Part 2"
+    | "The Lost"
+    | "The Mercenary"
+    | "The Order of the Grook"
+    | "The Qira Hive"
+    | "The Shadow of the Beast"
+    | "The Thanos Vaults"
+    | "The Ultimate Weapon"
+    | "Tower of Ascension"
+    | "Tribal Aggression"
+    | "Troubled Tribesmen"
+    | "Tunnel Trouble"
+    | "UndericeÀ"
+    | "WynnExcavation Site A"
+    | "WynnExcavation Site B"
+    | "WynnExcavation Site C"
+    | "WynnExcavation Site D"
+    | "Zhight Island"
+    | "A Journey Beyond"
+    | "A Journey Further"
+    | "A Hunter's Calling"
+    | "Frost Bite"
+    | "Kingdom of Sand"
+    | "Misadventure on the Sea"
+    | "Point of No Return"
+    | "Star Thief"
+    | "Studying the Corrupt"
+    | "The Olmic Rune"
+    | "Crop Failure"
+    | "Realm of Light IV - Finding the Light"
+    | "Forbidden Prison"
+    | "Lexdale Witch Trials"
+    | "Realm of Light V - The Realm of Light"
+    | "The Feathers Fly Part I"
+    | "The Feathers Fly Part II"
+    | "Realm of Light I - The Worm Holes"
+    | "Realm of Light II - Taproot"
+
+    | "Mini-Quest - Slay Mooshrooms"
+    | "Mini-Quest - Gather Barley"
+    | "Mini-Quest - Gather Birch Logs"
+    | "Mini-Quest - Gather Granite"
+    | "Mini-Quest - Gather Trout"
+    | "Mini-Quest - Gather Gold"
+    | "Mini-Quest - Gather Oats"
+    | "Mini-Quest - Gather Salmon"
+    | "Mini-Quest - Gather Willow Logs"
+    | "Mini-Quest - Slay Skeletons"
+    | "Mini-Quest - Gather Gold II"
+    | "Mini-Quest - Gather Oats II"
+    | "Mini-Quest - Gather Salmon II"
+    | "Mini-Quest - Gather Willow Logs II"
+    | "Mini-Quest - Slay Scarabs"
+    | "Mini-Quest - Gather Acacia Logs"
+    | "Mini-Quest - Gather Carp"
+    | "Mini-Quest - Gather Malt"
+    | "Mini-Quest - Gather Sandstone"
+    | "Mini-Quest - Slay Coyotes"
+    | "Mini-Quest - Gather Acacia Logs II"
+    | "Mini-Quest - Gather Carp II"
+    | "Mini-Quest - Gather Malt II"
+    | "Mini-Quest - Gather Sandstone II"
+    | "Mini-Quest - Slay Creatures of Nesaak Forest"
+    | "Mini-Quest - Gather Hops"
+    | "Mini-Quest - Gather Icefish"
+    | "Mini-Quest - Gather Iron"
+    | "Mini-Quest - Gather Spruce Logs"
+    | "Mini-Quest - Slay Orcs"
+    | "Mini-Quest - Gather Hops II"
+    | "Mini-Quest - Gather Icefish II"
+    | "Mini-Quest - Gather Iron II"
+    | "Mini-Quest - Gather Spruce Logs II"
+    | "Mini-Quest - Slay Slimes"
+    | "Mini-Quest - Gather Jungle Logs"
+    | "Mini-Quest - Gather Piranhas"
+    | "Mini-Quest - Gather Rye"
+    | "Mini-Quest - Gather Silver"
+    | "Mini-Quest - Slay Lizardmen"
+    | "Mini-Quest - Gather Jungle Logs II"
+    | "Mini-Quest - Gather Piranhas II"
+    | "Mini-Quest - Gather Rye II"
+    | "Mini-Quest - Gather Silver II"
+    | "Mini-Quest - Slay Spiders"
+    | "Mini-Quest - Slay Wraiths & Phantasms"
+    | "Mini-Quest - Gather Cobalt"
+    | "Mini-Quest - Gather Dark Logs"
+    | "Mini-Quest - Gather Koi"
+    | "Mini-Quest - Gather Millet"
+    | "Mini-Quest - Gather Cobalt II"
+    | "Mini-Quest - Gather Dark Logs II"
+    | "Mini-Quest - Gather Koi II"
+    | "Mini-Quest - Gather Millet II"
+    | "Mini-Quest - Slay Idols"
+    | "Mini-Quest - Gather Cobalt III"
+    | "Mini-Quest - Gather Dark Logs III"
+    | "Mini-Quest - Gather Koi III"
+    | "Mini-Quest - Gather Millet III"
+    | "Mini-Quest - Slay Dead Villagers"
+    | "Mini-Quest - Gather Decay Roots"
+    | "Mini-Quest - Gather Gylia Fish"
+    | "Mini-Quest - Gather Kanderstone"
+    | "Mini-Quest - Gather Light Logs"
+    | "Mini-Quest - Gather Decay Roots II"
+    | "Mini-Quest - Gather Gylia Fish II"
+    | "Mini-Quest - Gather Kanderstone II"
+    | "Mini-Quest - Gather Light Logs II"
+    | "Mini-Quest - Slay Myconids"
+    | "Mini-Quest - Slay Weirds"
+    | "Mini-Quest - Gather Decay Roots III"
+    | "Mini-Quest - Gather Gylia Fish III"
+    | "Mini-Quest - Gather Kanderstone III"
+    | "Mini-Quest - Gather Light Logs III"
+    | "Mini-Quest - Slay Felrocs"
+    | "Mini-Quest - Slay Hobgoblins"
+    | "Mini-Quest - Gather Bass"
+    | "Mini-Quest - Gather Diamonds"
+    | "Mini-Quest - Gather Pine Logs"
+    | "Mini-Quest - Gather Rice"
+    | "Mini-Quest - Gather Bass II"
+    | "Mini-Quest - Gather Diamonds II"
+    | "Mini-Quest - Gather Pine Logs II"
+    | "Mini-Quest - Gather Rice II"
+    | "Mini-Quest - Slay Jinkos"
+    | "Mini-Quest - Slay Robots"
+    | "Mini-Quest - Gather Bass III"
+    | "Mini-Quest - Gather Diamonds III"
+    | "Mini-Quest - Gather Pine Logs III"
+    | "Mini-Quest - Gather Rice III"
+    | "Mini-Quest - Gather Bamboo"
+    | "Mini-Quest - Gather Bass IV"
+    | "Mini-Quest - Gather Diamonds IV"
+    | "Mini-Quest - Gather Rice IV"
+    | "Mini-Quest - Slay Ailuropodas"
+    | "Mini-Quest - Gather Copper"
+    | "Mini-Quest - Gather Gudgeon"
+    | "Mini-Quest - Gather Oak Logs"
+    | "Mini-Quest - Gather Wheat"
+    | "Mini-Quest - Slay Pernix Monkeys"
+    | "Mini-Quest - Gather Avo Logs"
+    | "Mini-Quest - Gather Molten Eel"
+    | "Mini-Quest - Gather Molten Ore"
+    | "Mini-Quest - Gather Sorghum"
+    | "Mini-Quest - Slay Magma Entities"
+    | "Mini-Quest - Slay Frosted Guards & Cryostone Golems"
+    | "Mini-Quest - Gather Avo Logs II"
+    | "Mini-Quest - Gather Molten Eel II"
+    | "Mini-Quest - Gather Molten Ore II"
+    | "Mini-Quest - Gather Sorghum II"
+    | "Mini-Quest - Slay Ifrits"
+    | "Mini-Quest - Slay Astrochelys Manis"
+    | "Mini-Quest - Gather Avo Logs III"
+    | "Mini-Quest - Gather Molten Eel III"
+    | "Mini-Quest - Gather Molten Ore III"
+    | "Mini-Quest - Gather Sorghum III"
+    | "Mini-Quest - Slay Creatures of the Void"
+    | "Mini-Quest - Slay Conures"
+    | "Mini-Quest - Gather Avo Logs IV"
+    | "Mini-Quest - Gather Molten Eel IV"
+    | "Mini-Quest - Gather Molten Ore IV"
+    | "Mini-Quest - Gather Sorghum IV"
+    | "Mini-Quest - Slay Angels"
+    | "Mini-Quest - Slay Dragonlings"
+
+    | "Nether Portal"
+    | "Fast Travel"
+    | "Light's Secret"
+    | "Uth Shrine"
+    | "Ultimate Discovery"
+    | "Corrupted Dungeons"
+    | "Guild Master"
+    | "Grind Spot"
+    | "Cave"
+    | "Tol Altar"
+    | "Boss Altar"
+    | "Orphion's Nexus of Light"
+    | "The Canyon Colossus"
+    | "Nest of the Grootslangs"
+
+    | "Trade Market"
+    | "Blacksmith"
+    | "Identifier"
+    | "Powder Master"
+
+    | "Key Forge Merchant"
+    | "Dungeon Scroll Merchant"
+    | "Emerald Merchant"
+    | "Armour Merchant"
+    | "Weapon Merchant"
+    | "Junk Merchant"
+    | "Boat Merchant"
+    | "Treasure Merchant"
+    | "Wynnter 2016 Merchant"
+    | "Fish Merchant"
+    | "Scroll Merchant"
+    | "Bucket Merchant"
+    | "Egg Merchant"
+    | "Emeralds Merchant"
+    | "Potion Merchant"
+    | "Pink Wool Merchant"
+    | "Feather Merchant"
+    | "Mushroom Merchant"
+    | "Water Merchant"
+    | "Potato Merchant"
+    | "Apple Merchant"
+    | "Book Merchant"
+    | "Necromancy Merchant"
+    | "Quartz Merchant"
+    | "Melon Merchant"
+    | "Cobblestone Merchant"
+    | "Shifty Merchant"
+    | "Gold Dealer Merchant"
+    | "Artefact Merchant"
+    | "Art Merchant"
+    | "King's Merchant"
+    | "Liquid Merchant"
+    | "Clock Merchant"
+    | "Dungeon Merchant"
+    | "Suri Merchant"
+    | "Stiba Merchant"
+    | "Accessory Merchant"
+    | "Rymek Dealer Merchant"
+    | "Gert Merchant"
+    | "Tribal Merchant"
+    | "Explosives Merchant"
+    | "Black Market Merchant"
+    | "Seaskipper Merchant"
+    | "Seasail Merchant"
+    | "Fabrics Merchant"
+    | "Squid Merchant"
+    | "Siegfried Fan Item Merchant"
+    | "Hook Merchant"
+    | "Collector Merchant"
+    | "Recipe Merchant"
+    | "Wig Merchant"
+    | "Tribal Armour Merchant"
+    | "Tribal Weapon Merchant"
+    | "Charmcrafter Merchant"
+    | "Mask Merchant"
+    | "Diamond Rewards Merchant"
+    | "Exchange Merchant"
+    | "Powder Merchant"
+    | "Craftmas Merchant"
+    | "Bronze Rewards Merchant"
+    | "Silver Rewards Merchant"
+    | "Gold Rewards Merchant"
+    | "Golden Fish Merchant"
+    | "Glassblowing Merchant"
+    | "Wynnter 2017 Merchant"
+    | "Souvenir Merchant"
+    | "Horse Merchant"
+    | "Ticket Merchant"
+    | "Tool Merchant"
+    | "Bowl Merchant"
+    | "Hive Thunder Merchant"
+    | "Transmutation Merchant"
+    | "Hive Air Merchant"
+    | "Hive Earth Merchant"
+    | "Hive Water Merchant"
+    | "Hive Fire Merchant"
+    | "Master Trinket Merchant"
+    | "Master Armour Merchant"
+    | "Master Weapon Merchant"
+    | "Zhight Exchange Merchant"
+    | "Zhight Brew Merchant"
+    | "Brew-it-Yourself Merchant"
+    | "Treasure Prize Merchant"
+    | "Gift Merchant"
+    | "Literature Merchant"
+    | "Ingredient Merchant"
+    | "Tour Pass Merchant"
+    | "Reset Scroll Merchant"
+    | "Miner Pass Merchant"
+    | "Mysterious Merchant"
+
+    | "Weaponsmithing Station"
+    | "Armouring Station"
+    | "Alchemism Station"
+    | "Jeweling Station"
+    | "Tailoring Station"
+    | "Scribing Station"
+    | "Cooking Station"
+    | "Woodworking Station"
+    | "Tailor Station";
+
+/**
+ * An icon for a map location
+ */
+export type MapLocationIcon =
+    | "Content_Dungeon.png"
+    | "Content_CorruptedDungeon.png"
+    | "Content_Quest.png"
+    | "Content_Miniquest.png"
+    | "Content_UltimateDiscovery.png"
+    | "Content_GrindSpot.png"
+    | "Content_Cave.png"
+    | "Content_BossAltar.png"
+    | "Content_Raid.png"
+
+    | "NPC_GuildMaster.png"
+    | "NPC_TradeMarket.png"
+    | "NPC_Blacksmith.png"
+    | "NPC_ItemIdentifier.png"
+    | "NPC_PowderMaster.png"
+
+    | "Merchant_KeyForge.png"
+    | "Merchant_Scroll.png"
+    | "Merchant_Emerald.png"
+    | "Merchant_Armour.png"
+    | "Merchant_Weapon.png"
+    | "Merchant_Other.png"
+    | "Merchant_Potion.png"
+    | "Merchant_Liquid.png"
+    | "Merchant_Dungeon.png"
+    | "Merchant_Accessory.png"
+    | "Merchant_Seasail.png"
+    | "Merchant_Horse.png"
+    | "Merchant_Tool.png"
+    | "painting.png"
+    | "tnt.png"
+
+    | "Profession_Weaponsmithing.png"
+    | "Profession_Armouring.png"
+    | "Profession_Alchemism.png"
+    | "Profession_Jeweling.png"
+    | "Profession_Tailoring.png"
+    | "Profession_Scribing.png"
+    | "Profession_Cooking.png"
+    | "Profession_Woodworking.png"
+
+    | "Special_RootsOfCorruption.png"
+    | "Special_FastTravel.png"
+    | "Special_LightRealm.png"
+    | "Special_Rune.png";
 
 /**
  * Stats for items,
