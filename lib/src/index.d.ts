@@ -2122,10 +2122,6 @@ export class PlayerClass {
      */
     public mobsKilled: number;
     /**
-     * The amount of chests opened on this class
-     */
-    public chestsOpened: number;
-    /**
      * The amount of logins on this class
      */
     public logins: number;
@@ -2225,10 +2221,6 @@ export class Player extends BaseAPIObject {
      * The classes of the player
      */
     public classes: PlayerClass[];
-    /**
-     * The total chest count of the player
-     */
-    public chestsOpened: number;
     /**
      * The total amount of blocks travelled by the player
      * <div class="noteBox note" style="display:flex">
