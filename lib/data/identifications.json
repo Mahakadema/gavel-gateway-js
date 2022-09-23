@@ -31,61 +31,181 @@
     },
     {
         "name": "MAIN_ATTACK_DAMAGE_PERCENT",
-        "itemApiName": "damageBonus",
+        "itemApiName": "mainAttackDamageBonus",
         "ingredientApiName": "DAMAGEBONUS",
         "static": false
     },
     {
         "name": "MAIN_ATTACK_DAMAGE_RAW",
-        "itemApiName": "damageBonusRaw",
+        "itemApiName": "mainAttackDamageBonusRaw",
         "ingredientApiName": "DAMAGEBONUSRAW",
         "static": false
     },
     {
         "name": "SPELL_DAMAGE_PERCENT",
-        "itemApiName": "spellDamage",
+        "itemApiName": "spellDamageBonus",
         "ingredientApiName": "SPELLDAMAGE",
         "static": false
     },
     {
         "name": "SPELL_DAMAGE_RAW",
-        "itemApiName": "spellDamageRaw",
+        "itemApiName": "spellDamageBonusRaw",
         "ingredientApiName": "SPELLDAMAGERAW",
         "static": false
     },
     {
         "name": "RAINBOW_SPELL_DAMAGE_RAW",
-        "itemApiName": "rainbowSpellDamageRaw",
+        "itemApiName": "spellElementalDamageBonusRaw",
         "ingredientApiName": "RAINBOWSPELLDAMAGERAW",
         "static": false
     },
     {
+        "name": "SPELL_EARTH_DAMAGE_PERCENT",
+        "itemApiName": "spellEarthDamageBonus",
+        "ingredientApiName": "SPELLEARTHDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_THUNDER_DAMAGE_PERCENT",
+        "itemApiName": "spellThunderDamageBonus",
+        "ingredientApiName": "SPELLTHUNDERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_WATER_DAMAGE_PERCENT",
+        "itemApiName": "spellWaterDamageBonus",
+        "ingredientApiName": "SPELLWATERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_FIRE_DAMAGE_PERCENT",
+        "itemApiName": "spellFireDamageBonus",
+        "ingredientApiName": "SPELLFIREDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_AIR_DAMAGE_PERCENT",
+        "itemApiName": "spellAirDamageBonus",
+        "ingredientApiName": "SPELLAIRDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_EARTH_DAMAGE_RAW",
+        "itemApiName": "spellEarthDamageBonusRaw",
+        "ingredientApiName": "SPELLEARTHDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_THUNDER_DAMAGE_RAW",
+        "itemApiName": "spellThunderDamageBonusRaw",
+        "ingredientApiName": "SPELLTHUNDERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_WATER_DAMAGE_RAW",
+        "itemApiName": "spellWaterDamageBonusRaw",
+        "ingredientApiName": "SPELLWATERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_FIRE_DAMAGE_RAW",
+        "itemApiName": "spellFireDamageBonusRaw",
+        "ingredientApiName": "SPELLFIREDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_AIR_DAMAGE_RAW",
+        "itemApiName": "spellAirDamageBonusRaw",
+        "ingredientApiName": "SPELLAIRDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_EARTH_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackEarthDamageBonus",
+        "ingredientApiName": "MAINATTACKEARTHDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_THUNDER_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackThunderDamageBonus",
+        "ingredientApiName": "MAINATTACKTHUNDERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_WATER_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackWaterDamageBonus",
+        "ingredientApiName": "MAINATTACKWATERDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_FIRE_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackFireDamageBonus",
+        "ingredientApiName": "MAINATTACKFIREDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_AIR_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackAirDamageBonus",
+        "ingredientApiName": "MAINATTACKAIRDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_EARTH_DAMAGE_RAW",
+        "itemApiName": "mainAttackEarthDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKEARTHDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_THUNDER_DAMAGE_RAW",
+        "itemApiName": "mainAttackThunderDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKTHUNDERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_WATER_DAMAGE_RAW",
+        "itemApiName": "mainAttackWaterDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKWATERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_FIRE_DAMAGE_RAW",
+        "itemApiName": "mainAttackFireDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKFIREDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_AIR_DAMAGE_RAW",
+        "itemApiName": "mainAttackAirDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKAIRDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
         "name": "EARTH_DAMAGE",
-        "itemApiName": "bonusEarthDamage",
+        "itemApiName": "earthDamageBonus",
         "ingredientApiName": "EARTHDAMAGEBONUS",
         "static": false
     },
     {
         "name": "THUNDER_DAMAGE",
-        "itemApiName": "bonusThunderDamage",
+        "itemApiName": "thunderDamageBonus",
         "ingredientApiName": "THUNDERDAMAGEBONUS",
         "static": false
     },
     {
         "name": "WATER_DAMAGE",
-        "itemApiName": "bonusWaterDamage",
+        "itemApiName": "waterDamageBonus",
         "ingredientApiName": "WATERDAMAGEBONUS",
         "static": false
     },
     {
         "name": "FIRE_DAMAGE",
-        "itemApiName": "bonusFireDamage",
+        "itemApiName": "fireDamageBonus",
         "ingredientApiName": "FIREDAMAGEBONUS",
         "static": false
     },
     {
         "name": "AIR_DAMAGE",
-        "itemApiName": "bonusAirDamage",
+        "itemApiName": "airDamageBonus",
         "ingredientApiName": "AIRDAMAGEBONUS",
         "static": false
     },
