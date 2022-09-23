@@ -1,0 +1,46 @@
+
+.noteBox
+{
+	border: 1px solid;
+  	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	/* width: 400px; */
+}
+
+.warning
+{
+	border-color: #E76F51;
+	background-color: rgba(231, 111, 81, 0.1); 
+}
+
+.important
+{
+	border-color: #E9DE4C;
+	background-color: rgba(233, 222, 76, 0.1);
+}
+
+.tip
+{
+	border-color: #2A9D8F;
+	background-color: rgba(42, 157, 143, 0.1); 
+}
+
+.note
+{
+	border-color: #0096C7;
+	background-color: rgba(0, 150, 199, 0.1); 
+}
+
+.success
+{
+	border-color: #00B353;
+	background-color: rgba(0, 179, 83, 0.1); 
+}
+
+.noteBoxIcon
+{
+	width: 16px; 
+	height: 16px;
+	padding-right: 10px;
+}
