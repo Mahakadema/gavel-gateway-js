@@ -246,7 +246,7 @@ export interface LocalData {
     /**
      * Information on sprites commonly used by wynncraft items
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../assets/note.png", class="noteBoxIcon">Not all sprites are listed here. Ingredient sprites and some special items (currently only "Wybel Paw") don't use sprites from here.
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Not all sprites are listed here. Ingredient sprites and some special items (currently only "Wybel Paw") don't use sprites from here.
      * </div>
      */
     sprites: Map<ItemSpriteName, Sprite>,
@@ -255,10 +255,10 @@ export interface LocalData {
      * for a guild to level up from the given level to the next, prior to 1.20;
      * postGavelReborn is it's equivalent for post 1.20
      * <div class="noteBox tip" style="display:flex">
-     *     <img src="../assets/tip.png", class="noteBoxIcon">You can use this data to translate the level percentage returned by the guild API endpoint.
+     *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use this data to translate the level percentage returned by the guild API endpoint.
      * </div>
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../assets/note.png", class="noteBoxIcon">The array index represents the level.
+     *     <img src="../../assets/note.png", class="noteBoxIcon">The array index represents the level.
      * </div>
      */
     guildLevels: GuildLevelRequirementData[]
@@ -301,14 +301,14 @@ export interface MajorIdData {
     /**
      * The name of the Major ID as it shows up in-game
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
      * </div>
      */
     inGameName?: string,
     /**
      * The description of the Major ID as it shows up in-game
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
      * </div>
      */
     description?: string
@@ -355,7 +355,7 @@ export interface GuildLevelRequirementData {
      * The amount of XP required to level to the next level
      * before 1.20 - Gavel Reborn
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../assets/note.png", class="noteBoxIcon">Values above level 87 are just approximations.
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Values above level 87 are just approximations.
      * </div>
      */
     preGavelReborn: number,
