@@ -918,7 +918,11 @@ export interface Ratelimit {
     /**
      * The amount of requests currently awaiting to be processed
      */
-    totalQueued: number
+    totalQueued: number,
+    /**
+     * The number of requests cast in the past 4 seconds
+     */
+    recentRequestCount: number
 }
 
 /**
