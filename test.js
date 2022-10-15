@@ -35,8 +35,12 @@ async function main() {
         ""
     ];
     const playersToTest = [
-        "Salted",
         "asdbsdloafh",
+        {
+            player: "Woodcreature",
+            forceMatch: false
+        },
+        "WoodCreature",
         {
             player: "HeyZeer0",
             timeout: 3000,
@@ -274,6 +278,15 @@ Requesting players
         }
         console.log();
     }
+
+    console.log(`
+#####################################
+Requesting UUIDs
+#####################################
+`);
+
+    await api.fetchPlayerUUID("Carrie").then(console.log);
+    await api.fetchPlayerUUID("carrie").then(console.log);
 
     console.log(`
 #####################################
