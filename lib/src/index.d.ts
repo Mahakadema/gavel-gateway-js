@@ -1052,6 +1052,19 @@ export interface Config {
      */
     defaultTimeout: number,
     /**
+     * Whether to try and mitigate the difference between the timestamps returned by the API and the local system time. This affects the timestamps in the responses and cache control
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">If your system time is very accurate (1 second desync or less) you should disable this. Otherwise you should keep it enabled.
+     * </div>
+     * @default true
+     */
+    syncTime: boolean,
+    /**
+     * Whether exceeding the ratelimit should throw an error, or whether the request should be retried after the ratelimit reset
+     * @default false
+     */
+    throwOnRatelimitError: boolean,
+    /**
      * Information on all supported routes
      */
     routes: Routes
@@ -1106,6 +1119,17 @@ export interface ConfigOptions {
      * </div>
      */
     defaultTimeout?: number,
+    /**
+     * Whether to try and mitigate the difference between the timestamps returned by the API and the local system time. This affects the timestamps in the responses and cache control
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">If your system time is very accurate (1 second desync or less) you should disable this. Otherwise you should keep it enabled.
+     * </div>
+     */
+    syncTime?: boolean,
+    /**
+     * Whether exceeding the ratelimit should throw an error, or whether the request should be retried after the ratelimit reset
+     */
+    throwOnRatelimitError?: boolean,
     /**
      * The amount of milliseconds to cache requests of these routes for
      * <div class="noteBox note" style="display:flex">
