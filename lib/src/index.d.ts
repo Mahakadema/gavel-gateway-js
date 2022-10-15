@@ -43,6 +43,19 @@ export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promis
 export function fetchPlayer(options: PlayerRequestOptions | string): Promise<Player?>
 
 /**
+ * Fetches a players UUID from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * <div class="noteBox note" style="display:flex">
+ *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
+ * </div>
+ * @param options The options for the request, or a player name
+ * @category Endpoint
+ */
+export function fetchPlayerUUID(options: PlayerUUIDRequestOptions | string): Promise<UUID?>
+
+/**
  * Fetches the player leaderboard from the API
  * <div class="noteBox important" style="display:flex">
  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
@@ -640,7 +653,25 @@ export interface RawRequestOptions extends RequestOptions {
  */
 export interface PlayerRequestOptions extends RequestOptions {
     /**
-     * A player UUID or name
+     * A player UUID or name; case-insensitive in nearly all cases
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">Sometimes using a player name will return a different player from the requested one. To fix this, the UUID is requested and following that the player is rerequested. This extra step will force case-sensitivity. Disable the {@link PlayerRequestOptions.forceMatch} option to disable this functionality.
+     * </div>
+     */
+    player: string,
+    /**
+     * Whether the behaviour described in the {@link PlayerRequestOptions.player} option should be enforced
+     * @default true
+     */
+    forceMatch?: boolean
+}
+
+/**
+ * The options for a player API request
+ */
+export interface PlayerUUIDRequestOptions extends RequestOptions {
+    /**
+     * A player name; case-sensitive
      */
     player: string
 }
@@ -2272,6 +2303,22 @@ export class Player extends BaseAPIObject {
      * </div>
      */
     public ranking: PlayerRankings;
+}
+
+/**
+ * Represents a player UUID from the API
+ */
+export class UUID extends BaseAPIObject {
+    private constructor(data: Object, params: Object);
+
+    /**
+     * The account name of the player
+     */
+    public name: string;
+    /**
+     * The UUID of the player
+     */
+    public uuid: string;
 }
 
 /**
