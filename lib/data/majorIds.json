@@ -48,7 +48,7 @@
         "description": null
     },
     {
-        "name": "GRAVITY_WELL",
+        "name": "ENTROPY",
         "apiName": "ENTROPY",
         "inGameName": null,
         "description": null
@@ -140,6 +140,12 @@
     {
         "name": "GEOCENTRISM",
         "apiName": "GEOCENTRISM",
+        "inGameName": null,
+        "description": null
+    },
+    {
+        "name": "GRAVITY_WELL",
+        "apiName": "GRAVITYWELL",
         "inGameName": null,
         "description": null
     }
