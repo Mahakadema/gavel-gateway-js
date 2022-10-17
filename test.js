@@ -40,7 +40,7 @@ async function main() {
             player: "Woodcreature",
             forceMatch: false
         },
-        "WoodCreature",
+        "Woodcreature",
         {
             player: "HeyZeer0",
             timeout: 3000,
