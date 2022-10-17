@@ -653,17 +653,9 @@ export interface RawRequestOptions extends RequestOptions {
  */
 export interface PlayerRequestOptions extends RequestOptions {
     /**
-     * A player UUID or name; case-insensitive in nearly all cases
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">Sometimes using a player name will return a different player from the requested one. To fix this, the UUID is requested and following that the player is rerequested. This extra step will force case-sensitivity. Disable the {@link PlayerRequestOptions.forceMatch} option to disable this functionality.
-     * </div>
+     * A player UUID or name; case-insensitive
      */
     player: string,
-    /**
-     * Whether the behaviour described in the {@link PlayerRequestOptions.player} option should be enforced
-     * @default true
-     */
-    forceMatch?: boolean
 }
 
 /**
