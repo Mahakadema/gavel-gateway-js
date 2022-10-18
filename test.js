@@ -37,12 +37,13 @@ async function main() {
     const playersToTest = [
         "asdbsdloafh",
         {
-            player: "Woodcreature",
-            forceMatch: false
+            player: "_y1n",
+            forceCaseMatch: true
         },
+        "_y1n",
         "Woodcreature",
         {
-            player: "HeyZeer0",
+            player: "Heyzeer0",
             timeout: 3000,
             cacheFor: 10000
         }
