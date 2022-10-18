@@ -656,6 +656,11 @@ export interface PlayerRequestOptions extends RequestOptions {
      * A player UUID or name; case-insensitive
      */
     player: string,
+    /**
+     * Whether {@link PlayerRequestOptions.player | player} should be case-sensitive instead; ignored if {@link PlayerRequestOptions.player | player} is a UUID
+     * @default false
+     */
+    forceCaseMatch?: boolean
 }
 
 /**
