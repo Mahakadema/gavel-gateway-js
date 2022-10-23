@@ -2346,6 +2346,15 @@ export class UUID extends BaseAPIObject {
      * The UUID of the player
      */
     public uuid: string;
+
+    /**
+     * Fetches the player stats of the guild member
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">This method causes API requests.
+     * </div>
+     * @param options The options for the request; the `player` field has no effect
+     */
+    public fetch(options?: PlayerRequestOptions): Promise<Player>;
 }
 
 /**
