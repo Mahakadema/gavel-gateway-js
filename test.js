@@ -256,8 +256,10 @@ Requesting invalid player stats route
 #####################################
 `);
 
+    const invalidPlayerRoute = "https://api.wynncraft.com/v2/player/Carrie/stat";
+    console.log(invalidPlayerRoute);
     await api.fetchRaw({
-        route: "https://api.wynncraft.com/v2/player/Carrie/stat"
+        route: invalidPlayerRoute
     }).then(console.log).catch(console.log);
 
     console.log(`

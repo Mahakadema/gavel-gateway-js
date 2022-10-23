@@ -602,6 +602,9 @@ export interface RequestOptions {
     retries?: number,
     /**
      * The amount of milliseconds a until the request should be rejected
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Be aware that each {@link RequestOptions.retries | retry} has it's own timeout, meaning 30,000 ms of timeout may lead to a 90,000 ms wait until a request is rejected on 2 retries.</div>
+     * </div>
      */
     timeout?: number,
     /**
@@ -1113,6 +1116,9 @@ export interface ConfigOptions {
      * The amount of milliseconds a until a request should be rejected
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RequestOptions.timeout}.
+     * </div>
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Be aware that each {@link ConfigOptions.defaultRetries | retry} has it's own timeout, meaning 30,000 ms of timeout may lead to a 90,000 ms wait until a request is rejected on 2 retries.</div>
      * </div>
      */
     defaultTimeout?: number,
@@ -2420,10 +2426,18 @@ export class Guild extends BaseAPIObject {
      */
     public level: number;
     /**
-     * The level progress of the guilds current level
-     * as a number between 0 and 1
+     * The XP percentage of the guilds current level;
+     * Usually a number between 0 and 1
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon"><div>This number may be more than 1 as levelling up takes a couple minutes. Use <code>Guild#levelprogression</code> instead to get a safe percentage factor.</div>
+     * </div>
      */
     public xp: number;
+    /**
+     * The progress of the guild to the next level
+     * as a number between 0 and 1
+     */
+    public levelProgression: number;
     /**
      * Some data that was extracted from the guild level
      * <div class="noteBox important" style="display:flex">
