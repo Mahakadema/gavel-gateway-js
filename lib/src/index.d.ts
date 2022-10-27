@@ -608,14 +608,6 @@ export interface RequestOptions {
      */
     timeout?: number,
     /**
-     * The amount of time the request should be cached for
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>This only applies to {@link fetchRaw | fetchRaw}.</div>
-     * </div>
-     * @default 30000
-     */
-    cacheFor?: number,
-    /**
      * Whether to ignore version errors
      * <div class="noteBox tip" style="display:flex">
      *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use this to resolve temporary conflicts while the library awaits being updated. Otherwise it should stay enabled.
@@ -643,6 +635,11 @@ export interface RawRequestOptions extends RequestOptions {
      * </div>
      */
     allowStacking?: boolean,
+    /**
+     * The amount of time the request should be cached for
+     * @default 30000
+     */
+    cacheFor?: number,
     /**
      * Whether errors or profiles not being found should be
      * filtered out and throw errors/return `null`
@@ -1135,9 +1132,6 @@ export interface ConfigOptions {
     throwOnRatelimitError?: boolean,
     /**
      * The amount of milliseconds to cache requests of these routes for
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RequestOptions.cacheFor}.
-     * </div>
      */
     defaultCacheTimes?: CacheTimeOptions
 }
@@ -1677,7 +1671,7 @@ export interface ItemRequirementQuery {
     /**
      * Only match items with this class requirement
      */
-    class?: ClassType,
+    class?: ClassBaseType,
     /**
      * Only match items with a Strength req within this range
      */
@@ -2120,11 +2114,15 @@ export class PlayerClass {
     private constructor(data: any);
 
     /**
-     * The name of the class
+     * The uuid of the class
      */
-    public name: string;
+    public uuid: string;
     /**
-     * The type of class
+     * The base type of class
+     */
+    public baseType: ClassBaseType;
+    /**
+     * The type of the class
      */
     public type: ClassType;
     /**
@@ -2661,13 +2659,13 @@ export class LeaderboardPlayer {
      */
     public playtime: number;
     /**
-     * The {@link ClassType} that earns the player their spot on the
+     * The class that earns the player their spot on the
      * leaderboard
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Only set if the requested {@link PlayerLeaderboardScope | scope} was <code>SOLO</code></div>.
      * </div>
      */
-    public class?: ClassType;
+    public class?: LeaderboardPlayerClass;
     /**
      * The respective level of the player
      * <div class="noteBox note" style="display:flex">
@@ -2869,19 +2867,86 @@ export interface Range {
 }
 
 /**
- * A type of player class
+ * A server type found on Wynncraft
  */
-export type ClassType =
+export type WorldType =
+    | "WYNNCRAFT"
+    | "MEDIA"
+    | "OTHER";
+
+/**
+ * A class of a player on the leaderboard
+ */
+export interface LeaderboardPlayerClass {
+    /**
+     * The uuid of the class
+     */
+    public uuid: string,
+    /**
+     * The {@link ClassBaseType | base type} of the class
+     */
+    public baseType: ClassBaseType,
+    /**
+     * The {@link ClassType | type} of the class
+     */
+    public type: ClassType
+}
+
+/**
+ * A scope of leaderboard ranking
+ */
+export type PlayerLeaderboardScope =
+    | "TOTAL"
+    | "SOLO";
+
+/**
+ * Player leaderboards available for total
+ */
+export type PlayerTotalLeaderboardType =
+    | "PVP"
+    | "COMBAT"
+    | "PROFESSION"
+    | "COMBINED";
+
+/**
+ * Player leaderboards available for solo
+ */
+export type PlayerSoloLeaderboardType =
+    | "COMBAT"
+    | "PROFESSION"
+    | "COMBINED"
+    | "MINING"
+    | "WOODCUTTING"
+    | "FARMING"
+    | "FISHING"
+    | "SCRIBING"
+    | "COOKING"
+    | "ALCHEMISM"
+    | "WOODWORKING"
+    | "WEAPONSMITHING"
+    | "TAILORING"
+    | "ARMORING"
+    | "JEWELING";
+
+/**
+ * A type of player class excluding the reskins
+ */
+export type ClassBaseType =
     | "ARCHER"
     | "ASSASSIN"
+    | "MAGE"
+    | "SHAMAN"
+    | "WARRIOR";
+
+/**
+ * A type of player class
+ */
+export type ClassType = ClassBaseType
     | "DARK_WIZARD"
     | "HUNTER"
     | "KNIGHT"
-    | "MAGE"
     | "NINJA"
-    | "SHAMAN"
-    | "SKYSEER"
-    | "WARRIOR";
+    | "SKYSEER";
 
 /**
 * Holds ClassLevelData for all levels on a class
@@ -3918,7 +3983,7 @@ export interface ItemRequirements {
      *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is currently never set on weapons.
      * </div>
      */
-    class: ClassType?,
+    class: ClassBaseType?,
     /**
      * The strength requirement to use the item
      */
@@ -4356,48 +4421,4 @@ export interface SquareRegion {
 /**
  * A URL to a Wynncraft API resource
  */
-export type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
-
-/**
- * A scope of leaderboard ranking
- */
-export type PlayerLeaderboardScope =
-    | "TOTAL"
-    | "SOLO";
-
-/**
- * A server type found on Wynncraft
- */
-export type WorldType =
-    | "WYNNCRAFT"
-    | "MEDIA"
-    | "OTHER";
-
-/**
- * Player leaderboards available for total
- */
-export type PlayerTotalLeaderboardType =
-    | "PVP"
-    | "COMBAT"
-    | "PROFESSION"
-    | "COMBINED";
-
-/**
- * Player leaderboards available for solo
- */
-export type PlayerSoloLeaderboardType =
-    | "COMBAT"
-    | "PROFESSION"
-    | "COMBINED"
-    | "MINING"
-    | "WOODCUTTING"
-    | "FARMING"
-    | "FISHING"
-    | "SCRIBING"
-    | "COOKING"
-    | "ALCHEMISM"
-    | "WOODWORKING"
-    | "WEAPONSMITHING"
-    | "TAILORING"
-    | "ARMORING"
-    | "JEWELING";
+export type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://web-api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
