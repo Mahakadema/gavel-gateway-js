@@ -44,8 +44,7 @@ async function main() {
         "Woodcreature",
         {
             player: "Heyzeer0",
-            timeout: 3000,
-            cacheFor: 10000
+            timeout: 3000
         }
     ];
     const recipesToTest = [
