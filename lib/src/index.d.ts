@@ -2674,8 +2674,7 @@ export class LeaderboardPlayer {
      */
     public level?: number;
     /**
-     * The additional XP the player has gathered beyond their current
-     * level
+     * The additional XP the player has gathered beyond their current level
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">Only set if the type of the request wasn't <code>PVP</code>.
      * </div>
