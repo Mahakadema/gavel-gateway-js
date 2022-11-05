@@ -20,7 +20,9 @@ export function setConfig(config?: ConfigOptions): Config
 export function flushCache(): number
 
 /**
- * Returns a raw API response of the requested route
+ * Returns a raw API response of the requested route.
+ * This inserts a field `currentTimestamp` in `ROOT` for v2 requests and in `request` for legacy requests,
+ * it contains the timestamp of the date in the `Date` header
  * <div class="noteBox important" style="display:flex">
  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
@@ -608,6 +610,10 @@ export interface RequestOptions {
      */
     timeout?: number,
     /**
+     * The amount of time the request should be cached for, overwrites the defaults specified in the config
+     */
+    cacheFor?: number,
+    /**
      * Whether to ignore version errors
      * <div class="noteBox tip" style="display:flex">
      *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use this to resolve temporary conflicts while the library awaits being updated. Otherwise it should stay enabled.
@@ -636,16 +642,15 @@ export interface RawRequestOptions extends RequestOptions {
      */
     allowStacking?: boolean,
     /**
-     * The amount of time the request should be cached for
-     * @default 30000
-     */
-    cacheFor?: number,
-    /**
      * Whether errors or profiles not being found should be
      * filtered out and throw errors/return `null`
      * @default true
      */
-    interpret?: boolean
+    interpret?: boolean,
+    /**
+     * The expected `version` or `request.version` property, responses with another version will throw an error
+     */
+    routeVersion?: string | number
 }
 
 /**
@@ -1049,14 +1054,6 @@ export interface Config {
      */
     defaultTimeout: number,
     /**
-     * Whether to try and mitigate the difference between the timestamps returned by the API and the local system time. This affects the timestamps in the responses and cache control
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">If your system time is very accurate (1 second desync or less) you should disable this. Otherwise you should keep it enabled.
-     * </div>
-     * @default true
-     */
-    syncTime: boolean,
-    /**
      * Whether exceeding the ratelimit should throw an error, or whether the request should be retried after the ratelimit reset
      * @default false
      */
@@ -1120,13 +1117,6 @@ export interface ConfigOptions {
      */
     defaultTimeout?: number,
     /**
-     * Whether to try and mitigate the difference between the timestamps returned by the API and the local system time. This affects the timestamps in the responses and cache control
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">If your system time is very accurate (1 second desync or less) you should disable this. Otherwise you should keep it enabled.
-     * </div>
-     */
-    syncTime?: boolean,
-    /**
      * Whether exceeding the ratelimit should throw an error, or whether the request should be retried after the ratelimit reset
      */
     throwOnRatelimitError?: boolean,
@@ -1163,9 +1153,13 @@ export interface Routes {
      */
     PLAYER: Route,
     /**
-     * Player combat leaderboard route
+     * Player UUID route
      */
-    PLAYER_COMBAT_LEADERBOARD: Route,
+    PLAYER_UUID: Route,
+    /**
+     * Player leaderboard route
+     */
+    PLAYER_LEADERBOARD: Route,
     /**
      * Player pvp leaderboard route
      */
@@ -1207,13 +1201,13 @@ export interface Routes {
      */
     ITEM_SEARCH: Route,
     /**
-     * Name search route
-     */
-    NAME_SEARCH: Route,
-    /**
      * Athenas Item route
      */
     ATHENA_ITEMS: Route,
+    /**
+     * Name search route
+     */
+    NAME_SEARCH: Route,
     /**
      * Online players list route
      */
@@ -1221,7 +1215,15 @@ export interface Routes {
     /**
      * Online players sum route
      */
-    ONLINE_PLAYERS_SUM: Route
+    ONLINE_PLAYERS_SUM: Route,
+    /**
+     * Map locations route
+     */
+    MAP_LOCATIONS: Route,
+    /**
+     * Personal location route
+     */
+    MY_LOCATION: Route
 }
 
 /**
@@ -1251,9 +1253,13 @@ export interface CacheTimeOptions {
      */
     PLAYER?: number,
     /**
+     * The cache time for player uuids
+     */
+    PLAYER_UUID?: number,
+    /**
      * The cache time for the player combat leaderboard
      */
-    PLAYER_COMBAT_LEADERBOARD?: number,
+    PLAYER_LEADERBOARD?: number,
     /**
      * The cache time for the player pvp leaderboard
      */
@@ -1295,13 +1301,13 @@ export interface CacheTimeOptions {
      */
     ITEM_SEARCH?: number,
     /**
-     * The cache time for the name search
-     */
-    NAME_SEARCH?: number,
-    /**
      * The cache time for athenas item route
      */
     ATHENA_ITEMS?: number,
+    /**
+     * The cache time for the name search
+     */
+    NAME_SEARCH?: number,
     /**
      * The cache time for the online players list
      */
@@ -1309,7 +1315,15 @@ export interface CacheTimeOptions {
     /**
      * The cache time for the online players sum
      */
-    ONLINE_PLAYERS_SUM?: number
+    ONLINE_PLAYERS_SUM?: number,
+    /**
+     * The cache time for map locations
+     */
+    MAP_LOCATIONS?: number,
+    /**
+     * The cache time for the personal player location
+     */
+    MY_LOCATION?: number
 }
 
 
@@ -1872,12 +1886,22 @@ export interface RestrictedIdQuery {
  * Represents the basis of all objects returned by API requests
  */
 export class BaseAPIObject {
-    public constructor(requestTimestamp: number, timestamp: number, apiVersion: SemanticVersion, libVersion: SemanticVersion, source: WynncraftAPIRoute);
+    public constructor(requestTimestamp: number, responseTimestamp: number, timestamp: number, apiVersion: SemanticVersion, libVersion: SemanticVersion, source: WynncraftAPIRoute);
 
     /**
      * The unix timestamp indicating when this request started executing
      */
     public requestedAt: number;
+    /**
+     * The unix timestamp indicating when this request was responded to
+     * <div class="noteBox tip" style="display:flex">
+     *     <img src="../../assets/tip.png", class="noteBoxIcon"><div>You can use this value in combination with {@link BaseAPIObject.timestamp | timestamp} to see how old the data is</div>
+     * </div>
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">If the response was returned from cache or the response took a long time to transmit, then this isn't a reliable way to determine the age of data.
+     * </div>
+     */
+    public respondedAt: number;
     /**
      * The unix timestamp indicating when the data of this request was last
      * updated
@@ -3105,6 +3129,7 @@ export interface PvpData {
 */
 export type ServerRank =
     | "ADMINISTRATOR"
+    | "WEBDEV"
     | "MODERATOR"
     | "MEDIA"
     | "BUILDER"
@@ -3136,7 +3161,7 @@ export interface RankData {
     /**
      * The players' donator rank
      */
-    donatorRank: DonatorRank,
+    donatorRank: DonatorRank?,
     /**
      * Whether to display the players donator rank
      */
