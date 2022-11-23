@@ -1,767 +1,908 @@
 [
   {
+    "requirement": 0,
     "preGavelReborn": 0,
     "postGavelReborn": 0,
     "maxError": 0
   },
   {
+    "requirement": 20000,
     "preGavelReborn": 2200,
     "postGavelReborn": 20000,
     "maxError": 0
   },
   {
+    "requirement": 43000,
     "preGavelReborn": 6864,
     "postGavelReborn": 43000,
     "maxError": 0
   },
   {
+    "requirement": 69450,
     "preGavelReborn": 15630,
     "postGavelReborn": 69450,
     "maxError": 0
   },
   {
+    "requirement": 99868,
     "preGavelReborn": 30976,
     "postGavelReborn": 99868,
     "maxError": 0
   },
   {
+    "requirement": 134848,
     "preGavelReborn": 56428,
     "postGavelReborn": 134848,
     "maxError": 0
   },
   {
+    "requirement": 175075,
     "preGavelReborn": 97944,
     "postGavelReborn": 175075,
     "maxError": 0
   },
   {
+    "requirement": 221336,
     "preGavelReborn": 163300,
     "postGavelReborn": 221336,
     "maxError": 0
   },
   {
+    "requirement": 274536,
     "preGavelReborn": 264844,
     "postGavelReborn": 274536,
     "maxError": 0
   },
   {
+    "requirement": 335717,
     "preGavelReborn": 419560,
-    "postGavelReborn": 335171,
+    "postGavelReborn": 335717,
     "maxError": 0
   },
   {
+    "requirement": 406074,
     "preGavelReborn": 602448,
     "postGavelReborn": 406074,
     "maxError": 0
   },
   {
+    "requirement": 486986,
     "preGavelReborn": 852324,
     "postGavelReborn": 486986,
     "maxError": 0
   },
   {
+    "requirement": 580033,
     "preGavelReborn": 1274800,
     "postGavelReborn": 580033,
     "maxError": 0
   },
   {
+    "requirement": 687038,
     "preGavelReborn": 1741568,
     "postGavelReborn": 687038,
     "maxError": 0
   },
   {
+    "requirement": 810094,
     "preGavelReborn": 2393896,
     "postGavelReborn": 810094,
     "maxError": 0
   },
   {
+    "requirement": 951608,
     "preGavelReborn": 3178888,
     "postGavelReborn": 951608,
     "maxError": 0
   },
   {
+    "requirement": 1114349,
     "preGavelReborn": 4395776,
     "postGavelReborn": 1114349,
     "maxError": 0
   },
   {
+    "requirement": 1301502,
     "preGavelReborn": 5822952,
     "postGavelReborn": 1301502,
     "maxError": 0
   },
   {
+    "requirement": 1516727,
     "preGavelReborn": 7680496,
     "postGavelReborn": 1516727,
     "maxError": 0
   },
   {
+    "requirement": 1764236,
     "preGavelReborn": 10094700,
     "postGavelReborn": 1764236,
     "maxError": 0
   },
   {
+    "requirement": 2048872,
     "preGavelReborn": 12576960,
     "postGavelReborn": 2048872,
     "maxError": 0
   },
   {
+    "requirement": 2376202,
     "preGavelReborn": 15271408,
     "postGavelReborn": 2376202,
     "maxError": 0
   },
   {
+    "requirement": 2752633,
     "preGavelReborn": 18176328,
     "postGavelReborn": 2752633,
     "maxError": 0
   },
   {
+    "requirement": 3185528,
     "preGavelReborn": 21296324,
     "postGavelReborn": 3185528,
     "maxError": 0
   },
   {
+    "requirement": 3683357,
     "preGavelReborn": 24346288,
     "postGavelReborn": 3683357,
     "maxError": 0
   },
   {
+    "requirement": 4255860,
     "preGavelReborn": 28540928,
     "postGavelReborn": 4255860,
     "maxError": 0
   },
   {
+    "requirement": 4914239,
     "preGavelReborn": 34120944,
     "postGavelReborn": 4914239,
     "maxError": 0
   },
   {
+    "requirement": 5671375,
     "preGavelReborn": 40238272,
     "postGavelReborn": 5671375,
     "maxError": 0
   },
   {
+    "requirement": 6542082,
     "preGavelReborn": 48132760,
     "postGavelReborn": 6542082,
     "maxError": 0
   },
   {
+    "requirement": 7543394,
     "preGavelReborn": 56424720,
     "postGavelReborn": 7543394,
     "maxError": 0
   },
   {
+    "requirement": 8694903,
     "preGavelReborn": 65569680,
     "postGavelReborn": 8694903,
     "maxError": 0
   },
   {
+    "requirement": 10019138,
     "preGavelReborn": 76150072,
     "postGavelReborn": 10019138,
     "maxError": 0
   },
   {
+    "requirement": 11542009,
     "preGavelReborn": 94969036,
     "postGavelReborn": 11542009,
     "maxError": 0
   },
   {
+    "requirement": 13293310,
     "preGavelReborn": 106260696,
     "postGavelReborn": 13293310,
     "maxError": 0
   },
   {
+    "requirement": 15307307,
     "preGavelReborn": 121637664,
     "postGavelReborn": 15307307,
     "maxError": 0
   },
   {
+    "requirement": 17623403,
     "preGavelReborn": 140582440,
     "postGavelReborn": 17623403,
     "maxError": 0
   },
   {
+    "requirement": 20286914,
     "preGavelReborn": 168081408,
     "postGavelReborn": 20286914,
     "maxError": 0
   },
   {
+    "requirement": 23349951,
     "preGavelReborn": 187435056,
     "postGavelReborn": 23349951,
     "maxError": 0
   },
   {
+    "requirement": 26872443,
     "preGavelReborn": 216914412,
     "postGavelReborn": 26872443,
     "maxError": 0
   },
   {
+    "requirement": 30923310,
     "preGavelReborn": 250716864,
     "postGavelReborn": 30923310,
     "maxError": 0
   },
   {
+    "requirement": 35581806,
     "preGavelReborn": 302589056,
     "postGavelReborn": 35581806,
     "maxError": 0
   },
   {
+    "requirement": 40939077,
     "preGavelReborn": 372900328,
     "postGavelReborn": 40939077,
     "maxError": 0
   },
   {
+    "requirement": 47099939,
     "preGavelReborn": 439287340,
     "postGavelReborn": 47099939,
     "maxError": 0
   },
   {
+    "requirement": 54184929,
     "preGavelReborn": 528448652,
     "postGavelReborn": 54184929,
     "maxError": 0
   },
   {
+    "requirement": 62332669,
     "preGavelReborn": 635079244,
     "postGavelReborn": 62332669,
     "maxError": 0
   },
   {
+    "requirement": 71702569,
     "preGavelReborn": 762509284,
     "postGavelReborn": 71702569,
     "maxError": 0
   },
   {
+    "requirement": 82477955,
     "preGavelReborn": 914665840,
     "postGavelReborn": 82477955,
     "maxError": 0
   },
   {
+    "requirement": 94869648,
     "preGavelReborn": 1074729260,
     "postGavelReborn": 94869648,
     "maxError": 0
   },
   {
+    "requirement": 109120095,
     "preGavelReborn": 1262236800,
     "postGavelReborn": 109120095,
     "maxError": 0
   },
   {
+    "requirement": 125508109,
     "preGavelReborn": 1481808020,
     "postGavelReborn": 125508109,
     "maxError": 0
   },
   {
+    "requirement": 144354326,
     "preGavelReborn": 1738858000,
     "postGavelReborn": 144354326,
     "maxError": 0
   },
   {
+    "requirement": 166027474,
     "preGavelReborn": 2039683800,
     "postGavelReborn": 166027474,
     "maxError": 0
   },
   {
+    "requirement": 190951596,
     "preGavelReborn": 2391634960,
     "postGavelReborn": 190951596,
     "maxError": 0
   },
   {
+    "requirement": 219614335,
     "preGavelReborn": 2803273880,
     "postGavelReborn": 219614335,
     "maxError": 0
   },
   {
+    "requirement": 252576485,
     "preGavelReborn": 3284594280,
     "postGavelReborn": 252576485,
     "maxError": 0
   },
   {
+    "requirement": 290482958,
     "preGavelReborn": 3847231300,
     "postGavelReborn": 290482958,
     "maxError": 0
   },
   {
+    "requirement": 334075402,
     "preGavelReborn": 4504758720,
     "postGavelReborn": 334075402,
     "maxError": 0
   },
   {
+    "requirement": 384206712,
     "preGavelReborn": 5272982220,
     "postGavelReborn": 384206712,
     "maxError": 0
   },
   {
+    "requirement": 441857719,
     "preGavelReborn": 6170314920,
     "postGavelReborn": 441857719,
     "maxError": 0
   },
   {
+    "requirement": 508156376,
     "preGavelReborn": 7218203960,
     "postGavelReborn": 508156376,
     "maxError": 0
   },
   {
+    "requirement": 584399833,
     "preGavelReborn": 8074598400,
     "postGavelReborn": 584399833,
     "maxError": 0
   },
   {
+    "requirement": 672079808,
     "preGavelReborn": 9030089860,
     "postGavelReborn": 672079808,
     "maxError": 0
   },
   {
+    "requirement": 772911779,
     "preGavelReborn": 10095932440,
     "postGavelReborn": 772911779,
     "maxError": 0
   },
   {
+    "requirement": 888868546,
     "preGavelReborn": 11282040000,
     "postGavelReborn": 888868546,
     "maxError": 0
   },
   {
+    "requirement": 1022218827,
     "preGavelReborn": 12601600000,
     "postGavelReborn": 1022218827,
     "maxError": 0
   },
   {
+    "requirement": 1175571652,
     "preGavelReborn": 14085500000,
     "postGavelReborn": 1175571652,
     "maxError": 0
   },
   {
+    "requirement": 1351927399,
     "preGavelReborn": 15725160000,
     "postGavelReborn": 1351927399,
     "maxError": 0
   },
   {
+    "requirement": 1554736509,
     "preGavelReborn": 17570861220,
     "postGavelReborn": 1554736509,
     "maxError": 0
   },
   {
+    "requirement": 1787966986,
     "preGavelReborn": 19616419680,
     "postGavelReborn": 1787966986,
     "maxError": 0
   },
   {
+    "requirement": 2056182033,
     "preGavelReborn": 21895389120,
     "postGavelReborn": 2056182033,
     "maxError": 0
   },
   {
+    "requirement": 2364629339,
     "preGavelReborn": 24424400000,
     "postGavelReborn": 2364629339,
     "maxError": 0
   },
   {
+    "requirement": 2719343739,
     "preGavelReborn": 27261351700,
     "postGavelReborn": 2719343739,
     "maxError": 0
   },
   {
+    "requirement": 3127265300,
     "preGavelReborn": 30396960000,
     "postGavelReborn": 3127265300,
     "maxError": 0
   },
   {
+    "requirement": 3596375095,
     "preGavelReborn": 33902660000,
     "postGavelReborn": 3596375095,
     "maxError": 0
   },
   {
+    "requirement": 4135851359,
     "preGavelReborn": 37802160000,
     "postGavelReborn": 4135851359,
     "maxError": 0
   },
   {
+    "requirement": 4756249063,
     "preGavelReborn": 42157500000,
     "postGavelReborn": 4756249063,
     "maxError": 0
   },
   {
+    "requirement": 5469706423,
     "preGavelReborn": 46983200000,
     "postGavelReborn": 5469706423,
     "maxError": 0
   },
   {
+    "requirement": 6290182386,
     "preGavelReborn": 52361540000,
     "postGavelReborn": 6290182386,
     "maxError": 0
   },
   {
+    "requirement": 7233729744,
     "preGavelReborn": 58361160000,
     "postGavelReborn": 7233729744,
     "maxError": 0
   },
   {
+    "requirement": 8318809206,
     "preGavelReborn": 65018580000,
     "postGavelReborn": 8318809206,
     "maxError": 0
   },
   {
+    "requirement": 9566650587,
     "preGavelReborn": 72424000000,
     "postGavelReborn": 9566650587,
     "maxError": 0
   },
   {
+    "requirement": 11001668175,
     "preGavelReborn": 80653320000,
     "postGavelReborn": 11001668175,
     "maxError": 0
   },
   {
+    "requirement": 12651938401,
     "preGavelReborn": 89821160000,
     "postGavelReborn": 12651938401,
     "maxError": 0
   },
   {
+    "requirement": 14549749161,
     "preGavelReborn": 100010020000,
     "postGavelReborn": 14549749161,
     "maxError": 0
   },
   {
+    "requirement": 16732231535,
     "preGavelReborn": 111342000000,
     "postGavelReborn": 16732231535,
     "maxError": 0
   },
   {
+    "requirement": 19242086266,
     "preGavelReborn": 123924900000,
     "postGavelReborn": 19242086266,
     "maxError": 0
   },
   {
+    "requirement": 22128419206,
     "preGavelReborn": 137926800000,
     "postGavelReborn": 22128419206,
     "maxError": 0
   },
   {
+    "requirement": 25447702087,
     "preGavelReborn": 153483660000,
     "postGavelReborn": 25447702087,
     "maxError": 0
   },
   {
+    "requirement": 29264877400,
     "preGavelReborn": 170774560000,
     "postGavelReborn": 29264877400,
     "maxError": 0
   },
   {
+    "requirement": 33654629009,
     "preGavelReborn": 190094983561,
     "postGavelReborn": 33654629009,
     "maxError": 0.005
   },
   {
+    "requirement": 38702843361,
     "preGavelReborn": 211947041817,
     "postGavelReborn": 38702843361,
     "maxError": 0.01
   },
   {
+    "requirement": 44508289865,
     "preGavelReborn": 235073342519,
     "postGavelReborn": 44508289865,
     "maxError": 0.0001
   },
   {
+    "requirement": 51184553345,
     "preGavelReborn": 261403348032,
     "postGavelReborn": 51184553345,
     "maxError": 0.0004
   },
   {
+    "requirement": 58862256346,
     "preGavelReborn": 290950934667,
-    "postGavelReborn": 58000000000,
+    "postGavelReborn": 58862256346,
     "maxError": 0.0004
   },
   {
+    "requirement": 67691614798,
     "preGavelReborn": 323278730758,
     "postGavelReborn": 67691614798,
     "maxError": 0.0004
   },
   {
+    "requirement": 77845377018,
     "preGavelReborn": 359353060405,
     "postGavelReborn": 77845377018,
     "maxError": 0.00033
   },
   {
+    "requirement": 89522203571,
     "preGavelReborn": 399348290843,
     "postGavelReborn": 89522203571,
     "maxError": 0.00002
   },
   {
+    "requirement": 102950554106,
     "preGavelReborn": 443875079666,
     "postGavelReborn": 102950554106,
     "maxError": 0.0000097
   },
   {
+    "requirement": 118393157222,
     "preGavelReborn": 493292473071,
     "postGavelReborn": 118393157222,
     "maxError": 0.0000011
   },
   {
+    "requirement": 136152150806,
     "preGavelReborn": 547739833230,
     "postGavelReborn": 136152150806,
     "maxError": 0.0000015
   },
   {
+    "requirement": 156574993427,
     "preGavelReborn": 608538954719,
     "postGavelReborn": 156574993427,
     "maxError": 0.01
   },
   {
+    "requirement": 180061262441,
     "preGavelReborn": 676086778692,
     "postGavelReborn": 180061262441,
     "maxError": 0.02
   },
   {
+    "requirement": 207070471807,
     "preGavelReborn": 751132411127,
     "postGavelReborn": 207070471807,
     "maxError": 0.03
   },
   {
+    "requirement": 238131062578,
     "preGavelReborn": 834508108762,
     "postGavelReborn": 238131062578,
     "maxError": 0.04
   },
   {
+    "requirement": 273850741965,
     "preGavelReborn": 927138508835,
     "postGavelReborn": 273850741965,
     "maxError": 0.051
   },
   {
+    "requirement": 314928373259,
     "preGavelReborn": 1030050883316,
-    "postGavelReborn": 314928353259,
+    "postGavelReborn": 314928373259,
     "maxError": 0.061
   },
   {
+    "requirement": 362167649248,
     "preGavelReborn": 1144386531364,
-    "postGavelReborn": 362167606248,
+    "postGavelReborn": 362167649248,
     "maxError": 0.072
   },
   {
+    "requirement": 416492816635,
     "preGavelReborn": 1271413436345,
-    "postGavelReborn": 416492747185,
+    "postGavelReborn": 416492816635,
     "maxError": 0.082
   },
   {
+    "requirement": 478966759131,
     "preGavelReborn": 1412540327779,
-    "postGavelReborn": 478966659263,
+    "postGavelReborn": 478966759131,
     "maxError": 0.093
   },
   {
+    "requirement": 550811793000,
     "preGavelReborn": 1569332304163,
-    "postGavelReborn": 550811658152,
+    "postGavelReborn": 550811793000,
     "maxError": 0.104
   },
   {
+    "requirement": 633433581950,
     "preGavelReborn": 1743528189925,
-    "postGavelReborn": 633433406875,
+    "postGavelReborn": 633433581950,
     "maxError": 0.116
   },
   {
+    "requirement": 728448639243,
     "preGavelReborn": 1937059819006,
-    "postGavelReborn": 728448417907,
+    "postGavelReborn": 728448639243,
     "maxError": 0.127
   },
   {
+    "requirement": 837715955129,
     "preGavelReborn": 2152073458916,
-    "postGavelReborn": 837715680593,
+    "postGavelReborn": 837715955129,
     "maxError": 0.138
   },
   {
+    "requirement": 963373368398,
     "preGavelReborn": 2390953612856,
-    "postGavelReborn": 963373032681,
+    "postGavelReborn": 963373368398,
     "maxError": 0.149
   },
   {
+    "requirement": 1107879393658,
     "preGavelReborn": 2656349463883,
-    "postGavelReborn": 1107878987584,
+    "postGavelReborn": 1107879393658,
     "maxError": 0.161
   },
   {
+    "requirement": 1274061322707,
     "preGavelReborn": 2951204254374,
-    "postGavelReborn": 1274060835721,
+    "postGavelReborn": 1274061322707,
     "maxError": 0.173
   },
   {
+    "requirement": 1465170541113,
     "preGavelReborn": 3278787926609,
-    "postGavelReborn": 1465169961079,
+    "postGavelReborn": 1465170541113,
     "maxError": 0.184
   },
   {
+    "requirement": 1684946142280,
     "preGavelReborn": 3642733386463,
-    "postGavelReborn": 1684945455241,
+    "postGavelReborn": 1684946142280,
     "maxError": 0.196
   },
   {
+    "requirement": 1937688083622,
     "preGavelReborn": 4047076792360,
-    "postGavelReborn": 1937687273528,
+    "postGavelReborn": 1937688083622,
     "maxError": 0.208
   },
   {
+    "requirement": 2228341316165,
     "preGavelReborn": 4496302316312,
-    "postGavelReborn": 2228340364557,
-    "maxError": 0.220
+    "postGavelReborn": 2228341316165,
+    "maxError": 0.22
   },
   {
+    "requirement": 2562592533590,
     "preGavelReborn": 4995391873423,
-    "postGavelReborn": 2562591419240,
+    "postGavelReborn": 2562592533590,
     "maxError": 0.232
   },
   {
+    "requirement": 2946981433629,
     "preGavelReborn": 5549880371373,
-    "postGavelReborn": 2946980132126,
+    "postGavelReborn": 2946981433629,
     "maxError": 0.244
   },
   {
+    "requirement": 3389028668673,
     "preGavelReborn": 6165917092595,
-    "postGavelReborn": 3389027151945,
+    "postGavelReborn": 3389028668673,
     "maxError": 0.257
   },
   {
+    "requirement": 3897382988974,
     "preGavelReborn": 6850333889873,
-    "postGavelReborn": 3897381224737,
-    "maxError": 0.270
+    "postGavelReborn": 3897382988974,
+    "maxError": 0.27
   },
   {
+    "requirement": 4481990457320,
     "preGavelReborn": 7610720951649,
-    "postGavelReborn": 4481988408447,
+    "postGavelReborn": 4481990457320,
     "maxError": 0.282
   },
   {
+    "requirement": 5154289045918,
     "preGavelReborn": 8455510977282,
-    "postGavelReborn": 5154286669714,
+    "postGavelReborn": 5154289045918,
     "maxError": 0.295
   },
   {
+    "requirement": 5927432422806,
     "preGavelReborn": 9394072695761,
-    "postGavelReborn": 5927429670172,
+    "postGavelReborn": 5927432422806,
     "maxError": 0.308
   },
   {
+    "requirement": 6816547306226,
     "preGavelReborn": 10436814764990,
-    "postGavelReborn": 6816544120697,
+    "postGavelReborn": 6816547306226,
     "maxError": 0.321
   },
   {
+    "requirement": 7839029422160,
     "preGavelReborn": 11595301203904,
-    "postGavelReborn": 7839025738802,
+    "postGavelReborn": 7839029422160,
     "maxError": 0.335
   },
   {
+    "requirement": 9014883855485,
     "preGavelReborn": 12882379637537,
-    "postGavelReborn": 9014879599622,
+    "postGavelReborn": 9014883855485,
     "maxError": 0.348
   },
   {
+    "requirement": 10367116453807,
     "preGavelReborn": 14312323777304,
-    "postGavelReborn": 10367111539566,
+    "postGavelReborn": 10367116453807,
     "maxError": 0.362
   },
   {
+    "requirement": 11922183941878,
     "preGavelReborn": 15900991716585,
-    "postGavelReborn": 11922178270501,
+    "postGavelReborn": 11922183941878,
     "maxError": 0.375
   },
   {
+    "requirement": 13710511553160,
     "preGavelReborn": 17666001797125,
-    "postGavelReborn": 13710505011076,
+    "postGavelReborn": 13710511553160,
     "maxError": 0.389
   },
   {
+    "requirement": 15767088306134,
     "preGavelReborn": 19626927996606,
-    "postGavelReborn": 15767080762737,
+    "postGavelReborn": 15767088306134,
     "maxError": 0.403
   },
   {
+    "requirement": 18132151572054,
     "preGavelReborn": 21805517004230,
-    "postGavelReborn": 18132142877148,
+    "postGavelReborn": 18132151572054,
     "maxError": 0.417
   },
   {
+    "requirement": 20851974327862,
     "preGavelReborn": 24225929391699,
-    "postGavelReborn": 20851964308720,
+    "postGavelReborn": 20851974327862,
     "maxError": 0.431
   },
   {
+    "requirement": 23979770497042,
     "preGavelReborn": 26915007554178,
-    "postGavelReborn": 23979758955028,
+    "postGavelReborn": 23979770497042,
     "maxError": 0.445
   },
   {
+    "requirement": 27576736091598,
     "preGavelReborn": 29902573392692,
-    "postGavelReborn": 27576722798282,
-    "maxError": 0.460
+    "postGavelReborn": 27576736091598,
+    "maxError": 0.46
   },
   {
+    "requirement": 31713246525337,
     "preGavelReborn": 33221759039280,
-    "postGavelReborn": 31713231218024,
+    "postGavelReborn": 31713246525337,
     "maxError": 0.475
   },
   {
+    "requirement": 36470233524138,
     "preGavelReborn": 36909374292640,
-    "postGavelReborn": 36470215900728,
+    "postGavelReborn": 36470233524138,
     "maxError": 0.489
   },
   {
+    "requirement": 41940768572759,
     "preGavelReborn": 41006314839123,
-    "postGavelReborn": 41940748285837,
+    "postGavelReborn": 41940768572759,
     "maxError": 0.503
   },
   {
+    "requirement": 48231883878673,
     "preGavelReborn": 45558015786266,
-    "postGavelReborn": 48231860528712,
+    "postGavelReborn": 48231883878673,
     "maxError": 0.519
   },
   {
+    "requirement": 55466666480473,
     "preGavelReborn": 50614955538542,
-    "postGavelReborn": 55466639608019,
+    "postGavelReborn": 55466666480473,
     "maxError": 0.534
   },
   {
+    "requirement": 63786666472544,
     "preGavelReborn": 56233215603320,
-    "postGavelReborn": 63786635549222,
-    "maxError": 0.550
+    "postGavelReborn": 63786666472544,
+    "maxError": 0.55
   },
   {
+    "requirement": 73354666463426,
     "preGavelReborn": 62475102535288,
-    "postGavelReborn": 73354630881605,
+    "postGavelReborn": 73354666463426,
     "maxError": 0.565
   },
   {
+    "requirement": 84357866452940,
     "preGavelReborn": 69409838916705,
-    "postGavelReborn": 84357825513846,
+    "postGavelReborn": 84357866452940,
     "maxError": 0.581
   },
   {
+    "requirement": 97011546440881,
     "preGavelReborn": 77114331036460,
-    "postGavelReborn": 97011499340923,
+    "postGavelReborn": 97011546440881,
     "maxError": 0.597
   },
   {
+    "requirement": 111563278427013,
     "preGavelReborn": 85674021781507,
-    "postGavelReborn": 111563224242061,
+    "postGavelReborn": 111563278427013,
     "maxError": 0.613
   },
   {
+    "requirement": 128297770211065,
     "preGavelReborn": 95183838199254,
-    "postGavelReborn": 128297707878370,
+    "postGavelReborn": 128297770211065,
     "maxError": 0.629
   },
   {
+    "requirement": 147542435762725,
     "preGavelReborn": 105749244239371,
-    "postGavelReborn": 147542364060126,
+    "postGavelReborn": 147542435762725,
     "maxError": 0.645
   },
   {
+    "requirement": 169673801147134,
     "preGavelReborn": 117487410349941,
-    "postGavelReborn": 169673718669145,
+    "postGavelReborn": 169673801147134,
     "maxError": 0.661
-  },
-  {
-    "preGavelReborn": 130528512898785,
-    "postGavelReborn": 195124776469516,
-    "maxError": 0.678
-  },
-  {
-    "preGavelReborn": 145017177830550,
-    "postGavelReborn": 224393492939944,
-    "maxError": 0.695
   }
 ]
