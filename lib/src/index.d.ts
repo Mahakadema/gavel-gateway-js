@@ -266,17 +266,16 @@ export interface LocalData {
      */
     sprites: Map<ItemSpriteName, Sprite>,
     /**
-     * Information on guild level requirements; the preGavelReborn is the value
-     * for a guild to level up from the given level to the next, prior to 1.20;
-     * postGavelReborn is it's equivalent for post 1.20
-     * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use this data to translate the level percentage returned by the guild API endpoint.
-     * </div>
+     * Information on guild level xp requirements
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">The array index represents the level.
      * </div>
      */
-    guildLevels: GuildLevelRequirementData[]
+    guildLevels: GuildLevelRequirementData[],
+    /**
+     * Information on rewards unlocked after certain guild levels have been reached (currently outdated except for guild stars and loadout slots)
+     */
+    guildLevelRewards: GuildLevelRewardData[]
 }
 
 /**
@@ -372,14 +371,63 @@ export interface GuildLevelRequirementData {
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">Values above level 87 are just approximations.
      * </div>
+     * @deprecated this will be removed in the next major release
      */
     preGavelReborn: number,
     /**
      * The amount of XP required to level to the next level
      * after 1.20 - Gavel Reborn
+     * @deprecated this will be removed in the next major release
      */
-    postGavelReborn: number
+    postGavelReborn: number,
+    /**
+     * A number representing the maximum error between the actual raw value
+     * of xp and the projected value if using an exact pre Gavel Reborn percentage
+     * @deprecated this will be removed in the next major release
+     */
+    maxError: number,
+    /**
+     * The amount of XP required to level to the next level
+     */
+    requirement: number
 }
+
+/**
+ * Information of guild level rewards
+ */
+export interface GuildLevelRewardData {
+    /**
+     * The level this reward is unlocked at
+     */
+    level: number,
+    /**
+     * The type of the reward
+     */
+    type: GuildLevelRewardType,
+    /**
+     * The value of the reward, for guild slots a value of 7 would indicate 7 new slots being gained by that level
+     */
+    value: number,
+    /**
+     * This may hold a string value signifying the date when this level reward was last verified in the game
+     */
+    confirmed: string?
+}
+
+/**
+ * A type of reward earned by a guild levelling up
+ */
+export type GuildLevelRewardType =
+    | "MEMBER_SLOTS"
+    | "BADGE_SLOTS"
+    | "LOADOUT_SLOTS"
+    | "BANK_SLOTS_PUBLIC"
+    | "BANK_SLOTS_PRIVATE"
+    | "ALLY_SLOTS"
+    | "WEEKLY_OBJECTIVES_UNLOCKED"
+    | "BADGES"
+    | "GUILD_STARS"
+    | "TAX";
 
 /**
  * A sprite name commonly used by Wynncraft items
@@ -2445,6 +2493,10 @@ export class Guild extends BaseAPIObject {
      */
     public tag: string;
     /**
+     * The amount of guild stars displayed in front of the guild's tag in chat
+     */
+    public stars: number;
+    /**
      * Indicates whether the object has the data returned if
      * `GuildRequestOptions.fetchAdditionalStats=true` during request
      * <div class="noteBox note" style="display:flex">
@@ -2470,10 +2522,27 @@ export class Guild extends BaseAPIObject {
      */
     public levelProgression: number;
     /**
+     * The raw amount of xp the guild has towards the next level; this amount is not exact, refer to {@link Guild.xpRawLower} and {@link Guild.xpRawLower} for the lower and upper bound
+     */
+    public xpRaw: number;
+    /**
+     * The lower bound of raw xp the guild has
+     */
+    public xpRawLower: number;
+    /**
+     * The upper bound of raw xp the guild has
+     */
+    public xpRawUpper: number;
+    /**
+     * The total amount of XP required for the guild's current level
+     */
+    public xpRequired: number;
+    /**
      * Some data that was extracted from the guild level
      * <div class="noteBox important" style="display:flex">
      *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Make sure <code>Guild#xpFriendly.isSafe</code> is <code>true</code>, the data will only be present on guild levels up to 150.</div>
      * </div>
+     * @deprecated will be removed in the next major release
      */
     public xpFriendly: GuildXPInterpretation;
     /**
@@ -2495,6 +2564,10 @@ export class Guild extends BaseAPIObject {
      * The members of the guild
      */
     public members: GuildMember[];
+    /**
+     * The maximum member count of the guild (currently uses outdated data)
+     */
+    public memberSlots: number;
     /**
      * The banner data of the guild
      */
@@ -3461,20 +3534,18 @@ export interface GuildXPInterpretation {
     isSafe: boolean,
     /**
      * The maximum error the xp values may be off by, divide `xpRaw` by this number in order to get the the lower bound for the xp value
-     * @deprecated will be removed in the next major release
      */
     maxErrorLower: number,
     /**
      * The maximum error the xp values may be off by, multiply `xpRaw` by this number in order to get the upper bound for the xp value
-     * @deprecated will be removed in the next major release
      */
     maxErrorUpper: number,
     /**
-     * The progression of the guild towards the next guild level as a number between 0 and 1
+     * The progression of the guild towards the next guild level as a number between 0 and 1; rounded to the nearest percent
      */
     xpPct: number,
     /**
-     * The approximate raw amount of XP of the guild at this moment, this rounds down to the value of the nearest percent
+     * The approximate raw amount of XP of the guild at this moment, this rounds to the value of the nearest percent
      */
     xpRaw: number,
     /**
