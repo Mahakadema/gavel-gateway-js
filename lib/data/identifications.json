@@ -30,33 +30,9 @@
         "static": true
     },
     {
-        "name": "MAIN_ATTACK_DAMAGE_PERCENT",
-        "itemApiName": "mainAttackDamageBonus",
-        "ingredientApiName": "DAMAGEBONUS",
-        "static": false
-    },
-    {
-        "name": "MAIN_ATTACK_DAMAGE_RAW",
-        "itemApiName": "mainAttackDamageBonusRaw",
-        "ingredientApiName": "DAMAGEBONUSRAW",
-        "static": false
-    },
-    {
         "name": "SPELL_DAMAGE_PERCENT",
         "itemApiName": "spellDamageBonus",
         "ingredientApiName": "SPELLDAMAGE",
-        "static": false
-    },
-    {
-        "name": "SPELL_DAMAGE_RAW",
-        "itemApiName": "spellDamageBonusRaw",
-        "ingredientApiName": "SPELLDAMAGERAW",
-        "static": false
-    },
-    {
-        "name": "RAINBOW_SPELL_DAMAGE_RAW",
-        "itemApiName": "spellElementalDamageBonusRaw",
-        "ingredientApiName": "RAINBOWSPELLDAMAGERAW",
         "static": false
     },
     {
@@ -90,6 +66,24 @@
         "static": false
     },
     {
+        "name": "SPELL_ELEMENTAL_DAMAGE_PERCENT",
+        "itemApiName": "spellElementalDamageBonus",
+        "ingredientApiName": "SPELLELEMENTALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_NEUTRAL_DAMAGE_PERCENT",
+        "itemApiName": "spellNeutralDamageBonus",
+        "ingredientApiName": "SPELLNEUTRALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "SPELL_DAMAGE_RAW",
+        "itemApiName": "spellDamageBonusRaw",
+        "ingredientApiName": "SPELLDAMAGERAW",
+        "static": false
+    },
+    {
         "name": "SPELL_EARTH_DAMAGE_RAW",
         "itemApiName": "spellEarthDamageBonusRaw",
         "ingredientApiName": "SPELLEARTHDAMAGEBONUSRAW",
@@ -117,6 +111,24 @@
         "name": "SPELL_AIR_DAMAGE_RAW",
         "itemApiName": "spellAirDamageBonusRaw",
         "ingredientApiName": "SPELLAIRDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_ELEMENTAL_DAMAGE_RAW",
+        "itemApiName": "spellElementalDamageBonusRaw",
+        "ingredientApiName": "SPELLELEMENTALDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "SPELL_NEUTRAL_DAMAGE_RAW",
+        "itemApiName": "spellNeutralDamageBonusRaw",
+        "ingredientApiName": "SPELLNEUTRALDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackDamageBonus",
+        "ingredientApiName": "DAMAGEBONUS",
         "static": false
     },
     {
@@ -150,6 +162,24 @@
         "static": false
     },
     {
+        "name": "MAIN_ATTACK_ELEMENTAL_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackElementalDamageBonus",
+        "ingredientApiName": "MAINATTACKELEMENTALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_NEUTRAL_DAMAGE_PERCENT",
+        "itemApiName": "mainAttackNeutralDamageBonus",
+        "ingredientApiName": "MAINATTACKNEUTRALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_DAMAGE_RAW",
+        "itemApiName": "mainAttackDamageBonusRaw",
+        "ingredientApiName": "DAMAGEBONUSRAW",
+        "static": false
+    },
+    {
         "name": "MAIN_ATTACK_EARTH_DAMAGE_RAW",
         "itemApiName": "mainAttackEarthDamageBonusRaw",
         "ingredientApiName": "MAINATTACKEARTHDAMAGEBONUSRAW",
@@ -180,33 +210,111 @@
         "static": false
     },
     {
-        "name": "EARTH_DAMAGE",
+        "name": "MAIN_ATTACK_ELEMENTAL_DAMAGE_RAW",
+        "itemApiName": "mainAttackElementalDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKELEMENTALDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "MAIN_ATTACK_NEUTRAL_DAMAGE_RAW",
+        "itemApiName": "mainAttackNeutralDamageBonusRaw",
+        "ingredientApiName": "MAINATTACKNEUTRALDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "DAMAGE_PERCENT",
+        "itemApiName": "damageBonus",
+        "ingredientApiName": "UNDEFINED0",
+        "static": false
+    },
+    {
+        "name": "EARTH_DAMAGE_PERCENT",
         "itemApiName": "earthDamageBonus",
         "ingredientApiName": "EARTHDAMAGEBONUS",
         "static": false
     },
     {
-        "name": "THUNDER_DAMAGE",
+        "name": "THUNDER_DAMAGE_PERCENT",
         "itemApiName": "thunderDamageBonus",
         "ingredientApiName": "THUNDERDAMAGEBONUS",
         "static": false
     },
     {
-        "name": "WATER_DAMAGE",
+        "name": "WATER_DAMAGE_PERCENT",
         "itemApiName": "waterDamageBonus",
         "ingredientApiName": "WATERDAMAGEBONUS",
         "static": false
     },
     {
-        "name": "FIRE_DAMAGE",
+        "name": "FIRE_DAMAGE_PERCENT",
         "itemApiName": "fireDamageBonus",
         "ingredientApiName": "FIREDAMAGEBONUS",
         "static": false
     },
     {
-        "name": "AIR_DAMAGE",
+        "name": "AIR_DAMAGE_PERCENT",
         "itemApiName": "airDamageBonus",
         "ingredientApiName": "AIRDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "ELEMENTAL_DAMAGE_PERCENT",
+        "itemApiName": "elementalDamageBonus",
+        "ingredientApiName": "ELEMENTALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "NEUTRAL_DAMAGE_PERCENT",
+        "itemApiName": "neutralDamageBonus",
+        "ingredientApiName": "NEUTRALDAMAGEBONUS",
+        "static": false
+    },
+    {
+        "name": "DAMAGE_RAW",
+        "itemApiName": "damageBonusRaw",
+        "ingredientApiName": "UNDEFINED1",
+        "static": false
+    },
+    {
+        "name": "EARTH_DAMAGE_RAW",
+        "itemApiName": "earthDamageBonusRaw",
+        "ingredientApiName": "EARTHDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "THUNDER_DAMAGE_RAW",
+        "itemApiName": "thunderDamageBonusRaw",
+        "ingredientApiName": "THUNDERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "WATER_DAMAGE_RAW",
+        "itemApiName": "waterDamageBonusRaw",
+        "ingredientApiName": "WATERDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "FIRE_DAMAGE_RAW",
+        "itemApiName": "fireDamageBonusRaw",
+        "ingredientApiName": "FIREDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "AIR_DAMAGE_RAW",
+        "itemApiName": "airDamageBonusRaw",
+        "ingredientApiName": "AIRDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "ELEMENTAL_DAMAGE_RAW",
+        "itemApiName": "elementalDamageBonusRaw",
+        "ingredientApiName": "ELEMENTALDAMAGEBONUSRAW",
+        "static": false
+    },
+    {
+        "name": "NEUTRAL_DAMAGE_RAW",
+        "itemApiName": "neutralDamageBonusRaw",
+        "ingredientApiName": "NEUTRALDAMAGEBONUSRAW",
         "static": false
     },
     {
@@ -368,13 +476,13 @@
     {
         "name": "SPRINT_DURATION",
         "itemApiName": "sprint",
-        "ingredientApiName": "SPRINT",
+        "ingredientApiName": "STAMINA",
         "static": false
     },
     {
         "name": "SPRINT_REGEN",
         "itemApiName": "sprintRegen",
-        "ingredientApiName": "SPRINT_REGEN",
+        "ingredientApiName": "STAMINA_REGEN",
         "static": false
     },
     {
