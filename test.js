@@ -526,6 +526,66 @@ Local Data
     console.log(api.data.sprites.get("BOW_DEFAULT_0"));
     console.log((await api.fetchItems("Impeccable Oak Bow")).list.map(v => v.sprite));
 
+    console.log(
+        "#####################################\n" +
+        "Identification Data\n" +
+        "#####################################"
+    );
+    const items = await api.fetchRaw(api.setConfig({}).routes.ITEM_SEARCH.url);
+    const itemsSet = new Set();
+    console.log("---item properties---");
+    for (const item of items.items) {
+        for (const prop in item) {
+            if (!itemsSet.has(prop)) {
+                if (!api.data.identifications.find(v => v.itemApiName === prop)) // disable this line to show all props, not just unknown ones
+                    console.log(prop.padEnd(40), item.name, item[prop]);
+                itemsSet.add(prop);
+            }
+        }
+    }
+    console.log();
+    console.log("---unused item IDs---");
+    console.log(api.data.identifications.filter(v => !itemsSet.has(v.itemApiName)).map(v => v.name).join("\n"));
+
+    const ingredients = await api.fetchRaw(api.setConfig({}).routes.INGREDIENT_SEARCH.url);
+    console.log();
+    itemsSet.clear();
+    console.log("---ingredient IDs---");
+    for (const ingredient of ingredients.data) {
+        for (const prop in ingredient.identifications) {
+            if (!itemsSet.has(prop)) {
+                if (!api.data.identifications.find(v => v.ingredientApiName === prop)) // disable this line to show all props, not just unknown ones
+                    console.log(prop.padEnd(40), ingredient.name, ingredient.identifications[prop]);
+                itemsSet.add(prop);
+            }
+        }
+    }
+    console.log();
+    console.log("---unused item IDs---");
+    console.log(api.data.identifications.filter(v => !itemsSet.has(v.ingredientApiName)).map(v => v.name).join("\n"));
+    console.log();
+    itemsSet.clear();
+    console.log("---ingredient itemOnly IDs---");
+    for (const ingredient of ingredients.data) {
+        for (const prop in ingredient.itemOnlyIDs) {
+            if (!itemsSet.has(prop)) {
+                console.log(prop.padEnd(40), ingredient.name, ingredient.itemOnlyIDs[prop]);
+                itemsSet.add(prop);
+            }
+        }
+    }
+    console.log();
+    itemsSet.clear();
+    console.log("---ingredient consumableOnly IDs---");
+    for (const ingredient of ingredients.data) {
+        for (const prop in ingredient.consumableOnlyIDs) {
+            if (!itemsSet.has(prop)) {
+                console.log(prop.padEnd(40), ingredient.name, ingredient.consumableOnlyIDs[prop]);
+                itemsSet.add(prop);
+            }
+        }
+    }
+
     console.log(`
 #####################################
 Ratelimit after all tests completed
