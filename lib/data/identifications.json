@@ -1,530 +1,812 @@
 [
     {
         "name": "STRENGTH",
+        "inGameName": "Strength",
         "itemApiName": "strengthPoints",
         "ingredientApiName": "STRENGTHPOINTS",
-        "static": true
+        "suffix": "",
+        "static": true,
+        "inverted": false
     },
     {
         "name": "DEXTERITY",
+        "inGameName": "Dexterity",
         "itemApiName": "dexterityPoints",
         "ingredientApiName": "DEXTERITYPOINTS",
-        "static": true
+        "suffix": "",
+        "static": true,
+        "inverted": false
     },
     {
         "name": "INTELLIGENCE",
+        "inGameName": "Intelligence",
         "itemApiName": "intelligencePoints",
-        "ingredientApiName": "INTELLIGENCE",
-        "static": true
+        "ingredientApiName": "INTELLIGENCEPOINTS",
+        "suffix": "",
+        "static": true,
+        "inverted": false
     },
     {
         "name": "DEFENCE",
+        "inGameName": "Defence",
         "itemApiName": "defensePoints",
         "ingredientApiName": "DEFENSEPOINTS",
-        "static": true
+        "suffix": "",
+        "static": true,
+        "inverted": false
     },
     {
         "name": "AGILITY",
+        "inGameName": "Agility",
         "itemApiName": "agilityPoints",
         "ingredientApiName": "AGILITYPOINTS",
-        "static": true
+        "suffix": "",
+        "static": true,
+        "inverted": false
     },
     {
         "name": "SPELL_DAMAGE_PERCENT",
+        "inGameName": "Spell Damage",
         "itemApiName": "spellDamageBonus",
         "ingredientApiName": "SPELLDAMAGE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_EARTH_DAMAGE_PERCENT",
+        "inGameName": "Earth Spell Damage",
         "itemApiName": "spellEarthDamageBonus",
         "ingredientApiName": "SPELLEARTHDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_THUNDER_DAMAGE_PERCENT",
+        "inGameName": "Thunder Spell Damage",
         "itemApiName": "spellThunderDamageBonus",
         "ingredientApiName": "SPELLTHUNDERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_WATER_DAMAGE_PERCENT",
+        "inGameName": "Water Spell Damage",
         "itemApiName": "spellWaterDamageBonus",
         "ingredientApiName": "SPELLWATERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_FIRE_DAMAGE_PERCENT",
+        "inGameName": "Fire Spell Damage",
         "itemApiName": "spellFireDamageBonus",
         "ingredientApiName": "SPELLFIREDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_AIR_DAMAGE_PERCENT",
+        "inGameName": "Air Spell Damage",
         "itemApiName": "spellAirDamageBonus",
         "ingredientApiName": "SPELLAIRDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_ELEMENTAL_DAMAGE_PERCENT",
+        "inGameName": "Elemental Spell Damage",
         "itemApiName": "spellElementalDamageBonus",
         "ingredientApiName": "SPELLELEMENTALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_NEUTRAL_DAMAGE_PERCENT",
+        "inGameName": "Neutral Spell Damage",
         "itemApiName": "spellNeutralDamageBonus",
         "ingredientApiName": "SPELLNEUTRALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_DAMAGE_RAW",
+        "inGameName": "Spell Damage",
         "itemApiName": "spellDamageBonusRaw",
         "ingredientApiName": "SPELLDAMAGERAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_EARTH_DAMAGE_RAW",
+        "inGameName": "Earth Spell Damage",
         "itemApiName": "spellEarthDamageBonusRaw",
         "ingredientApiName": "SPELLEARTHDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_THUNDER_DAMAGE_RAW",
+        "inGameName": "Thunder Spell Damage",
         "itemApiName": "spellThunderDamageBonusRaw",
         "ingredientApiName": "SPELLTHUNDERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_WATER_DAMAGE_RAW",
+        "inGameName": "Water Spell Damage",
         "itemApiName": "spellWaterDamageBonusRaw",
         "ingredientApiName": "SPELLWATERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_FIRE_DAMAGE_RAW",
+        "inGameName": "Fire Spell Damage",
         "itemApiName": "spellFireDamageBonusRaw",
         "ingredientApiName": "SPELLFIREDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_AIR_DAMAGE_RAW",
+        "inGameName": "Air Spell Damage",
         "itemApiName": "spellAirDamageBonusRaw",
         "ingredientApiName": "SPELLAIRDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_ELEMENTAL_DAMAGE_RAW",
+        "inGameName": "Elemental Spell Damage",
         "itemApiName": "spellElementalDamageBonusRaw",
         "ingredientApiName": "SPELLELEMENTALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_NEUTRAL_DAMAGE_RAW",
+        "inGameName": "Neutral Spell Damage",
         "itemApiName": "spellNeutralDamageBonusRaw",
         "ingredientApiName": "SPELLNEUTRALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_DAMAGE_PERCENT",
+        "inGameName": "Main Attack Damage",
         "itemApiName": "mainAttackDamageBonus",
         "ingredientApiName": "DAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_EARTH_DAMAGE_PERCENT",
+        "inGameName": "Earth Main Attack Damage",
         "itemApiName": "mainAttackEarthDamageBonus",
         "ingredientApiName": "MAINATTACKEARTHDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_THUNDER_DAMAGE_PERCENT",
+        "inGameName": "Thunder Main Attack Damage",
         "itemApiName": "mainAttackThunderDamageBonus",
         "ingredientApiName": "MAINATTACKTHUNDERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_WATER_DAMAGE_PERCENT",
+        "inGameName": "Water Main Attack Damage",
         "itemApiName": "mainAttackWaterDamageBonus",
         "ingredientApiName": "MAINATTACKWATERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_FIRE_DAMAGE_PERCENT",
+        "inGameName": "Fire Main Attack Damage",
         "itemApiName": "mainAttackFireDamageBonus",
         "ingredientApiName": "MAINATTACKFIREDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_AIR_DAMAGE_PERCENT",
+        "inGameName": "Air Main Attack Damage",
         "itemApiName": "mainAttackAirDamageBonus",
         "ingredientApiName": "MAINATTACKAIRDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_ELEMENTAL_DAMAGE_PERCENT",
+        "inGameName": "Elemental Main Attack Damage",
         "itemApiName": "mainAttackElementalDamageBonus",
         "ingredientApiName": "MAINATTACKELEMENTALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_NEUTRAL_DAMAGE_PERCENT",
+        "inGameName": "Neutral Main Attack Damage",
         "itemApiName": "mainAttackNeutralDamageBonus",
         "ingredientApiName": "MAINATTACKNEUTRALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_DAMAGE_RAW",
+        "inGameName": "Main Attack Damage",
         "itemApiName": "mainAttackDamageBonusRaw",
         "ingredientApiName": "DAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_EARTH_DAMAGE_RAW",
+        "inGameName": "Earth Main Attack Damage",
         "itemApiName": "mainAttackEarthDamageBonusRaw",
         "ingredientApiName": "MAINATTACKEARTHDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_THUNDER_DAMAGE_RAW",
+        "inGameName": "Thunder Main Attack Damage",
         "itemApiName": "mainAttackThunderDamageBonusRaw",
         "ingredientApiName": "MAINATTACKTHUNDERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_WATER_DAMAGE_RAW",
+        "inGameName": "Water Main Attack Damage",
         "itemApiName": "mainAttackWaterDamageBonusRaw",
         "ingredientApiName": "MAINATTACKWATERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_FIRE_DAMAGE_RAW",
+        "inGameName": "Fire Main Attack Damage",
         "itemApiName": "mainAttackFireDamageBonusRaw",
         "ingredientApiName": "MAINATTACKFIREDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_AIR_DAMAGE_RAW",
+        "inGameName": "Air Main Attack Damage",
         "itemApiName": "mainAttackAirDamageBonusRaw",
         "ingredientApiName": "MAINATTACKAIRDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_ELEMENTAL_DAMAGE_RAW",
+        "inGameName": "Elemental Main Attack Damage",
         "itemApiName": "mainAttackElementalDamageBonusRaw",
         "ingredientApiName": "MAINATTACKELEMENTALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MAIN_ATTACK_NEUTRAL_DAMAGE_RAW",
+        "inGameName": "Neutral Main Attack Damage",
         "itemApiName": "mainAttackNeutralDamageBonusRaw",
         "ingredientApiName": "MAINATTACKNEUTRALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "DAMAGE_PERCENT",
+        "inGameName": "Damage",
         "itemApiName": "damageBonus",
         "ingredientApiName": "UNDEFINED0",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "EARTH_DAMAGE_PERCENT",
+        "inGameName": "Earth Damage",
         "itemApiName": "earthDamageBonus",
         "ingredientApiName": "EARTHDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "THUNDER_DAMAGE_PERCENT",
+        "inGameName": "Thunder Damage",
         "itemApiName": "thunderDamageBonus",
         "ingredientApiName": "THUNDERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "WATER_DAMAGE_PERCENT",
+        "inGameName": "Water Damage",
         "itemApiName": "waterDamageBonus",
         "ingredientApiName": "WATERDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "FIRE_DAMAGE_PERCENT",
+        "inGameName": "Fire Damage",
         "itemApiName": "fireDamageBonus",
         "ingredientApiName": "FIREDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "AIR_DAMAGE_PERCENT",
+        "inGameName": "Air Damage",
         "itemApiName": "airDamageBonus",
         "ingredientApiName": "AIRDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "ELEMENTAL_DAMAGE_PERCENT",
+        "inGameName": "Elemental Damage",
         "itemApiName": "elementalDamageBonus",
         "ingredientApiName": "ELEMENTALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "NEUTRAL_DAMAGE_PERCENT",
+        "inGameName": "Neutral Damage",
         "itemApiName": "neutralDamageBonus",
         "ingredientApiName": "NEUTRALDAMAGEBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "DAMAGE_RAW",
+        "inGameName": "Damage",
         "itemApiName": "damageBonusRaw",
         "ingredientApiName": "UNDEFINED1",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "EARTH_DAMAGE_RAW",
+        "inGameName": "Earth Damage",
         "itemApiName": "earthDamageBonusRaw",
         "ingredientApiName": "EARTHDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "THUNDER_DAMAGE_RAW",
+        "inGameName": "Thunder Damage",
         "itemApiName": "thunderDamageBonusRaw",
         "ingredientApiName": "THUNDERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "WATER_DAMAGE_RAW",
+        "inGameName": "Water Damage",
         "itemApiName": "waterDamageBonusRaw",
         "ingredientApiName": "WATERDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "FIRE_DAMAGE_RAW",
+        "inGameName": "Fire Damage",
         "itemApiName": "fireDamageBonusRaw",
         "ingredientApiName": "FIREDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "AIR_DAMAGE_RAW",
+        "inGameName": "Air Damage",
         "itemApiName": "airDamageBonusRaw",
         "ingredientApiName": "AIRDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "ELEMENTAL_DAMAGE_RAW",
+        "inGameName": "Elemental Damage",
         "itemApiName": "elementalDamageBonusRaw",
         "ingredientApiName": "ELEMENTALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "NEUTRAL_DAMAGE_RAW",
+        "inGameName": "Neutral Damage",
         "itemApiName": "neutralDamageBonusRaw",
         "ingredientApiName": "NEUTRALDAMAGEBONUSRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
+    },
+    {
+        "name": "CRITICAL_DAMAGE_RAW",
+        "inGameName": "Critical Damage",
+        "itemApiName": "criticalDamageBonusRaw",
+        "ingredientApiName": "CRITICALDAMAGEBONUSRAW",
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "EARTH_DEFENCE",
+        "inGameName": "Earth Defence",
         "itemApiName": "bonusEarthDefense",
         "ingredientApiName": "EARTHDEFENSE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "THUNDER_DEFENCE",
+        "inGameName": "Thunder Defence",
         "itemApiName": "bonusThunderDefense",
         "ingredientApiName": "THUNDERDEFENSE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "WATER_DEFENCE",
+        "inGameName": "Water Defence",
         "itemApiName": "bonusWaterDefense",
         "ingredientApiName": "WATERDEFENSE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "FIRE_DEFENCE",
+        "inGameName": "Fire Defence",
         "itemApiName": "bonusFireDefense",
         "ingredientApiName": "FIREDEFENSE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "AIR_DEFENCE",
+        "inGameName": "Air Defence",
         "itemApiName": "bonusAirDefense",
         "ingredientApiName": "AIRDEFENSE",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "HEALTH_REGEN_PERCENT",
+        "inGameName": "Health Regen",
         "itemApiName": "healthRegen",
         "ingredientApiName": "HEALTHREGEN",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "HEALTH_REGEN_RAW",
+        "inGameName": "Health Regen",
         "itemApiName": "healthRegenRaw",
         "ingredientApiName": "HEALTHREGENRAW",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "HEALTH",
+        "inGameName": "Health",
         "itemApiName": "healthBonus",
         "ingredientApiName": "HEALTHBONUS",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "LIFE_STEAL",
+        "inGameName": "Life Steal",
         "itemApiName": "lifeSteal",
         "ingredientApiName": "LIFESTEAL",
-        "static": false
+        "suffix": "/3s",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MANA_REGEN",
+        "inGameName": "Mana Regen",
         "itemApiName": "manaRegen",
         "ingredientApiName": "MANAREGEN",
-        "static": false
+        "suffix": "/5s",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "MANA_STEAL",
+        "inGameName": "Mana Steal",
         "itemApiName": "manaSteal",
         "ingredientApiName": "MANASTEAL",
-        "static": false
+        "suffix": "/3s",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPELL_COST_PCT_1",
+        "inGameName": "{sp1} Cost",
         "itemApiName": "spellCostPct1",
         "ingredientApiName": "SPELL_COST_PCT_1",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_RAW_1",
+        "inGameName": "{sp1} Cost",
         "itemApiName": "spellCostRaw1",
         "ingredientApiName": "SPELL_COST_RAW_1",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_PCT_2",
+        "inGameName": "{sp2} Cost",
         "itemApiName": "spellCostPct2",
         "ingredientApiName": "SPELL_COST_PCT_2",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_RAW_2",
+        "inGameName": "{sp2} Cost",
         "itemApiName": "spellCostRaw2",
         "ingredientApiName": "SPELL_COST_RAW_2",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_PCT_3",
+        "inGameName": "{sp3} Cost",
         "itemApiName": "spellCostPct3",
         "ingredientApiName": "SPELL_COST_PCT_3",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_RAW_3",
+        "inGameName": "{sp3} Cost",
         "itemApiName": "spellCostRaw3",
         "ingredientApiName": "SPELL_COST_RAW_3",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_PCT_4",
+        "inGameName": "{sp4} Cost",
         "itemApiName": "spellCostPct4",
         "ingredientApiName": "SPELL_COST_PCT_4",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "SPELL_COST_RAW_4",
+        "inGameName": "{sp4} Cost",
         "itemApiName": "spellCostRaw4",
         "ingredientApiName": "SPELL_COST_RAW_4",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": true
     },
     {
         "name": "ATTACK_SPEED",
+        "inGameName": "Attack Speed",
         "itemApiName": "attackSpeedBonus",
         "ingredientApiName": "ATTACKSPEED",
-        "static": false
+        "suffix": " tier",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "POISON",
+        "inGameName": "Poison",
         "itemApiName": "poison",
         "ingredientApiName": "POISON",
-        "static": false
+        "suffix": "/3s",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "THORNS",
+        "inGameName": "Thorns",
         "itemApiName": "thorns",
         "ingredientApiName": "THORNS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "REFLECTION",
+        "inGameName": "Reflection",
         "itemApiName": "reflection",
         "ingredientApiName": "REFLECTION",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "EXPLODING",
+        "inGameName": "Exploding",
         "itemApiName": "exploding",
         "ingredientApiName": "EXPLODING",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "JUMP_HEIGHT",
+        "inGameName": "Jump Height",
         "itemApiName": "jumpHeight",
         "ingredientApiName": "JUMP_HEIGHT",
-        "static": false
+        "suffix": "",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "WALK_SPEED",
+        "inGameName": "Walk Speed",
         "itemApiName": "speed",
         "ingredientApiName": "SPEED",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPRINT_DURATION",
+        "inGameName": "Sprint",
         "itemApiName": "sprint",
         "ingredientApiName": "STAMINA",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SPRINT_REGEN",
+        "inGameName": "Sprint Regen",
         "itemApiName": "sprintRegen",
         "ingredientApiName": "STAMINA_REGEN",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "SOUL_POINT_REGEN",
+        "inGameName": "Soul Point Regen",
         "itemApiName": "soulPoints",
         "ingredientApiName": "SOULPOINTS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "GATHERING_SPEED",
+        "inGameName": "Gathering Speed",
         "itemApiName": "gatherSpeed",
         "ingredientApiName": "GATHER_SPEED",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "GATHERING_XP_BONUS",
+        "inGameName": "Gather XP Bonus",
         "itemApiName": "gatherXpBonus",
         "ingredientApiName": "GATHER_XP_BONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "XP_BONUS",
+        "inGameName": "XP Bonus",
         "itemApiName": "xpBonus",
         "ingredientApiName": "XPBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "LOOT_BONUS",
+        "inGameName": "Loot Bonus",
         "itemApiName": "lootBonus",
         "ingredientApiName": "LOOTBONUS",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "LOOT_QUALITY",
+        "inGameName": "Loot Quality",
         "itemApiName": "lootQuality",
         "ingredientApiName": "LOOT_QUALITY",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
     },
     {
         "name": "STEALING",
+        "inGameName": "Stealing",
         "itemApiName": "emeraldStealing",
         "ingredientApiName": "EMERALDSTEALING",
-        "static": false
+        "suffix": "%",
+        "static": false,
+        "inverted": false
+    },
+    {
+        "name": "KNOCKBACK",
+        "inGameName": "Knockback",
+        "itemApiName": "knockback",
+        "ingredientApiName": "KNOCKBACK",
+        "suffix": "",
+        "static": false,
+        "inverted": false
     }
 ]
