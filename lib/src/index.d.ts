@@ -283,9 +283,13 @@ export interface LocalData {
  */
 export interface IdentificationData {
     /**
-     * The name the wrapper uses
+     * The name gavel-gateway-js uses
      */
     name: IdentificationName,
+    /**
+     * The name as it displays in game
+     */
+    inGameName: string,
     /**
      * The name used in the item API
      */
@@ -295,9 +299,17 @@ export interface IdentificationData {
      */
     ingredientApiName: string,
     /**
+     * The string appended directly to the IDs value, such as the "/3s" for Mana Steal or "%" for Spell Damage
+     */
+    suffix: string,
+    /**
      * Whether the ID has a static value
      */
-    static: boolean
+    static: boolean,
+    /**
+     * Whether the ID is inverted (lower values being better)
+     */
+    inverted: boolean,
 }
 
 /**
@@ -1003,7 +1015,11 @@ export interface Ratelimit {
     /**
      * The number of requests cast in the past 4 seconds
      */
-    recentRequestCount: number
+    recentRequestCount: number,
+    /**
+     * The number of milliseconds the API took to respond, averaged over recent requests
+     */
+    ping: number
 }
 
 /**
@@ -1426,55 +1442,250 @@ export interface IdentificationQuery {
      */
     agility?: OpenRange,
     /**
-     * The Main Attack Damage % identification has
-     * to have possible values within this range
-     */
-    mainAttackDamagePercent?: OpenRange,
-    /**
-     * The Raw Main Attack Damage identification has
-     * to have possible values within this range
-     */
-    mainAttackDamageRaw?: OpenRange,
-    /**
      * The Spell Damage % identification has to
      * have possible values within this range
      */
     spellDamagePercent?: OpenRange,
+    /**
+     * The Earth Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellEarthDamagePercent?: OpenRange,
+    /**
+     * The Thunder Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellThunderDamagePercent?: OpenRange,
+    /**
+     * The Water Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellWaterDamagePercent?: OpenRange,
+    /**
+     * The Fire Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellFireDamagePercent?: OpenRange,
+    /**
+     * The Air Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellAirDamagePercent?: OpenRange,
+    /**
+     * The Neutral Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellNeutralDamagePercent?: OpenRange,
+    /**
+     * The Elemental Spell Damage % identification has to
+     * have possible values within this range
+     */
+    spellElementalDamagePercent?: OpenRange,
     /**
      * The Raw Spell Damage identification has to
      * have possible values within this range
      */
     spellDamageRaw?: OpenRange,
     /**
-     * The Raw Rainbow Spell Damage identification
-     * has to have possible values within this range
+     * The Raw Earth Spell Damage identification has to
+     * have possible values within this range
      */
-    rainbowSpellDamageRaw?: OpenRange,
+    spellEarthDamageRaw?: OpenRange,
+    /**
+     * The Raw Thunder Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellThunderDamageRaw?: OpenRange,
+    /**
+     * The Raw Water Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellWaterDamageRaw?: OpenRange,
+    /**
+     * The Raw Fire Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellFireDamageRaw?: OpenRange,
+    /**
+     * The Raw Air Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellAirDamageRaw?: OpenRange,
+    /**
+     * The Raw Neutral Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellNeutralDamageRaw?: OpenRange,
+    /**
+     * The Raw Elemental Spell Damage identification has to
+     * have possible values within this range
+     */
+    spellElementalDamageRaw?: OpenRange,
+    /**
+     * The Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackDamagePercent?: OpenRange,
+    /**
+     * The Earth Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackEarthDamagePercent?: OpenRange,
+    /**
+     * The Thunder Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackThunderDamagePercent?: OpenRange,
+    /**
+     * The Water Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackWaterDamagePercent?: OpenRange,
+    /**
+     * The Fire Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackFireDamagePercent?: OpenRange,
+    /**
+     * The Air Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackAirDamagePercent?: OpenRange,
+    /**
+     * The Neutral Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackNeutralDamagePercent?: OpenRange,
+    /**
+     * The Elemental Main Attack Damage % identification has to
+     * have possible values within this range
+     */
+    mainAttackElementalDamagePercent?: OpenRange,
+    /**
+     * The Raw Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackDamageRaw?: OpenRange,
+    /**
+     * The Raw Earth Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackEarthDamageRaw?: OpenRange,
+    /**
+     * The Raw Thunder Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackThunderDamageRaw?: OpenRange,
+    /**
+     * The Raw Water Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackWaterDamageRaw?: OpenRange,
+    /**
+     * The Raw Fire Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackFireDamageRaw?: OpenRange,
+    /**
+     * The Raw Air Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackAirDamageRaw?: OpenRange,
+    /**
+     * The Raw Neutral Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackNeutralDamageRaw?: OpenRange,
+    /**
+     * The Raw Elemental Main Attack Damage identification has to
+     * have possible values within this range
+     */
+    mainAttackElementalDamageRaw?: OpenRange,
+    /**
+     * The Damage % identification has to
+     * have possible values within this range
+     */
+    damagePercent?: OpenRange,
     /**
      * The Earth Damage % identification has to
      * have possible values within this range
      */
-    earthDamage?: OpenRange,
+    earthDamagePercent?: OpenRange,
     /**
-     * The Thunder Damage % identification has
-     * to have possible values within this range
+     * The Thunder Damage % identification has to
+     * have possible values within this range
      */
-    thunderDamage?: OpenRange,
+    thunderDamagePercent?: OpenRange,
     /**
      * The Water Damage % identification has to
      * have possible values within this range
      */
-    waterDamage?: OpenRange,
+    waterDamagePercent?: OpenRange,
     /**
      * The Fire Damage % identification has to
      * have possible values within this range
      */
-    fireDamage?: OpenRange,
+    fireDamagePercent?: OpenRange,
     /**
      * The Air Damage % identification has to
      * have possible values within this range
      */
-    airDamage?: OpenRange,
+    airDamagePercent?: OpenRange,
+    /**
+     * The Neutral Damage % identification has to
+     * have possible values within this range
+     */
+    neutralDamagePercent?: OpenRange,
+    /**
+     * The Elemental Damage % identification has to
+     * have possible values within this range
+     */
+    elementalDamagePercent?: OpenRange,
+    /**
+     * The Raw Damage identification has to
+     * have possible values within this range
+     */
+    damageRaw?: OpenRange,
+    /**
+     * The Raw Earth Damage identification has to
+     * have possible values within this range
+     */
+    earthDamageRaw?: OpenRange,
+    /**
+     * The Raw Thunder Damage identification has to
+     * have possible values within this range
+     */
+    thunderDamageRaw?: OpenRange,
+    /**
+     * The Raw Water Damage identification has to
+     * have possible values within this range
+     */
+    waterDamageRaw?: OpenRange,
+    /**
+     * The Raw Fire Damage identification has to
+     * have possible values within this range
+     */
+    fireDamageRaw?: OpenRange,
+    /**
+     * The Raw Air Damage identification has to
+     * have possible values within this range
+     */
+    airDamageRaw?: OpenRange,
+    /**
+     * The Raw Neutral Damage identification has to
+     * have possible values within this range
+     */
+    neutralDamageRaw?: OpenRange,
+    /**
+     * The Raw Elemental Damage identification has to
+     * have possible values within this range
+     */
+    elementalDamageRaw?: OpenRange,
+    /**
+     * The Raw Critical Damage identification has to
+     * have possible values within this range
+     */
+    criticalDamageRaw?: OpenRange,
     /**
      * The Earth Defence % identification has
      * to have possible values within this range
@@ -1649,7 +1860,12 @@ export interface IdentificationQuery {
      * The Stealing identification has to
      * have possible values within this range
      */
-    stealing?: OpenRange
+    stealing?: OpenRange,
+    /**
+     * The Knockback identification has to
+     * have possible values within this range
+     */
+    knockback?: OpenRange,
 }
 
 /**
@@ -2329,7 +2545,7 @@ export class Player extends BaseAPIObject {
     /**
      * The playtime of the player
      * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon">The playtime doesn't have a specific unit. This value is roughly equal to one fifth of the player's playtime, however.
+     *     <img src="../../assets/tip.png", class="noteBoxIcon">The playtime doesn't have a specific unit. This value is roughly equal to one fifth of the player's playtime in minutes, however.
      * </div>
      */
     public playtime: number;
@@ -4072,10 +4288,7 @@ export interface ItemRequirements {
     /**
      * The class required to use the item
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">The value here is always the non-donator class.
-     * </div>
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is currently never set on weapons.
+     *     <img src="../../assets/note.png", class="noteBoxIcon">The value here is always the base class.
      * </div>
      */
     class: ClassBaseType?,
@@ -4229,36 +4442,57 @@ export type IdentificationName =
     | "DEFENCE"
     | "AGILITY"
 
-    | "MAIN_ATTACK_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_DAMAGE_RAW"
     | "SPELL_DAMAGE_PERCENT"
-    | "SPELL_DAMAGE_RAW"
-    | "RAINBOW_SPELL_DAMAGE_RAW"
     | "SPELL_EARTH_DAMAGE_PERCENT"
     | "SPELL_THUNDER_DAMAGE_PERCENT"
     | "SPELL_WATER_DAMAGE_PERCENT"
     | "SPELL_FIRE_DAMAGE_PERCENT"
     | "SPELL_AIR_DAMAGE_PERCENT"
+    | "SPELL_ELEMENTAL_DAMAGE_PERCENT"
+    | "SPELL_NEUTRAL_DAMAGE_PERCENT"
+    | "SPELL_DAMAGE_RAW"
     | "SPELL_EARTH_DAMAGE_RAW"
     | "SPELL_THUNDER_DAMAGE_RAW"
     | "SPELL_WATER_DAMAGE_RAW"
     | "SPELL_FIRE_DAMAGE_RAW"
     | "SPELL_AIR_DAMAGE_RAW"
+    | "SPELL_ELEMENTAL_DAMAGE_RAW"
+    | "SPELL_NEUTRAL_DAMAGE_RAW"
+
+    | "MAIN_ATTACK_DAMAGE_PERCENT"
     | "MAIN_ATTACK_EARTH_DAMAGE_PERCENT"
     | "MAIN_ATTACK_THUNDER_DAMAGE_PERCENT"
     | "MAIN_ATTACK_WATER_DAMAGE_PERCENT"
     | "MAIN_ATTACK_FIRE_DAMAGE_PERCENT"
     | "MAIN_ATTACK_AIR_DAMAGE_PERCENT"
+    | "MAIN_ATTACK_ELEMENTAL_DAMAGE_PERCENT"
+    | "MAIN_ATTACK_NEUTRAL_DAMAGE_PERCENT"
+    | "MAIN_ATTACK_DAMAGE_RAW"
     | "MAIN_ATTACK_EARTH_DAMAGE_RAW"
     | "MAIN_ATTACK_THUNDER_DAMAGE_RAW"
     | "MAIN_ATTACK_WATER_DAMAGE_RAW"
     | "MAIN_ATTACK_FIRE_DAMAGE_RAW"
     | "MAIN_ATTACK_AIR_DAMAGE_RAW"
-    | "EARTH_DAMAGE"
-    | "THUNDER_DAMAGE"
-    | "WATER_DAMAGE"
-    | "FIRE_DAMAGE"
-    | "AIR_DAMAGE"
+    | "MAIN_ATTACK_ELEMENTAL_DAMAGE_RAW"
+    | "MAIN_ATTACK_NEUTRAL_DAMAGE_RAW"
+
+    | "DAMAGE_PERCENT"
+    | "EARTH_DAMAGE_PERCENT"
+    | "THUNDER_DAMAGE_PERCENT"
+    | "WATER_DAMAGE_PERCENT"
+    | "FIRE_DAMAGE_PERCENT"
+    | "AIR_DAMAGE_PERCENT"
+    | "ELEMENTAL_DAMAGE_PERCENT"
+    | "NEUTRAL_DAMAGE_PERCENT"
+    | "DAMAGE_RAW"
+    | "EARTH_DAMAGE_RAW"
+    | "THUNDER_DAMAGE_RAW"
+    | "WATER_DAMAGE_RAW"
+    | "FIRE_DAMAGE_RAW"
+    | "AIR_DAMAGE_RAW"
+    | "ELEMENTAL_DAMAGE_RAW"
+    | "NEUTRAL_DAMAGE_RAW"
+    | "CRITICAL_DAMAGE_RAW"
 
     | "EARTH_DEFENCE"
     | "THUNDER_DEFENCE"
@@ -4296,7 +4530,8 @@ export type IdentificationName =
     | "XP_BONUS"
     | "LOOT_BONUS"
     | "LOOT_QUALITY"
-    | "STEALING";
+    | "STEALING"
+    | "KNOCKBACK";
 
 /**
  * A singular identification
@@ -4304,8 +4539,12 @@ export type IdentificationName =
 export interface Identification {
     /**
      * The name of the identification
+     * <div class="noteBox tip" style="display:flex">
+     *     <img src="../../assets/tip.png", class="noteBoxIcon"><div>You can use the {@link LocalData.identifications | Identification Data} to look up more info on this ID.</div>
+     * </div>
      */
     name: IdentificationName,
+    // id names should update ele dmg % to proper name to not clash with raw ele dmg
     /**
      * The base value for the identification
      * <div class="noteBox note" style="display:flex">
@@ -4314,11 +4553,17 @@ export interface Identification {
      */
     base?: number,
     /**
-     * The minimal value of the identification's roll
+     * The numerically lowest possible value of the identification's roll
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On {@link IdentificationData.inverted | inverted} IDs, this is the best possible roll.</div>
+     * </div>
      */
     min: number,
     /**
-     * The maximum value of the identification's roll
+     * The numerically highest possible value of the identification's roll
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On {@link IdentificationData.inverted | inverted} IDs, this is the worst possible roll.</div>
+     * </div>
      */
     max: number
 }
