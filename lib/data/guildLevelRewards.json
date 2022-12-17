@@ -8,8 +8,8 @@
   {
     "level": 0,
     "type": "MEMBER_SLOTS",
-    "value": 2,
-    "confirmed": null
+    "value": 4,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 0,
@@ -32,8 +32,8 @@
   {
     "level": 2,
     "type": "MEMBER_SLOTS",
-    "value": 3,
-    "confirmed": null
+    "value": 4,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 3,
@@ -56,8 +56,8 @@
   {
     "level": 6,
     "type": "MEMBER_SLOTS",
-    "value": 5,
-    "confirmed": null
+    "value": 8,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 7,
@@ -98,8 +98,8 @@
   {
     "level": 15,
     "type": "MEMBER_SLOTS",
-    "value": 5,
-    "confirmed": null
+    "value": 10,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 16,
@@ -128,8 +128,8 @@
   {
     "level": 24,
     "type": "MEMBER_SLOTS",
-    "value": 5,
-    "confirmed": null
+    "value": 12,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 25,
@@ -164,8 +164,8 @@
   {
     "level": 33,
     "type": "MEMBER_SLOTS",
-    "value": 7,
-    "confirmed": null
+    "value": 10,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 34,
@@ -206,8 +206,8 @@
   {
     "level": 42,
     "type": "MEMBER_SLOTS",
-    "value": 5,
-    "confirmed": null
+    "value": 12,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 45,
@@ -246,6 +246,12 @@
     "confirmed": "2022-11-23"
   },
   {
+    "level": 54,
+    "type": "MEMBER_SLOTS",
+    "value": 12,
+    "confirmed": "2022-12-16"
+  },
+  {
     "level": 57,
     "type": "TAX",
     "value": 20,
@@ -273,7 +279,7 @@
     "level": 66,
     "type": "MEMBER_SLOTS",
     "value": 8,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 69,
@@ -308,8 +314,8 @@
   {
     "level": 75,
     "type": "MEMBER_SLOTS",
-    "value": 10,
-    "confirmed": null
+    "value": 6,
+    "confirmed": "2022-12-16"
   },
   {
     "level": 78,
@@ -321,7 +327,7 @@
     "level": 81,
     "type": "MEMBER_SLOTS",
     "value": 6,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 84,
@@ -339,7 +345,7 @@
     "level": 87,
     "type": "MEMBER_SLOTS",
     "value": 6,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 89,
@@ -357,7 +363,7 @@
     "level": 93,
     "type": "MEMBER_SLOTS",
     "value": 4,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 95,
@@ -369,7 +375,7 @@
     "level": 96,
     "type": "MEMBER_SLOTS",
     "value": 4,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 96,
@@ -381,7 +387,7 @@
     "level": 99,
     "type": "MEMBER_SLOTS",
     "value": 4,
-    "confirmed": null
+    "confirmed": "2022-12-16"
   },
   {
     "level": 100,
@@ -390,15 +396,57 @@
     "confirmed": null
   },
   {
+    "level": 102,
+    "type": "MEMBER_SLOTS",
+    "value": 4,
+    "confirmed": "2022-12-16"
+  },
+  {
     "level": 104,
     "type": "LOADOUT_SLOTS",
     "value": 1,
     "confirmed": "2022-11-23"
   },
   {
+    "level": 105,
+    "type": "MEMBER_SLOTS",
+    "value": 4,
+    "confirmed": "2022-12-16"
+  },
+  {
+    "level": 108,
+    "type": "MEMBER_SLOTS",
+    "value": 4,
+    "confirmed": "2022-12-16"
+  },
+  {
+    "level": 111,
+    "type": "MEMBER_SLOTS",
+    "value": 4,
+    "confirmed": "2022-12-16"
+  },
+  {
+    "level": 114,
+    "type": "MEMBER_SLOTS",
+    "value": 4,
+    "confirmed": "2022-12-16"
+  },
+  {
     "level": 116,
     "type": "LOADOUT_SLOTS",
     "value": 1,
     "confirmed": "2022-11-23"
+  },
+  {
+    "level": 117,
+    "type": "MEMBER_SLOTS",
+    "value": 10,
+    "confirmed": "2022-12-16"
+  },
+  {
+    "level": 120,
+    "type": "MEMBER_SLOTS",
+    "value": 10,
+    "confirmed": "2022-12-16"
   }
 ]
