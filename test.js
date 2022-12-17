@@ -37,10 +37,14 @@ async function main() {
     const playersToTest = [
         "asdbsdloafh",
         {
-            player: "_y1n",
+            player: "Nightstriker",
             forceCaseMatch: true
         },
-        "_y1n",
+        {
+            player: "NightStriker",
+            forceCaseMatch: true
+        },
+        "NightStriker",
         "Woodcreature",
         {
             player: "Heyzeer0",
