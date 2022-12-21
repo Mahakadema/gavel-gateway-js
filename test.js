@@ -590,6 +590,37 @@ Local Data
         }
     }
 
+    console.log(
+        "#####################################\n" +
+        "Map Location stuff\n" +
+        "#####################################"
+    );
+    console.log('    | "' + (await api.fetchMapLocations()).list.map(v => v.icon).sort().filter((v, i, a) => v !== a[i - 1]).join('"\n    | "') + '"')
+    console.log();
+    console.log("-----------");
+    console.log();
+    console.log('    | "' + (await api.fetchMapLocations()).list
+        .sort((a, b) => a.name < b.name ? -1 : b.name > a.name)
+        .filter((v, i, a) => v.name !== a[i - 1]?.name)
+        .sort((a, b) => {
+            const categories = [
+                (l) => l.name.endsWith("Dungeon"),
+                (l) => l.icon === "Content_Quest.png",
+                (l) => l.name.includes("Mini-Quest"),
+                (l) => ["Content_UltimateDiscovery.png", "Content_GrindSpot.png", "Content_Cave.png", "Content_BossAltar.png", "Content_Raid.png"].includes(l.icon) || l.icon.startsWith("Special_") || l.name === "Corrupted Dungeons",
+                (l) => l.icon.startsWith("NPC_"),
+                (l) => l.name.endsWith("Merchant"),
+                (l) => l.name.endsWith("Station")
+            ];
+            const aIdx = categories.findIndex(v => v(a));
+            const bIdx = categories.findIndex(v => v(b));
+            if (aIdx === bIdx)
+                return a.name < b.name ? -1 : b.name > a.name;
+            return aIdx - bIdx;
+        })
+        .map(v => v.name)
+        .join('"\n    | "') + '"')
+
     console.log(`
 #####################################
 Ratelimit after all tests completed
