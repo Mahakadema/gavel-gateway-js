@@ -477,11 +477,11 @@
         "inverted": false
     },
     {
-        "name": "CRITICAL_DAMAGE_RAW",
+        "name": "CRITICAL_DAMAGE_PERCENT",
         "inGameName": "Critical Damage",
-        "itemApiName": "criticalDamageBonusRaw",
-        "ingredientApiName": "CRITICALDAMAGEBONUSRAW",
-        "suffix": "",
+        "itemApiName": "criticalDamageBonus",
+        "ingredientApiName": "CRITICALDAMAGEBONUS",
+        "suffix": "%",
         "static": false,
         "inverted": false
     },
