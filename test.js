@@ -47,6 +47,10 @@ async function main() {
         "NightStriker",
         "Woodcreature",
         {
+            player: "NOTGDATALL",
+            forceUUIDLookup: true
+        },
+        {
             player: "Heyzeer0",
             timeout: 3000
         }
@@ -277,8 +281,9 @@ Requesting players
         const result = await api.fetchPlayer(player).catch(e => e);
         console.log(Date.now() - start, "ms");
         if (result?.name) {
-            console.log(result?.name);
-            console.log(result?.totalLevel);
+            console.log(result.name);
+            console.log(result.totalLevel);
+            console.log(result.source);
         } else {
             console.log(result);
         }
