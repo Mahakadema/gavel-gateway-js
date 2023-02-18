@@ -241,7 +241,7 @@ export var data: LocalData
  * A collection of static data that is used within
  * the library
  */
-export interface LocalData {
+interface LocalData {
     /**
      * Information on Identifications
      */
@@ -281,7 +281,7 @@ export interface LocalData {
 /**
  * Information to translate raw identification API data to wrapped data
  */
-export interface IdentificationData {
+interface IdentificationData {
     /**
      * The name gavel-gateway-js uses
      */
@@ -315,7 +315,7 @@ export interface IdentificationData {
 /**
  * Table to translate raw major ID API data to wrapped data
  */
-export interface MajorIdData {
+interface MajorIdData {
     /**
      * The Major ID name the wrapper uses
      */
@@ -343,7 +343,7 @@ export interface MajorIdData {
 /**
  * Additional information for a territory
  */
-export interface TerritoryData {
+interface TerritoryData {
     /**
      * The name of the territory
      */
@@ -362,7 +362,7 @@ export interface TerritoryData {
  * A table to translate Minecraft ID strings
  * to numeric IDs and back; only item IDs
  */
-export interface MinecraftIds {
+interface MinecraftIds {
     /**
      * An object with key value pairs mapping string IDs -> string IDs
      */
@@ -376,7 +376,7 @@ export interface MinecraftIds {
 /**
  * Information on guild level requirements
  */
-export interface GuildLevelRequirementData {
+interface GuildLevelRequirementData {
     /**
      * The amount of XP required to level to the next level
      * before 1.20 - Gavel Reborn
@@ -407,7 +407,7 @@ export interface GuildLevelRequirementData {
 /**
  * Information of guild level rewards
  */
-export interface GuildLevelRewardData {
+interface GuildLevelRewardData {
     /**
      * The level this reward is unlocked at
      */
@@ -429,7 +429,7 @@ export interface GuildLevelRewardData {
 /**
  * A type of reward earned by a guild levelling up
  */
-export type GuildLevelRewardType =
+type GuildLevelRewardType =
     | "MEMBER_SLOTS"
     | "BADGE_SLOTS"
     | "LOADOUT_SLOTS"
@@ -444,7 +444,7 @@ export type GuildLevelRewardType =
 /**
  * A sprite name commonly used by Wynncraft items
  */
-export type ItemSpriteName =
+type ItemSpriteName =
     | "PLAYER_HEAD"
 
     | "LEATHER_HELMET"
@@ -637,7 +637,7 @@ export type ItemSpriteName =
 /**
  * The base options for a generic API request
  */
-export interface RequestOptions {
+interface RequestOptions {
     /**
      * The API key to use in this request
      * <div class="noteBox important" style="display:flex">
@@ -686,7 +686,7 @@ export interface RequestOptions {
 /**
  * The options for a raw API request
  */
-export interface RawRequestOptions extends RequestOptions {
+interface RawRequestOptions extends RequestOptions {
     /**
      * The API route to request
      */
@@ -716,7 +716,7 @@ export interface RawRequestOptions extends RequestOptions {
 /**
  * The options for a player API request
  */
-export interface PlayerRequestOptions extends RequestOptions {
+interface PlayerRequestOptions extends RequestOptions {
     /**
      * A player UUID or name; case-insensitive
      */
@@ -725,13 +725,25 @@ export interface PlayerRequestOptions extends RequestOptions {
      * Whether {@link PlayerRequestOptions.player | player} should be case-sensitive instead; ignored if {@link PlayerRequestOptions.player | player} is a UUID
      * @default false
      */
-    forceCaseMatch?: boolean
+    forceCaseMatch?: boolean,
+    /**
+     * Whether to force a {@link fetchPlayerUUID | UUID lookup} before the player request. This can help reduce some errors caused by name changes.
+     * Ignored if {@link PlayerRequestOptions.player | player} is a UUID
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">This may cause extra API requests.
+     * </div>
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">This makes the request case sensitive.
+     * </div>
+     * @default false
+     */
+    forceUUIDLookup?: boolean
 }
 
 /**
  * The options for a player API request
  */
-export interface PlayerUUIDRequestOptions extends RequestOptions {
+interface PlayerUUIDRequestOptions extends RequestOptions {
     /**
      * A player name; case-sensitive
      */
@@ -741,7 +753,7 @@ export interface PlayerUUIDRequestOptions extends RequestOptions {
 /**
  * The options for a player leaderboard API request
  */
-export interface PlayerLeaderboardRequestOptions extends RequestOptions {
+interface PlayerLeaderboardRequestOptions extends RequestOptions {
     /**
      * The scope of the leaderboard; TOTAL means all classes, SOLO means single class
      * @default "TOTAL"
@@ -760,7 +772,7 @@ export interface PlayerLeaderboardRequestOptions extends RequestOptions {
 /**
  * The options for a guild API request
  */
-export interface GuildRequestOptions extends RequestOptions {
+interface GuildRequestOptions extends RequestOptions {
     /**
      * The name of the guild
      */
@@ -779,7 +791,7 @@ export interface GuildRequestOptions extends RequestOptions {
 /**
  * The options for an ingredient API request
  */
-export interface IngredientSearchRequestOptions extends RequestOptions {
+interface IngredientSearchRequestOptions extends RequestOptions {
     /**
      * Only match ingredients containing this
      * string in their name
@@ -831,7 +843,7 @@ export interface IngredientSearchRequestOptions extends RequestOptions {
 /**
  * The options for a recipe API request
  */
-export interface RecipeSearchRequestOptions extends RequestOptions {
+interface RecipeSearchRequestOptions extends RequestOptions {
     /**
      * Only match the recipe with this ID
      */
@@ -895,7 +907,7 @@ export interface RecipeSearchRequestOptions extends RequestOptions {
 /**
  * The options for an item API request
  */
-export interface ItemSearchRequestOptions extends RequestOptions {
+interface ItemSearchRequestOptions extends RequestOptions {
     /**
      * Only match items containing this string in their `name`
      * <div class="noteBox tip" style="display:flex">
@@ -976,7 +988,7 @@ export interface ItemSearchRequestOptions extends RequestOptions {
 /**
  * The options for a name search API request
  */
-export interface NameSearchRequestOptions extends RequestOptions {
+interface NameSearchRequestOptions extends RequestOptions {
     /**
      * A string to search for
      */
@@ -995,7 +1007,7 @@ export interface NameSearchRequestOptions extends RequestOptions {
 /**
  * Information on the ratelimits of the API
  */
-export interface Ratelimit {
+interface Ratelimit {
     /**
      * The amount of API keys currently registered in the config
      */
@@ -1032,7 +1044,7 @@ export interface Ratelimit {
  *     <img src="../../assets/note.png", class="noteBoxIcon">If no API keys are set in the config, only one channel exists with the <code>apiKey</code> being set to <code>null</code>.
  * </div>
  */
-export interface RatelimitChannel {
+interface RatelimitChannel {
     /**
      * The API key being used with this channel
      */
@@ -1065,7 +1077,7 @@ export interface RatelimitChannel {
 /**
  * The configuration of the library
  */
-export interface Config {
+interface Config {
     /**
      * The maximum amount of queued requests before
      * new requests are rejected with an error
@@ -1131,7 +1143,7 @@ export interface Config {
 /**
  * The options to set the config to
  */
-export interface ConfigOptions {
+interface ConfigOptions {
     /**
      * How many request should be allowed to be queued
      * before the wrapper rejects new requests with an error
@@ -1193,7 +1205,7 @@ export interface ConfigOptions {
 /**
  * An API Key
  */
-export interface ApiKey {
+interface ApiKey {
     /**
      * The key itself
      */
@@ -1211,7 +1223,7 @@ export interface ApiKey {
 /**
  * Stores information on all possible routes
  */
-export interface Routes {
+interface Routes {
     /**
      * Player stats route
      */
@@ -1293,7 +1305,7 @@ export interface Routes {
 /**
  * A singular route to the API
  */
-export interface Route {
+interface Route {
     /**
      * The URL of the route
      */
@@ -1311,7 +1323,7 @@ export interface Route {
 /**
  * Options specifying cache times for routes
  */
-export interface CacheTimeOptions {
+interface CacheTimeOptions {
     /**
      * The cache time for player stats
      */
@@ -1408,7 +1420,7 @@ export interface CacheTimeOptions {
  *     <img src="../../assets/tip.png", class="noteBoxIcon">Use an empty range <code>{}</code> to search for an ID with any value.
  * </div>
  */
-export interface IdentificationQuery {
+interface IdentificationQuery {
     /**
      * Whether all specified filters have to
      * be satisfied, or if any can match
@@ -1871,7 +1883,7 @@ export interface IdentificationQuery {
 /**
  * A crafting profession filter to match when requesting ingredients
  */
-export interface CraftingSkillQuery {
+interface CraftingSkillQuery {
     /**
      * Whether the ingredient has to be usable for all
      * specified Crafting Skills, or if any are sufficient
@@ -1891,7 +1903,7 @@ export interface CraftingSkillQuery {
  *     <img src="../../assets/tip.png", class="noteBoxIcon">Values for modifier bounds have to be integer.
  * </div>
  */
-export interface PositionModifierQuery {
+interface PositionModifierQuery {
     /**
      * Whether all specified filters have to be satisfied, or if any can match
      * @default true
@@ -1930,7 +1942,7 @@ export interface PositionModifierQuery {
  *     <img src="../../assets/tip.png", class="noteBoxIcon">Values for range bounds have to be integer.
  * </div>
  */
-export interface ItemRequirementQuery {
+interface ItemRequirementQuery {
     /**
      * Whether all specified filters have to be satisfied, or if any can match
      * @default true
@@ -1975,7 +1987,7 @@ export interface ItemRequirementQuery {
 /**
  * A major ID filter to match when requesting Items
  */
-export interface MajorIdQuery {
+interface MajorIdQuery {
     /**
      * Whether the item has to have all major IDs, or if any are sufficient
      * @default true
@@ -1994,7 +2006,7 @@ export interface MajorIdQuery {
  *     <img src="../../assets/tip.png", class="noteBoxIcon">Values must be integer.
  * </div>
  */
-export interface ItemStatQuery {
+interface ItemStatQuery {
     /**
      * Whether all specified filters have to be satisfied, or if any can match
      * @default true
@@ -2062,7 +2074,7 @@ export interface ItemStatQuery {
 /**
  * A visual sprite to match in ingredient or item search
  */
-export interface SpriteQuery {
+interface SpriteQuery {
     /**
      * The ID of the sprite
      */
@@ -2079,7 +2091,7 @@ export interface SpriteQuery {
  *     <img src="../../assets/tip.png", class="noteBoxIcon">Values for ID bounds have to be integer.
  * </div>
  */
-export interface RestrictedIdQuery {
+interface RestrictedIdQuery {
     /**
      * Whether all specified filters have to be satisfied, or if any can match
      * @default true
@@ -2908,12 +2920,9 @@ export class Territory {
      */
     public guild: string?;
     /**
-     * The attacker of the territory
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is currently unused.
-     * </div>
+     * The tag of the guild holding the territory; `null` if no guild owns the territory
      */
-    public attacker: string?;
+    public guildTag: string?;
     /**
      * The time the territory was acquired
      */
@@ -3131,17 +3140,17 @@ export class OnlinePlayersSum extends BaseAPIObject {
 /**
  * A <a href="https://semver.org/" target="_blank">semantic version identifier</a>
  */
-export type SemanticVersion = `${number}.${number}.${number}`;
+type SemanticVersion = `${number}.${number}.${number}`;
 
 /**
  * A value resolvable to a minecraft item id
  */
-export type MinecraftId = MinecraftStringId | number;
+type MinecraftId = MinecraftStringId | number;
 
 /**
  * A value resolvable to a minecraft item id in string form
  */
-export type MinecraftStringId = `minecraft:${string}`;
+type MinecraftStringId = `minecraft:${string}`;
 
 /**
  * A range containing numbers between certain threshholds,
@@ -3150,7 +3159,7 @@ export type MinecraftStringId = `minecraft:${string}`;
  *     <img src="../../assets/note.png", class="noteBoxIcon">Some input fields for OpenRanges may require integers.
  * </div>
  */
-export interface OpenRange {
+interface OpenRange {
     /**
      * The minimal value to select
      */
@@ -3167,7 +3176,7 @@ export interface OpenRange {
  *     <img src="../../assets/note.png", class="noteBoxIcon">Some input fields for OpenRanges may require integers.
  * </div>
  */
-export interface Range {
+interface Range {
     /**
      * The minimal value to select
      */
@@ -3181,7 +3190,7 @@ export interface Range {
 /**
  * A server type found on Wynncraft
  */
-export type WorldType =
+type WorldType =
     | "WYNNCRAFT"
     | "MEDIA"
     | "OTHER";
@@ -3189,7 +3198,7 @@ export type WorldType =
 /**
  * A class of a player on the leaderboard
  */
-export interface LeaderboardPlayerClass {
+interface LeaderboardPlayerClass {
     /**
      * The uuid of the class
      */
@@ -3207,14 +3216,14 @@ export interface LeaderboardPlayerClass {
 /**
  * A scope of leaderboard ranking
  */
-export type PlayerLeaderboardScope =
+type PlayerLeaderboardScope =
     | "TOTAL"
     | "SOLO";
 
 /**
  * Player leaderboards available for total
  */
-export type PlayerTotalLeaderboardType =
+type PlayerTotalLeaderboardType =
     | "PVP"
     | "COMBAT"
     | "PROFESSION"
@@ -3223,7 +3232,7 @@ export type PlayerTotalLeaderboardType =
 /**
  * Player leaderboards available for solo
  */
-export type PlayerSoloLeaderboardType =
+type PlayerSoloLeaderboardType =
     | "COMBAT"
     | "PROFESSION"
     | "COMBINED"
@@ -3243,7 +3252,7 @@ export type PlayerSoloLeaderboardType =
 /**
  * A type of player class excluding the reskins
  */
-export type ClassBaseType =
+type ClassBaseType =
     | "ARCHER"
     | "ASSASSIN"
     | "MAGE"
@@ -3253,7 +3262,7 @@ export type ClassBaseType =
 /**
  * A type of player class
  */
-export type ClassType = ClassBaseType
+type ClassType = ClassBaseType
     | "DARK_WIZARD"
     | "HUNTER"
     | "KNIGHT"
@@ -3263,7 +3272,7 @@ export type ClassType = ClassBaseType
 /**
 * Holds ClassLevelData for all levels on a class
 */
-export interface ClassLevelsData {
+interface ClassLevelsData {
     /**
      * The combat level of the class
      */
@@ -3321,7 +3330,7 @@ export interface ClassLevelsData {
 /**
 * Contains the information of one level
 */
-export interface ClassLevelData {
+interface ClassLevelData {
     /**
      * The whole level
      */
@@ -3337,7 +3346,7 @@ export interface ClassLevelData {
 * such as dungeons or raids, completed by a
 * player or class
 */
-export interface RepeatableContent {
+interface RepeatableContent {
     /**
      * The name of content
      */
@@ -3351,7 +3360,7 @@ export interface RepeatableContent {
 /**
 * An object containing information on manually assigned class skill points
 */
-export interface SkillPoints {
+interface SkillPoints {
     /**
      * The Strength skill of the class
      */
@@ -3377,7 +3386,7 @@ export interface SkillPoints {
 /**
 * Holds information of class gamemodes
 */
-export interface Gamemodes {
+interface Gamemodes {
     /**
      * Whether the class is in Hardcore mode
      */
@@ -3402,7 +3411,7 @@ export interface Gamemodes {
 /**
 * Holds information on player or class PvP stats
 */
-export interface PvpData {
+interface PvpData {
     /**
      * The kills the player scored
      */
@@ -3416,7 +3425,7 @@ export interface PvpData {
 /**
 * A staff rank on Wynncraft
 */
-export type ServerRank =
+type ServerRank =
     | "ADMINISTRATOR"
     | "WEBDEV"
     | "MODERATOR"
@@ -3433,7 +3442,7 @@ export type ServerRank =
 /**
 * A donator rank on Wynncraft
 */
-export type DonatorRank =
+type DonatorRank =
     | "CHAMPION"
     | "HERO"
     | "VIP+"
@@ -3442,7 +3451,7 @@ export type DonatorRank =
 /**
 * Holds information about player ranks
 */
-export interface RankData {
+interface RankData {
     /**
      * The players' server rank
      */
@@ -3467,7 +3476,7 @@ export interface RankData {
 /**
 * Holds information about a players Guild
 */
-export interface PlayerGuildData {
+interface PlayerGuildData {
     /**
      * The name of the player's Guild, if applicable
      * @readonly
@@ -3490,7 +3499,7 @@ export interface PlayerGuildData {
 /**
 * Holds total level data
 */
-export interface PlayerLevelsData {
+interface PlayerLevelsData {
     /**
      * The combined combat level of the player
      */
@@ -3508,7 +3517,7 @@ export interface PlayerLevelsData {
 /**
  * Holds information on the player's leaderboard rankings
  */
-export interface PlayerRankings {
+interface PlayerRankings {
     /**
      * The ranking of the player's Guild
      * <div class="noteBox warning" style="display:flex">
@@ -3532,7 +3541,7 @@ export interface PlayerRankings {
 /**
  * A player's level rankings
  */
-export interface PlayerLevelRankings {
+interface PlayerLevelRankings {
     /**
      * The level rankings for combined levels across all classes
      */
@@ -3546,7 +3555,7 @@ export interface PlayerLevelRankings {
 /**
  * A player's combined level rankings
  */
-export interface PlayerTotalLevelRankings {
+interface PlayerTotalLevelRankings {
     /**
      * Position in the `TOTAL`/`COMBINED` leaderboard
      */
@@ -3564,7 +3573,7 @@ export interface PlayerTotalLevelRankings {
 /**
  * A player's single class level rankings
  */
-export interface PlayerSoloLevelRankings {
+interface PlayerSoloLevelRankings {
     /**
      * Position in the `SOLO`/`COMBINED` leaderboard
      */
@@ -3630,7 +3639,7 @@ export interface PlayerSoloLevelRankings {
 /**
  * A rank in a guild
  */
-export type GuildRank =
+type GuildRank =
     | "OWNER"
     | "CHIEF"
     | "STRATEGIST"
@@ -3641,7 +3650,7 @@ export type GuildRank =
 /**
  * A color as used by Minecraft
  */
-export type MinecraftColor =
+type MinecraftColor =
     | "WHITE"
     | "LIGHT_GRAY"
     | "GRAY"
@@ -3662,7 +3671,7 @@ export type MinecraftColor =
 /**
 * A banner pattern as defined by Minecraft
 */
-export type BannerPattern =
+type BannerPattern =
     | "bs" // Bottom Stripe
     | "ts" // Top Stripe
     | "ls" // Left Stripe
@@ -3707,7 +3716,7 @@ export type BannerPattern =
 /**
 * A banner layer with a pattern and color
 */
-export interface BannerLayer {
+interface BannerLayer {
     /**
      * The layer's pattern
      */
@@ -3721,7 +3730,7 @@ export interface BannerLayer {
 /**
 * An object with data about a guild banner
 */
-export interface BannerData {
+interface BannerData {
     /**
      * The highest unlocked regular tier of the banner
      */
@@ -3743,7 +3752,7 @@ export interface BannerData {
 /**
  * A guild level in friendly format
  */
-export interface GuildXPInterpretation {
+interface GuildXPInterpretation {
     /**
      * If this is `false`, all other properties are `null`, should never be `false`, unless the library hasn't updated in years
      */
@@ -3773,7 +3782,7 @@ export interface GuildXPInterpretation {
 /**
  * A name for a map location
  */
-export type MapLocationName =
+type MapLocationName =
     | "Corrupted Decrepit Sewers Dungeon"
     | "Corrupted Ice Barrows Dungeon"
     | "Corrupted Infested Pit Dungeon"
@@ -4162,7 +4171,7 @@ export type MapLocationName =
 /**
  * An icon for a map location
  */
-export type MapLocationIcon =
+type MapLocationIcon =
     | "Content_BossAltar.png"
     | "Content_Cave.png"
     | "Content_CorruptedDungeon.png"
@@ -4214,7 +4223,7 @@ export type MapLocationIcon =
  * weapon stats are only set on weapons,
  * armor stats are only set on armor
  */
-export interface ItemStats {
+interface ItemStats {
     /**
      * The powderslots of the item
      */
@@ -4276,7 +4285,7 @@ export interface ItemStats {
 /**
  * Requirements to use an item
  */
-export interface ItemRequirements {
+interface ItemRequirements {
     /**
      * The minimum combat level required to use the item
      */
@@ -4317,7 +4326,7 @@ export interface ItemRequirements {
 /**
  * An item skin as found in the mojang API
  */
-export interface ItemSkin {
+interface ItemSkin {
     /**
      * The UUID of the player used for the skin
      * <div class="noteBox warning" style="display:flex">
@@ -4341,14 +4350,14 @@ export interface ItemSkin {
 /**
  * A restriction put on an item
  */
-export type ItemRestriction =
+type ItemRestriction =
     | "UNTRADABLE"
     | "QUEST"; // "Quest Item"
 
 /**
 * A weapon attack speed
 */
-export type AttackSpeed =
+type AttackSpeed =
     | "SUPER_FAST"
     | "VERY_FAST"
     | "FAST"
@@ -4360,7 +4369,7 @@ export type AttackSpeed =
 /**
 * An item rarity tier
 */
-export type ItemRarity =
+type ItemRarity =
     | "MYTHIC"
     | "FABLED"
     | "LEGENDARY"
@@ -4372,7 +4381,7 @@ export type ItemRarity =
 /**
 * A source an item can be obtained from
 */
-export type ItemDropType =
+type ItemDropType =
     | "NEVER"
     | "NORMAL"
     | "DUNGEON"
@@ -4381,7 +4390,7 @@ export type ItemDropType =
 /**
 * A name for an item major ID
 */
-export type MajorId =
+type MajorId =
     | "SAVIOURS_SACRIFICE" // HERO
     | "PEACEFUL_EFFIGY"
     | "FURIOUS_EFFIGY"
@@ -4410,7 +4419,7 @@ export type MajorId =
 /**
  * All weapon, armor, and accessory types
  */
-export type ItemType =
+type ItemType =
     | "BOOTS"
     | "LEGGINGS"
     | "CHESTPLATE"
@@ -4427,7 +4436,7 @@ export type ItemType =
 /**
 * A category to search items or recipes by
 */
-export type ItemCategory =
+type ItemCategory =
     | "ARMOR"
     | "WEAPON"
     | "ACCESSORY";
@@ -4435,7 +4444,7 @@ export type ItemCategory =
 /**
 * A name for an item identification
 */
-export type IdentificationName =
+type IdentificationName =
     | "STRENGTH"
     | "DEXTERITY"
     | "INTELLIGENCE"
@@ -4536,7 +4545,7 @@ export type IdentificationName =
 /**
  * A singular identification
  */
-export interface Identification {
+interface Identification {
     /**
      * The name of the identification
      * <div class="noteBox tip" style="display:flex">
@@ -4571,7 +4580,7 @@ export interface Identification {
 /**
  * An item sprite
  */
-export interface Sprite {
+interface Sprite {
     /**
      * The string version of the items ID
      */
@@ -4589,7 +4598,7 @@ export interface Sprite {
 /**
  * The crafting grid position modifiers of an ingredient
  */
-export interface PositionModifiers {
+interface PositionModifiers {
     /**
      * The ID modifier to ingredients placed to the left of the ingredient
      */
@@ -4619,7 +4628,7 @@ export interface PositionModifiers {
 /**
  * The IDs only effective on certain types of crafted items
  */
-export interface RestrictedIdModifiers {
+interface RestrictedIdModifiers {
     /**
      * The durability modifier; only applies to non-consumable items
      */
@@ -4674,7 +4683,7 @@ export interface RestrictedIdModifiers {
 /**
 * A crafting profession skill
 */
-export type CraftingSkill =
+type CraftingSkill =
     | "ARMORING"
     | "ALCHEMISM"
     | "COOKING"
@@ -4687,7 +4696,7 @@ export type CraftingSkill =
 /**
 * A specific type of item craftable using professions
 */
-export type CraftableItemType =
+type CraftableItemType =
     | "BOOTS"
     | "BOW"
     | "BRACELET"
@@ -4707,7 +4716,7 @@ export type CraftableItemType =
 /**
  * A material to be used while crafting an item
  */
-export interface CraftingMaterial {
+interface CraftingMaterial {
     /**
      * The material name
      */
@@ -4721,7 +4730,7 @@ export interface CraftingMaterial {
 /**
  * A territory resource production
  */
-export interface Resources {
+interface Resources {
     /**
      * The amount of emeralds the territory produces
      */
@@ -4747,7 +4756,7 @@ export interface Resources {
 /**
  * A rectangular area
  */
-export interface SquareRegion {
+interface SquareRegion {
     /**
      * The bounds of the region on the X-axis
      */
@@ -4761,4 +4770,4 @@ export interface SquareRegion {
 /**
  * A URL to a Wynncraft API resource
  */
-export type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://web-api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
+type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://web-api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
