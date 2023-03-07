@@ -414,6 +414,12 @@
     "confirmed": "2022-12-16"
   },
   {
+    "level": 106,
+    "type": "BANK_SLOTS_PUBLIC",
+    "value": 7,
+    "confirmed": "2022-11-19"
+  },
+  {
     "level": 108,
     "type": "MEMBER_SLOTS",
     "value": 4,
