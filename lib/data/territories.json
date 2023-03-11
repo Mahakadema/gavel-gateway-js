@@ -8614,10 +8614,10 @@
     },
     "connections": [],
     "location": {
-      "startX": 1000,
-      "startZ": 1000,
-      "endX": 1024,
-      "endZ": 1024
+      "startX": null,
+      "startZ": null,
+      "endX": null,
+      "endZ": null
     }
   }
 }
