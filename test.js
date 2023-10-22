@@ -278,14 +278,14 @@ Requesting players
     for (const player of playersToTest) {
         console.log("Requesting", player);
         const start = Date.now();
-        const result = await api.fetchPlayer(player).catch(e => e);
-        console.log(Date.now() - start, "ms");
-        if (result?.name) {
+        try {
+            const result = await api.fetchPlayer(player);
+            console.log(Date.now() - start, "ms");
             console.log(result.name);
             console.log(result.totalLevel);
             console.log(result.source);
-        } else {
-            console.log(result);
+        } catch (e) {
+            console.log(e);
         }
         console.log();
     }
