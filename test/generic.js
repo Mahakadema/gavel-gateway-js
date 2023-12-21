@@ -1,5 +1,5 @@
 
-const api = require("./lib/src/index.js");
+const api = require("../lib/src/index.js");
 
 /**
  * This file is excluded from package downloads
@@ -10,7 +10,7 @@ const api = require("./lib/src/index.js");
  *     ...
  * ]
  */
-const apiKeys = require("./testApiKeys.json");
+const apiKeys = require("../testApiKeys.json");
 
 api.setConfig({ apiKeys: apiKeys });
 
@@ -198,7 +198,7 @@ async function main() {
     ];
 
     /**
-     * @type {import("./lib/src/index.js").IngredientSearchRequestOptions[]}
+     * @type {import("../lib/src/index.js").IngredientSearchRequestOptions[]}
      */
     const ingredientsToTest = [
         {
@@ -540,7 +540,7 @@ Local Data
         "Identification Data\n" +
         "#####################################"
     );
-    const items = await api.fetchRaw(api.setConfig({}).routes.ITEM_SEARCH.url);
+    const items = await api.fetchRaw(api.setConfig({}).routes.ITEMS.url);
     const itemsSet = new Set();
     console.log("---item properties---");
     for (const item of items.items) {

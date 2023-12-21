@@ -21,15 +21,13 @@ export function flushCache(): number
 
 /**
  * Returns a raw API response of the requested route.
- * This inserts a field `currentTimestamp` in `ROOT` for v2 requests and in `request` for legacy requests,
- * it contains the timestamp of the date in the `Date` header
  * <div class="noteBox important" style="display:flex">
  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request, or a route to request
  * @category Endpoint
  */
-export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promise<any>
+export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promise<RawResult>
 
 /**
  * Fetches a player from the API
@@ -88,13 +86,10 @@ export function fetchGuild(options: GuildRequestOptions | string): Promise<Guild
  * <div class="noteBox important" style="display:flex">
  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
- * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">The list is ordered in ascending order of creation.
- * </div>
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchGuildList(options?: RequestOptions): Promise<List<string>>
+export function fetchGuildList(options?: RequestOptions): Promise<List<GuildListItem>>
 
 /**
  * Fetches the guild leaderboard from the API
@@ -118,6 +113,27 @@ export function fetchGuildLeaderboard(options?: RequestOptions): Promise<List<Le
  * @category Endpoint
  */
 export function fetchTerritoryList(options?: RequestOptions): Promise<List<Territory>>
+
+/**
+ * Fetches all available leaderboard types from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchLeaderboardTypes(options?: RequestOptions): Promise<List<string>>
+
+// /**
+//  * Fetches a leaderboard from the API
+//  * <div class="noteBox important" style="display:flex">
+//  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+//  * </div>
+//  * @param options The options for the request
+//  * @category Endpoint
+//  */
+// // TODO: document types
+// export function fetchLeaderboard(options?: LeaderboardRequestOptions): Promise<List<LeaderboardEntry>>
 
 /**
  * Fetches all ingredients matching the options from the API
@@ -186,7 +202,7 @@ export function fetchItems(options?: ItemSearchRequestOptions | string): Promise
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchOnlinePlayers(options?: RequestOptions): Promise<List<World>>
+export function fetchOnlinePlayers(options?: OnlinePlayersRequestOptions | OnlinePlayersIdentifier): Promise<List<World>>
 
 /**
  * Fetches the number of online players from the API
@@ -229,7 +245,7 @@ export function fetchMapLocations(options: RequestOptions): Promise<List<MapLoca
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchMyLocation(options: RequestOptions): Promise<PlayerParty>
+export function fetchMyLocation(options: RequestOptions): Promise<List<PlayerParty>>
 
 /**
  * A collection of static data that is used within
@@ -242,14 +258,6 @@ export var data: LocalData
  * the library
  */
 interface LocalData {
-    /**
-     * Information on Identifications
-     */
-    identifications: IdentificationData[],
-    /**
-     * Information on Major IDs
-     */
-    majorIds: MajorIdData[],
     /**
      * A translation table for string and numeric minecraft IDs
      */
@@ -279,65 +287,39 @@ interface LocalData {
 }
 
 /**
- * Information to translate raw identification API data to wrapped data
- */
-interface IdentificationData {
-    /**
-     * The name gavel-gateway-js uses
-     */
-    name: IdentificationName,
-    /**
-     * The name as it displays in game
-     */
-    inGameName: string,
-    /**
-     * The name used in the item API
-     */
-    itemApiName: string,
-    /**
-     * The name used in the ingredient API
-     */
-    ingredientApiName: string,
-    /**
-     * The string appended directly to the IDs value, such as the "/3s" for Mana Steal or "%" for Spell Damage
-     */
-    suffix: string,
-    /**
-     * Whether the ID has a static value
-     */
-    static: boolean,
-    /**
-     * Whether the ID is inverted (lower values being better)
-     */
-    inverted: boolean,
-}
-
-/**
- * Table to translate raw major ID API data to wrapped data
+ * Information about a majorId
  */
 interface MajorIdData {
     /**
-     * The Major ID name the wrapper uses
+     * The Major ID name
      */
-    name: MajorId,
-    /**
-     * The name of the Major ID in the API
-     */
-    apiName: string,
-    /**
-     * The name of the Major ID as it shows up in-game
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
-     * </div>
-     */
-    inGameName?: string,
+    name: string,
     /**
      * The description of the Major ID as it shows up in-game
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This is only set after items have been requested once.
-     * </div>
      */
-    description?: string
+    description: string
+}
+
+/**
+ * Information on how to obtain an item
+ */
+interface ItemDropMeta {
+    /**
+     * The name of the activity, location or content where this item can be obtained
+     */
+    source: string;
+    /**
+     * The type of the activity, location or content where this item can be obtained
+     */
+    type: string;
+    /**
+     * If this item belongs to an event, the name of the event
+     */
+    event: string?;
+    /**
+     * The coordinates where the item can be obtained, if any
+     */
+    coordinates: number[]?;
 }
 
 /**
@@ -649,7 +631,10 @@ interface RequestOptions {
      */
     apiKey?: string,
     /**
-     * Whether to allow this request to pull from cache if available
+     * Whether to allow this request to use the cache or ongoing requests if available
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Requests using cache or other requests do not count towards the ratelimit and return a lot faster.
+     * </div>
      */
     allowCache?: boolean,
     /**
@@ -692,15 +677,14 @@ interface RawRequestOptions extends RequestOptions {
      */
     route: WynncraftAPIRoute
     /**
-     * Whether requests to the same route should be allowed to be stacked, see {@link Config.allowStackingByDefault}
+     * Whether to reuse objects returned by this in other calls to fetchRaw().
+     * If you want to modify the return value, you should set this to false.
      * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">Stacked requests only use a single API request and return the EXACT same object as all other requests in the stack.
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Disabling this hurts performance, but hardens the code against bugs due to downstream code modifying cached objects.
      * </div>
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">Keeping this enabled can cause errors if requested data is mutated in downstream code
-     * </div>
+     * @default true
      */
-    allowStacking?: boolean,
+    reuseJson: boolean,
     /**
      * Whether errors or profiles not being found should be
      * filtered out and throw errors/return `null`
@@ -708,9 +692,9 @@ interface RawRequestOptions extends RequestOptions {
      */
     interpret?: boolean,
     /**
-     * The expected `version` or `request.version` property, responses with another version will throw an error
+     * The expected `version` property, responses with another version will throw an error. This has no effect on v3
      */
-    routeVersion?: string | number
+    routeVersion?: string | number | null
 }
 
 /**
@@ -751,6 +735,17 @@ interface PlayerUUIDRequestOptions extends RequestOptions {
 }
 
 /**
+ * The options for a online players API request
+ */
+interface OnlinePlayersRequestOptions extends RequestOptions {
+    /**
+     * The identifier to use for players
+     * @default "USERNAME"
+     */
+    player: OnlinePlayersIdentifier
+}
+
+/**
  * The options for a player leaderboard API request
  */
 interface PlayerLeaderboardRequestOptions extends RequestOptions {
@@ -774,9 +769,19 @@ interface PlayerLeaderboardRequestOptions extends RequestOptions {
  */
 interface GuildRequestOptions extends RequestOptions {
     /**
-     * The name of the guild
+     * The name of the guild, case insensitive
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this or tag has to be defined.
+     * </div>
      */
-    guild: string,
+    guild?: string,
+    /**
+     * The tag of the guild, case sensitive
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this or guild has to be defined. This is overridden by guild
+     * </div>
+     */
+    tag?: string,
     /**
      * Whether to display more precise and additional
      * information
@@ -1085,30 +1090,13 @@ interface Config {
      */
     maxQueueLength: number,
     /**
-     * Whether to allow requests to use the cache
+     * Whether to allow requests to use the cache or currently ongoing requests
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RequestOptions.allowCache}.
      * </div>
      * @default true
      */
     allowCacheByDefault: boolean,
-    /**
-     * Whether to allow request stacking in raw API calls
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RawRequestOptions.allowStacking}.
-     * </div>
-     * @default true
-     */
-    allowStackingByDefault: boolean,
-    /**
-     * Whether to reuse JSON objects returned by the fetchRaw() function
-     * instead of regenerating them every time they are drawn from cache
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">Disabling this hurts performance, but hardens the code against bugs due to downstream code modifying API responses in the cache.
-     * </div>
-     * @default true
-     */
-    reuseJson: boolean,
     /**
      * The API keys being used
      */
@@ -1150,27 +1138,12 @@ interface ConfigOptions {
      */
     maxQueueLength?: number,
     /**
-     * Whether to allow requests to use the cache
+     * Whether to allow requests to use the cache or currently ongoing requests.
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RequestOptions.allowCache}.
      * </div>
      */
     allowCacheByDefault?: boolean,
-    /**
-     * Whether to allow request stacking in raw API calls
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">This is overridden by {@link RawRequestOptions.allowStacking}.
-     * </div>
-     */
-    allowStackingByDefault?: boolean,
-    /**
-     * Whether to reuse JSON objects returned by the fetchRaw() method
-     * instead of regenerating them every time they are drawn from cache;
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">Disabling this hurts performance, but hardens the code against bugs due to downstream code modifying API responses in the cache.
-     * </div>
-     */
-    reuseJson?: boolean,
     /**
      * The API keys to use
      */
@@ -1220,6 +1193,7 @@ interface ApiKey {
     interval: number
 }
 
+// TODO: new routes
 /**
  * Stores information on all possible routes
  */
@@ -1237,9 +1211,9 @@ interface Routes {
      */
     PLAYER_LEADERBOARD: Route,
     /**
-     * Player pvp leaderboard route
+     * Leaderboard route
      */
-    PLAYER_PVP_LEADERBOARD: Route,
+    LEADERBOARDS: Route,
     /**
      * Guild stats route
      */
@@ -1248,10 +1222,6 @@ interface Routes {
      * Guild list route
      */
     GUILD_LIST: Route,
-    /**
-     * Guild leaderboard route
-     */
-    GUILD_LEADERBOARD: Route,
     /**
      * Territory list route
      */
@@ -1275,23 +1245,15 @@ interface Routes {
     /**
      * Item search route
      */
-    ITEM_SEARCH: Route,
-    /**
-     * Athenas Item route
-     */
-    ATHENA_ITEMS: Route,
+    ITEMS: Route,
     /**
      * Name search route
      */
-    NAME_SEARCH: Route,
+    SEARCH: Route,
     /**
      * Online players list route
      */
     ONLINE_PLAYERS: Route,
-    /**
-     * Online players sum route
-     */
-    ONLINE_PLAYERS_SUM: Route,
     /**
      * Map locations route
      */
@@ -1299,7 +1261,11 @@ interface Routes {
     /**
      * Personal location route
      */
-    MY_LOCATION: Route
+    MY_LOCATION: Route,
+    /**
+     * Quest Count route
+     */
+    QUEST_COUNT: Route
 }
 
 /**
@@ -1315,10 +1281,19 @@ interface Route {
      */
     cacheTime: number,
     /**
-     * The API version of this route the wrapper was build for
+     * The API version of this route the wrapper was build for, v3 routes do not have a version
      */
-    version: SemanticVersion | number;
+    version: SemanticVersion | number | null;
+    /**
+     * The version of the API this route belongs to,
+     */
+    apiVersion: APIVersion
 }
+
+/**
+ * The different versions of the API
+ */
+type APIVersion = "legacy" | "v2" | "v3";
 
 /**
  * Options specifying cache times for routes
@@ -1337,9 +1312,9 @@ interface CacheTimeOptions {
      */
     PLAYER_LEADERBOARD?: number,
     /**
-     * The cache time for the player pvp leaderboard
+     * The cache time for leaderboards
      */
-    PLAYER_PVP_LEADERBOARD?: number,
+    LEADERBOARDS?: number,
     /**
      * The cache time for guild stats
      */
@@ -1348,10 +1323,6 @@ interface CacheTimeOptions {
      * The cache time for the guild list
      */
     GUILD_LIST?: number,
-    /**
-     * The cache time for the guild leaderboard
-     */
-    GUILD_LEADERBOARD?: number,
     /**
      * The cache time for the territory list
      */
@@ -1375,23 +1346,15 @@ interface CacheTimeOptions {
     /**
      * The cache time for the item search
      */
-    ITEM_SEARCH?: number,
-    /**
-     * The cache time for athenas item route
-     */
-    ATHENA_ITEMS?: number,
+    ITEMS?: number,
     /**
      * The cache time for the name search
      */
-    NAME_SEARCH?: number,
+    SEARCH?: number,
     /**
      * The cache time for the online players list
      */
     ONLINE_PLAYERS?: number,
-    /**
-     * The cache time for the online players sum
-     */
-    ONLINE_PLAYERS_SUM?: number,
     /**
      * The cache time for map locations
      */
@@ -1399,7 +1362,11 @@ interface CacheTimeOptions {
     /**
      * The cache time for the personal player location
      */
-    MY_LOCATION?: number
+    MY_LOCATION?: number,
+    /**
+     * The cache time for the Quest Count
+     */
+    QUEST_COUNT?: number
 }
 
 
@@ -1997,7 +1964,7 @@ interface MajorIdQuery {
     /**
      * A list of Major IDs to look for
      */
-    list: MajorId[]
+    list: string[]
 }
 
 /**
@@ -2149,6 +2116,40 @@ interface RestrictedIdQuery {
     charges?: OpenRange
 }
 
+/**
+ * The object returned by fetchRaw requests
+ */
+interface RawResult {
+    /**
+     * The timestamp the request was cast at. This timestamp is measured using the local clock.
+     */
+    requestedAt: number,
+    /**
+     * The timestamp the response was served. This timestamp is measured using the API server's clock.
+     */
+    respondedAt: number,
+    /**
+     * The timestamp the response was received at. This timestamp is measured using the local clock.
+     */
+    receivedAt: number,
+    /**
+     * The timestamp the data was created at. This timestamp is measured using the API server's clock.
+     */
+    dataTimestamp: number,
+    /**
+     * The HTTP response status code
+     */
+    status: number,
+    /**
+     * The response headers
+     */
+    headers: any,
+    /**
+     * The response body
+     */
+    body: any
+}
+
 
 
 
@@ -2162,27 +2163,42 @@ interface RestrictedIdQuery {
  * Represents the basis of all objects returned by API requests
  */
 export class BaseAPIObject {
-    public constructor(requestTimestamp: number, responseTimestamp: number, timestamp: number, apiVersion: SemanticVersion, libVersion: SemanticVersion, source: WynncraftAPIRoute);
+    public constructor(requestedAt: number, respondedAt: number, receivedAt: number, timestamp: number, apiVersion: SemanticVersion, libVersion: SemanticVersion, source: WynncraftAPIRoute);
 
     /**
-     * The unix timestamp indicating when this request started executing
+     * The unix timestamp indicating when this request was sent
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">This is measured using the local clock.
+     * </div>
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">If the response was returned from cache, then requestedAt, respondedAt and receivedAt may be in the past.
+     * </div>
      */
     public requestedAt: number;
     /**
-     * The unix timestamp indicating when this request was responded to
-     * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon"><div>You can use this value in combination with {@link BaseAPIObject.timestamp | timestamp} to see how old the data is</div>
+     * The unix timestamp indicating when this request was responded to by the API
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">This is measured using the API server's clock.
      * </div>
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">If the response was returned from cache or the response took a long time to transmit, then this isn't a reliable way to determine the age of data.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">If the response was returned from cache, then requestedAt, respondedAt and receivedAt may be in the past.
      * </div>
      */
     public respondedAt: number;
     /**
-     * The unix timestamp indicating when the data of this request was last
-     * updated
+     * The unix timestamp indicating when this request was received
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">This is measured using the local clock.
+     * </div>
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This stat does not reflect the time this data was created, but when the API frontend last synced this data. The PvP leaderboard, for instance, updates once per hour. Yet this timestamp will update once every 30 seconds.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">If the response was returned from cache, then requestedAt, respondedAt and receivedAt may be in the past.
+     * </div>
+     */
+    public receivedAt: number;
+    /**
+     * The unix timestamp indicating when the data of this request was created
+     * <div class="noteBox tip" style="display:flex">
+     *     <img src="../../assets/tip.png", class="noteBoxIcon">You can use this timestamp to determine how old a piece of data is.
      * </div>
      */
     public timestamp: number;
@@ -2209,6 +2225,11 @@ export class BaseAPIObject {
 export class NameSearch extends BaseAPIObject {
     private constructor(v: Object);
 
+
+    /**
+     * The query used for this search
+     */
+    public query: string;
     /**
      * The guild names including the search pattern in their name
      * <div class="noteBox note" style="display:flex">
@@ -2217,15 +2238,23 @@ export class NameSearch extends BaseAPIObject {
      */
     public guilds: string[];
     /**
-     * The player names matching the search query
+     * The guilds where the search pattern appeared in the tag
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered in descending order of first join date.
-     * </div>
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">It is not clear how exactly the search matches players, but most names require a near exact match.
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered in ascending order of creation date.
      * </div>
      */
-    public players: string[];
+    public guildTags: GuildListItem[];
+    /**
+     * The players whose name begins with the query
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered approximately lexicographically.
+     * </div>
+     */
+    public players: PlayerIdentifier[];
+    /**
+     * The items whose names contain the query string
+     */
+    public items: Item[];
 }
 
 /**
@@ -2237,11 +2266,11 @@ export class MapLocation {
     /**
      * The name of the location
      */
-    public name: MapLocationName;
+    public name: string;
     /**
      * The icon the Wynncraft map uses to display this location
      */
-    public icon: MapLocationIcon;
+    public icon: string;
     /**
      * The X coordinate of the location
      */
@@ -2264,8 +2293,11 @@ export class PlayerParty extends BaseAPIObject {
 
     /**
      * The world the player is currently logged into
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This can be null if the player just went offline
+     * </div>
      */
-    public world: string;
+    public world: string?;
     /**
      * The player to whom this request is bound
      */
@@ -2291,6 +2323,14 @@ export class PlayerPartyMember {
      */
     public uuid: string;
     /**
+     * The UUID of the class the player is currently using
+     */
+    public character: string;
+    /**
+     * The class nickname of the player, if available
+     */
+    public nickname: string?;
+    /**
      * The X coordinate of the player
      */
     public x: number;
@@ -2303,13 +2343,9 @@ export class PlayerPartyMember {
      */
     public z: number;
     /**
-     * The maximum health of the player
+     * The relationship this party member has to the self player
      */
-    public maxHealth: number;
-    /**
-     * The current health of the player
-     */
-    public health: number;
+    public relationship: PlayerRelationship;
 
     /**
      * Fetches the player stats of the party member
@@ -2396,7 +2432,7 @@ export class Item {
     /**
      * A list of this items major IDs
      */
-    public majorIds: MajorId[];
+    public majorId: MajorIdData;
     /**
      * The player head skin this item uses
      */
@@ -2405,6 +2441,10 @@ export class Item {
      * Whether the item is pre-identified (i.e. items bought from merchants)
      */
     public identified: boolean;
+    /**
+     * Information on how to obtain this item
+     */
+    public obtaining: ItemDropMeta;
 }
 
 /**
@@ -2686,15 +2726,9 @@ export class GuildMember {
      */
     public xp: number;
     /**
-     * The current world the player is online on, if any
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Only set if {@link Guild.hasAdditionalStats} is true</div>.
-     * </div>
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">If two members of a guild are online on the same world, this value refers to the same object.
-     * </div>
+     * The name of the world the player is online on, if any
      */
-    public world?: World;
+    public world: string?;
 
     /**
      * Fetches the player stats of the guild member
@@ -2766,14 +2800,6 @@ export class Guild extends BaseAPIObject {
      */
     public xpRequired: number;
     /**
-     * Some data that was extracted from the guild level
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon"><div>Make sure <code>Guild#xpFriendly.isSafe</code> is <code>true</code>, the data will only be present on guild levels up to 150.</div>
-     * </div>
-     * @deprecated will be removed in the next major release
-     */
-    public xpFriendly: GuildXPInterpretation;
-    /**
      * The creation date of the guild
      */
     public created: Date;
@@ -2797,9 +2823,17 @@ export class Guild extends BaseAPIObject {
      */
     public memberSlots: number;
     /**
+     * The amount of currently online members
+     */
+    public onlineMembers: number;
+    /**
      * The banner data of the guild
      */
     public banner: BannerData;
+    /**
+     * The placement in all seasons the guild participated in
+     */
+    public seasonRanks: SeasonRank[]
 
     /**
      * Mutates the object as if the fetchAdditionalStats property was `true`
@@ -2810,6 +2844,22 @@ export class Guild extends BaseAPIObject {
      * @param options The options for the request; the `guild` field has no effect
      */
     public fetchAdditionalStats(options?: GuildRequestOptions): Promise<Guild>;
+}
+
+/**
+ * Represents the name and tag of a guild
+ */
+export class GuildListItem {
+    private constructor(v: Object);
+
+    /**
+     * The name of the guild
+     */
+    public name: string;
+    /**
+     * The tag of the guild
+     */
+    public tag: string;
 }
 
 /**
@@ -3096,7 +3146,7 @@ export class World {
      */
     public worldType: WorldType;
     /**
-     * An array of player names who are online on the world
+     * An array of player names or UUIDs who are online on the world
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">Sorted in ascending order of login time.
      * </div>
@@ -3212,6 +3262,25 @@ interface LeaderboardPlayerClass {
      */
     public type: ClassType
 }
+
+/**
+ * The uuid and name of a player
+ */
+interface PlayerIdentifier {
+    /**
+     * The UUID of the player
+     */
+    public uuid: string,
+    /**
+     * The name of the player
+     */
+    public name: string
+}
+
+/**
+ * The relationship between two players, self overrides friend overrides party overrides guild.
+ */
+type PlayerRelationship = "SELF" | "FRIEND" | "PARTY" | "GUILD";
 
 /**
  * A scope of leaderboard ranking
@@ -3750,6 +3819,24 @@ interface BannerData {
 }
 
 /**
+ * An object with data about a guilds season placement
+ */
+interface SeasonRank {
+    /**
+     * The number of the season
+     */
+    season: number,
+    /**
+     * The Season Rating (SR) the guild had at the end of the season
+     */
+    rating: number,
+    /**
+     * The amount of territories the guild had at the end of the season
+     */
+    finalTerritories: number
+}
+
+/**
  * A guild level in friendly format
  */
 interface GuildXPInterpretation {
@@ -3778,445 +3865,6 @@ interface GuildXPInterpretation {
      */
     required: number
 }
-
-/**
- * A name for a map location
- */
-type MapLocationName =
-    | "Corrupted Decrepit Sewers Dungeon"
-    | "Corrupted Ice Barrows Dungeon"
-    | "Corrupted Infested Pit Dungeon"
-    | "Corrupted Lost Sanctuary Dungeon"
-    | "Corrupted Sand-Swept Tomb Dungeon"
-    | "Corrupted Undergrowth Ruins Dungeon"
-    | "Corrupted Underworld Crypt Dungeon"
-    | "Decrepit Sewers Dungeon"
-    | "Eldritch Outlook Dungeon"
-    | "Fallen Factory Dungeon"
-    | "Galleon's Graveyard Dungeon"
-    | "Ice Barrows Dungeon"
-    | "Infested Pit Dungeon"
-    | "Lost Sanctuary Dungeon"
-    | "Sand-Swept Tomb Dungeon"
-    | "Undergrowth Ruins Dungeon"
-    | "Underworld Crypt Dungeon"
-
-    | "???"
-    | "A Grave Mistake"
-    | "A Hunter's Calling"
-    | "A Journey Beyond"
-    | "A Journey Further"
-    | "A Marauder's Dues"
-    | "A Sandy Scandal"
-    | "Acquiring Credentials"
-    | "Aldorei's Secret Part I"
-    | "Aldorei's Secret Part II"
-    | "An Iron Heart Part I"
-    | "An Iron Heart Part II"
-    | "Arachnids' Ascent"
-    | "Beyond the Grave"
-    | "Blazing Retribution"
-    | "Canyon Condor"
-    | "Clearing the Camps"
-    | "Corrupted Betrayal"
-    | "Cowfusion"
-    | "Craftmas Chaos"
-    | "Creeper Infiltration"
-    | "Crop Failure"
-    | "Death Whistle"
-    | "Deja Vu"
-    | "Desperate Metal"
-    | "Dwarves and Doguns Part I"
-    | "Dwarves and Doguns Part II"
-    | "Dwarves and Doguns Part III"
-    | "Dwarves and Doguns Part IV"
-    | "Dwelling Walls"
-    | "Elemental Exercise"
-    | "Enter the Dojo"
-    | "Fallen Delivery"
-    | "Fantastic Voyage"
-    | "Fate of the Fallen"
-    | "Flight in Distress"
-    | "Forbidden Prison"
-    | "From the Bottom"
-    | "From the Mountains"
-    | "Frost Bite"
-    | "General's Orders"
-    | "Grand Youth"
-    | "Green Gloop"
-    | "Haven Antiquity"
-    | "Heart of Llevigar"
-    | "Infested Plants"
-    | "King's Recruit"
-    | "Kingdom of Sand"
-    | "Lava Springs"
-    | "Lazarus Pit"
-    | "Lexdale Witch Trials"
-    | "Lost Royalty"
-    | "Lost Soles"
-    | "Lost in the Jungle"
-    | "Macabre Masquerade ''Hallowynn 2014''"
-    | "Master Piece"
-    | "Meaningful Holiday"
-    | "Memory Paranoia"
-    | "Misadventure on the Sea"
-    | "Mixed Feelings"
-    | "Murder Mystery"
-    | "Mushroom Man"
-    | "One Thousand Meters Under"
-    | "Out of my Mind"
-    | "Pirate's Trove"
-    | "Pit of the Dead"
-    | "Point of No Return"
-    | "Poisoning the Pest"
-    | "Potion Making"
-    | "Purple and Blue"
-    | "Realm of Light I - The Worm Holes"
-    | "Realm of Light II - Taproot"
-    | "Realm of Light III - A Headless History"
-    | "Realm of Light IV - Finding the Light"
-    | "Realm of Light V - The Realm of Light"
-    | "Recipe For Disaster"
-    | "Reclaiming the House"
-    | "Recover the Past"
-    | "Redbeard's Booty"
-    | "Rise of the Quartron"
-    | "Royal Trials"
-    | "Shattered Minds"
-    | "Star Thief"
-    | "Studying the Corrupt"
-    | "Tempo Town Trouble"
-    | "The Belly of the Beast"
-    | "The Bigger Picture"
-    | "The Canary Calls"
-    | "The Canyon Guides"
-    | "The Corrupted Village"
-    | "The Dark Descent"
-    | "The Envoy Part I"
-    | "The Envoy Part II"
-    | "The Feathers Fly Part I"
-    | "The Feathers Fly Part II"
-    | "The Fortuneteller"
-    | "The Hero of Gavel"
-    | "The Hidden City"
-    | "The Hunger of Gerts Part 1"
-    | "The Hunger of Gerts Part 2"
-    | "The Lost"
-    | "The Maiden Tower"
-    | "The Mercenary"
-    | "The Olmic Rune"
-    | "The Order of the Grook"
-    | "The Qira Hive"
-    | "The Sewers of Ragni"
-    | "The Shadow of the Beast"
-    | "The Thanos Vaults"
-    | "The Ultimate Weapon"
-    | "Tower of Ascension"
-    | "Tribal Aggression"
-    | "Troubled Tribesmen"
-    | "Tunnel Trouble"
-    | "UndericeÀ"
-    | "WynnExcavation Site A"
-    | "WynnExcavation Site B"
-    | "WynnExcavation Site C"
-    | "WynnExcavation Site D"
-    | "Zhight Island"
-
-    | "Mini-Quest - Gather Acacia Logs"
-    | "Mini-Quest - Gather Acacia Logs II"
-    | "Mini-Quest - Gather Avo Logs"
-    | "Mini-Quest - Gather Avo Logs II"
-    | "Mini-Quest - Gather Avo Logs III"
-    | "Mini-Quest - Gather Avo Logs IV"
-    | "Mini-Quest - Gather Bamboo"
-    | "Mini-Quest - Gather Barley"
-    | "Mini-Quest - Gather Bass"
-    | "Mini-Quest - Gather Bass II"
-    | "Mini-Quest - Gather Bass III"
-    | "Mini-Quest - Gather Bass IV"
-    | "Mini-Quest - Gather Birch Logs"
-    | "Mini-Quest - Gather Carp"
-    | "Mini-Quest - Gather Carp II"
-    | "Mini-Quest - Gather Cobalt"
-    | "Mini-Quest - Gather Cobalt II"
-    | "Mini-Quest - Gather Cobalt III"
-    | "Mini-Quest - Gather Copper"
-    | "Mini-Quest - Gather Dark Logs"
-    | "Mini-Quest - Gather Dark Logs II"
-    | "Mini-Quest - Gather Dark Logs III"
-    | "Mini-Quest - Gather Decay Roots"
-    | "Mini-Quest - Gather Decay Roots II"
-    | "Mini-Quest - Gather Decay Roots III"
-    | "Mini-Quest - Gather Diamonds"
-    | "Mini-Quest - Gather Diamonds II"
-    | "Mini-Quest - Gather Diamonds III"
-    | "Mini-Quest - Gather Diamonds IV"
-    | "Mini-Quest - Gather Gold"
-    | "Mini-Quest - Gather Gold II"
-    | "Mini-Quest - Gather Granite"
-    | "Mini-Quest - Gather Gudgeon"
-    | "Mini-Quest - Gather Gylia Fish"
-    | "Mini-Quest - Gather Gylia Fish II"
-    | "Mini-Quest - Gather Gylia Fish III"
-    | "Mini-Quest - Gather Hops"
-    | "Mini-Quest - Gather Hops II"
-    | "Mini-Quest - Gather Icefish"
-    | "Mini-Quest - Gather Icefish II"
-    | "Mini-Quest - Gather Iron"
-    | "Mini-Quest - Gather Iron II"
-    | "Mini-Quest - Gather Jungle Logs"
-    | "Mini-Quest - Gather Jungle Logs II"
-    | "Mini-Quest - Gather Kanderstone"
-    | "Mini-Quest - Gather Kanderstone II"
-    | "Mini-Quest - Gather Kanderstone III"
-    | "Mini-Quest - Gather Koi"
-    | "Mini-Quest - Gather Koi II"
-    | "Mini-Quest - Gather Koi III"
-    | "Mini-Quest - Gather Light Logs"
-    | "Mini-Quest - Gather Light Logs II"
-    | "Mini-Quest - Gather Light Logs III"
-    | "Mini-Quest - Gather Malt"
-    | "Mini-Quest - Gather Malt II"
-    | "Mini-Quest - Gather Millet"
-    | "Mini-Quest - Gather Millet II"
-    | "Mini-Quest - Gather Millet III"
-    | "Mini-Quest - Gather Molten Eel"
-    | "Mini-Quest - Gather Molten Eel II"
-    | "Mini-Quest - Gather Molten Eel III"
-    | "Mini-Quest - Gather Molten Eel IV"
-    | "Mini-Quest - Gather Molten Ore"
-    | "Mini-Quest - Gather Molten Ore II"
-    | "Mini-Quest - Gather Molten Ore III"
-    | "Mini-Quest - Gather Molten Ore IV"
-    | "Mini-Quest - Gather Oak Logs"
-    | "Mini-Quest - Gather Oats"
-    | "Mini-Quest - Gather Oats II"
-    | "Mini-Quest - Gather Pine Logs"
-    | "Mini-Quest - Gather Pine Logs II"
-    | "Mini-Quest - Gather Pine Logs III"
-    | "Mini-Quest - Gather Piranhas"
-    | "Mini-Quest - Gather Piranhas II"
-    | "Mini-Quest - Gather Rice"
-    | "Mini-Quest - Gather Rice II"
-    | "Mini-Quest - Gather Rice III"
-    | "Mini-Quest - Gather Rice IV"
-    | "Mini-Quest - Gather Rye"
-    | "Mini-Quest - Gather Rye II"
-    | "Mini-Quest - Gather Salmon"
-    | "Mini-Quest - Gather Salmon II"
-    | "Mini-Quest - Gather Sandstone"
-    | "Mini-Quest - Gather Sandstone II"
-    | "Mini-Quest - Gather Silver"
-    | "Mini-Quest - Gather Silver II"
-    | "Mini-Quest - Gather Sorghum"
-    | "Mini-Quest - Gather Sorghum II"
-    | "Mini-Quest - Gather Sorghum III"
-    | "Mini-Quest - Gather Sorghum IV"
-    | "Mini-Quest - Gather Spruce Logs"
-    | "Mini-Quest - Gather Spruce Logs II"
-    | "Mini-Quest - Gather Trout"
-    | "Mini-Quest - Gather Wheat"
-    | "Mini-Quest - Gather Willow Logs"
-    | "Mini-Quest - Gather Willow Logs II"
-    | "Mini-Quest - Slay Ailuropodas"
-    | "Mini-Quest - Slay Angels"
-    | "Mini-Quest - Slay Astrochelys Manis"
-    | "Mini-Quest - Slay Conures"
-    | "Mini-Quest - Slay Coyotes"
-    | "Mini-Quest - Slay Creatures of Nesaak Forest"
-    | "Mini-Quest - Slay Creatures of the Void"
-    | "Mini-Quest - Slay Dead Villagers"
-    | "Mini-Quest - Slay Dragonlings"
-    | "Mini-Quest - Slay Felrocs"
-    | "Mini-Quest - Slay Frosted Guards & Cryostone Golems"
-    | "Mini-Quest - Slay Hobgoblins"
-    | "Mini-Quest - Slay Idols"
-    | "Mini-Quest - Slay Ifrits"
-    | "Mini-Quest - Slay Jinkos"
-    | "Mini-Quest - Slay Lizardmen"
-    | "Mini-Quest - Slay Magma Entities"
-    | "Mini-Quest - Slay Mooshrooms"
-    | "Mini-Quest - Slay Myconids"
-    | "Mini-Quest - Slay Orcs"
-    | "Mini-Quest - Slay Pernix Monkeys"
-    | "Mini-Quest - Slay Robots"
-    | "Mini-Quest - Slay Scarabs"
-    | "Mini-Quest - Slay Skeletons"
-    | "Mini-Quest - Slay Slimes"
-    | "Mini-Quest - Slay Spiders"
-    | "Mini-Quest - Slay Weirds"
-    | "Mini-Quest - Slay Wraiths & Phantasms"
-
-    | "Boss Altar"
-    | "Cave"
-    | "Corrupted Dungeons"
-    | "Fast Travel"
-    | "Grind Spot"
-    | "Light's Secret"
-    | "Nest of the Grootslangs"
-    | "Nether Portal"
-    | "Orphion's Nexus of Light"
-    | "The Canyon Colossus"
-    | "Tol Altar"
-    | "Ultimate Discovery"
-    | "Uth Shrine"
-
-    | "Blacksmith"
-    | "Guild Master"
-    | "Identifier"
-    | "Powder Master"
-    | "Trade Market"
-
-    | "Accessory Merchant"
-    | "Apple Merchant"
-    | "Armour Merchant"
-    | "Art Merchant"
-    | "Artefact Merchant"
-    | "Black Market Merchant"
-    | "Boat Merchant"
-    | "Book Merchant"
-    | "Bowl Merchant"
-    | "Brew-it-Yourself Merchant"
-    | "Bronze Rewards Merchant"
-    | "Bucket Merchant"
-    | "Charmcrafter Merchant"
-    | "Clock Merchant"
-    | "Cobblestone Merchant"
-    | "Collector Merchant"
-    | "Craftmas Merchant"
-    | "Diamond Rewards Merchant"
-    | "Dungeon Merchant"
-    | "Dungeon Scroll Merchant"
-    | "Egg Merchant"
-    | "Emerald Merchant"
-    | "Emeralds Merchant"
-    | "Exchange Merchant"
-    | "Explosives Merchant"
-    | "Fabrics Merchant"
-    | "Feather Merchant"
-    | "Fish Merchant"
-    | "Gert Merchant"
-    | "Gift Merchant"
-    | "Glassblowing Merchant"
-    | "Gold Dealer Merchant"
-    | "Gold Rewards Merchant"
-    | "Golden Fish Merchant"
-    | "Hive Air Merchant"
-    | "Hive Earth Merchant"
-    | "Hive Fire Merchant"
-    | "Hive Thunder Merchant"
-    | "Hive Water Merchant"
-    | "Hook Merchant"
-    | "Horse Merchant"
-    | "Ingredient Merchant"
-    | "Junk Merchant"
-    | "Key Forge Merchant"
-    | "King's Merchant"
-    | "Liquid Merchant"
-    | "Literature Merchant"
-    | "Mask Merchant"
-    | "Master Armour Merchant"
-    | "Master Trinket Merchant"
-    | "Master Weapon Merchant"
-    | "Melon Merchant"
-    | "Miner Pass Merchant"
-    | "Mushroom Merchant"
-    | "Mysterious Merchant"
-    | "Necromancy Merchant"
-    | "Pink Wool Merchant"
-    | "Potato Merchant"
-    | "Potion Merchant"
-    | "Powder Merchant"
-    | "Quartz Merchant"
-    | "Recipe Merchant"
-    | "Reset Scroll Merchant"
-    | "Rymek Dealer Merchant"
-    | "Scroll Merchant"
-    | "Seasail Merchant"
-    | "Seaskipper Merchant"
-    | "Shifty Merchant"
-    | "Siegfried Fan Item Merchant"
-    | "Silver Rewards Merchant"
-    | "Souvenir Merchant"
-    | "Squid Merchant"
-    | "Stiba Merchant"
-    | "Suri Merchant"
-    | "Ticket Merchant"
-    | "Tool Merchant"
-    | "Tour Pass Merchant"
-    | "Transmutation Merchant"
-    | "Treasure Merchant"
-    | "Treasure Prize Merchant"
-    | "Tribal Armour Merchant"
-    | "Tribal Merchant"
-    | "Tribal Weapon Merchant"
-    | "Water Merchant"
-    | "Weapon Merchant"
-    | "Wig Merchant"
-    | "Wynnter 2016 Merchant"
-    | "Wynnter 2017 Merchant"
-    | "Zhight Brew Merchant"
-    | "Zhight Exchange Merchant"
-
-    | "Alchemism Station"
-    | "Armouring Station"
-    | "Cooking Station"
-    | "Jeweling Station"
-    | "Scribing Station"
-    | "Tailor Station"
-    | "Tailoring Station"
-    | "Weaponsmithing Station"
-    | "Woodworking Station";
-
-/**
- * An icon for a map location
- */
-type MapLocationIcon =
-    | "Content_BossAltar.png"
-    | "Content_Cave.png"
-    | "Content_CorruptedDungeon.png"
-    | "Content_Dungeon.png"
-    | "Content_GrindSpot.png"
-    | "Content_Miniquest.png"
-    | "Content_Quest.png"
-    | "Content_Raid.png"
-    | "Content_UltimateDiscovery.png"
-
-    | "Merchant_Accessory.png"
-    | "Merchant_Armour.png"
-    | "Merchant_Dungeon.png"
-    | "Merchant_Emerald.png"
-    | "Merchant_Horse.png"
-    | "Merchant_KeyForge.png"
-    | "Merchant_Liquid.png"
-    | "Merchant_Other.png"
-    | "Merchant_Potion.png"
-    | "Merchant_Scroll.png"
-    | "Merchant_Seasail.png"
-    | "Merchant_Tool.png"
-    | "Merchant_Weapon.png"
-    | "painting.png"
-    | "tnt.png"
-
-    | "NPC_Blacksmith.png"
-    | "NPC_GuildMaster.png"
-    | "NPC_ItemIdentifier.png"
-    | "NPC_PowderMaster.png"
-    | "NPC_TradeMarket.png"
-
-    | "Profession_Alchemism.png"
-    | "Profession_Armouring.png"
-    | "Profession_Cooking.png"
-    | "Profession_Jeweling.png"
-    | "Profession_Scribing.png"
-    | "Profession_Tailoring.png"
-    | "Profession_Weaponsmithing.png"
-    | "Profession_Woodworking.png"
-
-    | "Special_FastTravel.png"
-    | "Special_LightRealm.png"
-    | "Special_RootsOfCorruption.png"
-    | "Special_Rune.png";
 
 /**
  * Stats for items,
@@ -4330,17 +3978,19 @@ interface ItemSkin {
     /**
      * The UUID of the player used for the skin
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">Not all skins have this field.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is always null.
      * </div>
+     * @deprecated
      */
-    uuid?: string,
+    uuid: null,
     /**
      * The name of the player used for the skin
      * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">Not all skins have this field.
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is always null.
      * </div>
+     * @deprecated
      */
-    name?: string,
+    name: null,
     /**
      * The URL to the player skin
      */
@@ -4388,35 +4038,6 @@ type ItemDropType =
     | "LOOTCHEST";
 
 /**
-* A name for an item major ID
-*/
-type MajorId =
-    | "SAVIOURS_SACRIFICE" // HERO
-    | "PEACEFUL_EFFIGY"
-    | "FURIOUS_EFFIGY"
-    | "PLAGUE"
-    | "HAWKEYE"
-    | "CHERRY_BOMBS"
-    | "FLASHFREEZE"
-    | "GREED"
-    | "LIGHTWEIGHT"
-    | "CAVALRYMAN"
-    | "MAGNET"
-    | "FISSION"
-    | "RALLY"
-    | "GUARDIAN"
-    | "HEART_OF_THE_PACK" // ALTRUISM
-    | "TRANSCENDENCE" // ARCANES
-    | "GRAVITY_WELL" // ENTROPY
-    | "ROVING_ASSASSIN" // ROVINGASSASSIN
-    | "GEOCENTRISM"
-    | "FREERUNNER"
-    | "MADNESS"
-    | "SORCERY"
-    | "EXPLOSIVE_IMPACT"
-    | "TAUNT";
-
-/**
  * All weapon, armor, and accessory types
  */
 type ItemType =
@@ -4442,105 +4063,9 @@ type ItemCategory =
     | "ACCESSORY";
 
 /**
-* A name for an item identification
-*/
-type IdentificationName =
-    | "STRENGTH"
-    | "DEXTERITY"
-    | "INTELLIGENCE"
-    | "DEFENCE"
-    | "AGILITY"
-
-    | "SPELL_DAMAGE_PERCENT"
-    | "SPELL_EARTH_DAMAGE_PERCENT"
-    | "SPELL_THUNDER_DAMAGE_PERCENT"
-    | "SPELL_WATER_DAMAGE_PERCENT"
-    | "SPELL_FIRE_DAMAGE_PERCENT"
-    | "SPELL_AIR_DAMAGE_PERCENT"
-    | "SPELL_ELEMENTAL_DAMAGE_PERCENT"
-    | "SPELL_NEUTRAL_DAMAGE_PERCENT"
-    | "SPELL_DAMAGE_RAW"
-    | "SPELL_EARTH_DAMAGE_RAW"
-    | "SPELL_THUNDER_DAMAGE_RAW"
-    | "SPELL_WATER_DAMAGE_RAW"
-    | "SPELL_FIRE_DAMAGE_RAW"
-    | "SPELL_AIR_DAMAGE_RAW"
-    | "SPELL_ELEMENTAL_DAMAGE_RAW"
-    | "SPELL_NEUTRAL_DAMAGE_RAW"
-
-    | "MAIN_ATTACK_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_EARTH_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_THUNDER_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_WATER_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_FIRE_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_AIR_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_ELEMENTAL_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_NEUTRAL_DAMAGE_PERCENT"
-    | "MAIN_ATTACK_DAMAGE_RAW"
-    | "MAIN_ATTACK_EARTH_DAMAGE_RAW"
-    | "MAIN_ATTACK_THUNDER_DAMAGE_RAW"
-    | "MAIN_ATTACK_WATER_DAMAGE_RAW"
-    | "MAIN_ATTACK_FIRE_DAMAGE_RAW"
-    | "MAIN_ATTACK_AIR_DAMAGE_RAW"
-    | "MAIN_ATTACK_ELEMENTAL_DAMAGE_RAW"
-    | "MAIN_ATTACK_NEUTRAL_DAMAGE_RAW"
-
-    | "DAMAGE_PERCENT"
-    | "EARTH_DAMAGE_PERCENT"
-    | "THUNDER_DAMAGE_PERCENT"
-    | "WATER_DAMAGE_PERCENT"
-    | "FIRE_DAMAGE_PERCENT"
-    | "AIR_DAMAGE_PERCENT"
-    | "ELEMENTAL_DAMAGE_PERCENT"
-    | "NEUTRAL_DAMAGE_PERCENT"
-    | "DAMAGE_RAW"
-    | "EARTH_DAMAGE_RAW"
-    | "THUNDER_DAMAGE_RAW"
-    | "WATER_DAMAGE_RAW"
-    | "FIRE_DAMAGE_RAW"
-    | "AIR_DAMAGE_RAW"
-    | "ELEMENTAL_DAMAGE_RAW"
-    | "NEUTRAL_DAMAGE_RAW"
-    | "CRITICAL_DAMAGE_RAW"
-
-    | "EARTH_DEFENCE"
-    | "THUNDER_DEFENCE"
-    | "WATER_DEFENCE"
-    | "FIRE_DEFENCE"
-    | "AIR_DEFENCE"
-    | "HEALTH_REGEN_PERCENT"
-    | "HEALTH_REGEN_RAW"
-    | "HEALTH"
-    | "LIFE_STEAL"
-
-    | "MANA_REGEN"
-    | "MANA_STEAL"
-    | "SPELL_COST_PCT_1"
-    | "SPELL_COST_RAW_1"
-    | "SPELL_COST_PCT_2"
-    | "SPELL_COST_RAW_2"
-    | "SPELL_COST_PCT_3"
-    | "SPELL_COST_RAW_3"
-    | "SPELL_COST_PCT_4"
-    | "SPELL_COST_RAW_4"
-
-    | "ATTACK_SPEED"
-    | "POISON"
-    | "THORNS"
-    | "REFLECTION"
-    | "EXPLODING"
-    | "JUMP_HEIGHT"
-    | "WALK_SPEED"
-    | "SPRINT_DURATION"
-    | "SPRINT_REGEN"
-    | "SOUL_POINT_REGEN"
-    | "GATHERING_SPEED"
-    | "GATHERING_XP_BONUS"
-    | "XP_BONUS"
-    | "LOOT_BONUS"
-    | "LOOT_QUALITY"
-    | "STEALING"
-    | "KNOCKBACK";
+ * The identifier for the online players list
+ */
+type OnlinePlayersIdentifier = "USERNAME" | "UUID";
 
 /**
  * A singular identification
@@ -4548,12 +4073,8 @@ type IdentificationName =
 interface Identification {
     /**
      * The name of the identification
-     * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon"><div>You can use the {@link LocalData.identifications | Identification Data} to look up more info on this ID.</div>
-     * </div>
      */
-    name: IdentificationName,
-    // id names should update ele dmg % to proper name to not clash with raw ele dmg
+    name: string,
     /**
      * The base value for the identification
      * <div class="noteBox note" style="display:flex">
@@ -4564,14 +4085,14 @@ interface Identification {
     /**
      * The numerically lowest possible value of the identification's roll
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On {@link IdentificationData.inverted | inverted} IDs, this is the best possible roll.</div>
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On inverted IDs, this is the best possible roll.</div>
      * </div>
      */
     min: number,
     /**
      * The numerically highest possible value of the identification's roll
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On {@link IdentificationData.inverted | inverted} IDs, this is the worst possible roll.</div>
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>On inverted IDs, this is the worst possible roll.</div>
      * </div>
      */
     max: number
@@ -4770,4 +4291,4 @@ interface SquareRegion {
 /**
  * A URL to a Wynncraft API resource
  */
-type WynncraftAPIRoute = `https://api.wynncraft.com/${string}` | `https://web-api.wynncraft.com/${string}` | `https://athena.wynntils.com/${string}`;
+type WynncraftAPIRoute = `https://api.wynncraft.com/${string}`;
