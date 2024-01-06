@@ -2160,6 +2160,28 @@ interface RawResult {
 
 
 /**
+ * Represents an Error that occured in the Wynncraft API
+ * @category Errors
+ */
+export class WynncraftAPIError extends Error {
+    public constructor(message?: string);
+}
+
+/**
+ * Represents that multiple entries were found, use the 'key'
+ * property in the choices array to make a new request.
+ * @category Errors
+ */
+export class MultipleChoicesError<T extends { key: string }> extends WynncraftAPIError {
+    public constructor(message?: string, choices?: T[]);
+
+    /**
+     * An array of the options that the query matched
+     */
+    public choices: T[];
+}
+
+/**
  * Represents the basis of all objects returned by API requests
  */
 export class BaseAPIObject {
