@@ -829,16 +829,23 @@ interface PlayerLeaderboardRequestOptions extends RequestOptions {
  */
 interface GuildRequestOptions extends RequestOptions {
     /**
+     * The UUID of the guild
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this, name or tag has to be defined.
+     * </div>
+     */
+    uuid?: string,
+    /**
      * The name of the guild, case insensitive
      * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this or tag has to be defined.
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this, uuid or tag has to be defined. This is overridden by uuid
      * </div>
      */
     guild?: string,
     /**
      * The tag of the guild, case sensitive
      * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this or guild has to be defined. This is overridden by guild
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Either this, uuid or guild has to be defined. This is overridden by guild and uuid
      * </div>
      */
     tag?: string,
@@ -2218,7 +2225,7 @@ export class NameSearch extends BaseAPIObject {
      *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered in ascending order of creation date.
      * </div>
      */
-    public guilds: string[];
+    public guilds: GuildListItem[]; // TODO: fix once patch out
     /**
      * The guilds where the search pattern appeared in the tag
      * <div class="noteBox note" style="display:flex">
@@ -3009,6 +3016,10 @@ export class GuildListItem {
     private constructor(v: Object);
 
     /**
+     * The UUID of the guild
+     */
+    public uuid: string;
+    /**
      * The name of the guild
      */
     public name: string;
@@ -3122,9 +3133,12 @@ export class Territory {
     public territory: string;
     /**
      * The name of the guild holding the territory; `null` if no guild owns the territory
-     * @readonly
      */
     public guild: string?;
+    /**
+     * The UUID of the guild holding the territory; `null` if no guild owns the territory
+     */
+    public guildUUID: string?;
     /**
      * The tag of the guild holding the territory; `null` if no guild owns the territory
      */
@@ -3233,8 +3247,11 @@ export class LeaderboardGuild {
     private constructor(v: Object);
 
     /**
+     * The UUID of the guild
+     */
+    public uuid: string;
+    /**
      * The name of the guild
-     * @readonly
      */
     public name: string;
     /**
