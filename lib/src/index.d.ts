@@ -52,6 +52,7 @@ export function fetchPlayer(options: PlayerRequestOptions | string): Promise<Pla
  * </div>
  * @param options The options for the request, or a player name
  * @category Endpoint
+ * @deprecated As the UUID endpoint is v2, this function should no longer be used, as the used endpoint has quite a few bugs
  */
 export function fetchPlayerUUID(options: PlayerUUIDRequestOptions | string): Promise<UUID?>
 
@@ -719,6 +720,7 @@ interface PlayerRequestOptions extends RequestOptions {
      * <div class="noteBox important" style="display:flex">
      *     <img src="../../assets/important.png", class="noteBoxIcon">This makes the request case sensitive.
      * </div>
+     * @deprecated As of v3.1.0, this option has no effect.
      * @default false
      */
     forceUUIDLookup?: boolean
