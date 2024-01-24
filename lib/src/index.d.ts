@@ -249,6 +249,16 @@ export function fetchMapLocations(options: RequestOptions): Promise<List<MapLoca
 export function fetchMyLocation(options: RequestOptions): Promise<List<PlayerParty>>
 
 /**
+ * Fetches the number of quests from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchQuestCount(options?: RequestOptions): Promise<QuestCount>
+
+/**
  * A collection of static data that is used within
  * the library, but can also be used externally
  */
@@ -3200,6 +3210,18 @@ export class OnlinePlayersSum extends BaseAPIObject {
      * The amount of players currently online on Wynncraft
      */
     public players: number;
+}
+
+/**
+ * Represents the sum of quests currently in the game
+ */
+export class QuestCount extends BaseAPIObject {
+    private constructor(data: Object, params: Object);
+
+    /**
+     * The amount of quests
+     */
+    public quests: number;
 }
 
 
