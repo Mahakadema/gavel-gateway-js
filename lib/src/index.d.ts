@@ -745,19 +745,14 @@ interface PlayerRequestOptions extends RequestOptions {
     /**
      * Whether {@link PlayerRequestOptions.player | player} should be case-sensitive instead; ignored if {@link PlayerRequestOptions.player | player} is a UUID
      * @default false
+     * @deprecated As of v3.1.0, this option has no effect.
      */
     forceCaseMatch?: boolean,
     /**
      * Whether to force a {@link fetchPlayerUUID | UUID lookup} before the player request. This can help reduce some errors caused by name changes.
      * Ignored if {@link PlayerRequestOptions.player | player} is a UUID
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">This may cause extra API requests.
-     * </div>
-     * <div class="noteBox important" style="display:flex">
-     *     <img src="../../assets/important.png", class="noteBoxIcon">This makes the request case sensitive.
-     * </div>
-     * @deprecated As of v3.1.0, this option has no effect.
      * @default false
+     * @deprecated As of v3.1.0, this option has no effect.
      */
     forceUUIDLookup?: boolean
 }
@@ -1263,73 +1258,25 @@ interface ApiKey {
  * Stores information on all possible routes
  */
 interface Routes {
-    /**
-     * Player stats route
-     */
+    ABILITY_TREE: Route,
+    ABILITY_MAP: Route,
+    PLAYER_CHARACTER_AT: Route,
     PLAYER: Route,
-    /**
-     * Player UUID route
-     */
     PLAYER_UUID: Route,
-    /**
-     * Player leaderboard route
-     */
     PLAYER_LEADERBOARD: Route,
-    /**
-     * Leaderboard route
-     */
     LEADERBOARDS: Route,
-    /**
-     * Guild stats route
-     */
     GUILD: Route,
-    /**
-     * Guild list route
-     */
     GUILD_LIST: Route,
-    /**
-     * Territory list route
-     */
     TERRITORY_LIST: Route,
-    /**
-     * Ingredient search route
-     */
     INGREDIENT_SEARCH: Route,
-    /**
-     * Ingredient list route
-     */
     INGREDIENT_LIST: Route,
-    /**
-     * Recipe search route
-     */
     RECIPE_SEARCH: Route,
-    /**
-     * Recipe list route
-     */
     RECIPE_LIST: Route,
-    /**
-     * Item search route
-     */
     ITEMS: Route,
-    /**
-     * Name search route
-     */
     SEARCH: Route,
-    /**
-     * Online players list route
-     */
     ONLINE_PLAYERS: Route,
-    /**
-     * Map locations route
-     */
     MAP_LOCATIONS: Route,
-    /**
-     * Personal location route
-     */
     MY_LOCATION: Route,
-    /**
-     * Quest Count route
-     */
     QUEST_COUNT: Route
 }
 
@@ -1349,10 +1296,6 @@ interface Route {
      * The API version of this route the wrapper was build for, v3 routes do not have a version
      */
     version: SemanticVersion | number | null;
-    /**
-     * The version of the API this route belongs to,
-     */
-    apiVersion: APIVersion
 }
 
 /**
@@ -1364,73 +1307,25 @@ type APIVersion = "legacy" | "v2" | "v3";
  * Options specifying cache times for routes
  */
 interface CacheTimeOptions {
-    /**
-     * The cache time for player stats
-     */
+    ABILITY_TREE?: number,
+    ABILITY_MAP?: number,
+    PLAYER_CHARACTER_AT?: number,
     PLAYER?: number,
-    /**
-     * The cache time for player uuids
-     */
     PLAYER_UUID?: number,
-    /**
-     * The cache time for the player combat leaderboard
-     */
     PLAYER_LEADERBOARD?: number,
-    /**
-     * The cache time for leaderboards
-     */
     LEADERBOARDS?: number,
-    /**
-     * The cache time for guild stats
-     */
     GUILD?: number,
-    /**
-     * The cache time for the guild list
-     */
     GUILD_LIST?: number,
-    /**
-     * The cache time for the territory list
-     */
     TERRITORY_LIST?: number,
-    /**
-     * The cache time for the ingredient search
-     */
     INGREDIENT_SEARCH?: number,
-    /**
-     * The cache time for the ingredient list
-     */
     INGREDIENT_LIST?: number,
-    /**
-     * The cache time for the recipe search
-     */
     RECIPE_SEARCH?: number,
-    /**
-     * The cache time for the recipe list
-     */
     RECIPE_LIST?: number,
-    /**
-     * The cache time for the item search
-     */
     ITEMS?: number,
-    /**
-     * The cache time for the name search
-     */
     SEARCH?: number,
-    /**
-     * The cache time for the online players list
-     */
     ONLINE_PLAYERS?: number,
-    /**
-     * The cache time for map locations
-     */
     MAP_LOCATIONS?: number,
-    /**
-     * The cache time for the personal player location
-     */
     MY_LOCATION?: number,
-    /**
-     * The cache time for the Quest Count
-     */
     QUEST_COUNT?: number
 }
 
@@ -2545,6 +2440,10 @@ export class PlayerClass {
      */
     public uuid: string;
     /**
+     * The nickname of the class, if exists
+     */
+    public nickname: string?;
+    /**
      * The base type of class
      */
     public baseType: ClassBaseType;
@@ -2594,7 +2493,17 @@ export class PlayerClass {
      */
     public pvp: PvpData;
     /**
-     * The playtime on this class
+     * The playtime of the class in minutes
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">See {@link Player.minutesPlayed}
+     * </div>
+     */
+    public minutesPlayed: number;
+    /**
+     * The playtime of this class in its native unit
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">See {@link Player.playtime}
+     * </div>
      */
     public playtime: number;
     /**
@@ -2634,9 +2543,13 @@ export class PlayerClass {
      */
     public discoveries: number;
     /**
-     * The amount of swarms won on this class
+     * The amount of wars participated in on this class
      */
-    public eventsWon: number;
+    public wars: number;
+    /**
+     * The amount of chests opened on this class
+     */
+    public chestsOpened: number;
     /**
      * Whether this class has reached combat level 101 before the Economy
      * Update 1.18 released
@@ -2662,6 +2575,14 @@ export class Player extends BaseAPIObject {
      */
     public uuid: string;
     /**
+     * Whether the player has their profile set to public. If false, ability tree lookups will fail and skillpoints will be null
+     */
+    public publicProfile: boolean;
+    /**
+     * The last character this player has used, if available
+     */
+    public lastCharacter: PlayerClass?;
+    /**
      * The rank data of the player
      */
     public rank: RankData;
@@ -2682,9 +2603,16 @@ export class Player extends BaseAPIObject {
      */
     public lastJoinTimestamp: number;
     /**
-     * The playtime of the player
-     * <div class="noteBox tip" style="display:flex">
-     *     <img src="../../assets/tip.png", class="noteBoxIcon">The playtime doesn't have a specific unit. This value is roughly equal to one fifth of the player's playtime in minutes, however.
+     * The playtime of the player in minutes
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">Accurate down to 5 minutes. Same restrictions as with {@link Player.playtime | playtime} apply.
+     * </div>
+     */
+    public minutesPlayed: number;
+    /**
+     * The playtime of the player in its native unit
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">The playtime unit is 5 minutes. Be aware that playtime is affected by server lag and other factors.
      * </div>
      */
     public playtime: number;
@@ -2705,9 +2633,29 @@ export class Player extends BaseAPIObject {
      */
     public pvp: PvpData;
     /**
+     * The total amount of times the player has run specific dungeons
+     */
+    public dungeons: RepeatableContent[];
+    /**
+     * The total amount of times the player has run specific dungeons, including on deleted classes
+     */
+    public dungeonsIncludingDeleted: RepeatableContent[];
+    /**
+     * The total amount of times the player has run specific raids
+     */
+    public raids: RepeatableContent[];
+    /**
+     * The total amount of times the player has run specific raids, including on deleted classes
+     */
+    public raidsIncludingDeleted: RepeatableContent[];
+    /**
      * The classes of the player
      */
     public classes: PlayerClass[];
+    /**
+     * The total amount of wars the player has participated in
+     */
+    public wars: number;
     /**
      * The total amount of blocks travelled by the player
      * <div class="noteBox note" style="display:flex">
@@ -3565,7 +3513,7 @@ interface ClassLevelsData {
     /**
      * The combat level of the class
      */
-    combat: ClassLevelData,
+    combat: ClassLevelDataWithRaw,
     /**
      * The mining level of the class
      */
@@ -3614,6 +3562,24 @@ interface ClassLevelsData {
      * The scribing level of the class
      */
     scribing: ClassLevelData
+}
+
+/**
+ * Contains the information of one level, including raw xp
+ */
+interface ClassLevelDataWithRaw {
+    /**
+     * The whole level
+     */
+    level: number,
+    /**
+     * The XP percentage, expressed as a number between 0 and 1
+     */
+    xp: number,
+    /**
+     * The raw xp amount
+     */
+    xpRaw: number
 }
 
 /**
@@ -3685,6 +3651,10 @@ interface Gamemodes {
      */
     ironman: boolean,
     /**
+     * Whether the class is in Ultimate Ironman mode
+     */
+    ultimateIronman: boolean,
+    /**
      * Whether the class is in Craftsman mode
      */
     craftsman: boolean,
@@ -3742,24 +3712,39 @@ type DonatorRank =
 */
 interface RankData {
     /**
-     * The players' server rank
+     * The players server rank
      */
     serverRank: ServerRank,
     /**
-     * The players' donator rank
+     * The players server ranks short version, if available
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">This property is only present on {@link Player} objects.
+     * </div>
+     */
+    shortenedServerRank?: string,
+    /**
+     * The players donator rank
      */
     donatorRank: DonatorRank?,
-    /**
-     * Whether to display the players donator rank
-     */
-    displayDonatorRank: boolean,
     /**
      * Whether the player is a veteran
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">The Wynncraft criteria for a veteran is whether the player has bought a rank before the 2014 Minecraft EULA change.
      * </div>
      */
-    veteran: boolean
+    veteran: boolean,
+    /**
+     * The text color of the players rank badge
+     */
+    textColor: string,
+    /**
+     * The background color of the players rank badge
+     */
+    backgroundColor: string,
+    /**
+     * The cdn URL of the players rank badge
+     */
+    badgeUrl: string
 }
 
 /**
@@ -3767,16 +3752,20 @@ interface RankData {
 */
 interface PlayerGuildData {
     /**
-     * The name of the player's Guild, if applicable
+     * The name of the players guild, if applicable
      * @readonly
      */
     name: string?,
     /**
-     * The player's rank in the Guild, if applicable
+     * The tag of the players guild, if applicable
+     */
+    tag: string?,
+    /**
+     * The players rank in the guild, if applicable
      */
     rank: GuildRank?,
     /**
-     * Returns the API object of the Guild, if applicable
+     * Returns the API object of the guild, if applicable
      * <div class="noteBox important" style="display:flex">
      *     <img src="../../assets/important.png", class="noteBoxIcon">This method causes API requests.
      * </div>
@@ -3800,130 +3789,86 @@ interface PlayerLevelsData {
     /**
      * The combined total level of the player
      */
-    combined: number
+    combined: number,
+    /**
+     * The combined total level of the player, including deleted classes. This excludes the first level of professions
+     */
+    includingDeleted: number
 }
 
 /**
- * Holds information on the player's leaderboard rankings
+ * An archetype restriction on an ability unlock
  */
-interface PlayerRankings {
+interface ArchetypeRequirement {
     /**
-     * The ranking of the player's Guild
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is currently unused.
-     * </div>
+     * The archetype to which the threshold applies
      */
-    guild: number?,
+    name: string,
     /**
-     * The PvP ranking of the player
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon">This field is currently unused.
-     * </div>
+     * The amount of required unlocked abilities in the archetype to unlock this ability
      */
-    pvp: number?,
-    /**
-     * The level rankings of the player
-     */
-    player: PlayerLevelRankings
+    amount: number
 }
 
 /**
- * A player's level rankings
+ * The location of an ability tree node on the tree
  */
-interface PlayerLevelRankings {
+interface AbilityNodeLocation {
     /**
-     * The level rankings for combined levels across all classes
+     * The X coordinate of the node, starts counting from 1
      */
-    combined: PlayerTotalLevelRankings,
+    x: number,
     /**
-     * The level rankings for single class levels
+     * The Y coordinate of the node, starts counting from 1
      */
-    solo: PlayerSoloLevelRankings
+    y: number,
+    /**
+     * The page on which this node appears
+     */
+    page: number,
 }
 
 /**
- * A player's combined level rankings
+ * An ability tree archetype
  */
-interface PlayerTotalLevelRankings {
+interface Archetype {
     /**
-     * Position in the `TOTAL`/`COMBINED` leaderboard
+     * The ID of the archetype
      */
-    all: number?,
+    id: string,
     /**
-     * Position in the `TOTAL`/`COMBAT` leaderboard
+     * The name of the archetype, includes formatting codes
      */
-    combat: number?,
+    name: string,
     /**
-     * Position in the `TOTAL`/`PROFESSION` leaderboard
+     * The description of the archetype, includes formatting codes
      */
-    profession: number?
+    description: string,
+    /**
+     * The short description of the archetype
+     */
+    shortDescription: string,
+    /**
+     * The sprite used for the icon of the archetype
+     */
+    sprite: Sprite
 }
 
 /**
- * A player's single class level rankings
+ * The direction a connector can have
  */
-interface PlayerSoloLevelRankings {
-    /**
-     * Position in the `SOLO`/`COMBINED` leaderboard
-     */
-    all: number?,
-    /**
-     * Position in the `SOLO`/`COMBAT` leaderboard
-     */
-    combat: number?,
-    /**
-     * Position in the `SOLO`/`PROFESSION` leaderboard
-     */
-    profession: number?,
-    /**
-     * Position in the `SOLO`/`MINING` leaderboard
-     */
-    mining: number?,
-    /**
-     * Position in the `SOLO`/`FARMING` leaderboard
-     */
-    farming: number?,
-    /**
-     * Position in the `SOLO`/`FISHING` leaderboard
-     */
-    fishing: number?,
-    /**
-     * Position in the `SOLO`/`WOODCUTTING` leaderboard
-     */
-    woodcutting: number?,
-    /**
-     * Position in the `SOLO`/`ARMORING` leaderboard
-     */
-    armoring: number?,
-    /**
-     * Position in the `SOLO`/`TAILORING` leaderboard
-     */
-    tailoring: number?,
-    /**
-     * Position in the `SOLO`/`JEWELING` leaderboard
-     */
-    jeweling: number?,
-    /**
-     * Position in the `SOLO`/`WOODWORKING` leaderboard
-     */
-    woodworking: number?,
-    /**
-     * Position in the `SOLO`/`WEAPONSMITHING` leaderboard
-     */
-    weaponsmithing: number?,
-    /**
-     * Position in the `SOLO`/`ALCHEMISM` leaderboard
-     */
-    alchemism: number?,
-    /**
-     * Position in the `SOLO`/`COOKING` leaderboard
-     */
-    cooking: number?,
-    /**
-     * Position in the `SOLO`/`SCRIBING` leaderboard
-     */
-    scribing: number?
-}
+type ConnectorDirection =
+    | "UP_RIGHT"
+    | "UP_DOWN"
+    | "UP_LEFT"
+    | "RIGHT_DOWN"
+    | "RIGHT_LEFT"
+    | "DOWN_LEFT"
+    | "UP_RIGHT_DOWN"
+    | "UP_RIGHT_LEFT"
+    | "UP_DOWN_LEFT"
+    | "RIGHT_DOWN_LEFT"
+    | "UP_RIGHT_DOWN_LEFT";
 
 /**
  * A rank in a guild
