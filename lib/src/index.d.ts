@@ -70,6 +70,32 @@ export function fetchPlayerUUID(options: PlayerUUIDRequestOptions | string): Pro
 export function fetchPlayerLeaderboard(options?: PlayerLeaderboardRequestOptions | PlayerTotalLeaderboardType): Promise<List<LeaderboardPlayer>>
 
 /**
+ * Fetches the ability tree of a players character from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function throws an error if the player has their profile set to private.
+ * </div>
+ * <div class="noteBox note" style="display:flex">
+ *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player or character cannot be found.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchPlayerCharacterAbilityTree(options: PlayerCharacterAbilityTreeRequestOptions): Promise<PlayerCharacterAbilityTree?>
+
+/**
+ * Fetches the ability tree of a class from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchAbilityTree(options: AbilityTreeRequestOptions | ClassType): Promise<AbilityTree>
+
+/**
  * Fetches a guild from the API
  * <div class="noteBox important" style="display:flex">
  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
@@ -744,6 +770,33 @@ interface PlayerUUIDRequestOptions extends RequestOptions {
      * A player name; case-sensitive
      */
     player: string
+}
+
+/**
+ * The options for a player character ability tree API request
+ */
+interface PlayerCharacterAbilityTreeRequestOptions implements AbilityTreeRequestOptions, SelectingRequestOptions<PlayerMultipleChoice> {
+    /**
+     * The players UUID or name, case insensitive
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">Currently, the API is not able to handle Multiple Choice cases on this endpoint. Avoid using usernames.
+     * </div>
+     */
+    player: string,
+    /**
+     * A UUID of a character of the player
+     */
+    character: string
+}
+
+/**
+ * The options for an ability tree API request
+ */
+interface AbilityTreeRequestOptions extends RequestOptions {
+    /**
+     * The class type of the character
+     */
+    class: ClassType
 }
 
 /**
@@ -2692,16 +2745,137 @@ export class Player extends BaseAPIObject {
      */
     public discoveries: number;
     /**
-     * The total amount of swarms won
+     * The leaderboard rankings of the player in all player leaderboards (see {@link fetchLeaderboardTypes}), only the leaderboards where the player is in the top 3,000,000 are set.
      */
-    public eventsWon: number;
+    public ranking: { [K in PlayerLeaderboardType]: number }
     /**
-     * The leaderboard rankings of the player in all levels; `null` if not in #100
-     * <div class="noteBox warning" style="display:flex">
-     *     <img src="../../assets/warning.png", class="noteBoxIcon"><div>If the player name was misspelled in the {@link PlayerRequestOptions.player | options}, the rankings are always <code>null</code></div>.
-     * </div>
+     * The ID of the linked forum member, if available
      */
-    public ranking: PlayerRankings;
+    public forumId: number?;
+}
+
+/**
+ * Represents a player characters ability tree
+ */
+export class PlayerCharacterAbilityTree extends BaseAPIObject {
+    private constructor(rawResult: RawResult, params: any);
+
+    /**
+     * The UUID of the player
+     */
+    public player: string;
+    /**
+     * The UUID of the character
+     */
+    public character: string;
+    /**
+     * The number of pages with unlocked abilities in this ability tree
+     */
+    public pages: number;
+    /**
+     * The unlocked abilities on this characters ability tree
+     */
+    public unlockedAbilities: Ability[];
+    /**
+     * The unlocked nodes on this characters ability tree
+     */
+    public unlockedNodes: (Ability | AbilityConnectorNode)[]
+}
+
+/**
+ * Represents the generic ability tree of a class
+ */
+export class AbilityTree extends BaseAPIObject {
+    private constructor(rawResult: RawResult, params: any);
+
+    /**
+     * The archetypes on this class' ability tree
+     */
+    public archetypes: Archetype[];
+    /**
+     * The abilities on this class' ability tree
+     */
+    public abilities: Ability[];
+    /**
+     * The nodes that make up this class' ability tree
+     */
+    public map: (Ability | AbilityConnectorNode)[];
+}
+
+/**
+ * An ability from the ability tree
+ */
+export class Ability {
+    private constructor(data: any);
+
+    /**
+     * The ID of the ability
+     */
+    public id: string;
+    /**
+     * The name of the ability, includes formatting codes
+     */
+    public name: string;
+    /**
+     * The description of the ability, includes formatting codes
+     */
+    public description: string;
+    /**
+     * The abilities leading to this one
+     */
+    public parents: Ability[];
+    /**
+     * The abilities reachable from this one
+     */
+    public children: Ability[];
+    /**
+     * The cost to unlock the ability, in ability points
+     */
+    public cost: number;
+    /**
+     * The ability required to unlock this one, if exists. This is used for things like upgrades to a spell only being possible if the spell was unlocked.
+     */
+    public requiredAbility: Ability?;
+    /**
+     * The archetype restriction, if one exists
+     */
+    public archetypeRequirement: ArchetypeRequirement?;
+    /**
+     * The abilities locked by this one
+     */
+    public locks: Ability[];
+    /**
+     * The abilities that lock this one
+     */
+    public lockedBy: Ability[];
+    /**
+     * The location of this ability on a rendered tree
+     */
+    public location: AbilityNodeLocation;
+    /**
+     * The sprite used for this ability
+     */
+    public sprite: Sprite;
+}
+
+/**
+ * A connector ability tree node
+ */
+export class AbilityConnectorNode {
+    private constructor(data: any);
+
+    /**
+     * The abilities this connector is connecting. There can be more than 2 elements in this array
+     */
+    public links: Ability[];
+    /**
+     * The location of this node on a rendered tree
+     */
+    public location: AbilityNodeLocation;
+    /**
+     * The type of connection this is
+     */
+    public direction: ConnectorDirection;
 }
 
 /**
