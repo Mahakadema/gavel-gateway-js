@@ -37,6 +37,9 @@ export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promis
  * <div class="noteBox note" style="display:flex">
  *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
  * </div>
+ * <div class="noteBox warning" style="display:flex">
+ *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
+ * </div>
  * @param options The options for the request, or a player name or uuid
  * @category Endpoint
  */
@@ -80,6 +83,9 @@ export function fetchPlayerLeaderboard(options?: PlayerLeaderboardRequestOptions
  * <div class="noteBox note" style="display:flex">
  *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player or character cannot be found.
  * </div>
+ * <div class="noteBox warning" style="display:flex">
+ *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
+ * </div>
  * @param options The options for the request
  * @category Endpoint
  */
@@ -102,6 +108,9 @@ export function fetchAbilityTree(options: AbilityTreeRequestOptions | ClassType)
  * </div>
  * <div class="noteBox note" style="display:flex">
  *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the guild doesn't exist.
+ * </div>
+ * <div class="noteBox warning" style="display:flex">
+ *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
  * </div>
  * @param options The options for the request, or a guild name to request
  * @category Endpoint
@@ -706,6 +715,22 @@ interface RequestOptions {
 }
 
 /**
+ * Request options for requests which may encounter a MultipleChoicesError
+ */
+interface SelectingRequestOptions<T> extends RequestOptions {
+    /**
+     * A function that will be executed with each of the choices as a parameter.
+     * It may return a Promise of a boolean. In that case, the selector will be executed for all values simultaneously. And the passing element with the lowest index will be selected.
+     * If the selector returns false for all choices, the error is thrown regardless
+     * @param v The current choice
+     * @param i The index of the current choice
+     * @param a The array of all choices
+     * @returns True, if the given choice should be selected
+     */
+    multipleChoicesSelector?: (v: T, i: number, a: T[]) => boolean | Promise<boolean>,
+}
+
+/**
  * The options for a raw API request
  */
 interface RawRequestOptions extends RequestOptions {
@@ -737,7 +762,7 @@ interface RawRequestOptions extends RequestOptions {
 /**
  * The options for a player API request
  */
-interface PlayerRequestOptions extends RequestOptions {
+interface PlayerRequestOptions extends SelectingRequestOptions<PlayerMultipleChoice> {
     /**
      * A player UUID or name; case-insensitive
      */
@@ -827,7 +852,7 @@ interface PlayerLeaderboardRequestOptions extends RequestOptions {
 /**
  * The options for a guild API request
  */
-interface GuildRequestOptions extends RequestOptions {
+interface GuildRequestOptions extends SelectingRequestOptions<GuildMultipleChoice> {
     /**
      * The UUID of the guild
      * <div class="noteBox important" style="display:flex">
@@ -2117,6 +2142,68 @@ interface RawResult {
     body: any
 }
 
+/**
+ * A choice used by MultipleChoicesErrors on player requests
+ */
+interface PlayerMultipleChoice {
+    /**
+     * The players UUID
+     */
+    uuid: string,
+    /**
+     * The players name
+     * <div class="noteBox important" style="display:flex">
+     *     <img src="../../assets/important.png", class="noteBoxIcon">Usually, MultipleChoicesErrors occur because player names are not updated consistently. The names are likely to match for all choices.
+     * </div>
+     */
+    name: string,
+    /**
+     * The players rank
+     */
+    rank: RankData,
+    /**
+     * Fetches the player of this choice
+     */
+    fetch: (options?: PlayerRequestOptions) => Promise<Player>
+}
+
+/**
+ * A choice used by MultipleChoicesErrors on guild requests
+ */
+interface GuildMultipleChoice {
+    /**
+     * The UUID of the guild
+     */
+    uuid: string,
+    /**
+     * The guild name
+     */
+    name: string,
+    /**
+     * The guild tag
+     */
+    tag: string,
+    /**
+     * The guild level
+     */
+    level: number,
+    /**
+     * The guild member count
+     */
+    memberCount: number,
+    /**
+     * The guilds creation date
+     */
+    created: Date,
+    /**
+     * The guilds creation timestamp
+     */
+    createdTimestamp: number
+    /**
+     * Fetches the guild of this choice
+     */
+    fetch: (options?: GuildRequestOptions) => Promise<Guild>
+}
 
 
 
@@ -2139,7 +2226,7 @@ export class WynncraftAPIError extends Error {
  * property in the choices array to make a new request.
  * @category Errors
  */
-export class MultipleChoicesError<T extends { key: string }> extends WynncraftAPIError {
+export class MultipleChoicesError<T extends { fetch: (options?: RequestOptions) => Promise<V> }> extends WynncraftAPIError {
     public constructor(message?: string, choices?: T[]);
 
     /**
