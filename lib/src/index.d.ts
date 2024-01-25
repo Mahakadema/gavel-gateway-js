@@ -69,8 +69,9 @@ export function fetchPlayerUUID(options: PlayerUUIDRequestOptions | string): Pro
  * </div>
  * @param options The options for the request; or a type of `TOTAL` leaderboard to request
  * @category Endpoint
+ * @deprecated Use {@link fetchLeaderboard} instead
  */
-export function fetchPlayerLeaderboard(options?: PlayerLeaderboardRequestOptions | PlayerTotalLeaderboardType): Promise<List<LeaderboardPlayer>>
+export function fetchPlayerLeaderboard(options?: LegacyPlayerLeaderboardRequestOptions | LegacyPlayerTotalLeaderboardType): Promise<List<LegacyLeaderboardPlayer>>
 
 /**
  * Fetches the ability tree of a players character from the API
@@ -137,6 +138,7 @@ export function fetchGuildList(options?: RequestOptions): Promise<List<GuildList
  * </div>
  * @param options The options for the request
  * @category Endpoint
+ * @deprecated Use {@link fetchLeaderboard} instead
  */
 export function fetchGuildLeaderboard(options?: RequestOptions): Promise<List<LeaderboardGuild>>
 
@@ -158,18 +160,18 @@ export function fetchTerritoryList(options?: RequestOptions): Promise<List<Terri
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchLeaderboardTypes(options?: RequestOptions): Promise<List<string>>
+export function fetchLeaderboardTypes(options?: RequestOptions): Promise<LeaderboardTypes>
 
-// /**
-//  * Fetches a leaderboard from the API
-//  * <div class="noteBox important" style="display:flex">
-//  *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
-//  * </div>
-//  * @param options The options for the request
-//  * @category Endpoint
-//  */
-// // TODO: document types
-// export function fetchLeaderboard(options?: LeaderboardRequestOptions): Promise<List<LeaderboardEntry>>
+/**
+ * Fetches a leaderboard from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchLeaderboard(options?: LeaderboardRequestOptions<GuildLeaderboardType> | GuildLeaderboardType): Promise<List<LeaderboardGuild>>
+export function fetchLeaderboard(options?: LeaderboardRequestOptions<PlayerLeaderboardType> | PlayerLeaderboardType): Promise<List<LeaderboardPlayer>>
 
 /**
  * Fetches all ingredients matching the options from the API
@@ -830,15 +832,27 @@ interface OnlinePlayersRequestOptions extends RequestOptions {
     player: OnlinePlayersIdentifier
 }
 
+interface LeaderboardRequestOptions<LbType> extends RequestOptions {
+    /**
+     * The type of Leaderboard to fetch
+     */
+    leaderboard: LbType,
+    /**
+     * The maximum amount of entries, maximum of 1000
+     * @default 100
+     */
+    limit: number
+}
+
 /**
  * The options for a player leaderboard API request
  */
-interface PlayerLeaderboardRequestOptions extends RequestOptions {
+interface LegacyPlayerLeaderboardRequestOptions extends RequestOptions {
     /**
      * The scope of the leaderboard; TOTAL means all classes, SOLO means single class
      * @default "TOTAL"
      */
-    scope?: PlayerLeaderboardScope,
+    scope?: LegacyPlayerLeaderboardScope,
     /**
      * The type of level or levels to rank
      * <div class="noteBox tip" style="display:flex">
@@ -846,7 +860,7 @@ interface PlayerLeaderboardRequestOptions extends RequestOptions {
      * </div>
      * @default "COMBAT"
      */
-    type?: PlayerSoloLeaderboardType | PlayerTotalLeaderboardType,
+    type?: LegacyPlayerSoloLeaderboardType | LegacyPlayerTotalLeaderboardType,
 }
 
 /**
@@ -2797,6 +2811,73 @@ export class Player extends BaseAPIObject {
 }
 
 /**
+ * Represents a player from the leaderboards API
+ */
+export class LeaderboardPlayer {
+    private constructor(v: object);
+
+    /**
+     * The UUID of the player
+     */
+    public uuid: string;
+    /**
+     * The username of the player
+     */
+    public name: string;
+    /**
+     * The metric this leaderboard tracks
+     */
+    public score: number;
+    /**
+     * The playtime of the player or the character in minutes
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">See {@link Player.minutesPlayed}
+     * </div>
+     */
+    public minutesPlayed: number;
+    /**
+     * The playtime of the player or the character in its native unit
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">See {@link Player.playtime}
+     * </div>
+     */
+    public playtime: number;
+    /**
+     * The amount of overflow XP the player has. Only present for solo leaderboards or leaderboards that track a level.
+     */
+    public xp: number?;
+    /**
+     * The respective level, such as of the challenge class or the accumulated level of all classes on global leaderboards.
+     * Currently this property is `null` on hardcoreContent, huicContent and huichContent.
+     */
+    public level: number?;
+    /**
+     * Information on the character, if applicable
+     */
+    public character: LeaderboardPlayerCharacter?;
+    /**
+     * The players rank
+     */
+    public rank: RankData;
+}
+
+/**
+ * Represents the types of leaderboards available on the API
+ */
+export class LeaderboardTypes extends BaseAPIObject {
+    private constructor(rawResult: RawResult, params: any);
+
+    /**
+     * The available guild leaderboards
+     */
+    public guildLeaderboards: AvailableLeaderboard<GuildLeaderboardType, LeaderboardGuild>;
+    /**
+     * The available player leaderboards
+     */
+    public playerLeaderboards: AvailableLeaderboard<PlayerLeaderboardType, LeaderboardPlayer>;
+}
+
+/**
  * Represents a player characters ability tree
  */
 export class PlayerCharacterAbilityTree extends BaseAPIObject {
@@ -3264,7 +3345,7 @@ export class Territory {
 /**
  * Represents a player in a leaderboard from the API
  */
-export class LeaderboardPlayer {
+export class LegacyLeaderboardPlayer {
     private constructor(v: Object);
 
     /**
@@ -3282,7 +3363,7 @@ export class LeaderboardPlayer {
      *     <img src="../../assets/warning.png", class="noteBoxIcon">The <code>displayTag</code> and <code>veteran</code> properties are currently always false, unless both are true.
      * </div>
      */
-    public rank: RankData;
+    public rank: LegacyRankData;
     /**
      * The playtime of the player
      */
@@ -3291,10 +3372,10 @@ export class LeaderboardPlayer {
      * The class that earns the player their spot on the
      * leaderboard
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Only set if the requested {@link PlayerLeaderboardScope | scope} was <code>SOLO</code></div>.
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Only set if the requested {@link LegacyPlayerLeaderboardScope | scope} was <code>SOLO</code></div>.
      * </div>
      */
-    public class?: LeaderboardPlayerClass;
+    public class?: LegacyLeaderboardPlayerClass;
     /**
      * The respective level of the player
      * <div class="noteBox note" style="display:flex">
@@ -3312,7 +3393,7 @@ export class LeaderboardPlayer {
     /**
      * The nether kills of the player
      * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Only set if the {@link PlayerTotalLeaderboardType | type} of the request was <code>PVP</code></div>.
+     *     <img src="../../assets/note.png", class="noteBoxIcon"><div>Only set if the {@link LegacyPlayerTotalLeaderboardType | type} of the request was <code>PVP</code></div>.
      * </div>
      */
     public kills?: number;
@@ -3518,9 +3599,55 @@ type WorldType =
     | "OTHER";
 
 /**
+ * A type of leaderboard for players
+ */
+type PlayerLeaderboardType = string;
+
+/**
+ * A type of leaderboard for guilds
+ */
+type GuildLeaderboardType = `guild${string}`;
+
+/**
+ * A type of leaderboard which can be fetched
+ */
+interface AvailableLeaderboard<LbType, LbEntryType> {
+    /**
+     * The name of the leaderboard
+     */
+    name: LbType,
+    /**
+     * Fetches the leaderboard
+     */
+    fetch: (options: LeaderboardRequestOptions<LbType>) => Promise<List<LbEntryType>>
+}
+
+/**
+ * The character of a player on the leaderboard
+ */
+interface LeaderboardPlayerCharacter {
+    /**
+     * The UUID of the character
+     */
+    uuid: string,
+    /**
+     * The type of class excluding reskins
+     */
+    baseType: ClassBaseType,
+    /**
+     * The type of class including reskins
+     */
+    type: ClassType,
+    /**
+     * The nickname of the character, if applicable
+     */
+    nickname: string?
+}
+
+/**
  * A class of a player on the leaderboard
  */
-interface LeaderboardPlayerClass {
+interface LegacyLeaderboardPlayerClass {
     /**
      * The uuid of the class
      */
@@ -3557,14 +3684,14 @@ type PlayerRelationship = "SELF" | "FRIEND" | "PARTY" | "GUILD";
 /**
  * A scope of leaderboard ranking
  */
-type PlayerLeaderboardScope =
+type LegacyPlayerLeaderboardScope =
     | "TOTAL"
     | "SOLO";
 
 /**
  * Player leaderboards available for total
  */
-type PlayerTotalLeaderboardType =
+type LegacyPlayerTotalLeaderboardType =
     | "PVP"
     | "COMBAT"
     | "PROFESSION"
@@ -3573,7 +3700,7 @@ type PlayerTotalLeaderboardType =
 /**
  * Player leaderboards available for solo
  */
-type PlayerSoloLeaderboardType =
+type LegacyPlayerSoloLeaderboardType =
     | "COMBAT"
     | "PROFESSION"
     | "COMBINED"
@@ -3795,7 +3922,7 @@ type ServerRank =
     | "MEDIA"
     | "BUILDER"
     | "ITEM"
-    | "GAME_MASTER"
+    | "GAME MASTER"
     | "CMD"
     | "MUSIC"
     | "HYBRID"
@@ -3821,11 +3948,11 @@ interface RankData {
     serverRank: ServerRank,
     /**
      * The players server ranks short version, if available
-     * <div class="noteBox note" style="display:flex">
-     *     <img src="../../assets/note.png", class="noteBoxIcon">This property is only present on {@link Player} objects.
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">This property does not consistently shorten ranks across different endpoints.
      * </div>
      */
-    shortenedServerRank?: string,
+    shortenedServerRank: string,
     /**
      * The players donator rank
      */
@@ -3835,20 +3962,48 @@ interface RankData {
      * <div class="noteBox note" style="display:flex">
      *     <img src="../../assets/note.png", class="noteBoxIcon">The Wynncraft criteria for a veteran is whether the player has bought a rank before the 2014 Minecraft EULA change.
      * </div>
+     * <div class="noteBox warning" style="display:flex">
+     *     <img src="../../assets/warning.png", class="noteBoxIcon">Not all veteran players are always displayed as such.
+     * </div>
      */
     veteran: boolean,
     /**
      * The text color of the players rank badge
      */
-    textColor: string,
+    textColor: string?,
     /**
      * The background color of the players rank badge
      */
-    backgroundColor: string,
+    backgroundColor: string?,
     /**
      * The cdn URL of the players rank badge
      */
-    badgeUrl: string
+    badgeUrl: string?
+}
+
+/**
+ * RankData used on the v2 leaderboards
+ */
+interface LegacyRankData {
+    /**
+     * The server rank of the player
+     */
+    serverRank: ServerRank,
+    /**
+     * The donator rank of the player
+     */
+    donatorRank: DonatorRank?,
+    /**
+     * Whether to display the donator rank
+     */
+    displayDonatorRank: boolean,
+    /**
+     * Whether the player is a veteran
+     * <div class="noteBox note" style="display:flex">
+     *     <img src="../../assets/note.png", class="noteBoxIcon">The Wynncraft criteria for a veteran is whether the player has bought a rank before the 2014 Minecraft EULA change.
+     * </div>
+     */
+    veteran: boolean
 }
 
 /**
