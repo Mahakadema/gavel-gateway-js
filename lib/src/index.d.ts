@@ -280,10 +280,13 @@ export function fetchMapLocations(options: RequestOptions): Promise<List<MapLoca
  * <div class="noteBox note" style="display:flex">
  *     <img src="../assets/note.png", class="noteBoxIcon">Which player to return info for is based on the IP used to cast this request and the IP logged into the Minecraft server.
  * </div>
+ * <div class="noteBox note" style="display:flex">
+ *     <img src="../assets/note.png", class="noteBoxIcon">This request returns `null` if no player is logged in.
+ * </div>
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchMyLocation(options: RequestOptions): Promise<List<PlayerParty>>
+export function fetchMyLocation(options: RequestOptions): Promise<List<PlayerParty>?>
 
 /**
  * Fetches the number of quests from the API
@@ -2666,6 +2669,12 @@ export class PlayerClass {
      * </div>
      */
     public hasEconomyStar: boolean;
+
+    /**
+     * Fetches the characters ability tree
+     * @param options The options for the request, the `player`, `character` and `class` fields have no effect
+     */
+    public fetchAbilityTree(options: PlayerCharacterAbilityTreeRequestOptions): Promise<PlayerCharacterAbilityTree?>
 }
 
 /**
@@ -2892,9 +2901,25 @@ export class PlayerCharacterAbilityTree extends BaseAPIObject {
      */
     public character: string;
     /**
+     * The type of class this ability tree belongs to
+     */
+    public classBaseType: ClassBaseType;
+    /**
      * The number of pages with unlocked abilities in this ability tree
      */
     public pages: number;
+    /**
+     * The archetypes on this class' ability tree
+     */
+    public archetypes: Archetype[]; // TODO: most of these are just copied from AbilityTree. 
+    /**
+     * The abilities on this class' ability tree
+     */
+    public abilities: Ability[];
+    /**
+     * The nodes that make up this class' ability tree
+     */
+    public map: (Ability | AbilityConnectorNode)[];
     /**
      * The unlocked abilities on this characters ability tree
      */
@@ -2909,8 +2934,12 @@ export class PlayerCharacterAbilityTree extends BaseAPIObject {
  * Represents the generic ability tree of a class
  */
 export class AbilityTree extends BaseAPIObject {
-    private constructor(rawResult: RawResult, params: any);
+    private constructor(rawMap: RawResult, rawTree: RawResult, params: any);
 
+    /**
+     * The type of class this ability tree belongs to
+     */
+    public classBaseType: ClassBaseType;
     /**
      * The archetypes on this class' ability tree
      */
@@ -3641,7 +3670,12 @@ interface LeaderboardPlayerCharacter {
     /**
      * The nickname of the character, if applicable
      */
-    nickname: string?
+    nickname: string?,
+    /**
+     * Fetches the characters ability tree
+     * @param options The request options, the fields `player`, `character` and `class` have no effect
+     */
+    fetchAbilityTree: (options: PlayerCharacterAbilityTreeRequestOptions) => Promise<PlayerCharacterAbilityTree?>
 }
 
 /**
@@ -4011,8 +4045,11 @@ interface LegacyRankData {
 */
 interface PlayerGuildData {
     /**
+     * The UUID of the players guild, if applicable
+     */
+    uuid: string?,
+    /**
      * The name of the players guild, if applicable
-     * @readonly
      */
     name: string?,
     /**
