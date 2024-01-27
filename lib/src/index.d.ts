@@ -2329,7 +2329,7 @@ export class NameSearch extends BaseAPIObject {
      *     <img src="../../assets/note.png", class="noteBoxIcon">Ordered in ascending order of creation date.
      * </div>
      */
-    public guilds: GuildListItem[]; // TODO: fix once patch out
+    public guilds: GuildListItem[];
     /**
      * The guilds where the search pattern appeared in the tag
      * <div class="noteBox note" style="display:flex">
@@ -2889,7 +2889,7 @@ export class LeaderboardTypes extends BaseAPIObject {
 /**
  * Represents a player characters ability tree
  */
-export class PlayerCharacterAbilityTree extends BaseAPIObject {
+export class PlayerCharacterAbilityTree extends AbilityTree {
     private constructor(rawResult: RawResult, params: any);
 
     /**
@@ -2901,25 +2901,9 @@ export class PlayerCharacterAbilityTree extends BaseAPIObject {
      */
     public character: string;
     /**
-     * The type of class this ability tree belongs to
-     */
-    public classBaseType: ClassBaseType;
-    /**
      * The number of pages with unlocked abilities in this ability tree
      */
     public pages: number;
-    /**
-     * The archetypes on this class' ability tree
-     */
-    public archetypes: Archetype[]; // TODO: most of these are just copied from AbilityTree. 
-    /**
-     * The abilities on this class' ability tree
-     */
-    public abilities: Ability[];
-    /**
-     * The nodes that make up this class' ability tree
-     */
-    public map: (Ability | AbilityConnectorNode)[];
     /**
      * The unlocked abilities on this characters ability tree
      */
@@ -2934,7 +2918,7 @@ export class PlayerCharacterAbilityTree extends BaseAPIObject {
  * Represents the generic ability tree of a class
  */
 export class AbilityTree extends BaseAPIObject {
-    private constructor(rawMap: RawResult, rawTree: RawResult, params: any);
+    private constructor(rawTree: RawResult, rawMap: RawResult, params: any);
 
     /**
      * The type of class this ability tree belongs to
