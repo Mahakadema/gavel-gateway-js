@@ -22,7 +22,7 @@ export function flushCache(): number
 /**
  * Returns a raw API response of the requested route.
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request, or a route to request
  * @category Endpoint
@@ -32,13 +32,13 @@ export function fetchRaw(options: RawRequestOptions | WynncraftAPIRoute): Promis
 /**
  * Fetches a player from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
  * </div>
  * <div class="noteBox warning" style="display:flex">
- *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
+ *     <img src="../../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
  * </div>
  * @param options The options for the request, or a player name or uuid
  * @category Endpoint
@@ -48,10 +48,10 @@ export function fetchPlayer(options: PlayerRequestOptions | string): Promise<Pla
 /**
  * Fetches a players UUID from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player has never logged into Wynncraft.
  * </div>
  * @param options The options for the request, or a player name
  * @category Endpoint
@@ -62,10 +62,10 @@ export function fetchPlayerUUID(options: PlayerUUIDRequestOptions | string): Pro
 /**
  * Fetches the player leaderboard from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">The list is ordered in ascending order of position. (first place at start)
+ *     <img src="../../assets/note.png", class="noteBoxIcon">The list is ordered in ascending order of position. (first place at start)
  * </div>
  * @param options The options for the request; or a type of `TOTAL` leaderboard to request
  * @category Endpoint
@@ -76,16 +76,16 @@ export function fetchPlayerLeaderboard(options?: LegacyPlayerLeaderboardRequestO
 /**
  * Fetches the ability tree of a players character from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function throws an error if the player has their profile set to private.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function throws an error if the player has their profile set to private.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player or character cannot be found.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the player or character cannot be found.
  * </div>
  * <div class="noteBox warning" style="display:flex">
- *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
+ *     <img src="../../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -95,7 +95,7 @@ export function fetchPlayerCharacterAbilityTree(options: PlayerCharacterAbilityT
 /**
  * Fetches the ability tree of a class from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -105,13 +105,13 @@ export function fetchAbilityTree(options: AbilityTreeRequestOptions | ClassType)
 /**
  * Fetches a guild from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the guild doesn't exist.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">This function returns <code>null</code> if the guild doesn't exist.
  * </div>
  * <div class="noteBox warning" style="display:flex">
- *     <img src="../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
+ *     <img src="../../assets/warning.png", class="noteBoxIcon">This function may throw a {@link MultipleChoicesError}. Specify a {@link SelectingRequestOptions.multipleChoicesSelector} to avoid these errors
  * </div>
  * @param options The options for the request, or a guild name to request
  * @category Endpoint
@@ -121,7 +121,7 @@ export function fetchGuild(options: GuildRequestOptions | string): Promise<Guild
 /**
  * Fetches all guild names from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -131,10 +131,10 @@ export function fetchGuildList(options?: RequestOptions): Promise<List<GuildList
 /**
  * Fetches the guild leaderboard from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">The list is ordered in ascending order of position. (first place at start)
+ *     <img src="../../assets/note.png", class="noteBoxIcon">The list is ordered in ascending order of position. (first place at start)
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -145,7 +145,7 @@ export function fetchGuildLeaderboard(options?: RequestOptions): Promise<List<Le
 /**
  * Fetches the territory list from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -155,7 +155,7 @@ export function fetchTerritoryList(options?: RequestOptions): Promise<List<Terri
 /**
  * Fetches all available leaderboard types from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -165,7 +165,7 @@ export function fetchLeaderboardTypes(options?: RequestOptions): Promise<Leaderb
 /**
  * Fetches a leaderboard from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -176,10 +176,10 @@ export function fetchLeaderboard(options?: LeaderboardRequestOptions<PlayerLeade
 /**
  * Fetches all ingredients matching the options from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox tip" style="display:flex">
- *     <img src="../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
+ *     <img src="../../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
  * </div>
  * @param options The options for the request, or a partial display name to search for
  * @category Endpoint
@@ -189,7 +189,7 @@ export function fetchIngredients(options?: IngredientSearchRequestOptions | stri
 /**
  * Fetches all ingredient names from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -199,10 +199,10 @@ export function fetchIngredientList(options?: RequestOptions): Promise<List<stri
 /**
  * Fetches all recipes matching the options from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox tip" style="display:flex">
- *     <img src="../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
+ *     <img src="../../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
  * </div>
  * @param options The options for the request, or a recipe ID
  * @category Endpoint
@@ -212,7 +212,7 @@ export function fetchRecipes(options?: RecipeSearchRequestOptions | string): Pro
 /**
  * Fetches all recipe names from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -222,10 +222,10 @@ export function fetchRecipeList(options?: RequestOptions): Promise<List<string>>
 /**
  * Fetches all items matching the options from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox tip" style="display:flex">
- *     <img src="../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
+ *     <img src="../../assets/tip.png", class="noteBoxIcon">You should never disable caching for this function. Disabling caching or setting low cache times will result in multiple MB of network traffic on every call.
  * </div>
  * @param options The options for the request, or a partial display name to search for
  * @category Endpoint
@@ -235,7 +235,7 @@ export function fetchItems(options?: ItemSearchRequestOptions | string): Promise
 /**
  * Fetches the online players from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -245,7 +245,7 @@ export function fetchOnlinePlayers(options?: OnlinePlayersRequestOptions | Onlin
 /**
  * Fetches the number of online players from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -255,7 +255,7 @@ export function fetchOnlinePlayersSum(options?: RequestOptions): Promise<OnlineP
 /**
  * Fetches the guild and player names matching this query from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request, or a string to search for
  * @category Endpoint
@@ -265,7 +265,7 @@ export function fetchNames(options: NameSearchRequestOptions | string): Promise<
 /**
  * Fetches the coordinates of important locations from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -275,13 +275,13 @@ export function fetchMapLocations(options: RequestOptions): Promise<List<MapLoca
 /**
  * Fetches the coordinates and health info for the locally logged in player from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">Which player to return info for is based on the IP used to cast this request and the IP logged into the Minecraft server.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">Which player to return info for is based on the IP used to cast this request and the IP logged into the Minecraft server.
  * </div>
  * <div class="noteBox note" style="display:flex">
- *     <img src="../assets/note.png", class="noteBoxIcon">This request returns `null` if no player is logged in.
+ *     <img src="../../assets/note.png", class="noteBoxIcon">This request returns `null` if no player is logged in.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -291,7 +291,7 @@ export function fetchMyLocation(options: RequestOptions): Promise<List<PlayerPar
 /**
  * Fetches the number of quests from the API
  * <div class="noteBox important" style="display:flex">
- *     <img src="../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
  * </div>
  * @param options The options for the request
  * @category Endpoint
@@ -2239,8 +2239,8 @@ export class WynncraftAPIError extends Error {
 }
 
 /**
- * Represents that multiple entries were found, use the 'key'
- * property in the choices array to make a new request.
+ * Represents that multiple entries were found.
+ * Use the fetch function to request the chosen options
  * @category Errors
  */
 export class MultipleChoicesError<T extends { fetch: (options?: RequestOptions) => Promise<V> }> extends WynncraftAPIError {
@@ -3691,7 +3691,11 @@ interface PlayerIdentifier {
     /**
      * The name of the player
      */
-    public name: string
+    public name: string,
+    /**
+     * Fetches the player
+     */
+    public fetch: (options?: PlayerRequestOptions) => Promise<Player?>
 }
 
 /**
