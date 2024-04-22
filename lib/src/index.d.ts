@@ -2814,6 +2814,10 @@ export class Player extends BaseAPIObject {
      */
     public ranking: { [K in PlayerLeaderboardType]: number }
     /**
+     * The leaderboard rankings of the player in all player leaderboards (see {@link fetchLeaderboardTypes}) from the previous day. This works the same as {@link Player.ranking | ranking} but always displays the value rankings had before the last update.
+     */
+    public previousRanking: { [K in PlayerLeaderboardType]: number }
+    /**
      * The ID of the linked forum member, if available
      */
     public forumId: number?;
@@ -3090,6 +3094,10 @@ export class GuildMember {
 export class Guild extends BaseAPIObject {
     private constructor(data: Object, params: Object);
 
+    /**
+     * The UUID of the guild
+     */
+    public uuid: string;
     /**
      * The name of the guild
      */
@@ -4075,7 +4083,7 @@ interface PlayerLevelsData {
      */
     combined: number,
     /**
-     * The combined total level of the player, including deleted classes. This excludes the first level of professions
+     * The combined total level of the player, including deleted classes. This includes the first level of professions
      */
     includingDeleted: number
 }
