@@ -4531,7 +4531,7 @@ interface ItemSkin {
  */
 type ItemRestriction =
     | "UNTRADABLE"
-    | "QUEST"; // "Quest Item"
+    | "QUEST_ITEM"; // "Quest Item"
 
 /**
 * A weapon attack speed
@@ -4632,6 +4632,10 @@ interface Identification {
  */
 interface Sprite {
     /**
+     * The type of the sprite
+     */
+    type: SpriteType,
+    /**
      * The string version of the items ID
      */
     id: MinecraftStringId,
@@ -4640,9 +4644,17 @@ interface Sprite {
      */
     numericalId: number,
     /**
-     * The items damage value (data value)
+     * The items damage value (data value); only present on LEGACY sprite types
      */
-    damage: number
+    damage: number?,
+    /**
+     * The items customModelData attribute; only present on ATTRIBUTE sprite types
+     */
+    customModelData: number?,
+    /**
+     * The items sprite name, used for requesting an icon from the CDN; only present on ATTRIBUTE sprite types
+     */
+    name: string?
 }
 
 /**
@@ -4762,6 +4774,13 @@ type CraftableItemType =
     | "SCROLL"
     | "SPEAR"
     | "WAND";
+
+/**
+ * The type of a sprite, determining what fields are present on the sprite
+ */
+type SpriteType =
+    | "LEGACY"
+    | "ATTRIBUTE";
 
 /**
  * A material to be used while crafting an item
