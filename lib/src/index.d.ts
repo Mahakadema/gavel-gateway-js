@@ -100,7 +100,17 @@ export function fetchPlayerCharacterAbilityTree(options: PlayerCharacterAbilityT
  * @param options The options for the request
  * @category Endpoint
  */
-export function fetchAbilityTree(options: AbilityTreeRequestOptions | ClassType): Promise<AbilityTree>
+export function fetchAbilityTree(options: RequestOptionsWithClassType | ClassType): Promise<AbilityTree>
+
+/**
+ * Fetches the possible aspects of a class from the API
+ * <div class="noteBox important" style="display:flex">
+ *     <img src="../../assets/important.png", class="noteBoxIcon">This function causes API requests.
+ * </div>
+ * @param options The options for the request
+ * @category Endpoint
+ */
+export function fetchAspects(options: RequestOptionsWithClassType | ClassType): Promise<List<Aspect>>
 
 /**
  * Fetches a guild from the API
@@ -800,7 +810,7 @@ interface PlayerUUIDRequestOptions extends RequestOptions {
 /**
  * The options for a player character ability tree API request
  */
-interface PlayerCharacterAbilityTreeRequestOptions implements AbilityTreeRequestOptions, SelectingRequestOptions<PlayerMultipleChoice> {
+interface PlayerCharacterAbilityTreeRequestOptions implements RequestOptionsWithClassType, SelectingRequestOptions<PlayerMultipleChoice> {
     /**
      * The players UUID or name, case insensitive
      * <div class="noteBox warning" style="display:flex">
@@ -817,7 +827,7 @@ interface PlayerCharacterAbilityTreeRequestOptions implements AbilityTreeRequest
 /**
  * The options for an ability tree API request
  */
-interface AbilityTreeRequestOptions extends RequestOptions {
+interface RequestOptionsWithClassType extends RequestOptions {
     /**
      * The class type of the character
      */
@@ -3035,6 +3045,38 @@ export class AbilityConnectorNode {
 }
 
 /**
+ * An Aspect
+ */
+export class Aspect {
+    private constructor(data: any);
+
+    /**
+     * The Aspect's name
+     */
+    public name: string;
+    /**
+     * The rarity of the Aspect
+     */
+    public rarity: ItemRarity;
+    /**
+     * The class this Aspect is restricted to
+     */
+    public class: ClassBaseType;
+    /**
+     * The Aspect's tiers
+     */
+    public tiers: AspectTier[];
+    /**
+     * The Aspect's sprite
+     */
+    public sprite: Sprite;
+    /**
+     * The CDN URL of an image used for display of the Aspect
+     */
+    public iconUrl: string;
+}
+
+/**
  * Represents a player UUID from the API
  */
 export class UUID extends BaseAPIObject {
@@ -4102,6 +4144,20 @@ interface PlayerLevelsData {
      * The combined total level of the player, including deleted classes. This includes the first level of professions
      */
     includingDeleted: number
+}
+
+/**
+ * An Aspect's tier
+ */
+interface AspectTier {
+    /**
+     * The tier's threshold
+     */
+    threshold: number,
+    /**
+     * A formatted description of the tier's effects
+     */
+    description: string,
 }
 
 /**
