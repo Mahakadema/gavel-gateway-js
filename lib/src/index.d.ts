@@ -2996,6 +2996,14 @@ export class Ability {
      * The sprite used for this ability
      */
     public sprite: Sprite;
+    /**
+     * The CDN URL used to access the image of the sprite for display purposes
+     */
+    public passiveIconUrl: string;
+    /**
+     * The CDN URL used to access the image of the sprite for display purposes
+     */
+    public activeIconUrl: string;
 }
 
 /**
@@ -3016,6 +3024,14 @@ export class AbilityConnectorNode {
      * The type of connection this is
      */
     public direction: ConnectorDirection;
+    /**
+     * The CDN URL used to access the image of the sprite for display purposes
+     */
+    public passiveIconUrl: string;
+    /**
+     * The CDN URL used to access the image of the sprite for display purposes
+     */
+    public activeIconUrl: string;
 }
 
 /**
