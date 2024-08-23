@@ -2058,17 +2058,25 @@ interface ItemStatQuery {
 }
 
 /**
- * A visual sprite to match in ingredient or item search
+ * A visual sprite to match in ingredient or item search; one of the properties has to be defined
  */
 interface SpriteQuery {
     /**
      * The ID of the sprite
      */
-    id: MinecraftId,
+    id?: MinecraftId,
     /**
-     * The damage value (or data value) of the sprite
+     * The damage value (or data value) of the sprite; this only matches sprites of LEGACY type
      */
-    damage?: number
+    damage?: number,
+    /**
+     * The customModelData value of the sprite; this only matches sprites of ATTRIBUTE type
+     */
+    customModelData?: number,
+    /**
+     * The name of the sprite; this only matches sprites of ATTRIBUTE type
+     */
+    name?: string,
 }
 
 /**
@@ -4646,15 +4654,15 @@ interface Sprite {
     /**
      * The items damage value (data value); only present on LEGACY sprite types
      */
-    damage: number?,
+    damage?: number,
     /**
      * The items customModelData attribute; only present on ATTRIBUTE sprite types
      */
-    customModelData: number?,
+    customModelData?: number,
     /**
      * The items sprite name, used for requesting an icon from the CDN; only present on ATTRIBUTE sprite types
      */
-    name: string?
+    name?: string
 }
 
 /**
