@@ -19,3 +19,11 @@
 - fixed rank colors in MultipleChoicesErrors
 - fixed veteran in MultipleChoicesErrors
 - fixed MultipleChoicesErrors sometimes failing due to missing player ranks
+
+v3.2.1
+
+## Model Changes
+- Added `territories` and `discoveries` to NameSearch
+
+## Bugfixes
+- Fixed NameSearch failing to parse Items properly

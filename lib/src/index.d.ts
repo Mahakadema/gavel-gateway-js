@@ -2366,6 +2366,14 @@ export class NameSearch extends BaseAPIObject {
      * The items whose names contain the query string
      */
     public items: Item[];
+    /**
+     * The territories whose names start with the query string
+     */
+    public territories: TerritoryStub[];
+    /**
+     * The discoveries whose names start with the query string
+     */
+    public discoveries: DiscoveryStub[];
 }
 
 /**
@@ -3409,7 +3417,7 @@ export class Territory {
     /**
      * The location and dimensions of the territory
      */
-    public location: SquareRegion;
+    public location: RectangleLocation;
     /**
      * The amount of resources produced by the territory at base production
      */
@@ -4155,6 +4163,34 @@ interface PlayerLevelsData {
 }
 
 /**
+ * A territories general information
+ */
+interface TerritoryStub {
+    /**
+     * The name of the territory
+     */
+    name: string,
+    /**
+     * The location of the territory
+     */
+    location: RectangleLocation,
+}
+
+/**
+ * A discoveries general information
+ */
+interface DiscoveryStub {
+    /**
+     * The name of the discovery
+     */
+    name: string,
+    /**
+     * The location of the discovery
+     */
+    location: CuboidLocation,
+}
+
+/**
  * An Aspect's tier
  */
 interface AspectTier {
@@ -4833,11 +4869,29 @@ interface Resources {
 /**
  * A rectangular area
  */
-interface SquareRegion {
+interface RectangleLocation {
     /**
      * The bounds of the region on the X-axis
      */
     x: Range,
+    /**
+     * The bounds of the region on the Z-axis
+     */
+    z: Range
+}
+
+/**
+ * A cuboid
+ */
+interface CuboidLocation {
+    /**
+     * The bounds of the region on the X-axis
+     */
+    x: Range,
+    /**
+     * The bounds of the region on the X-axis
+     */
+    y: Range,
     /**
      * The bounds of the region on the Z-axis
      */
