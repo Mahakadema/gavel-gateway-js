@@ -842,7 +842,7 @@ interface OnlinePlayersRequestOptions extends RequestOptions {
      * The identifier to use for players
      * @default "USERNAME"
      */
-    player: OnlinePlayersIdentifier
+    identifier: OnlinePlayersIdentifier
 }
 
 interface LeaderboardRequestOptions<LbType> extends RequestOptions {
